@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c0ec3b0781d47ff8752e5dbc3690035 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1c0ec3b0781d47ff8752e5dbc3690035" ></div>
+        
+</body>
+<script>    
+    
+            var map_1c0ec3b0781d47ff8752e5dbc3690035 = L.map(
+                "map_1c0ec3b0781d47ff8752e5dbc3690035",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1c0ec3b0781d47ff8752e5dbc3690035);
+
+            
+
+        
+    
+            var tile_layer_d15d64f6141b4e90b1c9f2c0b7fd4c60 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1c0ec3b0781d47ff8752e5dbc3690035);
+        
+    
+            var tile_layer_44a081f71a9a464bba5b08bdc38db4fa = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1c0ec3b0781d47ff8752e5dbc3690035);
+        
+    
+            var marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d = L.markerClusterGroup(
+                {}
+            );
+            map_1c0ec3b0781d47ff8752e5dbc3690035.addLayer(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+            var marker_4bb0a5b51c9045b38fc82756baea8dbc = L.marker(
+                [8.716667, -80.608333],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_aa4235adaab642aa9364b94d45711801 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c7ead077f434dd58a23dac940ee877b = $(`<div id="html_9c7ead077f434dd58a23dac940ee877b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Río Blanco and Caño Susio 1 hr hike to the west. Río Blanco is ca 5 hr hike north down from the continental Divide above El Copé and El Petroso sawmill. [Coordinates on orginal label: 08º38'N, 080º36'W] <strong>Elevación:</strong> 114.3 m  <strong>Fecha:</strong> 1980-12-13 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma|William J. Hahn|Thomas M. Antonio <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_aa4235adaab642aa9364b94d45711801.setContent(html_9c7ead077f434dd58a23dac940ee877b);
+        
+
+        marker_4bb0a5b51c9045b38fc82756baea8dbc.bindPopup(popup_aa4235adaab642aa9364b94d45711801)
+        ;
+
+        
+    
+    
+            var marker_3e4bf30564db49e19afd5c04c746f6e9 = L.marker(
+                [9.84, -83.58],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_864b5d2366ed4513a4a84deaace8e28a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eba6b8682fa4351bda04002c3def00e = $(`<div id="html_5eba6b8682fa4351bda04002c3def00e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cultivated in Las Cruces Tropical Botanic Garden, San Vito de Jave, collected between Turrialba and Moravia in place called Platanillo (Tuis) <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1974-09-14 00:00:00+00:00 <strong>Recolectores:</strong> Anonymous <strong>Identificadores:</strong> D. Frodin (MO)</div>`)[0];
+            popup_864b5d2366ed4513a4a84deaace8e28a.setContent(html_5eba6b8682fa4351bda04002c3def00e);
+        
+
+        marker_3e4bf30564db49e19afd5c04c746f6e9.bindPopup(popup_864b5d2366ed4513a4a84deaace8e28a)
+        ;
+
+        
+    
+    
+            var marker_061220a296e242deaaf6e59e90e85d49 = L.marker(
+                [10.27, -84.16],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_65a9ffde5a10423180100562a9187b7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe47e17f4a094f78b494b2b6d425568e = $(`<div id="html_fe47e17f4a094f78b494b2b6d425568e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Colonia Virgen del Socorro in and around the Finca of Sr. Carlos Molina, between 2 and 5 km east of Cariblanco <strong>Elevación:</strong> 970.0 m  <strong>Fecha:</strong> 1975-08-10 00:00:00+00:00 <strong>Recolectores:</strong> John F. Utley|K. Burt-Utley <strong>Identificadores:</strong> D. Frodin (MO)</div>`)[0];
+            popup_65a9ffde5a10423180100562a9187b7a.setContent(html_fe47e17f4a094f78b494b2b6d425568e);
+        
+
+        marker_061220a296e242deaaf6e59e90e85d49.bindPopup(popup_65a9ffde5a10423180100562a9187b7a)
+        ;
+
+        
+    
+    
+            var marker_065667d3a3334026bba2b959c56d753d = L.marker(
+                [10.16, -83.96],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_ae99f6419cfa497a8bdae18b682c19c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cca4a518622b4ff9804a3ae5f77dcc3c = $(`<div id="html_cca4a518622b4ff9804a3ae5f77dcc3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Sanguijuela. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1984-01-07 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P.|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> D. Frodin</div>`)[0];
+            popup_ae99f6419cfa497a8bdae18b682c19c5.setContent(html_cca4a518622b4ff9804a3ae5f77dcc3c);
+        
+
+        marker_065667d3a3334026bba2b959c56d753d.bindPopup(popup_ae99f6419cfa497a8bdae18b682c19c5)
+        ;
+
+        
+    
+    
+            var marker_1cef20a219cd4461bf5d53b90509f00c = L.marker(
+                [9.85, -83.43],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_1c7768737eac407f838bcd351ec14dd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abd7aa63cfd14025a7ca008c7fea4f24 = $(`<div id="html_abd7aa63cfd14025a7ca008c7fea4f24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> cleared pasture-lands and forest on crests of nearby hills, near Moravia and along the road towards Turrialba <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1966-12-19 00:00:00+00:00 <strong>Recolectores:</strong> W. C. Burger & W. Ramirez B. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1c7768737eac407f838bcd351ec14dd3.setContent(html_abd7aa63cfd14025a7ca008c7fea4f24);
+        
+
+        marker_1cef20a219cd4461bf5d53b90509f00c.bindPopup(popup_1c7768737eac407f838bcd351ec14dd3)
+        ;
+
+        
+    
+    
+            var marker_78c8a651350445c6bf32d314422e25ec = L.marker(
+                [9.818375, -83.705606],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_d9a011c1481d4836b6bdadd1128fcdc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f82b48f7487417dbfbc4401b76116e5 = $(`<div id="html_6f82b48f7487417dbfbc4401b76116e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1966-12-01 00:00:00+00:00 <strong>Recolectores:</strong> Collaboration; W. Burger & W. Rameriz B. <strong>Identificadores:</strong> John F.M. & Margaret J. Cannon</div>`)[0];
+            popup_d9a011c1481d4836b6bdadd1128fcdc3.setContent(html_6f82b48f7487417dbfbc4401b76116e5);
+        
+
+        marker_78c8a651350445c6bf32d314422e25ec.bindPopup(popup_d9a011c1481d4836b6bdadd1128fcdc3)
+        ;
+
+        
+    
+    
+            var marker_c52b09754553411aacc012b7ee569bf3 = L.marker(
+                [9.85, -83.43],
+                {}
+            ).addTo(marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d);
+        
+    
+        var popup_9d25e66d5cd144d2ade48ea7b4e3fc81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dd962a5092d488a99e7c941844fafbd = $(`<div id="html_5dd962a5092d488a99e7c941844fafbd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cleared pasture - lands and forest on crests of nearby hills, near Moravia and along the road toward Turrialba. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_9d25e66d5cd144d2ade48ea7b4e3fc81.setContent(html_5dd962a5092d488a99e7c941844fafbd);
+        
+
+        marker_c52b09754553411aacc012b7ee569bf3.bindPopup(popup_9d25e66d5cd144d2ade48ea7b4e3fc81)
+        ;
+
+        
+    
+    
+            var layer_control_2735e1773f7a4ac9904a23975b6ce3bc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d15d64f6141b4e90b1c9f2c0b7fd4c60,
+                    "ESRI World Imagery" : tile_layer_44a081f71a9a464bba5b08bdc38db4fa,
+                },
+                overlays :  {
+                    "macro_element_f20aebd4397d4acf8514b84cccdb6b0d" : marker_cluster_f20aebd4397d4acf8514b84cccdb6b0d,
+                },
+            };
+            L.control.layers(
+                layer_control_2735e1773f7a4ac9904a23975b6ce3bc.base_layers,
+                layer_control_2735e1773f7a4ac9904a23975b6ce3bc.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1c0ec3b0781d47ff8752e5dbc3690035);
+            tile_layer_44a081f71a9a464bba5b08bdc38db4fa.remove();
+        
+</script>

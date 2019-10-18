@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c9c747aca800436ba28adf1e8340ed99 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c9c747aca800436ba28adf1e8340ed99" ></div>
+        
+</body>
+<script>    
+    
+            var map_c9c747aca800436ba28adf1e8340ed99 = L.map(
+                "map_c9c747aca800436ba28adf1e8340ed99",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c9c747aca800436ba28adf1e8340ed99);
+
+            
+
+        
+    
+            var tile_layer_33135221b3184d86bce85bb5626e72e2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+            var tile_layer_b1fc2f1ef1b141e99c232006ba289b8d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+            var circle_marker_ae4615a1741c49baae7d06fbefce6d69 = L.circleMarker(
+                [1.416667, -78.533333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_f5c52decba8d4e04990ce04d8373312c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_534fbe4a7e914635895db9c5f094e7ee = $(`<div id="html_534fbe4a7e914635895db9c5f094e7ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Km 89 Tumaco-Pasto. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1998-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Ramirez, B. R. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f5c52decba8d4e04990ce04d8373312c.setContent(html_534fbe4a7e914635895db9c5f094e7ee);
+        
+
+        circle_marker_ae4615a1741c49baae7d06fbefce6d69.bindPopup(popup_f5c52decba8d4e04990ce04d8373312c)
+        ;
+
+        
+    
+    
+            var circle_marker_4d2c3e48b196479d91beff761aeb00a4 = L.circleMarker(
+                [8.75, -82.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_2b538e57479b4d4aaf20e1a43518cd0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08d3eb800ff64f208b1370614d4f498b = $(`<div id="html_08d3eb800ff64f208b1370614d4f498b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest behind Vivero Forestal, 12 km N of Los Planes de Hornito, IRHE Fortuna Hydroelectric Project. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1982-05-09 00:00:00+00:00 <strong>Recolectores:</strong> S. D. Knapp <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2b538e57479b4d4aaf20e1a43518cd0e.setContent(html_08d3eb800ff64f208b1370614d4f498b);
+        
+
+        circle_marker_4d2c3e48b196479d91beff761aeb00a4.bindPopup(popup_2b538e57479b4d4aaf20e1a43518cd0e)
+        ;
+
+        
+    
+    
+            var circle_marker_02b059fc568544c3bbd89e531c048cce = L.circleMarker(
+                [8.68, -79.92],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_3ab5bed121974e4ba9605e25edaa6bee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88a36536041346858da344808ce3a1d0 = $(`<div id="html_88a36536041346858da344808ce3a1d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito de Capira. Cerro Campana, trocha desde el mirador a la cima <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1995-01-12 00:00:00+00:00 <strong>Recolectores:</strong> C. Galdames <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3ab5bed121974e4ba9605e25edaa6bee.setContent(html_88a36536041346858da344808ce3a1d0);
+        
+
+        circle_marker_02b059fc568544c3bbd89e531c048cce.bindPopup(popup_3ab5bed121974e4ba9605e25edaa6bee)
+        ;
+
+        
+    
+    
+            var circle_marker_24095a0bb34b4dba838017ece82135a3 = L.circleMarker(
+                [10.21, -84.51],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_e17c51a9573e4b7a9b23fd6318720ac0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d307286b21ee4f36b92ec42c88e618c1 = $(`<div id="html_d307286b21ee4f36b92ec42c88e618c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera Central, bosques remanentes y potreros 9 Km norte camino a Bajo Rodríguez <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1995-03-28 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J.F. Morales, III</div>`)[0];
+            popup_e17c51a9573e4b7a9b23fd6318720ac0.setContent(html_d307286b21ee4f36b92ec42c88e618c1);
+        
+
+        circle_marker_24095a0bb34b4dba838017ece82135a3.bindPopup(popup_e17c51a9573e4b7a9b23fd6318720ac0)
+        ;
+
+        
+    
+    
+            var circle_marker_a827f045eb7d43bcae8f28cdddf16156 = L.circleMarker(
+                [8.66666, -80.61666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_d7b80c04f422406e93a76cb769234103 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c4eaa6ba67446829939b606e224260d = $(`<div id="html_4c4eaa6ba67446829939b606e224260d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Above El Cope along old road to Atlantic side; along trail to divide ridge east of road. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1989-01-25 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_d7b80c04f422406e93a76cb769234103.setContent(html_4c4eaa6ba67446829939b606e224260d);
+        
+
+        circle_marker_a827f045eb7d43bcae8f28cdddf16156.bindPopup(popup_d7b80c04f422406e93a76cb769234103)
+        ;
+
+        
+    
+    
+            var circle_marker_5cb7ac795a8441b7bc685ae28dd6126f = L.circleMarker(
+                [8.75, -82.216667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1707778c1094493ab749a2a092c6d26e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98a18a94109b4fdfa91735dff67f45bd = $(`<div id="html_98a18a94109b4fdfa91735dff67f45bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Fortuna Lake and Chiriquí Grande; 4.5-5 km N of dam over Fortuna Lake. <strong>Elevación:</strong> 1117.5 m  <strong>Fecha:</strong> 1985-03-08 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_1707778c1094493ab749a2a092c6d26e.setContent(html_98a18a94109b4fdfa91735dff67f45bd);
+        
+
+        circle_marker_5cb7ac795a8441b7bc685ae28dd6126f.bindPopup(popup_1707778c1094493ab749a2a092c6d26e)
+        ;
+
+        
+    
+    
+            var circle_marker_6efe33fdfb704c62a69ec282f13b9ec8 = L.circleMarker(
+                [9.8, -83.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_5d1ed4e18f3047e982f3b9be313971a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f06fcce946942cf8a6a482994623f37 = $(`<div id="html_0f06fcce946942cf8a6a482994623f37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12 km south of Turrialba by air, 4 km southeast of Pejibaye along Río Gato. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-04-16 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_5d1ed4e18f3047e982f3b9be313971a4.setContent(html_0f06fcce946942cf8a6a482994623f37);
+        
+
+        circle_marker_6efe33fdfb704c62a69ec282f13b9ec8.bindPopup(popup_5d1ed4e18f3047e982f3b9be313971a4)
+        ;
+
+        
+    
+    
+            var circle_marker_e5430a86b47f422498c7c994dd23cdb5 = L.circleMarker(
+                [8.673333, -80.595],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_a3451d502a064ec0b42e60c334d39a13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e6c472dd52945f0b21de3b2e75bdd95 = $(`<div id="html_9e6c472dd52945f0b21de3b2e75bdd95" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Continental Divide above El Copé. [Coordinates on orginal label: 8º38'N, 80º39'W.] <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1985-11-27 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Andrew J. Henderson|Heraclio Herrera|Gordon McPherson|Lois Brako <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_a3451d502a064ec0b42e60c334d39a13.setContent(html_9e6c472dd52945f0b21de3b2e75bdd95);
+        
+
+        circle_marker_e5430a86b47f422498c7c994dd23cdb5.bindPopup(popup_a3451d502a064ec0b42e60c334d39a13)
+        ;
+
+        
+    
+    
+            var circle_marker_5685aba88afb4fb18d299e225daccea8 = L.circleMarker(
+                [8.6625, -80.59055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1a6ecd28964a497f990d34f7cfea799b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5df2359cf794eedb73ca749b76646cf = $(`<div id="html_d5df2359cf794eedb73ca749b76646cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity El Copé, Alto Calvario, ca. 6 mi N of El Copé <strong>Elevación:</strong> 770.0 m  <strong>Fecha:</strong> 1994-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat|Guang Hua Zhu <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1a6ecd28964a497f990d34f7cfea799b.setContent(html_d5df2359cf794eedb73ca749b76646cf);
+        
+
+        circle_marker_5685aba88afb4fb18d299e225daccea8.bindPopup(popup_1a6ecd28964a497f990d34f7cfea799b)
+        ;
+
+        
+    
+    
+            var circle_marker_14e7592a52024ffa9a17fa5defde7354 = L.circleMarker(
+                [8.73333, -82.23333000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_034ba001cf2246fd8044f98cefd59eab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff6b023ae08e4dadb3ff6ea0b92312f8 = $(`<div id="html_ff6b023ae08e4dadb3ff6ea0b92312f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area. <strong>Elevación:</strong> 1070.0 m  <strong>Fecha:</strong> 1984-08-03 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy <strong>Identificadores:</strong> M. Cannon, 1988 (BM)</div>`)[0];
+            popup_034ba001cf2246fd8044f98cefd59eab.setContent(html_ff6b023ae08e4dadb3ff6ea0b92312f8);
+        
+
+        circle_marker_14e7592a52024ffa9a17fa5defde7354.bindPopup(popup_034ba001cf2246fd8044f98cefd59eab)
+        ;
+
+        
+    
+    
+            var circle_marker_09b702436999456496a7914e2820134f = L.circleMarker(
+                [8.75, -82.3],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_d64757e1f9b74fb4bf81e6f1232109a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7e6739573934f9e894b3c6b4947dc35 = $(`<div id="html_f7e6739573934f9e894b3c6b4947dc35" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Gualaca-Chiriquí Grande, vicinity Lago Fortuna, along trail to meteorological station on Río Hornito departing from highway N side, ca. 0.5 km S of Centro de Cientificos. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1994-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat|Guang Hua Zhu <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d64757e1f9b74fb4bf81e6f1232109a8.setContent(html_f7e6739573934f9e894b3c6b4947dc35);
+        
+
+        circle_marker_09b702436999456496a7914e2820134f.bindPopup(popup_d64757e1f9b74fb4bf81e6f1232109a8)
+        ;
+
+        
+    
+    
+            var circle_marker_6021629eaa1a44618acf6348379b26c4 = L.circleMarker(
+                [8.7, -82.23333000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_b8bc959a502e4179a146181fd2a5dfba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d38616e32a04fbeb317c49282e6fb19 = $(`<div id="html_2d38616e32a04fbeb317c49282e6fb19" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area. Unnamed creek to E of road flowing into Río Hornito near Quebrada Moro. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1984-06-16 00:00:00+00:00 <strong>Recolectores:</strong> H. W. Churchill <strong>Identificadores:</strong> M. Cannon, 1988 (BM)</div>`)[0];
+            popup_b8bc959a502e4179a146181fd2a5dfba.setContent(html_2d38616e32a04fbeb317c49282e6fb19);
+        
+
+        circle_marker_6021629eaa1a44618acf6348379b26c4.bindPopup(popup_b8bc959a502e4179a146181fd2a5dfba)
+        ;
+
+        
+    
+    
+            var circle_marker_10bd55fecaf8442ba19155cb71d11cf4 = L.circleMarker(
+                [8.75, -82.21666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_a176fd2727bc4b97b86c2173a3d531d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7c95c36f4d2496f9b7403c9216e0d90 = $(`<div id="html_b7c95c36f4d2496f9b7403c9216e0d90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area. Quebrada Bonito to N of reservoir. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-07-30 00:00:00+00:00 <strong>Recolectores:</strong> H. W. Churchill <strong>Identificadores:</strong> M. Cannon, 1988 (BM)</div>`)[0];
+            popup_a176fd2727bc4b97b86c2173a3d531d1.setContent(html_b7c95c36f4d2496f9b7403c9216e0d90);
+        
+
+        circle_marker_10bd55fecaf8442ba19155cb71d11cf4.bindPopup(popup_a176fd2727bc4b97b86c2173a3d531d1)
+        ;
+
+        
+    
+    
+            var circle_marker_c874222453af4c91aa33d38e1cc9ddb4 = L.circleMarker(
+                [8.716660000000001, -82.23333000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_7ea71f15e37b4391bc3c3722bed77ce3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c00e182f25b942988fdef575aa67bb40 = $(`<div id="html_c00e182f25b942988fdef575aa67bb40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area. Around creek to W of road drawing into Río Hornito S of reservoir. Alt. 1200 m. 8º43'N, 82º14'W. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1984-06-14 00:00:00+00:00 <strong>Recolectores:</strong> H. W. Churchill <strong>Identificadores:</strong> M. Cannon, 1989 (BM)</div>`)[0];
+            popup_7ea71f15e37b4391bc3c3722bed77ce3.setContent(html_c00e182f25b942988fdef575aa67bb40);
+        
+
+        circle_marker_c874222453af4c91aa33d38e1cc9ddb4.bindPopup(popup_7ea71f15e37b4391bc3c3722bed77ce3)
+        ;
+
+        
+    
+    
+            var circle_marker_c051ce3c2b814e22947bca9472f3568d = L.circleMarker(
+                [8.75, -82.21666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_923598e93f104da59aafccdc3f3825ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_711e606e7be14eee81c4358d2fb74b17 = $(`<div id="html_711e606e7be14eee81c4358d2fb74b17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area, N of reservoir. Quebrada Bonito to E of road. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-05-23 00:00:00+00:00 <strong>Recolectores:</strong> H. W. Churchill <strong>Identificadores:</strong> M. Cannon, 1989 (BM)</div>`)[0];
+            popup_923598e93f104da59aafccdc3f3825ba.setContent(html_711e606e7be14eee81c4358d2fb74b17);
+        
+
+        circle_marker_c051ce3c2b814e22947bca9472f3568d.bindPopup(popup_923598e93f104da59aafccdc3f3825ba)
+        ;
+
+        
+    
+    
+            var circle_marker_4caedfb1200b4ce4b72814e6159a14af = L.circleMarker(
+                [1.0333299999999999, -78.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_b9828ab271d44bb281b630d530781e91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7f1480c91eb4d8a93229b65f47cc24a = $(`<div id="html_b7f1480c91eb4d8a93229b65f47cc24a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Etnica Awá. Parroquia El Chical. Centro Gualpí Medio. Río Canumbí. Bosque muy húmedo Premontano. Bosque primario, topografía muy irregular; suelo negro franco-arcilloso. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1993-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Armando Grijalva|Carlos Aulestia|J. Taicúz <strong>Identificadores:</strong> M.Mora & P. Lowry II</div>`)[0];
+            popup_b9828ab271d44bb281b630d530781e91.setContent(html_b7f1480c91eb4d8a93229b65f47cc24a);
+        
+
+        circle_marker_4caedfb1200b4ce4b72814e6159a14af.bindPopup(popup_b9828ab271d44bb281b630d530781e91)
+        ;
+
+        
+    
+    
+            var circle_marker_1a7426c0a2e3418a9c7e40fcc66a549a = L.circleMarker(
+                [8.666667, -79.916667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_4f4a66408b234edbaf9613697133a1e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf04323246e243edaf262690b1d3d301 = $(`<div id="html_bf04323246e243edaf262690b1d3d301" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1983-07-23 00:00:00+00:00 <strong>Recolectores:</strong> Clem W. Hamilton|Karen Krager|James S. Miller|Leslie Miller <strong>Identificadores:</strong> M. Cannon, 1989 (BM)</div>`)[0];
+            popup_4f4a66408b234edbaf9613697133a1e9.setContent(html_bf04323246e243edaf262690b1d3d301);
+        
+
+        circle_marker_1a7426c0a2e3418a9c7e40fcc66a549a.bindPopup(popup_4f4a66408b234edbaf9613697133a1e9)
+        ;
+
+        
+    
+    
+            var circle_marker_444c83dfffd1414e8110d3a60e1d0d2c = L.circleMarker(
+                [8.633333, -80.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_60b0330e6a6c40e18005646c8f3d36c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_debdb2496c3c404992f7a04bb033a3cb = $(`<div id="html_debdb2496c3c404992f7a04bb033a3cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along continental divide above El Cope <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1988-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon, 1989 (BM)</div>`)[0];
+            popup_60b0330e6a6c40e18005646c8f3d36c3.setContent(html_debdb2496c3c404992f7a04bb033a3cb);
+        
+
+        circle_marker_444c83dfffd1414e8110d3a60e1d0d2c.bindPopup(popup_60b0330e6a6c40e18005646c8f3d36c3)
+        ;
+
+        
+    
+    
+            var circle_marker_197201e211ea4e59b86dea3fa8512c60 = L.circleMarker(
+                [8.66666, -79.83333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_2f1312a6c15c4e6988d2fc30ad276c4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f96e1cf0fa8c4033b893e15374a53ffd = $(`<div id="html_f96e1cf0fa8c4033b893e15374a53ffd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana, c. 8º40'N, 79º50'W. Forested slopes, 800-950 m. <strong>Elevación:</strong> 875.0 m  <strong>Fecha:</strong> 1985-12-31 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_2f1312a6c15c4e6988d2fc30ad276c4a.setContent(html_f96e1cf0fa8c4033b893e15374a53ffd);
+        
+
+        circle_marker_197201e211ea4e59b86dea3fa8512c60.bindPopup(popup_2f1312a6c15c4e6988d2fc30ad276c4a)
+        ;
+
+        
+    
+    
+            var circle_marker_9e9a55dfaf154007a6bfe34cc30caf3e = L.circleMarker(
+                [8.776389, -82.195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_b9f4edcb250d46cea51ec79f62424f20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69433a94ccf649e1993a1d0e1e81c9fa = $(`<div id="html_69433a94ccf649e1993a1d0e1e81c9fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam region, along pipeline service road. [Coordinates on orginal label: c. 8º45'N, 82º15'W]. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1985-12-07 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_b9f4edcb250d46cea51ec79f62424f20.setContent(html_69433a94ccf649e1993a1d0e1e81c9fa);
+        
+
+        circle_marker_9e9a55dfaf154007a6bfe34cc30caf3e.bindPopup(popup_b9f4edcb250d46cea51ec79f62424f20)
+        ;
+
+        
+    
+    
+            var circle_marker_97503faa79664c778a80e6c7bcdceeac = L.circleMarker(
+                [8.776389, -82.195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_dad5b7ea34dd4275981b595f90589308 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46f3348fb3874c46a05a1029b4a76751 = $(`<div id="html_46f3348fb3874c46a05a1029b4a76751" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam region, along pipeline service road. [Coordinates on orginal label: c. 8º45'N, 82º15'W]. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1985-12-07 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_dad5b7ea34dd4275981b595f90589308.setContent(html_46f3348fb3874c46a05a1029b4a76751);
+        
+
+        circle_marker_97503faa79664c778a80e6c7bcdceeac.bindPopup(popup_dad5b7ea34dd4275981b595f90589308)
+        ;
+
+        
+    
+    
+            var circle_marker_651fb2ebf93242fcaec7d1aa7aae8712 = L.circleMarker(
+                [8.63333, -80.58333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_8e1e016c4981463e936342f0f04e308e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98b9b002ce2b4ceeb748ad2e3bf5a49e = $(`<div id="html_98b9b002ce2b4ceeb748ad2e3bf5a49e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Above Cope.  Forested slopes. <strong>Elevación:</strong> 725.0 m  <strong>Fecha:</strong> 1985-11-27 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_8e1e016c4981463e936342f0f04e308e.setContent(html_98b9b002ce2b4ceeb748ad2e3bf5a49e);
+        
+
+        circle_marker_651fb2ebf93242fcaec7d1aa7aae8712.bindPopup(popup_8e1e016c4981463e936342f0f04e308e)
+        ;
+
+        
+    
+    
+            var circle_marker_7ca66003688f4e1a82e6efa03696ae55 = L.circleMarker(
+                [8.75, -82.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_237d18173ce24bf8bee26a52e37108dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb11a68a25b143f7a32de7c86f95eecb = $(`<div id="html_cb11a68a25b143f7a32de7c86f95eecb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Fortuna Dam, above Gualaca. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1985-03-12 00:00:00+00:00 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> M. Cannon, 1989 (BM)</div>`)[0];
+            popup_237d18173ce24bf8bee26a52e37108dd.setContent(html_cb11a68a25b143f7a32de7c86f95eecb);
+        
+
+        circle_marker_7ca66003688f4e1a82e6efa03696ae55.bindPopup(popup_237d18173ce24bf8bee26a52e37108dd)
+        ;
+
+        
+    
+    
+            var circle_marker_aab2b25802bc42a495e4225afd1a25ec = L.circleMarker(
+                [8.733333, -82.243055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_6b074b80fe1b434d96dad9a9ba3b93c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fca1925de1f94cc6bb491bf52d0dddf6 = $(`<div id="html_fca1925de1f94cc6bb491bf52d0dddf6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Gualaca-Chiriquí Grande 8.4 miles beyond Los Planes de Hornito, 7.3 miles beyond turnoff to Caldera; steep slopes. <strong>Elevación:</strong> 1130.0 m  <strong>Fecha:</strong> 1987-09-20 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> M. Cannon 1989 (BM)</div>`)[0];
+            popup_6b074b80fe1b434d96dad9a9ba3b93c0.setContent(html_fca1925de1f94cc6bb491bf52d0dddf6);
+        
+
+        circle_marker_aab2b25802bc42a495e4225afd1a25ec.bindPopup(popup_6b074b80fe1b434d96dad9a9ba3b93c0)
+        ;
+
+        
+    
+    
+            var circle_marker_461df526e9de480c90a9e203dd45eee4 = L.circleMarker(
+                [8.683333, -80.591667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_d3de706c996a4469933d98a12a9ce417 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13469215dee547d7b83a438e76f2bb80 = $(`<div id="html_13469215dee547d7b83a438e76f2bb80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E of El Copé sawmill along small stream. <strong>Elevación:</strong> 670.56 m  <strong>Fecha:</strong> 1978-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_d3de706c996a4469933d98a12a9ce417.setContent(html_13469215dee547d7b83a438e76f2bb80);
+        
+
+        circle_marker_461df526e9de480c90a9e203dd45eee4.bindPopup(popup_d3de706c996a4469933d98a12a9ce417)
+        ;
+
+        
+    
+    
+            var circle_marker_b71a12b3ac754be39de5f15cd233be60 = L.circleMarker(
+                [9.81666, -83.66111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_57fcb3c9cc134b9a96a39393e5a467ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_512560a0791344148408496ce3b749a5 = $(`<div id="html_512560a0791344148408496ce3b749a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida, Cuenca del Reventazón, Tuis, ca 4 km, sobre la calle Rivel, bosques aledaños al Río Tuis <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1999-05-06 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|E. Ureña <strong>Identificadores:</strong> A. Rodríguez</div>`)[0];
+            popup_57fcb3c9cc134b9a96a39393e5a467ad.setContent(html_512560a0791344148408496ce3b749a5);
+        
+
+        circle_marker_b71a12b3ac754be39de5f15cd233be60.bindPopup(popup_57fcb3c9cc134b9a96a39393e5a467ad)
+        ;
+
+        
+    
+    
+            var circle_marker_e3cefadd5d5b40ccb859661f2c09ae02 = L.circleMarker(
+                [8.626389, -80.122222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_c977c7e4f4aa48439f4861ec03bc0923 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4a37b6c144443abaf7409301cb83eab = $(`<div id="html_a4a37b6c144443abaf7409301cb83eab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills N of El Valle, E slope of Cerro Gaital. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1982-05-29 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_c977c7e4f4aa48439f4861ec03bc0923.setContent(html_a4a37b6c144443abaf7409301cb83eab);
+        
+
+        circle_marker_e3cefadd5d5b40ccb859661f2c09ae02.bindPopup(popup_c977c7e4f4aa48439f4861ec03bc0923)
+        ;
+
+        
+    
+    
+            var circle_marker_2e709600beb04a9fa6eaf9d092df6a90 = L.circleMarker(
+                [8.633333, -80.141667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_cd69eb580edf4c39a6c6779781dc9843 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60d4d33ba86449c98b580c9208618ab8 = $(`<div id="html_60d4d33ba86449c98b580c9208618ab8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along ridge of Cerro Gaital, N slopes of mountains near La Mesa; N of El Valle. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1982-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp|Robert J. Schmalzel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cd69eb580edf4c39a6c6779781dc9843.setContent(html_60d4d33ba86449c98b580c9208618ab8);
+        
+
+        circle_marker_2e709600beb04a9fa6eaf9d092df6a90.bindPopup(popup_cd69eb580edf4c39a6c6779781dc9843)
+        ;
+
+        
+    
+    
+            var circle_marker_a7cf442220da439899cb67bd9a9ad91c = L.circleMarker(
+                [8.69, -79.916944],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_cdf365dbe8524ed3a4c0fd700f72a209 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a107952d62b4d3cbe9ad9ceded6e122 = $(`<div id="html_8a107952d62b4d3cbe9ad9ceded6e122" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana along trail to summit. <strong>Elevación:</strong> 730.0 m  <strong>Fecha:</strong> 1972-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cdf365dbe8524ed3a4c0fd700f72a209.setContent(html_8a107952d62b4d3cbe9ad9ceded6e122);
+        
+
+        circle_marker_a7cf442220da439899cb67bd9a9ad91c.bindPopup(popup_cdf365dbe8524ed3a4c0fd700f72a209)
+        ;
+
+        
+    
+    
+            var circle_marker_b5b12bb5b93b427d86dd10ff47a90aed = L.circleMarker(
+                [8.550833, -81.171389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_d41782b5a8b04db184ca5b1b8c00541f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8347fb597fe9467a90b280411ac40088 = $(`<div id="html_8347fb597fe9467a90b280411ac40088" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valley of Río Dos Bocas on road between Alto Piedra (above Santa Fé) and Calovebora, along road. <strong>Elevación:</strong> 375.0 m  <strong>Fecha:</strong> 1974-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> R. Liesner</div>`)[0];
+            popup_d41782b5a8b04db184ca5b1b8c00541f.setContent(html_8347fb597fe9467a90b280411ac40088);
+        
+
+        circle_marker_b5b12bb5b93b427d86dd10ff47a90aed.bindPopup(popup_d41782b5a8b04db184ca5b1b8c00541f)
+        ;
+
+        
+    
+    
+            var circle_marker_f97600df9fdb4cec85d00bb4a3539178 = L.circleMarker(
+                [8.7, -79.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_35608d735404489aa1d6b2f65f80136c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d2a92efea8f4ce9988b0f75b20ca739 = $(`<div id="html_5d2a92efea8f4ce9988b0f75b20ca739" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road to Cerro Campana. <strong>Elevación:</strong> 432.0 m  <strong>Fecha:</strong> 1971-05-25 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_35608d735404489aa1d6b2f65f80136c.setContent(html_5d2a92efea8f4ce9988b0f75b20ca739);
+        
+
+        circle_marker_f97600df9fdb4cec85d00bb4a3539178.bindPopup(popup_35608d735404489aa1d6b2f65f80136c)
+        ;
+
+        
+    
+    
+            var circle_marker_cdcf97239cab4877b92136406068cb3e = L.circleMarker(
+                [8.625, -80.108333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_162a59aa5a8e4765a77ad8546bf11861 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d8430a282954e329fe636481fc17f6c = $(`<div id="html_6d8430a282954e329fe636481fc17f6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Valle site area of WEPCOR, Cerro Pilón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-04-24 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr. <strong>Identificadores:</strong> T. Croat</div>`)[0];
+            popup_162a59aa5a8e4765a77ad8546bf11861.setContent(html_6d8430a282954e329fe636481fc17f6c);
+        
+
+        circle_marker_cdcf97239cab4877b92136406068cb3e.bindPopup(popup_162a59aa5a8e4765a77ad8546bf11861)
+        ;
+
+        
+    
+    
+            var circle_marker_6c86b1a3a27448b6ad5c9a3ebd1d6106 = L.circleMarker(
+                [8.645833, -80.133333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_f91d55c09e8642c79151476fd2931492 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b5c1401189a4bc1bca2ce194e56fea5 = $(`<div id="html_8b5c1401189a4bc1bca2ce194e56fea5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Mesa (above El Valle de Antón). <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1971-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f91d55c09e8642c79151476fd2931492.setContent(html_8b5c1401189a4bc1bca2ce194e56fea5);
+        
+
+        circle_marker_6c86b1a3a27448b6ad5c9a3ebd1d6106.bindPopup(popup_f91d55c09e8642c79151476fd2931492)
+        ;
+
+        
+    
+    
+            var circle_marker_036922d1c4504525863542f9723188fe = L.circleMarker(
+                [8.75, -82.233333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_4a7c5dae0f75455d9fc799d1dbb86083 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e88ae7adb7e47148d0acfb9d402eb71 = $(`<div id="html_0e88ae7adb7e47148d0acfb9d402eb71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Fortuna hydroelectric project; north side of river. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1978-03-22 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_4a7c5dae0f75455d9fc799d1dbb86083.setContent(html_0e88ae7adb7e47148d0acfb9d402eb71);
+        
+
+        circle_marker_036922d1c4504525863542f9723188fe.bindPopup(popup_4a7c5dae0f75455d9fc799d1dbb86083)
+        ;
+
+        
+    
+    
+            var circle_marker_6e7d18e28f9946eeab857b58af7fa605 = L.circleMarker(
+                [8.636667, -80.105],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_8cef386f9e1144468f773a0bb36730bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ae6281d37ac42438f931fc90e8d991d = $(`<div id="html_8ae6281d37ac42438f931fc90e8d991d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pilón; summit. <strong>Elevación:</strong> 944.88 m  <strong>Fecha:</strong> 1968-07-25 00:00:00+00:00 <strong>Recolectores:</strong> John D. Dwyer|B. R. Lallathin <strong>Identificadores:</strong> J. Dwyer</div>`)[0];
+            popup_8cef386f9e1144468f773a0bb36730bc.setContent(html_8ae6281d37ac42438f931fc90e8d991d);
+        
+
+        circle_marker_6e7d18e28f9946eeab857b58af7fa605.bindPopup(popup_8cef386f9e1144468f773a0bb36730bc)
+        ;
+
+        
+    
+    
+            var circle_marker_4e1737f63cbd482385985907605d8c1a = L.circleMarker(
+                [8.7, -79.91666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_137c8900c67a45b1be6724370840e7a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_079d4d5b3bb6431ab6aecbdba200ff23 = $(`<div id="html_079d4d5b3bb6431ab6aecbdba200ff23" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana, tropical moist forest. trail leading to cross <strong>Elevación:</strong> 822.96 m  <strong>Fecha:</strong> 1980-09-18 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_137c8900c67a45b1be6724370840e7a5.setContent(html_079d4d5b3bb6431ab6aecbdba200ff23);
+        
+
+        circle_marker_4e1737f63cbd482385985907605d8c1a.bindPopup(popup_137c8900c67a45b1be6724370840e7a5)
+        ;
+
+        
+    
+    
+            var circle_marker_f75ed1ee284e4d9b9eee1321dc000ba4 = L.circleMarker(
+                [8.550833, -81.17277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_9fcf78c183b2404caa59c96ba4d1b7ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac01485441d649b8a05bbe3541d7003b = $(`<div id="html_ac01485441d649b8a05bbe3541d7003b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 16 km NW of Santa Fé, on road to Calovebora (Panama Highway 35). <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1975-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_9fcf78c183b2404caa59c96ba4d1b7ef.setContent(html_ac01485441d649b8a05bbe3541d7003b);
+        
+
+        circle_marker_f75ed1ee284e4d9b9eee1321dc000ba4.bindPopup(popup_9fcf78c183b2404caa59c96ba4d1b7ef)
+        ;
+
+        
+    
+    
+            var circle_marker_897fc0c8549d456590ac88e68b4a86d2 = L.circleMarker(
+                [8.633333, -80.125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_09a0584fc6b34fabab565700eb4d124f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10bebbb246174c8e8c27abdc4918d14e = $(`<div id="html_10bebbb246174c8e8c27abdc4918d14e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Mesa above El Valle; in forest on both sides of junction with road to Cerro Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1974-07-21 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_09a0584fc6b34fabab565700eb4d124f.setContent(html_10bebbb246174c8e8c27abdc4918d14e);
+        
+
+        circle_marker_897fc0c8549d456590ac88e68b4a86d2.bindPopup(popup_09a0584fc6b34fabab565700eb4d124f)
+        ;
+
+        
+    
+    
+            var circle_marker_9b27839908de49ada281ffdd4cf56990 = L.circleMarker(
+                [8.536667, -80.105],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_599bdfaeb5f648f19ce726f71d0e509e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3729639cff041ca98418039c50a23c2 = $(`<div id="html_b3729639cff041ca98418039c50a23c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pilón. <strong>Elevación:</strong> 883.92 m  <strong>Fecha:</strong> 1968-01-19 00:00:00+00:00 <strong>Recolectores:</strong> John D. Dwyer <strong>Identificadores:</strong> J. Dwyer</div>`)[0];
+            popup_599bdfaeb5f648f19ce726f71d0e509e.setContent(html_b3729639cff041ca98418039c50a23c2);
+        
+
+        circle_marker_9b27839908de49ada281ffdd4cf56990.bindPopup(popup_599bdfaeb5f648f19ce726f71d0e509e)
+        ;
+
+        
+    
+    
+            var circle_marker_31235cbb76974e76951d6a87405bfbef = L.circleMarker(
+                [8.67638, -80.61111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1b7175455f334501947b4a9bb8f2b1df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dab5b1a2a77466089084da949e90c0b = $(`<div id="html_2dab5b1a2a77466089084da949e90c0b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Continental Divide north of El Copé, location called Alto Calvario, controlled by Rivera Sawmill, currently being demolished by bulldozer extraction of trees, one at a time. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1980-06-14 00:00:00+00:00 <strong>Recolectores:</strong> James P. Folsom|Robert B. Channell|A. Long|James D. Mauseth <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_1b7175455f334501947b4a9bb8f2b1df.setContent(html_2dab5b1a2a77466089084da949e90c0b);
+        
+
+        circle_marker_31235cbb76974e76951d6a87405bfbef.bindPopup(popup_1b7175455f334501947b4a9bb8f2b1df)
+        ;
+
+        
+    
+    
+            var circle_marker_dc03948230d240659231d99753279c43 = L.circleMarker(
+                [8.7, -79.91666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_68f50b253a914b7898ee5a9751cb9da0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f00df757a7344e289d48951419eb69d = $(`<div id="html_7f00df757a7344e289d48951419eb69d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana Road, on trail to mountain with cross <strong>Elevación:</strong> 243.84 m  <strong>Fecha:</strong> 1967-08-19 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr. <strong>Identificadores:</strong> T. Croat</div>`)[0];
+            popup_68f50b253a914b7898ee5a9751cb9da0.setContent(html_7f00df757a7344e289d48951419eb69d);
+        
+
+        circle_marker_dc03948230d240659231d99753279c43.bindPopup(popup_68f50b253a914b7898ee5a9751cb9da0)
+        ;
+
+        
+    
+    
+            var circle_marker_2f06191c4321435d99c0dacbb81687d1 = L.circleMarker(
+                [8.69055, -79.92083000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_de1ef6799c42441fb65de152975b79f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04e3b2e9ff374901a3d60fa5e346680b = $(`<div id="html_04e3b2e9ff374901a3d60fa5e346680b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana in forest along trail from 2700 ft. to top (ca. 3200 ft.) <strong>Elevación:</strong> 899.1600000000002 m  <strong>Fecha:</strong> 1978-07-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> M.J. Cannon</div>`)[0];
+            popup_de1ef6799c42441fb65de152975b79f3.setContent(html_04e3b2e9ff374901a3d60fa5e346680b);
+        
+
+        circle_marker_2f06191c4321435d99c0dacbb81687d1.bindPopup(popup_de1ef6799c42441fb65de152975b79f3)
+        ;
+
+        
+    
+    
+            var circle_marker_82a7bf2bbd9d4abebe74c6284149ecd2 = L.circleMarker(
+                [8.676667, -80.61],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_4fce830bd7294e969321c54715e7a3d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a53ca826795948feadbf9ea29d92ca3f = $(`<div id="html_a53ca826795948feadbf9ea29d92ca3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Above El Potroso sawmill at Continental Divide. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1980-10-25 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_4fce830bd7294e969321c54715e7a3d7.setContent(html_a53ca826795948feadbf9ea29d92ca3f);
+        
+
+        circle_marker_82a7bf2bbd9d4abebe74c6284149ecd2.bindPopup(popup_4fce830bd7294e969321c54715e7a3d7)
+        ;
+
+        
+    
+    
+            var circle_marker_225d68fcc3f34950850ebab17edb6555 = L.circleMarker(
+                [8.622222, -80.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_c10553edc3ed48ec9aac79e9d11b8c9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2dafc4bf8364df5a32a0a96125ccd2e = $(`<div id="html_f2dafc4bf8364df5a32a0a96125ccd2e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Valle de Antón, La Mesa. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1973-04-01 00:00:00+00:00 <strong>Recolectores:</strong> Helen Kennedy|Alva Kennedy|Elmer Kennedy <strong>Identificadores:</strong> R. Liesner</div>`)[0];
+            popup_c10553edc3ed48ec9aac79e9d11b8c9b.setContent(html_f2dafc4bf8364df5a32a0a96125ccd2e);
+        
+
+        circle_marker_225d68fcc3f34950850ebab17edb6555.bindPopup(popup_c10553edc3ed48ec9aac79e9d11b8c9b)
+        ;
+
+        
+    
+    
+            var circle_marker_9827132b61814ef7b4a86833765007d0 = L.circleMarker(
+                [8.550833, -81.171389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_169231fd9c1444cc8737cc8be5584494 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72944ca269984d2d97893cf55cdcb3a0 = $(`<div id="html_72944ca269984d2d97893cf55cdcb3a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valley of Río Dos Bocas along road between Escuela Agricola Alto Piedra and Calovebora, 15.6 km northwest of Santa Fé; along trail to Santa Fé, steep forested hill east of river. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1974-08-31 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_169231fd9c1444cc8737cc8be5584494.setContent(html_72944ca269984d2d97893cf55cdcb3a0);
+        
+
+        circle_marker_9827132b61814ef7b4a86833765007d0.bindPopup(popup_169231fd9c1444cc8737cc8be5584494)
+        ;
+
+        
+    
+    
+            var circle_marker_65da41c3a49c45cda1176311394e90bd = L.circleMarker(
+                [8.68722, -79.92194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_7f299c56e1b342fa8759a20aade4340b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd5a0afa5c664f74b99c4b8301d6d3ec = $(`<div id="html_bd5a0afa5c664f74b99c4b8301d6d3ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along trail to top Cerro Campana <strong>Elevación:</strong> 810.0 m  <strong>Fecha:</strong> 1974-10-13 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> M.J. Cannon</div>`)[0];
+            popup_7f299c56e1b342fa8759a20aade4340b.setContent(html_bd5a0afa5c664f74b99c4b8301d6d3ec);
+        
+
+        circle_marker_65da41c3a49c45cda1176311394e90bd.bindPopup(popup_7f299c56e1b342fa8759a20aade4340b)
+        ;
+
+        
+    
+    
+            var circle_marker_1c52dc7f2dc347f3b14b5ad03ef302c2 = L.circleMarker(
+                [8.633333, -80.125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1d3313e620494ef0938f66457941faf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c437884e30347c49d56b10178b88479 = $(`<div id="html_9c437884e30347c49d56b10178b88479" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Mesa above El Valle; in forest on both sides of junction with road to Cerro Pilón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1974-07-21 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> R. Liesner</div>`)[0];
+            popup_1d3313e620494ef0938f66457941faf3.setContent(html_9c437884e30347c49d56b10178b88479);
+        
+
+        circle_marker_1c52dc7f2dc347f3b14b5ad03ef302c2.bindPopup(popup_1d3313e620494ef0938f66457941faf3)
+        ;
+
+        
+    
+    
+            var circle_marker_bebf4ec9bc444f6e8d77768e619a7a71 = L.circleMarker(
+                [8.68333, -79.91666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_58ad431e3a7a42719ba520a3f3f1a950 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd98a1c071bc4a53a82c12af5dc5a35f = $(`<div id="html_dd98a1c071bc4a53a82c12af5dc5a35f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana, trocha desde el mirador a la cima. Bosque premontano, nuboso. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1995-01-12 00:00:00+00:00 <strong>Recolectores:</strong> Carmen Galdames <strong>Identificadores:</strong> J. Aranda</div>`)[0];
+            popup_58ad431e3a7a42719ba520a3f3f1a950.setContent(html_dd98a1c071bc4a53a82c12af5dc5a35f);
+        
+
+        circle_marker_bebf4ec9bc444f6e8d77768e619a7a71.bindPopup(popup_58ad431e3a7a42719ba520a3f3f1a950)
+        ;
+
+        
+    
+    
+            var circle_marker_e8ac5cc4d0034693b280b3ec17b90117 = L.circleMarker(
+                [8.733333, -82.216667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_43217590183f4e648dce92161e56495e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4990d6143efa495e858ace3562baa9c3 = $(`<div id="html_4990d6143efa495e858ace3562baa9c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Fortuna hydroelectric project. Clearing in forest; and along river near camp as indicated. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 1978-03-19 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> M.J. Cannon</div>`)[0];
+            popup_43217590183f4e648dce92161e56495e.setContent(html_4990d6143efa495e858ace3562baa9c3);
+        
+
+        circle_marker_e8ac5cc4d0034693b280b3ec17b90117.bindPopup(popup_43217590183f4e648dce92161e56495e)
+        ;
+
+        
+    
+    
+            var circle_marker_c13666be0c344d5ea1b58d9ca04f4c47 = L.circleMarker(
+                [8.616660000000001, -80.11666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_8d9e3a5f62a44232babc5e5c54c38d95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_262c896ef14140de97488eb75c5ae5f5 = $(`<div id="html_262c896ef14140de97488eb75c5ae5f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Gaital to Caracoral. Rain forest <strong>Elevación:</strong> 899.1600000000002 m  <strong>Fecha:</strong> 1968-07-25 00:00:00+00:00 <strong>Recolectores:</strong> John D. Dwyer|Mireya D. Correa A. <strong>Identificadores:</strong> J. Dwyer</div>`)[0];
+            popup_8d9e3a5f62a44232babc5e5c54c38d95.setContent(html_262c896ef14140de97488eb75c5ae5f5);
+        
+
+        circle_marker_c13666be0c344d5ea1b58d9ca04f4c47.bindPopup(popup_8d9e3a5f62a44232babc5e5c54c38d95)
+        ;
+
+        
+    
+    
+            var circle_marker_bc7e3fe42d6e44b487e9ed79c4e81218 = L.circleMarker(
+                [8.63333, -80.13333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_2aae081090124c1d97bcc36d8553206b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f23374ffa04d47058791a00490db482e = $(`<div id="html_f23374ffa04d47058791a00490db482e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Mesa, 4 km N of El Valle. Tropical wet forest and roadsides <strong>Elevación:</strong> 862.5 m  <strong>Fecha:</strong> 1974-01-04 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Nee|John D. Dwyer <strong>Identificadores:</strong> M.J. Cannon</div>`)[0];
+            popup_2aae081090124c1d97bcc36d8553206b.setContent(html_f23374ffa04d47058791a00490db482e);
+        
+
+        circle_marker_bc7e3fe42d6e44b487e9ed79c4e81218.bindPopup(popup_2aae081090124c1d97bcc36d8553206b)
+        ;
+
+        
+    
+    
+            var circle_marker_71efdaa8770042eeabe8ffdb56458723 = L.circleMarker(
+                [8.550833, -81.17277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_a195baf46a2d402f97bf1fce0455d14e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_583878a2d8aa47a3a335f6225e9f4bfd = $(`<div id="html_583878a2d8aa47a3a335f6225e9f4bfd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On road from Santa Fé to Calovebora (Panamanian Highway 35), 16 km from Santa Fé. On Atlantic slope near Rio Caloveborita. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1975-06-18 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Kent P. Dumont|S.E. Carpenter|S.M. Carpenter <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_a195baf46a2d402f97bf1fce0455d14e.setContent(html_583878a2d8aa47a3a335f6225e9f4bfd);
+        
+
+        circle_marker_71efdaa8770042eeabe8ffdb56458723.bindPopup(popup_a195baf46a2d402f97bf1fce0455d14e)
+        ;
+
+        
+    
+    
+            var circle_marker_701066f48d6e477aaf4ba862103065d8 = L.circleMarker(
+                [8.625, -80.113333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_99c8bbd021cb4b18a8d4816352db5655 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1e2079882ea40d1a2f0cbfb70e2bf9c = $(`<div id="html_a1e2079882ea40d1a2f0cbfb70e2bf9c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slopes and summit of Cerro Caracoral, north rim of El Valle. <strong>Elevación:</strong> 899.1600000000002 m  <strong>Fecha:</strong> 1981-04-22 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_99c8bbd021cb4b18a8d4816352db5655.setContent(html_a1e2079882ea40d1a2f0cbfb70e2bf9c);
+        
+
+        circle_marker_701066f48d6e477aaf4ba862103065d8.bindPopup(popup_99c8bbd021cb4b18a8d4816352db5655)
+        ;
+
+        
+    
+    
+            var circle_marker_d4f018fa89924d9289609455411b393b = L.circleMarker(
+                [8.63333, -80.10833000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_e9471498affc4becada22accfd1efe24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c16e8791b8c24d9f8b33a7898cea6df4 = $(`<div id="html_c16e8791b8c24d9f8b33a7898cea6df4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pilón, 5 km NE of El Valle. <strong>Elevación:</strong> 922.5 m  <strong>Fecha:</strong> 1975-06-13 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Kent P. Dumont|S.E. Carpenter|S.M. Carpenter <strong>Identificadores:</strong> M.J. Cannon</div>`)[0];
+            popup_e9471498affc4becada22accfd1efe24.setContent(html_c16e8791b8c24d9f8b33a7898cea6df4);
+        
+
+        circle_marker_d4f018fa89924d9289609455411b393b.bindPopup(popup_e9471498affc4becada22accfd1efe24)
+        ;
+
+        
+    
+    
+            var circle_marker_a412c98fc7704befabd67d5234032cda = L.circleMarker(
+                [8.716660000000001, -82.26666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_c8b73732a3864fa097d00e2a1bc2e409 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89daf92fb5e44ccf86187ba91af32462 = $(`<div id="html_89daf92fb5e44ccf86187ba91af32462" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, camino de quebrada Bonita. hacia el este del rio Chiriqui. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1987-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Iván A. Valdespino|M. Ruíz|Clementina Chung|Guillermo Carcamo|Noris Salazar A.|Beatriz Lara|Dilia Santamaría <strong>Identificadores:</strong> Ivan a. Valdespino</div>`)[0];
+            popup_c8b73732a3864fa097d00e2a1bc2e409.setContent(html_89daf92fb5e44ccf86187ba91af32462);
+        
+
+        circle_marker_a412c98fc7704befabd67d5234032cda.bindPopup(popup_c8b73732a3864fa097d00e2a1bc2e409)
+        ;
+
+        
+    
+    
+            var circle_marker_a38d3e1013dd4314b53abea250348227 = L.circleMarker(
+                [8.551944, -81.175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_adb6b73e58a748699e18e217364408cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4d5eb46bd57499991a39c7c7787a356 = $(`<div id="html_e4d5eb46bd57499991a39c7c7787a356" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> N of Santa Fé 11 km from Escuela Agricola Alto de Piedra. On Atlantic slope, in forest along Río Dos Bocas. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1974-11-15 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> M. Canon</div>`)[0];
+            popup_adb6b73e58a748699e18e217364408cf.setContent(html_e4d5eb46bd57499991a39c7c7787a356);
+        
+
+        circle_marker_a38d3e1013dd4314b53abea250348227.bindPopup(popup_adb6b73e58a748699e18e217364408cf)
+        ;
+
+        
+    
+    
+            var circle_marker_f0d42f633a984382b59e4d41d5813652 = L.circleMarker(
+                [8.623330000000001, -80.10833000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_7b8c6da2c9194c6b9c4647835012fef9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1d09d39fc3f4b05b73dca46b2e86536 = $(`<div id="html_c1d09d39fc3f4b05b73dca46b2e86536" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Valle de Antón <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1946-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Paul H. Allen <strong>Identificadores:</strong> A. C. Smith</div>`)[0];
+            popup_7b8c6da2c9194c6b9c4647835012fef9.setContent(html_c1d09d39fc3f4b05b73dca46b2e86536);
+        
+
+        circle_marker_f0d42f633a984382b59e4d41d5813652.bindPopup(popup_7b8c6da2c9194c6b9c4647835012fef9)
+        ;
+
+        
+    
+    
+            var circle_marker_88c47f37d4b34a08816b962e5781a4aa = L.circleMarker(
+                [8.716660000000001, -82.26666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_d4f1db6274224e1f9108c4127fd7c6ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fda672c589b4ff6bee94a942f1e9f34 = $(`<div id="html_6fda672c589b4ff6bee94a942f1e9f34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, camino de quebrada Bonita. Hacia el este del rio Chiriqui. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1987-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Iván A. Valdespino|M. Ruíz|Clementina Chung|Guillermo Carcamo|Noris Salazar A.|Beatriz Lara|Dilia Santamaría <strong>Identificadores:</strong> Ivan A. Va Idespino</div>`)[0];
+            popup_d4f1db6274224e1f9108c4127fd7c6ca.setContent(html_6fda672c589b4ff6bee94a942f1e9f34);
+        
+
+        circle_marker_88c47f37d4b34a08816b962e5781a4aa.bindPopup(popup_d4f1db6274224e1f9108c4127fd7c6ca)
+        ;
+
+        
+    
+    
+            var circle_marker_d7659d24bb36478ba6e274232e030176 = L.circleMarker(
+                [8.621667, -80.108333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1c4d8d83dec346b08bf2ba987f520abe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c0db5800544b8bac81bebbd6f857e0 = $(`<div id="html_86c0db5800544b8bac81bebbd6f857e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NE slopes of Cerro Caracoral, N rim of El Valle. <strong>Elevación:</strong> 899.1600000000002 m  <strong>Fecha:</strong> 1981-03-13 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_1c4d8d83dec346b08bf2ba987f520abe.setContent(html_86c0db5800544b8bac81bebbd6f857e0);
+        
+
+        circle_marker_d7659d24bb36478ba6e274232e030176.bindPopup(popup_1c4d8d83dec346b08bf2ba987f520abe)
+        ;
+
+        
+    
+    
+            var circle_marker_93044967d0d04c899a08c084a1f1f91e = L.circleMarker(
+                [8.60416, -81.11805],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_6d7f887d2e234647b5b5cb0930662a46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5cfd844806246178aa6d08b6e760506 = $(`<div id="html_e5cfd844806246178aa6d08b6e760506" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Headwaters of Río Caloveborita. Ca. 15 km past Escuela Agricola Alto Piedra above Santa Fé. Atlantic watershed <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1981-05-15 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma|Lennart Andersson <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_6d7f887d2e234647b5b5cb0930662a46.setContent(html_e5cfd844806246178aa6d08b6e760506);
+        
+
+        circle_marker_93044967d0d04c899a08c084a1f1f91e.bindPopup(popup_6d7f887d2e234647b5b5cb0930662a46)
+        ;
+
+        
+    
+    
+            var circle_marker_2d479641f8f74fd4afab28f290c2a8e9 = L.circleMarker(
+                [8.68722, -79.9175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_f8fe8becfd1241ee8fca65803c9a4403 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a360d8ac55724912b6e0b682bc134dc2 = $(`<div id="html_a360d8ac55724912b6e0b682bc134dc2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1981-02-14 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy|Kenneth J. Sytsma <strong>Identificadores:</strong> M. J. Cannon</div>`)[0];
+            popup_f8fe8becfd1241ee8fca65803c9a4403.setContent(html_a360d8ac55724912b6e0b682bc134dc2);
+        
+
+        circle_marker_2d479641f8f74fd4afab28f290c2a8e9.bindPopup(popup_f8fe8becfd1241ee8fca65803c9a4403)
+        ;
+
+        
+    
+    
+            var circle_marker_a442ff616fab46098e3e04ff7d4d3dcf = L.circleMarker(
+                [8.6, -80.13333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_4c1f9b23fdff45548caedb42d9bb6ceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_016cb8691210499e90e1950b19c430ba = $(`<div id="html_016cb8691210499e90e1950b19c430ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> About 39 kms. from Interamerican Highway along El Valle road. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-10-05 00:00:00+00:00 <strong>Recolectores:</strong> Mireya D. Correa A. <strong>Identificadores:</strong> R. L. Dressler</div>`)[0];
+            popup_4c1f9b23fdff45548caedb42d9bb6ceb.setContent(html_016cb8691210499e90e1950b19c430ba);
+        
+
+        circle_marker_a442ff616fab46098e3e04ff7d4d3dcf.bindPopup(popup_4c1f9b23fdff45548caedb42d9bb6ceb)
+        ;
+
+        
+    
+    
+            var circle_marker_201ef33bc7da4f7d87937a062b7f0077 = L.circleMarker(
+                [8.604167, -81.11805600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_4542a1317a784fb0b3209a2d4f7315ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d3faa6d07834d359ad032aae2c8b22e = $(`<div id="html_5d3faa6d07834d359ad032aae2c8b22e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Headwaters of Río Calveborita; ca. 15 km past Escuela Agricola Alto Piedra above Santa Fé; Atlantic watershed. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1981-05-16 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma|Lennart Andersson <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_4542a1317a784fb0b3209a2d4f7315ea.setContent(html_5d3faa6d07834d359ad032aae2c8b22e);
+        
+
+        circle_marker_201ef33bc7da4f7d87937a062b7f0077.bindPopup(popup_4542a1317a784fb0b3209a2d4f7315ea)
+        ;
+
+        
+    
+    
+            var circle_marker_16a32a94c3de4475a558631c3946239c = L.circleMarker(
+                [8.611667, -80.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_233ed2abc8464ce6b691743cb994fa0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_660caad856414d229c4178912d1fb4f4 = $(`<div id="html_660caad856414d229c4178912d1fb4f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Valle, behind Club Campestre. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1971-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_233ed2abc8464ce6b691743cb994fa0a.setContent(html_660caad856414d229c4178912d1fb4f4);
+        
+
+        circle_marker_16a32a94c3de4475a558631c3946239c.bindPopup(popup_233ed2abc8464ce6b691743cb994fa0a)
+        ;
+
+        
+    
+    
+            var circle_marker_f2dbfd8e78284160b8a55cb862a3a4de = L.circleMarker(
+                [8.679167, -80.608333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_d4c99f2a9931458494ce7909244922b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2a248d4f409474caf2355c421bf7179 = $(`<div id="html_e2a248d4f409474caf2355c421bf7179" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7 km N of El Copé de Veraguas; lumber camp. Continental Divide, extremely windy - circa Rivera sawmill; Alto Calvario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1977-01-11 00:00:00+00:00 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> D. G. Frodin</div>`)[0];
+            popup_d4c99f2a9931458494ce7909244922b2.setContent(html_e2a248d4f409474caf2355c421bf7179);
+        
+
+        circle_marker_f2dbfd8e78284160b8a55cb862a3a4de.bindPopup(popup_d4c99f2a9931458494ce7909244922b2)
+        ;
+
+        
+    
+    
+            var circle_marker_18e0e7549ba44f3bb52b1d00c5aca623 = L.circleMarker(
+                [8.621667, -80.11],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_ce41a1ed2f784feeb2781e923c8c4718 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fcf7638a2154b67afe2917dfbe86865 = $(`<div id="html_1fcf7638a2154b67afe2917dfbe86865" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Foothills and summit of Cerro Caracoral, near La Mesa, N. of El Valle de Antón. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1981-09-10 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp <strong>Identificadores:</strong> M. Cannon</div>`)[0];
+            popup_ce41a1ed2f784feeb2781e923c8c4718.setContent(html_1fcf7638a2154b67afe2917dfbe86865);
+        
+
+        circle_marker_18e0e7549ba44f3bb52b1d00c5aca623.bindPopup(popup_ce41a1ed2f784feeb2781e923c8c4718)
+        ;
+
+        
+    
+    
+            var circle_marker_41c2eba71ac0485c991995bcf63f5a27 = L.circleMarker(
+                [8.7, -82.233333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1ebed4fb13624c54a0c153d19d284612 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb86e718b0a74f12b70eb5b006e42f52 = $(`<div id="html_bb86e718b0a74f12b70eb5b006e42f52" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Gualaca, ca. 8.5 miles from Planos de Hornito on the road to the La Fortuna dam site. Near stream. <strong>Elevación:</strong> 1341.12 m  <strong>Fecha:</strong> 1980-07-10 00:00:00+00:00 <strong>Recolectores:</strong> Thomas M. Antonio <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1ebed4fb13624c54a0c153d19d284612.setContent(html_bb86e718b0a74f12b70eb5b006e42f52);
+        
+
+        circle_marker_41c2eba71ac0485c991995bcf63f5a27.bindPopup(popup_1ebed4fb13624c54a0c153d19d284612)
+        ;
+
+        
+    
+    
+            var circle_marker_9c6f29b1794a44c7900fad47f8f87cf2 = L.circleMarker(
+                [8.616667, -80.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_79b827c37b9343d9b884fcb8b98d920a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c818fc229f0433d9915e4aecc8f2bf9 = $(`<div id="html_8c818fc229f0433d9915e4aecc8f2bf9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Cerro Pilón and El Valle de Antón. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1967-08-15 00:00:00+00:00 <strong>Recolectores:</strong> James A. Duke|John D. Dwyer <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_79b827c37b9343d9b884fcb8b98d920a.setContent(html_8c818fc229f0433d9915e4aecc8f2bf9);
+        
+
+        circle_marker_9c6f29b1794a44c7900fad47f8f87cf2.bindPopup(popup_79b827c37b9343d9b884fcb8b98d920a)
+        ;
+
+        
+    
+    
+            var circle_marker_0d53bbcd828f4f70aa7d5e5703f99c88 = L.circleMarker(
+                [8.626667, -80.105],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_719fea3d6f3742c095320c9ba1c0f1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12fca66de5b44463ab9b2507a1894621 = $(`<div id="html_12fca66de5b44463ab9b2507a1894621" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On slopes of Cerro Pilón near El Valle. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1967-06-10 00:00:00+00:00 <strong>Recolectores:</strong> James A. Duke <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_719fea3d6f3742c095320c9ba1c0f1a6.setContent(html_12fca66de5b44463ab9b2507a1894621);
+        
+
+        circle_marker_0d53bbcd828f4f70aa7d5e5703f99c88.bindPopup(popup_719fea3d6f3742c095320c9ba1c0f1a6)
+        ;
+
+        
+    
+    
+            var circle_marker_fdabd7bb5f964f67bd7a5d16b8ca1ec2 = L.circleMarker(
+                [8.73333, -82.23333000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_e5c9c3e76ae144c193748cf249cd232d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baff1a21670c4d80b9b768529a0f766e = $(`<div id="html_baff1a21670c4d80b9b768529a0f766e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area. <strong>Elevación:</strong> 1070.0 m  <strong>Fecha:</strong> 1984-08-03 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy <strong>Identificadores:</strong> M. Cannon, BM</div>`)[0];
+            popup_e5c9c3e76ae144c193748cf249cd232d.setContent(html_baff1a21670c4d80b9b768529a0f766e);
+        
+
+        circle_marker_fdabd7bb5f964f67bd7a5d16b8ca1ec2.bindPopup(popup_e5c9c3e76ae144c193748cf249cd232d)
+        ;
+
+        
+    
+    
+            var circle_marker_fa555c4210114f39adb123dc88b7f3f3 = L.circleMarker(
+                [8.7, -79.91666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_7534e799ed82479f93fd833a34e4bb16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36130355167f4b299329849d1d594cb9 = $(`<div id="html_36130355167f4b299329849d1d594cb9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Campana, tropical moist forest. Premontane wet forest, trail leading  to cross. <strong>Elevación:</strong> 868.6800000000002 m  <strong>Fecha:</strong> 1980-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma <strong>Identificadores:</strong> M. Cannon, BM</div>`)[0];
+            popup_7534e799ed82479f93fd833a34e4bb16.setContent(html_36130355167f4b299329849d1d594cb9);
+        
+
+        circle_marker_fa555c4210114f39adb123dc88b7f3f3.bindPopup(popup_7534e799ed82479f93fd833a34e4bb16)
+        ;
+
+        
+    
+    
+            var circle_marker_a7d9ed3aee1e4c5a9e8af97d7cda4811 = L.circleMarker(
+                [8.75, -82.283333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_6ee1858a9ef64280be9fed2f79cfb13e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8ce619dc10b4f478a2e85125a87a8d7 = $(`<div id="html_e8ce619dc10b4f478a2e85125a87a8d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Gualaca and Fortuna dam site, 10.1 mi NW of Los Planes de Hornito. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1980-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> M. Cannon, BM</div>`)[0];
+            popup_6ee1858a9ef64280be9fed2f79cfb13e.setContent(html_e8ce619dc10b4f478a2e85125a87a8d7);
+        
+
+        circle_marker_a7d9ed3aee1e4c5a9e8af97d7cda4811.bindPopup(popup_6ee1858a9ef64280be9fed2f79cfb13e)
+        ;
+
+        
+    
+    
+            var circle_marker_f83d8a59322d432ebf20343401ed8603 = L.circleMarker(
+                [9.816667, -83.661111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_7f2d5eefcdc54d35a2e9e94ae5a7d697 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48c5a56aa03d4e81bcf68a519213b3ae = $(`<div id="html_48c5a56aa03d4e81bcf68a519213b3ae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tuis, 4 Km sobre la calle Rivel; siguiendo sobre el margen del rio Tuis. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1999-05-06 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Esteban Uren~a <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_7f2d5eefcdc54d35a2e9e94ae5a7d697.setContent(html_48c5a56aa03d4e81bcf68a519213b3ae);
+        
+
+        circle_marker_f83d8a59322d432ebf20343401ed8603.bindPopup(popup_7f2d5eefcdc54d35a2e9e94ae5a7d697)
+        ;
+
+        
+    
+    
+            var circle_marker_094f7dd1e7f04302a76696eaced6b137 = L.circleMarker(
+                [9.816667, -83.661111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_956cce687f074f03b5764c8db40be176 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f57d6518478c448e99c2875976679791 = $(`<div id="html_f57d6518478c448e99c2875976679791" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tuis, 4 Km sobre la calle Rivel; siguiendo sobre el margen del rio Tuis. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1999-05-06 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Esteban Uren~a <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_956cce687f074f03b5764c8db40be176.setContent(html_f57d6518478c448e99c2875976679791);
+        
+
+        circle_marker_094f7dd1e7f04302a76696eaced6b137.bindPopup(popup_956cce687f074f03b5764c8db40be176)
+        ;
+
+        
+    
+    
+            var circle_marker_555d1e1dad7b4348a75611e62599bee7 = L.circleMarker(
+                [9.8, -83.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_456ccd9e731d49fa8f64b840d00543f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8bdb99d9eb4440b9f1d71cd1975410a = $(`<div id="html_d8bdb99d9eb4440b9f1d71cd1975410a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12 km S of Turrialba by air, 4 km SE of Pejibaye along Rio Gato. Disturbed primary forest along river. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-04-16 00:00:00+00:00 <strong>Recolectores:</strong> Ron L. Liesner <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_456ccd9e731d49fa8f64b840d00543f8.setContent(html_d8bdb99d9eb4440b9f1d71cd1975410a);
+        
+
+        circle_marker_555d1e1dad7b4348a75611e62599bee7.bindPopup(popup_456ccd9e731d49fa8f64b840d00543f8)
+        ;
+
+        
+    
+    
+            var circle_marker_e920264edc9f403196da170a15593dff = L.circleMarker(
+                [8.4833, -80.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_7f88acfa13294e2bbe30ce104d17518b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2150d80088245d5a175189379a3b41c = $(`<div id="html_e2150d80088245d5a175189379a3b41c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-08-02 00:00:00+00:00 <strong>Recolectores:</strong> J. L. Luteyn <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_7f88acfa13294e2bbe30ce104d17518b.setContent(html_e2150d80088245d5a175189379a3b41c);
+        
+
+        circle_marker_e920264edc9f403196da170a15593dff.bindPopup(popup_7f88acfa13294e2bbe30ce104d17518b)
+        ;
+
+        
+    
+    
+            var circle_marker_5d0f43d000214e7584ef6058bbb3e0ce = L.circleMarker(
+                [1.41666, -78.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_ac548fa2df1240a3aea271d52fb13d98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddccd5912db9495aba09775036c1da3f = $(`<div id="html_ddccd5912db9495aba09775036c1da3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Km 89 vía Tumaco a Pasto <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1998-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Ramírez-P, B. R. <strong>Identificadores:</strong> Ramírez-P, B. R.</div>`)[0];
+            popup_ac548fa2df1240a3aea271d52fb13d98.setContent(html_ddccd5912db9495aba09775036c1da3f);
+        
+
+        circle_marker_5d0f43d000214e7584ef6058bbb3e0ce.bindPopup(popup_ac548fa2df1240a3aea271d52fb13d98)
+        ;
+
+        
+    
+    
+            var circle_marker_b9c63230506e4c38901089db96d560fb = L.circleMarker(
+                [1.3, -77.93333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_04c9f4cf442d4c2ab695fbeee2b0b1ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_140b6f24313545539499f32c4c656869 = $(`<div id="html_140b6f24313545539499f32c4c656869" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Resguardo Indígena Gualcalá Santa Fé, camino al Río Gualcalá <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-12-17 00:00:00+00:00 <strong>Recolectores:</strong> Ramírez-P, B. R. | González, M. S. <strong>Identificadores:</strong> Ramírez-P, B. R.; González, M. S.</div>`)[0];
+            popup_04c9f4cf442d4c2ab695fbeee2b0b1ab.setContent(html_140b6f24313545539499f32c4c656869);
+        
+
+        circle_marker_b9c63230506e4c38901089db96d560fb.bindPopup(popup_04c9f4cf442d4c2ab695fbeee2b0b1ab)
+        ;
+
+        
+    
+    
+            var circle_marker_d842b1326c4344688de15a3160428906 = L.circleMarker(
+                [8.507188000000001, -80.102665],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_1f17d89129454379819386d058361b07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9491d4c56e3a409bac3427f8faaaebba = $(`<div id="html_9491d4c56e3a409bac3427f8faaaebba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> T.B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1f17d89129454379819386d058361b07.setContent(html_9491d4c56e3a409bac3427f8faaaebba);
+        
+
+        circle_marker_d842b1326c4344688de15a3160428906.bindPopup(popup_1f17d89129454379819386d058361b07)
+        ;
+
+        
+    
+    
+            var circle_marker_eefa8636c214404daf00c2b84ee32969 = L.circleMarker(
+                [8.68, -79.91],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_b9927b33e7ca42bc996c57cb96b73595 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef5ca3d0f8b54721af9960efbd1cad72 = $(`<div id="html_ef5ca3d0f8b54721af9960efbd1cad72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito de Capira. Cerro Campana, trocha desde el mirador a la cima. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1995-01-12 00:00:00+00:00 <strong>Recolectores:</strong> Galdames, Carmen <strong>Identificadores:</strong> J. Aranda</div>`)[0];
+            popup_b9927b33e7ca42bc996c57cb96b73595.setContent(html_ef5ca3d0f8b54721af9960efbd1cad72);
+        
+
+        circle_marker_eefa8636c214404daf00c2b84ee32969.bindPopup(popup_b9927b33e7ca42bc996c57cb96b73595)
+        ;
+
+        
+    
+    
+            var circle_marker_fb92696584494fdb87cc8f8293ccff48 = L.circleMarker(
+                [9.78, -83.68],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+        
+    
+        var popup_9e490582921c4771b33b65c9f01d7fd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2377e07475d444db8d23f4c2aec495f8 = $(`<div id="html_2377e07475d444db8d23f4c2aec495f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Primary forest near Río Tepemchín. 4 km  SE of Pejibaye. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1973-02-18 00:00:00+00:00 <strong>Recolectores:</strong> Lent, Roy W. <strong>Identificadores:</strong> Baker, Richard A.</div>`)[0];
+            popup_9e490582921c4771b33b65c9f01d7fd0.setContent(html_2377e07475d444db8d23f4c2aec495f8);
+        
+
+        circle_marker_fb92696584494fdb87cc8f8293ccff48.bindPopup(popup_9e490582921c4771b33b65c9f01d7fd0)
+        ;
+
+        
+    
+    
+            var layer_control_3d712f394f474d3194a57ad5fe8035e5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_33135221b3184d86bce85bb5626e72e2,
+                    "ESRI World Imagery" : tile_layer_b1fc2f1ef1b141e99c232006ba289b8d,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_3d712f394f474d3194a57ad5fe8035e5.base_layers,
+                layer_control_3d712f394f474d3194a57ad5fe8035e5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c9c747aca800436ba28adf1e8340ed99);
+            tile_layer_b1fc2f1ef1b141e99c232006ba289b8d.remove();
+        
+</script>

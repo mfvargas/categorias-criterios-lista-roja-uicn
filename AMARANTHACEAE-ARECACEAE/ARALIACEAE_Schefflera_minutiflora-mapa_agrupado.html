@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56c69bb55cd64c8183c23be95182199e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_56c69bb55cd64c8183c23be95182199e" ></div>
+        
+</body>
+<script>    
+    
+            var map_56c69bb55cd64c8183c23be95182199e = L.map(
+                "map_56c69bb55cd64c8183c23be95182199e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_56c69bb55cd64c8183c23be95182199e);
+
+            
+
+        
+    
+            var tile_layer_882a0429824342f9b57678b3c28dac3c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_56c69bb55cd64c8183c23be95182199e);
+        
+    
+            var tile_layer_0bee344b997342239f7dc98fa9f41e9e = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_56c69bb55cd64c8183c23be95182199e);
+        
+    
+            var marker_cluster_2c81ea825fb84e4e95ccc475201621e7 = L.markerClusterGroup(
+                {}
+            );
+            map_56c69bb55cd64c8183c23be95182199e.addLayer(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+            var marker_309355d0c4d14c1eb8aa3f633fa166a8 = L.marker(
+                [0.321667, -77.419444],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_019becf8d82b4bc78f9a28cc10f18735 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01ca3fa8c4e5400ab4cb1a5a5a51bfc0 = $(`<div id="html_01ca3fa8c4e5400ab4cb1a5a5a51bfc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ecuador, Sucumbios, Bear Ridge (1700-1920 m): Eastern slopes of the Andes, ca. 10 km south of the Ecuador-Colombia border, ridgeline southeast of Sur Pax. Vicinity of campsite #3 (Bermejo Bear Ridge) on Rapid Biological Inventory #3. Access from Bermejo oil feild road to Pozo 2, NW between Lumbaqui and Cascales. Vicinity of Oso Ridge Camp. <strong>Elevación:</strong> 1810.0 m  <strong>Fecha:</strong> 2001-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Aguinda|Nigel Pitman|Robin B. Foster <strong>Identificadores:</strong> Marcela Mora</div>`)[0];
+            popup_019becf8d82b4bc78f9a28cc10f18735.setContent(html_01ca3fa8c4e5400ab4cb1a5a5a51bfc0);
+        
+
+        marker_309355d0c4d14c1eb8aa3f633fa166a8.bindPopup(popup_019becf8d82b4bc78f9a28cc10f18735)
+        ;
+
+        
+    
+    
+            var marker_4057fe92e8524d88b9b02dafd8cd1a74 = L.marker(
+                [6.105278, -73.222222],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_c0e2d083249e430faab4032c2659a809 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ecfe015f6cc4d02b3f20309b1470269 = $(`<div id="html_3ecfe015f6cc4d02b3f20309b1470269" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ispeccion de Virolin, Cuchilla La Vieja-Costilla del Fara. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 1999-03-22 00:00:00+00:00 <strong>Recolectores:</strong> H. Mendoza|A. Robles|S. Medina <strong>Identificadores:</strong> J. Jimenez</div>`)[0];
+            popup_c0e2d083249e430faab4032c2659a809.setContent(html_3ecfe015f6cc4d02b3f20309b1470269);
+        
+
+        marker_4057fe92e8524d88b9b02dafd8cd1a74.bindPopup(popup_c0e2d083249e430faab4032c2659a809)
+        ;
+
+        
+    
+    
+            var marker_3b76efae044c4270850d8ca7ba39e908 = L.marker(
+                [1.583333, -76.0],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4ed2f29b6ad44a27b87c2d7db500bc89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b9da022a1334e8f862d1e9536c73235 = $(`<div id="html_0b9da022a1334e8f862d1e9536c73235" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vía a la quebrada Cascajal del Conudo, Parque Natural Nacional Cueva de Los Guácharos. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-08-30 00:00:00+00:00 <strong>Recolectores:</strong> César E. Barbosa <strong>Identificadores:</strong> O. Rivera-Diaz</div>`)[0];
+            popup_4ed2f29b6ad44a27b87c2d7db500bc89.setContent(html_0b9da022a1334e8f862d1e9536c73235);
+        
+
+        marker_3b76efae044c4270850d8ca7ba39e908.bindPopup(popup_4ed2f29b6ad44a27b87c2d7db500bc89)
+        ;
+
+        
+    
+    
+            var marker_04edc79456c242a2a9c8683e77b9d1a8 = L.marker(
+                [7.088806, -75.486583],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_e93c123810c64b87846b3741d890255f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8456f3b2d22949aa9158daea37415dc9 = $(`<div id="html_8456f3b2d22949aa9158daea37415dc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Via Yarumal a Briceno, borde de carretera. <strong>Elevación:</strong> 1818.0 m  <strong>Fecha:</strong> 2017-10-14 00:00:00+00:00 <strong>Recolectores:</strong> Álvaro Idárraga-Piedrahita|Porter P. Lowry II|Marcela Mora|Jaider Jiménez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e93c123810c64b87846b3741d890255f.setContent(html_8456f3b2d22949aa9158daea37415dc9);
+        
+
+        marker_04edc79456c242a2a9c8683e77b9d1a8.bindPopup(popup_e93c123810c64b87846b3741d890255f)
+        ;
+
+        
+    
+    
+            var marker_6b26adf0b9ec4a8cbc388c41bb474caa = L.marker(
+                [-0.667556, -77.793139],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_13b07f912c0347a3bb7a560d732f079c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42df97a60632494796f78e9983209ba3 = $(`<div id="html_42df97a60632494796f78e9983209ba3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the Tena-Baeza road. Left side of roda in a recess. Between Archidona and Cosanga. Before small open/surface sand mine. <strong>Elevación:</strong> 1569.0 m  <strong>Fecha:</strong> 2016-03-23 00:00:00+00:00 <strong>Recolectores:</strong> Carlos Rodrigues-Vaz|A. Rosillo <strong>Identificadores:</strong> P.P. Lowry II, G.M. Plunkett, C. Rodrigues-Vaz & M.M. Mora</div>`)[0];
+            popup_13b07f912c0347a3bb7a560d732f079c.setContent(html_42df97a60632494796f78e9983209ba3);
+        
+
+        marker_6b26adf0b9ec4a8cbc388c41bb474caa.bindPopup(popup_13b07f912c0347a3bb7a560d732f079c)
+        ;
+
+        
+    
+    
+            var marker_53f0d7ff14e644c69b16b505b559bb7a = L.marker(
+                [-0.657778, -77.787778],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_d756b64e8a9a4a36b886658a4f7fa2d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14b666aead2548db987f02a49d3051e7 = $(`<div id="html_14b666aead2548db987f02a49d3051e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guacamayos, along road between Archidona and Baeza, south of and below the crest of the cordillera. Boundary between Sumaco National Park and Antisana Ecological Reserve.  Perhumid cloud forest on steep slopes and rocky roadcuts. <strong>Elevación:</strong> 1670.0 m  <strong>Fecha:</strong> 2016-10-10 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill|Porter P. Lowry II|Gregory M. Plunkett <strong>Identificadores:</strong> P.P. Lowry II</div>`)[0];
+            popup_d756b64e8a9a4a36b886658a4f7fa2d1.setContent(html_14b666aead2548db987f02a49d3051e7);
+        
+
+        marker_53f0d7ff14e644c69b16b505b559bb7a.bindPopup(popup_d756b64e8a9a4a36b886658a4f7fa2d1)
+        ;
+
+        
+    
+    
+            var marker_6f6b1bd39f774644be073cc54031cb2c = L.marker(
+                [-2.77, -78.1],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a04fa4fbeee24cfe8d9ce7d7722e2ac6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a722bee26a274c21a538b97fbeb3bc2c = $(`<div id="html_a722bee26a274c21a538b97fbeb3bc2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Cutucú, western slopes, along a trail from Lagroño to Yaupi. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1976-11-01 00:00:00+00:00 <strong>Recolectores:</strong> M. T. Madison, E. O. Bush & E. W. Davis <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a04fa4fbeee24cfe8d9ce7d7722e2ac6.setContent(html_a722bee26a274c21a538b97fbeb3bc2c);
+        
+
+        marker_6f6b1bd39f774644be073cc54031cb2c.bindPopup(popup_a04fa4fbeee24cfe8d9ce7d7722e2ac6)
+        ;
+
+        
+    
+    
+            var marker_5d199ea8cc854438a9bf8d31a189ecf0 = L.marker(
+                [-2.77, -78.1],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_d29d58c855e14b3883f4d01b2d8db182 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_973e99d9812c452192459e09b41dd424 = $(`<div id="html_973e99d9812c452192459e09b41dd424" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Cutucú, western slopes, along a trail from Lagroño to Yaupi, Elfin forest. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1976-11-01 00:00:00+00:00 <strong>Recolectores:</strong> M. T. Madison, E. O. Bush & E. W. Davis <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d29d58c855e14b3883f4d01b2d8db182.setContent(html_973e99d9812c452192459e09b41dd424);
+        
+
+        marker_5d199ea8cc854438a9bf8d31a189ecf0.bindPopup(popup_d29d58c855e14b3883f4d01b2d8db182)
+        ;
+
+        
+    
+    
+            var marker_ac93075d4e9a41858adc2492131636fd = L.marker(
+                [1.71, -75.9],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_d9aca184908c4a41835eefe06dcadb78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6df98ed2b85f4be09cbbd6f425641948 = $(`<div id="html_6df98ed2b85f4be09cbbd6f425641948" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> cabecera del río Pescado, parque natural municipal Andaquí, bosque de niebla, bien conservado, con dosel medianamente cerrado de 12m, sotobosque denso con alto grado de epifitismo y cobertura de musgos, capa de hojarasca gruesa, terreno muy pendiente <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2017-01-23 00:00:00+00:00 <strong>Recolectores:</strong> Castaño-A., N. <strong>Identificadores:</strong> Rivera-D., O.</div>`)[0];
+            popup_d9aca184908c4a41835eefe06dcadb78.setContent(html_6df98ed2b85f4be09cbbd6f425641948);
+        
+
+        marker_ac93075d4e9a41858adc2492131636fd.bindPopup(popup_d9aca184908c4a41835eefe06dcadb78)
+        ;
+
+        
+    
+    
+            var marker_83f663c606dc4274aabc4da687881b7a = L.marker(
+                [7.25, -75.5],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_1805821b81734f98a868a12a45e9cef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52a4af8e259240f4abc957cfdebe2fe4 = $(`<div id="html_52a4af8e259240f4abc957cfdebe2fe4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda San Fermín. 1 Km. de la vía Ventanas (Mun. Yarumal)_Briceño. Finca San Rermín. (Prop. Lucio Restrepo). bpm. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1988-03-20 00:00:00+00:00 <strong>Recolectores:</strong> R. Callejas Posada <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1805821b81734f98a868a12a45e9cef2.setContent(html_52a4af8e259240f4abc957cfdebe2fe4);
+        
+
+        marker_83f663c606dc4274aabc4da687881b7a.bindPopup(popup_1805821b81734f98a868a12a45e9cef2)
+        ;
+
+        
+    
+    
+            var marker_c8afdd8bf1e146f8a526f67941c6a7ff = L.marker(
+                [7.25, -75.5],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_ea562b86542546a1898f9beedd2ce3e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1aae83e83b0d4dd89ad06116b05145ed = $(`<div id="html_1aae83e83b0d4dd89ad06116b05145ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda San Fermín. 1 Km. de la vía Ventanas (Mun. Yarumal)_Briceño. Finca San Rermín. (Prop. Lucio Restrepo). bpm. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1988-03-20 00:00:00+00:00 <strong>Recolectores:</strong> R. Callejas Posada <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ea562b86542546a1898f9beedd2ce3e8.setContent(html_1aae83e83b0d4dd89ad06116b05145ed);
+        
+
+        marker_c8afdd8bf1e146f8a526f67941c6a7ff.bindPopup(popup_ea562b86542546a1898f9beedd2ce3e8)
+        ;
+
+        
+    
+    
+            var marker_3a9af7a875514c9d9ede7fc8d47a0794 = L.marker(
+                [-0.65, -77.52],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_ac94d793677440949f445c1be8fe151e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f116c52c4414bbabf43016a2f1bfc98 = $(`<div id="html_8f116c52c4414bbabf43016a2f1bfc98" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Napo-Galeras. Cordillera de Galeras. Sendero hacia Huamaní. <strong>Elevación:</strong> 1575.0 m  <strong>Fecha:</strong> 1997-03-15 00:00:00+00:00 <strong>Recolectores:</strong> A. B. Alvarez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ac94d793677440949f445c1be8fe151e.setContent(html_8f116c52c4414bbabf43016a2f1bfc98);
+        
+
+        marker_3a9af7a875514c9d9ede7fc8d47a0794.bindPopup(popup_ac94d793677440949f445c1be8fe151e)
+        ;
+
+        
+    
+    
+            var marker_61cff70a67894ce8bae9eaaed313b3b2 = L.marker(
+                [6.225245, -75.130763],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_1744c9cb6fb5495699bbefded06357dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edb603ebff2541e086df8f42fc8568cd = $(`<div id="html_edb603ebff2541e086df8f42fc8568cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Límites entre las veredas Quebrada Arriba y el Roble, sector La Ceja de Guatapé. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2017-06-17 00:00:00+00:00 <strong>Recolectores:</strong> Diana González. | Tatiana de la Hoz. | Andrés Atehortúa. | Eduardo Posada. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1744c9cb6fb5495699bbefded06357dd.setContent(html_edb603ebff2541e086df8f42fc8568cd);
+        
+
+        marker_61cff70a67894ce8bae9eaaed313b3b2.bindPopup(popup_1744c9cb6fb5495699bbefded06357dd)
+        ;
+
+        
+    
+    
+            var marker_b39a6b05ee0d4aeabf5090c2c5f07fff = L.marker(
+                [6.225245, -75.130763],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_68b34f22bacb43149420e6a7049148f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a01847775fa44a2b9092200e5bcb6e3e = $(`<div id="html_a01847775fa44a2b9092200e5bcb6e3e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Límites entre las veredas Quebrada Arriba y el Roble, sector La Ceja de Guatapé. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2017-06-17 00:00:00+00:00 <strong>Recolectores:</strong> Diana González. | Tatiana de la Hoz. | Andrés Atehortúa. | Eduardo Posada. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_68b34f22bacb43149420e6a7049148f4.setContent(html_a01847775fa44a2b9092200e5bcb6e3e);
+        
+
+        marker_b39a6b05ee0d4aeabf5090c2c5f07fff.bindPopup(popup_68b34f22bacb43149420e6a7049148f4)
+        ;
+
+        
+    
+    
+            var marker_9d846f2c5cdf4ae2bba81682cd34da03 = L.marker(
+                [-0.58, -77.87],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_40eeab2d7a3042d686c6dd1a96222dba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1cbd9df1540485aa84b3edeefe9f457 = $(`<div id="html_c1cbd9df1540485aa84b3edeefe9f457" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Napo: 5 km. south of Cosanga on Quito - Tena road. Montane forest. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1983-08-29 00:00:00+00:00 <strong>Recolectores:</strong> H. Balslev & B. M. Boom <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_40eeab2d7a3042d686c6dd1a96222dba.setContent(html_c1cbd9df1540485aa84b3edeefe9f457);
+        
+
+        marker_9d846f2c5cdf4ae2bba81682cd34da03.bindPopup(popup_40eeab2d7a3042d686c6dd1a96222dba)
+        ;
+
+        
+    
+    
+            var marker_9ba4508a215640769661d1ee632ac553 = L.marker(
+                [-0.6333300000000001, -77.83333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_ef2073917317497789a6b2dc9cc7ff80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d275c7abe93c4e9889422c9fab768ccb = $(`<div id="html_d275c7abe93c4e9889422c9fab768ccb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guacamayos, ca. 6 km SE of Cosanga, wet montane tropical forest <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-09-27 00:00:00+00:00 <strong>Recolectores:</strong> Jürgen Homeier|C. Chicaiza|B. Moreno <strong>Identificadores:</strong> P. Fiaschi (VCU)</div>`)[0];
+            popup_ef2073917317497789a6b2dc9cc7ff80.setContent(html_d275c7abe93c4e9889422c9fab768ccb);
+        
+
+        marker_9ba4508a215640769661d1ee632ac553.bindPopup(popup_ef2073917317497789a6b2dc9cc7ff80)
+        ;
+
+        
+    
+    
+            var marker_0eea8613cf8e40ad94af118789763b5e = L.marker(
+                [-0.64, -77.785],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_41d487228b79468a9148b69aff79690f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d549179f32b44ffdaeae34ba12abcf48 = $(`<div id="html_d549179f32b44ffdaeae34ba12abcf48" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Sumaco-Galeras, Rio Hollin watershed, wet lower montane forest <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-03-29 00:00:00+00:00 <strong>Recolectores:</strong> Jürgen Homeier|M.A. Chinchero|D. Simba|L. Guachamin|M. Unger <strong>Identificadores:</strong> E. Jaramillo (QCNE)</div>`)[0];
+            popup_41d487228b79468a9148b69aff79690f.setContent(html_d549179f32b44ffdaeae34ba12abcf48);
+        
+
+        marker_0eea8613cf8e40ad94af118789763b5e.bindPopup(popup_41d487228b79468a9148b69aff79690f)
+        ;
+
+        
+    
+    
+            var marker_cbb3d36369d64d2a974e3dd882d5052b = L.marker(
+                [-3.45, -78.36666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4be5f6178f3848bdbe3964343631f546 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a2f63b2d913404db0e819e4866b6cff = $(`<div id="html_7a2f63b2d913404db0e819e4866b6cff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Campamento Achupalla, Cordillera del Cóndor, 15 km east of Gualaquiza,  dense tangled scrubby forest. <strong>Elevación:</strong> 2125.0 m  <strong>Fecha:</strong> 1993-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_4be5f6178f3848bdbe3964343631f546.setContent(html_7a2f63b2d913404db0e819e4866b6cff);
+        
+
+        marker_cbb3d36369d64d2a974e3dd882d5052b.bindPopup(popup_4be5f6178f3848bdbe3964343631f546)
+        ;
+
+        
+    
+    
+            var marker_6d1686ee67284c128fcb897926d026b9 = L.marker(
+                [6.95, -75.033333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_7eb208a672e14f4cac768438b715eceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f72e1ed57cea4891a0a12b125d4bcdc6 = $(`<div id="html_f72e1ed57cea4891a0a12b125d4bcdc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road between Amalfi and Fraguas, near Salazar, 17.5-19.8 km from centro of Amalfi, bosque húmedo premontaño.  Specimen treated with ethanol. <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1988-02-14 00:00:00+00:00 <strong>Recolectores:</strong> John M. MacDougal|Julio C. Betancur B.|et al. <strong>Identificadores:</strong> D. Frodin (K)</div>`)[0];
+            popup_7eb208a672e14f4cac768438b715eceb.setContent(html_f72e1ed57cea4891a0a12b125d4bcdc6);
+        
+
+        marker_6d1686ee67284c128fcb897926d026b9.bindPopup(popup_7eb208a672e14f4cac768438b715eceb)
+        ;
+
+        
+    
+    
+            var marker_1c8bf4dde6444f79ad9551aafae6974d = L.marker(
+                [3.5, -76.7],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_83b446cb70cc4226800f8223aec961dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c07692f06adf4f36806108b0865a48c7 = $(`<div id="html_c07692f06adf4f36806108b0865a48c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hacienda Tokio. Wet montane forest behind microwave tower ca. 10 km S of Queremal. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1983-02-26 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Adrian Juncosa|et al. <strong>Identificadores:</strong> Marcela Mora</div>`)[0];
+            popup_83b446cb70cc4226800f8223aec961dd.setContent(html_c07692f06adf4f36806108b0865a48c7);
+        
+
+        marker_1c8bf4dde6444f79ad9551aafae6974d.bindPopup(popup_83b446cb70cc4226800f8223aec961dd)
+        ;
+
+        
+    
+    
+            var marker_8925970ec72d4a37b2bd40e75c1e2a75 = L.marker(
+                [5.8666599999999995, -75.3],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4c03af11160a4fefaf8d9aa58fb5ccf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76191005eaa74f7b91c500de3084fd8b = $(`<div id="html_76191005eaa74f7b91c500de3084fd8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mpio. de La Unión; Km 33 of road Sonsón-La Unión (23 km from La Unión), Lat. 5º52'N, Long. 75º18'W, alt 2330 m; disturbed vegetation between road and stream near bridge. <strong>Elevación:</strong> 2330.0 m  <strong>Fecha:</strong> 1986-12-08 00:00:00+00:00 <strong>Recolectores:</strong> James L. Zarucchi|Nohelia Bedoya <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_4c03af11160a4fefaf8d9aa58fb5ccf6.setContent(html_76191005eaa74f7b91c500de3084fd8b);
+        
+
+        marker_8925970ec72d4a37b2bd40e75c1e2a75.bindPopup(popup_4c03af11160a4fefaf8d9aa58fb5ccf6)
+        ;
+
+        
+    
+    
+            var marker_8e325739b1b6451aa99a95a60d0ee54b = L.marker(
+                [5.866667, -75.3],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_15879af280404d8f988877c075b434fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a6295f0f57a481c8529c21d71cfa501 = $(`<div id="html_5a6295f0f57a481c8529c21d71cfa501" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mpio. de La Unión; Km 33 of road Sonsón-La Unión (23 km from La Unión), Lat. 5º52'N, Long. 75º18'W, alt 2330 m; disturbed vegetation between road and stream near bridge. <strong>Elevación:</strong> 2330.0 m  <strong>Fecha:</strong> 1986-12-08 00:00:00+00:00 <strong>Recolectores:</strong> James L. Zarucchi|Nohelia Bedoya <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_15879af280404d8f988877c075b434fb.setContent(html_5a6295f0f57a481c8529c21d71cfa501);
+        
+
+        marker_8e325739b1b6451aa99a95a60d0ee54b.bindPopup(popup_15879af280404d8f988877c075b434fb)
+        ;
+
+        
+    
+    
+            var marker_01ee25657d3f43d9b5f1bea029271e55 = L.marker(
+                [6.28333, -75.13333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_ddfa8f8f8f594d22af5314c829c509d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8024cb7a1484bd0a745b4fa22e1fea5 = $(`<div id="html_d8024cb7a1484bd0a745b4fa22e1fea5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mpio. de Guatapé; ca 8 km NNE of Guatapé, Vereda Santa Rita, Finca Montepinar, Lat. 6º17'N, Long. 75º08'W, alt 1840 m; tropical wet/very wet forest adjacent to power line right- of-way. <strong>Elevación:</strong> 1840.0 m  <strong>Fecha:</strong> 1986-12-04 00:00:00+00:00 <strong>Recolectores:</strong> James L. Zarucchi <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_ddfa8f8f8f594d22af5314c829c509d8.setContent(html_d8024cb7a1484bd0a745b4fa22e1fea5);
+        
+
+        marker_01ee25657d3f43d9b5f1bea029271e55.bindPopup(popup_ddfa8f8f8f594d22af5314c829c509d8)
+        ;
+
+        
+    
+    
+            var marker_0536143913ce44e1b7c3900d6543e921 = L.marker(
+                [-0.13333299999999998, -77.466667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_16b9ef95ba814a589604f2ea05e18695 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31e3632d4fe04ffc8727a33687afb293 = $(`<div id="html_31e3632d4fe04ffc8727a33687afb293" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón El Chaco. Río Granadillo. Campamento de  INECEL.  "Codo Alto".  Bosque pluvial Premontano.  Bosque primario con gruesa capa de materia orgánica. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1990-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_16b9ef95ba814a589604f2ea05e18695.setContent(html_31e3632d4fe04ffc8727a33687afb293);
+        
+
+        marker_0536143913ce44e1b7c3900d6543e921.bindPopup(popup_16b9ef95ba814a589604f2ea05e18695)
+        ;
+
+        
+    
+    
+            var marker_98451fdf2c4240919b38f7881bbbce01 = L.marker(
+                [-0.13333299999999998, -77.466667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_dd9853018f52463a9161356b402ecffc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec050169cba24bddadab56d5fdc04df5 = $(`<div id="html_ec050169cba24bddadab56d5fdc04df5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón El Chaco. Río Granadillo. Campamento de  INECEL.  "Codo Alto".  Bosque pluvial Premontano.  Bosque primario con gruesa capa de materia orgánica. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1990-09-13 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_dd9853018f52463a9161356b402ecffc.setContent(html_ec050169cba24bddadab56d5fdc04df5);
+        
+
+        marker_98451fdf2c4240919b38f7881bbbce01.bindPopup(popup_dd9853018f52463a9161356b402ecffc)
+        ;
+
+        
+    
+    
+            var marker_f0be121ea62840649d49a9733538ea17 = L.marker(
+                [-4.1166599999999995, -78.56666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a870691b273944a3ae4613a66d6f37ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_340d1c0eadae47b39411680f7c623dd9 = $(`<div id="html_340d1c0eadae47b39411680f7c623dd9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas de la Cordillera del Cóndor. Sendero desde Pachicutza hacia el "Hito". Bosque muy húmedo Montano Bajo. Bosque primario. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1990-12-05 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios|David A. Neill <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_a870691b273944a3ae4613a66d6f37ed.setContent(html_340d1c0eadae47b39411680f7c623dd9);
+        
+
+        marker_f0be121ea62840649d49a9733538ea17.bindPopup(popup_a870691b273944a3ae4613a66d6f37ed)
+        ;
+
+        
+    
+    
+            var marker_1662db07c3d0417883a97d70aac1aff7 = L.marker(
+                [-0.833333, -77.833333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_c22170ff644447b8a5ad1683a704c1d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5b776adf5f347af9f7d25b21b059cf8 = $(`<div id="html_e5b776adf5f347af9f7d25b21b059cf8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón Archidona. Carretera Hollín-Loreto; km 1-12, cerca de Narupa. Bosque pluvial Premontano. Bosque primario, intervenido. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1988-09-06 00:00:00+00:00 <strong>Recolectores:</strong> Vlastimil Zak|Jaime L. Jaramillo <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c22170ff644447b8a5ad1683a704c1d9.setContent(html_e5b776adf5f347af9f7d25b21b059cf8);
+        
+
+        marker_1662db07c3d0417883a97d70aac1aff7.bindPopup(popup_c22170ff644447b8a5ad1683a704c1d9)
+        ;
+
+        
+    
+    
+            var marker_f4d76a36bd014a178e887ad2de2cbbf0 = L.marker(
+                [-0.116667, -77.65],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_355b6f548364497996bfcac73ea08198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb1425c5cb784252ae06106cc9de27fc = $(`<div id="html_cb1425c5cb784252ae06106cc9de27fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas al sur del Volcán Reventador, arriba del Campamento San Rafael. Bosque muy húmedo Premontano. Bosque primario. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-10-11 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_355b6f548364497996bfcac73ea08198.setContent(html_cb1425c5cb784252ae06106cc9de27fc);
+        
+
+        marker_f4d76a36bd014a178e887ad2de2cbbf0.bindPopup(popup_355b6f548364497996bfcac73ea08198)
+        ;
+
+        
+    
+    
+            var marker_3c71c64f53b0410199ce779254c64470 = L.marker(
+                [-0.6, -77.85],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_11f4b592e23e4f889915c402872a3087 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a73bf378092842df9b79905e19d7482e = $(`<div id="html_a73bf378092842df9b79905e19d7482e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón Quijos. Cosanga. Hacienda Guacamayos. Río Cosanga; microcuenca del Río Vinillos. Suelo saturado, casi pantanoso. Bosque primario. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1990-05-10 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios|Efraín Freire <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_11f4b592e23e4f889915c402872a3087.setContent(html_a73bf378092842df9b79905e19d7482e);
+        
+
+        marker_3c71c64f53b0410199ce779254c64470.bindPopup(popup_11f4b592e23e4f889915c402872a3087)
+        ;
+
+        
+    
+    
+            var marker_f9f73f2354534bd59d0bf3af2722bb17 = L.marker(
+                [-0.13333, -77.5],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_e8b7dd5e8a824b3fb522cb1db4678266 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87736f54feff462bbc5da97857b8fcf1 = $(`<div id="html_87736f54feff462bbc5da97857b8fcf1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Proyecto Hidroeléctrico Coca, Punto ST4. Márgen  derecha del Río Quijos, ca 10 km al sur de Reventador.  Bosque pluvial Premontano. Bosque primario, suelos volcánicos,  pendientes de 5-20%. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1990-10-06 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> D. Frodin (PH), 1991; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_e8b7dd5e8a824b3fb522cb1db4678266.setContent(html_87736f54feff462bbc5da97857b8fcf1);
+        
+
+        marker_f9f73f2354534bd59d0bf3af2722bb17.bindPopup(popup_e8b7dd5e8a824b3fb522cb1db4678266)
+        ;
+
+        
+    
+    
+            var marker_aa83d5ba8fea4aa8b59bbb7204f87bbe = L.marker(
+                [-0.18333, -77.65],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_277ba18f5e0c46aeb4a556560df0cb61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac57f3783c7b4d379235b7c61d864e16 = $(`<div id="html_ac57f3783c7b4d379235b7c61d864e16" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Proyecto Hidroeléctrico Coca, Punto ST3. Margen derecha  del Río Quijos, ca. 10 km al sur de Reventador.  Bosque pluvial Premontano.  Bosque primario, suelos  volcánicos con pendientes 10-20%. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-10-03 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> D. Frodin (PH), 1991; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_277ba18f5e0c46aeb4a556560df0cb61.setContent(html_ac57f3783c7b4d379235b7c61d864e16);
+        
+
+        marker_aa83d5ba8fea4aa8b59bbb7204f87bbe.bindPopup(popup_277ba18f5e0c46aeb4a556560df0cb61)
+        ;
+
+        
+    
+    
+            var marker_cddb09f962f5411d88f80a6d7cb4c692 = L.marker(
+                [-0.183333, -77.65],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_762a297a0dcb4a96bbb26cd7e5a3ecbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_212381caaf564210af507be84c37ed0d = $(`<div id="html_212381caaf564210af507be84c37ed0d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Proyecto Hidroeléctrico Coca, Punto ST3. Margen derecha  del Río Quijos, ca. 10 km al sur de Reventador.  Bosque pluvial Premontano.  Bosque primario, suelos  volcánicos con pendientes 10-20%. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-10-03 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_762a297a0dcb4a96bbb26cd7e5a3ecbc.setContent(html_212381caaf564210af507be84c37ed0d);
+        
+
+        marker_cddb09f962f5411d88f80a6d7cb4c692.bindPopup(popup_762a297a0dcb4a96bbb26cd7e5a3ecbc)
+        ;
+
+        
+    
+    
+            var marker_adda4bdfbf32401dbf928adea53aee3a = L.marker(
+                [-0.18333, -77.65],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_e632c49017784ad2b97c5ede9693f6db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5465ea7110a246629eaf8226bf768158 = $(`<div id="html_5465ea7110a246629eaf8226bf768158" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Proyecto Hidroeléctrico Coca, Punto ST3. Margen derecha  del Río Quijos, ca. 10 km al sur de Reventador.  Bosque pluvial Premontano.  Bosque primario, suelos  volcánicos con pendientes 10-20%. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-10-03 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_e632c49017784ad2b97c5ede9693f6db.setContent(html_5465ea7110a246629eaf8226bf768158);
+        
+
+        marker_adda4bdfbf32401dbf928adea53aee3a.bindPopup(popup_e632c49017784ad2b97c5ede9693f6db)
+        ;
+
+        
+    
+    
+            var marker_84c0314b3dfa4cf480e9ea03461142b3 = L.marker(
+                [-0.183333, -77.65],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_3d08b90dc0334d1680c41994b0dfd83c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea6f367792445cdb5214f3ed535d34e = $(`<div id="html_bea6f367792445cdb5214f3ed535d34e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Proyecto Hidroeléctrico Coca, Punto ST3. Margen derecha  del Río Quijos, ca. 10 km al sur de Reventador.  Bosque pluvial Premontano.  Bosque primario, suelos  volcánicos con pendientes 10-20%. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-10-03 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_3d08b90dc0334d1680c41994b0dfd83c.setContent(html_bea6f367792445cdb5214f3ed535d34e);
+        
+
+        marker_84c0314b3dfa4cf480e9ea03461142b3.bindPopup(popup_3d08b90dc0334d1680c41994b0dfd83c)
+        ;
+
+        
+    
+    
+            var marker_f79c67ef8ed048ca9616c6b6da7dc7ff = L.marker(
+                [6.13333, -76.15],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_55bd4acba1fd406dae82b4023ca0945d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8d38b12e2aa4d8c97063f33d5b6fc8b = $(`<div id="html_a8d38b12e2aa4d8c97063f33d5b6fc8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> road to Pabon; 24 km S of Urrao-Betulia road; disturbed secondary forest W of road. <strong>Elevación:</strong> 2030.0 m  <strong>Fecha:</strong> 1987-10-31 00:00:00+00:00 <strong>Recolectores:</strong> Alan E. Brant|Julio C. Betancur B. <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_55bd4acba1fd406dae82b4023ca0945d.setContent(html_a8d38b12e2aa4d8c97063f33d5b6fc8b);
+        
+
+        marker_f79c67ef8ed048ca9616c6b6da7dc7ff.bindPopup(popup_55bd4acba1fd406dae82b4023ca0945d)
+        ;
+
+        
+    
+    
+            var marker_2e5cff2f6a754712adca9b109094951c = L.marker(
+                [0.9666600000000001, -78.26666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_88e066d6f2984fc6bb7c39c8f9c01a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d78dc4f9af743d39a7399fe4e114beb = $(`<div id="html_6d78dc4f9af743d39a7399fe4e114beb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Gualpi Chico, vicinity of Awá encampment. <strong>Elevación:</strong> 1330.0 m  <strong>Fecha:</strong> 1988-01-17 00:00:00+00:00 <strong>Recolectores:</strong> W. Scott Hoover|Ana Argüello|P. Gelpi|R.A. Lorentzen <strong>Identificadores:</strong> D. Frodin</div>`)[0];
+            popup_88e066d6f2984fc6bb7c39c8f9c01a9c.setContent(html_6d78dc4f9af743d39a7399fe4e114beb);
+        
+
+        marker_2e5cff2f6a754712adca9b109094951c.bindPopup(popup_88e066d6f2984fc6bb7c39c8f9c01a9c)
+        ;
+
+        
+    
+    
+            var marker_e8572e01631343419e04fcb9c472546d = L.marker(
+                [-0.666667, -77.916667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_c7abf28bf9d34a19896be23a1d745f12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3075b9ac5b8544029915ee2d75db542d = $(`<div id="html_3075b9ac5b8544029915ee2d75db542d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> South slope of Cordillera de Guacamayos, c. 5 km below pass. <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1985-04-27 00:00:00+00:00 <strong>Recolectores:</strong> Bruce A. Stein <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c7abf28bf9d34a19896be23a1d745f12.setContent(html_3075b9ac5b8544029915ee2d75db542d);
+        
+
+        marker_e8572e01631343419e04fcb9c472546d.bindPopup(popup_c7abf28bf9d34a19896be23a1d745f12)
+        ;
+
+        
+    
+    
+            var marker_99c69f9651134aaabf8157480d82ddba = L.marker(
+                [6.53333, -76.31666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_71e1d35dd1cc4c68a0f01c5ede7a0544 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37356aae4c7e438cb077f132a92e73eb = $(`<div id="html_37356aae4c7e438cb077f132a92e73eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Natural Las Orquídeas.  Vereda Calles.  Inventario Permanente Bosque Pluvial Premontano.  Margen derecha con el Río Calles.  Zona limitrofe con bosque nublado. Colectado con O. Alvarez, A. Duque, F. Giraldo & W. Rodríguez. <strong>Elevación:</strong> 1475.0 m  <strong>Fecha:</strong> 1993-11-29 00:00:00+00:00 <strong>Recolectores:</strong> John James Pipoly, III|Álvaro Cogollo P.|et al. <strong>Identificadores:</strong> A. Idárraga (HUA)</div>`)[0];
+            popup_71e1d35dd1cc4c68a0f01c5ede7a0544.setContent(html_37356aae4c7e438cb077f132a92e73eb);
+        
+
+        marker_99c69f9651134aaabf8157480d82ddba.bindPopup(popup_71e1d35dd1cc4c68a0f01c5ede7a0544)
+        ;
+
+        
+    
+    
+            var marker_007cf32659114a2e981fc4f11126cc3e = L.marker(
+                [6.53333, -76.31666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a3f2d5fabc934ffb95ab9f348f97d46e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c937f7ecf2324bdd9c933dc6f2851669 = $(`<div id="html_c937f7ecf2324bdd9c933dc6f2851669" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda Calles.  Parque Nacional Natural "Las Orquídeas".  Margen derecha del Río Calles, en el filo NW de la Cabaña de Calles.  bp-PM. Colectado con A. Duque, F. Giraldo, W. Rodriguez & E. Alvarez <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1993-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Álvaro Cogollo P.|et al. <strong>Identificadores:</strong> A. Idárraga (HUA)</div>`)[0];
+            popup_a3f2d5fabc934ffb95ab9f348f97d46e.setContent(html_c937f7ecf2324bdd9c933dc6f2851669);
+        
+
+        marker_007cf32659114a2e981fc4f11126cc3e.bindPopup(popup_a3f2d5fabc934ffb95ab9f348f97d46e)
+        ;
+
+        
+    
+    
+            var marker_7397e97677da448783a3fa581fd79665 = L.marker(
+                [-4.252222, -78.664722],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_7cde8741c53f4222a22af2f426c64d20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9419fc0c1d9f4ffb9ad28c0205ac026e = $(`<div id="html_9419fc0c1d9f4ffb9ad28c0205ac026e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera del Cóndor, "Area de Conservación Los Tepuyes". Sloping sandstone plateau west of upper Río Nangaritza near the Cabañas Yankuam lodge. Dense wet forest, in and near "Nangaritza Lower Sandstone Plateau" one-hectare forest inventory plot. <strong>Elevación:</strong> 1120.0 m  <strong>Fecha:</strong> 2007-09-16 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill|Christopher Davidson|Sharon R. Christoph|Wilson Quizhpe <strong>Identificadores:</strong> P. Lowry, G. Plunkett & M. Mora (S. shuarorum)</div>`)[0];
+            popup_7cde8741c53f4222a22af2f426c64d20.setContent(html_9419fc0c1d9f4ffb9ad28c0205ac026e);
+        
+
+        marker_7397e97677da448783a3fa581fd79665.bindPopup(popup_7cde8741c53f4222a22af2f426c64d20)
+        ;
+
+        
+    
+    
+            var marker_5e7b2b72a5c24cf2927d0e326fa1d07f = L.marker(
+                [-3.581944, -78.435],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a33a1eaad6854f1d8a33a7cd138ba364 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f20ee02402b41e08aa9f9d72a5bb8ca = $(`<div id="html_3f20ee02402b41e08aa9f9d72a5bb8ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Región de la Cordillera del Cóndor. Valle del Río Wawaime, afluyente del Rio Quimi-Tundayme. Carretera hacia el sitio futuro de la mina de cobre de EcuaCorriente. Bosque muy húmedo pre-montano. Bosque denso y bajo. Suelo arenoso, derivado de roca arenisca. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2006-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Wilson Quizhpe|Thomas B. Croat <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_a33a1eaad6854f1d8a33a7cd138ba364.setContent(html_3f20ee02402b41e08aa9f9d72a5bb8ca);
+        
+
+        marker_5e7b2b72a5c24cf2927d0e326fa1d07f.bindPopup(popup_a33a1eaad6854f1d8a33a7cd138ba364)
+        ;
+
+        
+    
+    
+            var marker_1e96ef83b9b742edbbb8672d1b190400 = L.marker(
+                [-0.6333300000000001, -77.83333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_3e806e038bb245dd848abb2753ee376f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93f3bbd5291d4fec9da20f9758fb7f94 = $(`<div id="html_93f3bbd5291d4fec9da20f9758fb7f94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guacamayos, ca. 6 km SE of Cosanga, wet montane tropical forest <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 2005-09-27 00:00:00+00:00 <strong>Recolectores:</strong> Jürgen Homeier|C. Chicaiza|B. Moreno <strong>Identificadores:</strong> P. Fiaschi (VCU), 2007; conf. P.P.Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_3e806e038bb245dd848abb2753ee376f.setContent(html_93f3bbd5291d4fec9da20f9758fb7f94);
+        
+
+        marker_1e96ef83b9b742edbbb8672d1b190400.bindPopup(popup_3e806e038bb245dd848abb2753ee376f)
+        ;
+
+        
+    
+    
+            var marker_90b9335ab0ea418bb38e90f78f39cd78 = L.marker(
+                [1.116667, -78.366667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a3fc219f854c466781d27927351ebd8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_676f6bcd1afb43d395ca390fabbc11fd = $(`<div id="html_676f6bcd1afb43d395ca390fabbc11fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Marcos valley. Farmland and rain forest disturbed by the local Coaiquer (Awa) Amerindians. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1983-11-20 00:00:00+00:00 <strong>Recolectores:</strong> A.S. Barfod|Lars P. Kvist|D. Nissen <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_a3fc219f854c466781d27927351ebd8c.setContent(html_676f6bcd1afb43d395ca390fabbc11fd);
+        
+
+        marker_90b9335ab0ea418bb38e90f78f39cd78.bindPopup(popup_a3fc219f854c466781d27927351ebd8c)
+        ;
+
+        
+    
+    
+            var marker_46ba881f47294fd493ab9636c059d248 = L.marker(
+                [-3.6252699999999995, -78.44055],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_0d5cda42a85849ad91f9dde80b362203 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ece06bacf5348fd996ab4f692e1a201 = $(`<div id="html_8ece06bacf5348fd996ab4f692e1a201" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In the vicinity of the mining camp at the Río Tundaime. Along trail above botanical garden. Montane forest, low on ridges. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2004-11-11 00:00:00+00:00 <strong>Recolectores:</strong> H. van der Werff|Bruce Gray|Juan C. Ronquillo|Wilson Quizhpe <strong>Identificadores:</strong> P. Fiaschi, 2007; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_0d5cda42a85849ad91f9dde80b362203.setContent(html_8ece06bacf5348fd996ab4f692e1a201);
+        
+
+        marker_46ba881f47294fd493ab9636c059d248.bindPopup(popup_0d5cda42a85849ad91f9dde80b362203)
+        ;
+
+        
+    
+    
+            var marker_809c9c7c66dd4f2f8afd8b561e3b1a81 = L.marker(
+                [-0.8325, -77.52388],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_cf1d53199c7a4fac89e1e9449c172b9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19c98df378634cb38dc15edef17e5638 = $(`<div id="html_19c98df378634cb38dc15edef17e5638" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Galeras. Parque Nacional Sumaco Napo-Galeras. Steep east slope of Galeras massif, below military base on trail to Arapino. Very wet lower montane forest on sandstone substrate. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2003-03-10 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill|et al. <strong>Identificadores:</strong> P. Fiaschi (VCU), 2007; conf. P.P.Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_cf1d53199c7a4fac89e1e9449c172b9a.setContent(html_19c98df378634cb38dc15edef17e5638);
+        
+
+        marker_809c9c7c66dd4f2f8afd8b561e3b1a81.bindPopup(popup_cf1d53199c7a4fac89e1e9449c172b9a)
+        ;
+
+        
+    
+    
+            var marker_7e19fd13d1f64ac698457d64a4f736a9 = L.marker(
+                [-3.263611, -78.170278],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_fa26b86273e44662b16652ff64548fef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb3ff8e1fb3c4d609f11191458dabe2b = $(`<div id="html_fb3ff8e1fb3c4d609f11191458dabe2b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Huaracayo, east of Cordillera del Cóndor and Río Coangos. Cerro Ijiach Naint, flat-topped sandstone mountain, east of Shuar village of Tinkimints. Low, dense montane forest and shrubby vegetation on summi <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 2001-03-21 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill|Paul E. Berry|José M. Manzanares|Lou Jost <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_fa26b86273e44662b16652ff64548fef.setContent(html_fb3ff8e1fb3c4d609f11191458dabe2b);
+        
+
+        marker_7e19fd13d1f64ac698457d64a4f736a9.bindPopup(popup_fa26b86273e44662b16652ff64548fef)
+        ;
+
+        
+    
+    
+            var marker_d019c19065ae4fd49e9bc8c6f1bba149 = L.marker(
+                [-5.26555, -78.36861],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_5335cab784564f2ea5a9858db415c09d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe763c49bef04d008e50f4a2ba0816ce = $(`<div id="html_fe763c49bef04d008e50f4a2ba0816ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Tayu, ca. 1 hr. from Chiriaco. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2001-03-19 00:00:00+00:00 <strong>Recolectores:</strong> H. van der Werff|et al. <strong>Identificadores:</strong> D.G. Frodin</div>`)[0];
+            popup_5335cab784564f2ea5a9858db415c09d.setContent(html_fe763c49bef04d008e50f4a2ba0816ce);
+        
+
+        marker_d019c19065ae4fd49e9bc8c6f1bba149.bindPopup(popup_5335cab784564f2ea5a9858db415c09d)
+        ;
+
+        
+    
+    
+            var marker_0ed8b2def177480885bacb07f2a82dde = L.marker(
+                [-0.583333, -77.833333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_e4461446ddad42e39de89febcb77683e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e021d19783304408bc8e5d07ac859d49 = $(`<div id="html_e021d19783304408bc8e5d07ac859d49" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecológica Antisana. Cordillera de Guacamayos. Roadside from Baeza to Tena, 5 km south of pass at "La Virgen de Guacamayos". <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-08-24 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill <strong>Identificadores:</strong> F. Borchsenius (AAU)</div>`)[0];
+            popup_e4461446ddad42e39de89febcb77683e.setContent(html_e021d19783304408bc8e5d07ac859d49);
+        
+
+        marker_0ed8b2def177480885bacb07f2a82dde.bindPopup(popup_e4461446ddad42e39de89febcb77683e)
+        ;
+
+        
+    
+    
+            var marker_0233d80d38cb45bc8e9defa773839895 = L.marker(
+                [1.13333, -77.96666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a8fd7c5169dd4a93abb06bce85529f1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7311b0e51af94c16acb15f054c531e9b = $(`<div id="html_7311b0e51af94c16acb15f054c531e9b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Planda, Salazar Finca 7 km above Ricaurte, premontane wet forest. Non-transect. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1981-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> D. Frodin (PH)</div>`)[0];
+            popup_a8fd7c5169dd4a93abb06bce85529f1f.setContent(html_7311b0e51af94c16acb15f054c531e9b);
+        
+
+        marker_0233d80d38cb45bc8e9defa773839895.bindPopup(popup_a8fd7c5169dd4a93abb06bce85529f1f)
+        ;
+
+        
+    
+    
+            var marker_1a861a6592ea413f943ae32a8d792ac7 = L.marker(
+                [-0.6333300000000001, -77.85],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_27a882e617324c0bbc090704915ba572 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ef3b6c831f94471b55cb66cd93b2f6d = $(`<div id="html_3ef3b6c831f94471b55cb66cd93b2f6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecológica Antisana, Cordillera de los Guacamayos, compañía ARCO. Colecciones entre Río Vinillos y El Mirador. Bosque pluvial montano bajo, vegetación primaria, suelo colinado bien drenado. <strong>Elevación:</strong> 2280.0 m  <strong>Fecha:</strong> 1999-01-03 00:00:00+00:00 <strong>Recolectores:</strong> Homero Vargas|Edwin Narváez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_27a882e617324c0bbc090704915ba572.setContent(html_3ef3b6c831f94471b55cb66cd93b2f6d);
+        
+
+        marker_1a861a6592ea413f943ae32a8d792ac7.bindPopup(popup_27a882e617324c0bbc090704915ba572)
+        ;
+
+        
+    
+    
+            var marker_9f4be7ad4f374ebb93a2d78fff8ea956 = L.marker(
+                [-0.65, -77.83333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_fd77d7f2691d4f2f97b6d71fbce65b12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35ce879ab20948b5a06db7a3ef89209c = $(`<div id="html_35ce879ab20948b5a06db7a3ef89209c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecológica Antisana. Coordillera de los Guacamayos, colecciones entre El Mirador y La Virgen. Oleoducto de la Compañía Arco. Bosque primario pluvial montano bajo, suelo colinado bien drenado. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1998-12-12 00:00:00+00:00 <strong>Recolectores:</strong> Homero Vargas|Edwin Narváez <strong>Identificadores:</strong> F. Borchsenius (AAU), 2002; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_fd77d7f2691d4f2f97b6d71fbce65b12.setContent(html_35ce879ab20948b5a06db7a3ef89209c);
+        
+
+        marker_9f4be7ad4f374ebb93a2d78fff8ea956.bindPopup(popup_fd77d7f2691d4f2f97b6d71fbce65b12)
+        ;
+
+        
+    
+    
+            var marker_c1de86300e6443d6818e8da8e836935f = L.marker(
+                [-0.6333300000000001, -77.85],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_9f330b8ddb5240f3a08b55deb581f15e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccedddde681b4dbeb7165263313dc9aa = $(`<div id="html_ccedddde681b4dbeb7165263313dc9aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecológica Antisana. Cordillera de los Guacamayos, colecciones desde la parte alta hasta el Río Vinillos. Oleoducto de la compañía Arco, km 111-112. Bosque primario pluvial montano bajo, suelo colinado bien drenado. <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 1998-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Homero Vargas|Edwin Narváez <strong>Identificadores:</strong> F. Borchsenius (AAU), 2002; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_9f330b8ddb5240f3a08b55deb581f15e.setContent(html_ccedddde681b4dbeb7165263313dc9aa);
+        
+
+        marker_c1de86300e6443d6818e8da8e836935f.bindPopup(popup_9f330b8ddb5240f3a08b55deb581f15e)
+        ;
+
+        
+    
+    
+            var marker_e23a36df36d9433195a94c2bd5b92637 = L.marker(
+                [-0.6333300000000001, -77.85],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_687ec60607fe4c72bef04c8d3b03862d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4321c8afb1994eccb9bb99fa7f956e86 = $(`<div id="html_4321c8afb1994eccb9bb99fa7f956e86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecológica Antisana. Cordillera de los Guacamayos, camino de La Virgen. Oleoducto de la compañía Arco. Bosque pluvial Montano Bajo, primario, suelo colinado bien drenado. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1998-12-11 00:00:00+00:00 <strong>Recolectores:</strong> Homero Vargas|Edwin Narváez <strong>Identificadores:</strong> ! P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_687ec60607fe4c72bef04c8d3b03862d.setContent(html_4321c8afb1994eccb9bb99fa7f956e86);
+        
+
+        marker_e23a36df36d9433195a94c2bd5b92637.bindPopup(popup_687ec60607fe4c72bef04c8d3b03862d)
+        ;
+
+        
+    
+    
+            var marker_5daed7cbc38941d687093688473fdcc3 = L.marker(
+                [-0.666667, -77.833333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_f7e17b85af5c44b1883aa4500a65b226 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24b51336eab4481a9fb0226393a604eb = $(`<div id="html_24b51336eab4481a9fb0226393a604eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera Tena-Baeza. Cordillera de Guacamayos. Reserva Ecológica Antisana. 16 km al norte del desvío a Loreto. Bosque pluvial Premontano. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1995-06-18 00:00:00+00:00 <strong>Recolectores:</strong> Milton Tirado|R. Murillo <strong>Identificadores:</strong> F. Borchsenius (AAU)</div>`)[0];
+            popup_f7e17b85af5c44b1883aa4500a65b226.setContent(html_24b51336eab4481a9fb0226393a604eb);
+        
+
+        marker_5daed7cbc38941d687093688473fdcc3.bindPopup(popup_f7e17b85af5c44b1883aa4500a65b226)
+        ;
+
+        
+    
+    
+            var marker_ddcff8aa37ca40bbad8c9e22abd5af69 = L.marker(
+                [-0.633333, -77.81666700000001],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_6baba9fe37b44bc5a661ad6c2056e227 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_160a28e3c9c34ed6a8197c36e436a133 = $(`<div id="html_160a28e3c9c34ed6a8197c36e436a133" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecologica Antisana. Sector Guacamayos. Sendero Jumandy - La Virgen (km 30). Path follows potential oil pipe-line. Ends near Río Urcusiqui. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1998-05-01 00:00:00+00:00 <strong>Recolectores:</strong> John L. Clark|Edwin Narváez|T. Pauchi <strong>Identificadores:</strong> F. Borchsenius (AAU), 2002; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_6baba9fe37b44bc5a661ad6c2056e227.setContent(html_160a28e3c9c34ed6a8197c36e436a133);
+        
+
+        marker_ddcff8aa37ca40bbad8c9e22abd5af69.bindPopup(popup_6baba9fe37b44bc5a661ad6c2056e227)
+        ;
+
+        
+    
+    
+            var marker_6f3f834af97e4dcbb445a29a73b6d881 = L.marker(
+                [-0.6333300000000001, -77.85],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_1a096dcb3fea4cb1b168845ccd606382 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_427163b62fd24702a097e5bb309ab80f = $(`<div id="html_427163b62fd24702a097e5bb309ab80f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guacamayos. Antisana Ecological Reserve. Along road from Baeza to Tena, near crest of Guacamayos ridge. Lower montane rain forest. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1998-08-13 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill <strong>Identificadores:</strong> P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_1a096dcb3fea4cb1b168845ccd606382.setContent(html_427163b62fd24702a097e5bb309ab80f);
+        
+
+        marker_6f3f834af97e4dcbb445a29a73b6d881.bindPopup(popup_1a096dcb3fea4cb1b168845ccd606382)
+        ;
+
+        
+    
+    
+            var marker_e529fe7e7022446791baabfaf827b340 = L.marker(
+                [6.10722, -73.19776999999999],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_1e5401e523af4b5f905dbcf8c62ec46e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80eca2fa51484a07811b5fccc8d8ae2f = $(`<div id="html_80eca2fa51484a07811b5fccc8d8ae2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Virolín. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1992-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Tatsuyuki Ohba|César E. Barbosa <strong>Identificadores:</strong> P. Fiaschi</div>`)[0];
+            popup_1e5401e523af4b5f905dbcf8c62ec46e.setContent(html_80eca2fa51484a07811b5fccc8d8ae2f);
+        
+
+        marker_e529fe7e7022446791baabfaf827b340.bindPopup(popup_1e5401e523af4b5f905dbcf8c62ec46e)
+        ;
+
+        
+    
+    
+            var marker_1183850fb02c4d01b651c15a9f2c1976 = L.marker(
+                [1.14888, -72.64777],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_5f6b1c24b67841d69952f9e801c42e6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a432b5c8f904528a6bb46750b6ad2bc = $(`<div id="html_4a432b5c8f904528a6bb46750b6ad2bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona montañosa de la vereda Medio Afan, camino Medio Afan-Churumbelo, ca 2.5 horas de Mocoa hacia el oriente. <strong>Elevación:</strong> 1230.0 m  <strong>Fecha:</strong> 1990-07-27 00:00:00+00:00 <strong>Recolectores:</strong> Luis Carlos García|et al. <strong>Identificadores:</strong> Marcela Mora</div>`)[0];
+            popup_5f6b1c24b67841d69952f9e801c42e6b.setContent(html_4a432b5c8f904528a6bb46750b6ad2bc);
+        
+
+        marker_1183850fb02c4d01b651c15a9f2c1976.bindPopup(popup_5f6b1c24b67841d69952f9e801c42e6b)
+        ;
+
+        
+    
+    
+            var marker_33468801852b47f780be10ce95ee3a14 = L.marker(
+                [-5.25694, -78.36138000000001],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_cd807b1213a548fe8b5c14e7fb58db06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c03b4c8bf574612a8aefe25f88152f0 = $(`<div id="html_1c03b4c8bf574612a8aefe25f88152f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dtto. Imaza, Tayu Mujaji. Comunidad de Wawas. Bosque primario. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Rocío Rojas <strong>Identificadores:</strong> R. Vasquez (MO)</div>`)[0];
+            popup_cd807b1213a548fe8b5c14e7fb58db06.setContent(html_1c03b4c8bf574612a8aefe25f88152f0);
+        
+
+        marker_33468801852b47f780be10ce95ee3a14.bindPopup(popup_cd807b1213a548fe8b5c14e7fb58db06)
+        ;
+
+        
+    
+    
+            var marker_a07489781ee140dc9dd3c29d036b2da1 = L.marker(
+                [-0.68333, -77.88333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_d65bb8f01c9f4156a70f57031635fca2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adc10831cdc84c73b56185820b6149b5 = $(`<div id="html_adc10831cdc84c73b56185820b6149b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road Baeza-Tena, 31 km past Cosanga. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 1993-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Finn Borchsenius <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d65bb8f01c9f4156a70f57031635fca2.setContent(html_adc10831cdc84c73b56185820b6149b5);
+        
+
+        marker_a07489781ee140dc9dd3c29d036b2da1.bindPopup(popup_d65bb8f01c9f4156a70f57031635fca2)
+        ;
+
+        
+    
+    
+            var marker_d41fb1f8bf174a7ba97138a0414dbbbd = L.marker(
+                [-0.65, -77.51666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_fa032e78419f48a0815dc68664260bbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abd8197749e9471c997828333d21d7fe = $(`<div id="html_abd8197749e9471c997828333d21d7fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Napo-Galeras.  Cordillera de Galeras.  Sendero hacia Huamaní.  Bosque primario.  Bosque primario.  Bosque pluvial Pre-Montano. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1997-03-17 00:00:00+00:00 <strong>Recolectores:</strong> Aída Alvarez|Pohla, A.-M.|P. Cerda <strong>Identificadores:</strong> Aída Alvarez (QCNE), 1997; conf. P.P.Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_fa032e78419f48a0815dc68664260bbb.setContent(html_abd8197749e9471c997828333d21d7fe);
+        
+
+        marker_d41fb1f8bf174a7ba97138a0414dbbbd.bindPopup(popup_fa032e78419f48a0815dc68664260bbb)
+        ;
+
+        
+    
+    
+            var marker_a5da5c08bfde464f83d6f47a2c3947f8 = L.marker(
+                [-0.6333300000000001, -77.85],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_6433eb08560d4970b537a01a897edd89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1fad382fc614e2bb586728f1aaa970e = $(`<div id="html_d1fad382fc614e2bb586728f1aaa970e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ecológica Antisana.  Cordillera de Guacamayos.  Ruta del oleoducto propuesto por ARCO, Km 100.  Camino viejo de herradura, cerca a las antenas.  Bosque muy húmedo montano bajo. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1997-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Homero Vargas|David A. Neill|Efraín Freire <strong>Identificadores:</strong> H. Vargas (QCNE), 1997; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_6433eb08560d4970b537a01a897edd89.setContent(html_d1fad382fc614e2bb586728f1aaa970e);
+        
+
+        marker_a5da5c08bfde464f83d6f47a2c3947f8.bindPopup(popup_6433eb08560d4970b537a01a897edd89)
+        ;
+
+        
+    
+    
+            var marker_24becf5138fa4b08bc4228cd8e3384a3 = L.marker(
+                [-0.65, -77.516667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4891b29d5f65462cada85b0a2c4cc248 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baabb4bb49384fa4a7a3b55a90828a8b = $(`<div id="html_baabb4bb49384fa4a7a3b55a90828a8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Napo-Galeras.  Cordillera de Galeras.  Sendero hacia Huamaní. <strong>Elevación:</strong> 1575.0 m  <strong>Fecha:</strong> 1997-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Aída Alvarez|P. Cerda|Pohla, A.-M. <strong>Identificadores:</strong> Aída Alvarez (QCNE), 1997; conf. P.P.Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_4891b29d5f65462cada85b0a2c4cc248.setContent(html_baabb4bb49384fa4a7a3b55a90828a8b);
+        
+
+        marker_24becf5138fa4b08bc4228cd8e3384a3.bindPopup(popup_4891b29d5f65462cada85b0a2c4cc248)
+        ;
+
+        
+    
+    
+            var marker_a6bfcf9199ba43498f1719acc544ea6a = L.marker(
+                [-0.58333, -77.86666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_531531a3d6794004b1a29768f8b1eacf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_449c0f89f92048ea9ccbdbcacf5c6480 = $(`<div id="html_449c0f89f92048ea9ccbdbcacf5c6480" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5 km S of Cosanga on Quito-Tena road. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1983-08-29 00:00:00+00:00 <strong>Recolectores:</strong> H. Balslev|B.K. Boom <strong>Identificadores:</strong> D. Frodin</div>`)[0];
+            popup_531531a3d6794004b1a29768f8b1eacf.setContent(html_449c0f89f92048ea9ccbdbcacf5c6480);
+        
+
+        marker_a6bfcf9199ba43498f1719acc544ea6a.bindPopup(popup_531531a3d6794004b1a29768f8b1eacf)
+        ;
+
+        
+    
+    
+            var marker_8acd5163bad241c0b66b7ba49d03664b = L.marker(
+                [-0.644, -77.792],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4a404d29c3f248369a27e5e64ac46517 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d3f0b65134346faa3d0c5acf260338b = $(`<div id="html_5d3f0b65134346faa3d0c5acf260338b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the road between Baeza and tena; 46.8 km N of Archidona; primary forest. <strong>Elevación:</strong> 2330.0 m  <strong>Fecha:</strong> 1979-12-21 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> D. Frodin</div>`)[0];
+            popup_4a404d29c3f248369a27e5e64ac46517.setContent(html_5d3f0b65134346faa3d0c5acf260338b);
+        
+
+        marker_8acd5163bad241c0b66b7ba49d03664b.bindPopup(popup_4a404d29c3f248369a27e5e64ac46517)
+        ;
+
+        
+    
+    
+            var marker_e644f8d1985f48549a692138afdd0f4c = L.marker(
+                [-0.26666, -77.66666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_5cfe6c7dde9646488af0a5fd26162ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5621b0e7b4c43788e8a60c1eb7db764 = $(`<div id="html_a5621b0e7b4c43788e8a60c1eb7db764" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Junction of Baeza-Lago Agrio Road with Río Azuela; cloud forest. <strong>Elevación:</strong> 1740.0 m  <strong>Fecha:</strong> 1971-10-21 00:00:00+00:00 <strong>Recolectores:</strong> Bruce  MacBryde <strong>Identificadores:</strong> D. Frodin</div>`)[0];
+            popup_5cfe6c7dde9646488af0a5fd26162ed0.setContent(html_a5621b0e7b4c43788e8a60c1eb7db764);
+        
+
+        marker_e644f8d1985f48549a692138afdd0f4c.bindPopup(popup_5cfe6c7dde9646488af0a5fd26162ed0)
+        ;
+
+        
+    
+    
+            var marker_66d8e7e91fc74c1293b0e09ed121514a = L.marker(
+                [-4.08333, -78.95],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_736904b63b6f42b9a94fbc8cc8520711 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f39f7893e784b039b3ae689032a4c37 = $(`<div id="html_1f39f7893e784b039b3ae689032a4c37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Podocarpus. Guardería río Bombuscaro. Bosque primario bajo filo de colina. Sendero al Mirador. Bosque muy húmedo Pre-Montano. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1995-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Walter A. Palacios|Milton Tirado <strong>Identificadores:</strong> P. Fiaschi (VCU)</div>`)[0];
+            popup_736904b63b6f42b9a94fbc8cc8520711.setContent(html_1f39f7893e784b039b3ae689032a4c37);
+        
+
+        marker_66d8e7e91fc74c1293b0e09ed121514a.bindPopup(popup_736904b63b6f42b9a94fbc8cc8520711)
+        ;
+
+        
+    
+    
+            var marker_cf511630c0ed468c880980d76b533bde = L.marker(
+                [-0.88333, -77.55],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_cdc9e29360ec49e490a3df3123a014be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_388ee7f37c0a4d7aac54e4a35ffb60ca = $(`<div id="html_388ee7f37c0a4d7aac54e4a35ffb60ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Sumaco Napo-Galeras. Cordillera de Galeras. Premontane Rain Forest, limestone substrate. Southeast side of Galeras mountain, near sesimic study line 30. Upper ridge and summit area. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1996-04-25 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill|Jorge Zuleta|J. Cerda <strong>Identificadores:</strong> F. Borchsenius (AAU), 2001; conf. P.P. Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_cdc9e29360ec49e490a3df3123a014be.setContent(html_388ee7f37c0a4d7aac54e4a35ffb60ca);
+        
+
+        marker_cf511630c0ed468c880980d76b533bde.bindPopup(popup_cdc9e29360ec49e490a3df3123a014be)
+        ;
+
+        
+    
+    
+            var marker_741da1dc72d246f6a239401c2995bc6c = L.marker(
+                [-0.85, -77.51666],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a48a51947ea84b9f9c71fc47b2c8aff9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c077e0cdb5f741acbce1f0b4a9a1326b = $(`<div id="html_c077e0cdb5f741acbce1f0b4a9a1326b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Sumaco Napo-Galeras. Cordillera de Galeras. Premontane Rain Forest on limestone substrate. "Elfin forest near summit, east side of mountain. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1996-04-06 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill|Homero Vargas <strong>Identificadores:</strong> P. Fiaschi (VCU), 2007; conf. P.P.Lowry, G.M. Plunkett & D.A. Neill</div>`)[0];
+            popup_a48a51947ea84b9f9c71fc47b2c8aff9.setContent(html_c077e0cdb5f741acbce1f0b4a9a1326b);
+        
+
+        marker_741da1dc72d246f6a239401c2995bc6c.bindPopup(popup_a48a51947ea84b9f9c71fc47b2c8aff9)
+        ;
+
+        
+    
+    
+            var marker_7439556e0c7647e2925e5e9c936cb0a9 = L.marker(
+                [-9.422222, -74.73472199999999],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4f60a49baabe4e598601ac2205a611a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da7914347871410bb3a6674ecda2ffbe = $(`<div id="html_da7914347871410bb3a6674ecda2ffbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito Yuyapichis. CC.NN Tahuantinsuyo. Reserva Comunal el Sira. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2014-05-12 00:00:00+00:00 <strong>Recolectores:</strong> Luis Valenzuela G. <strong>Identificadores:</strong> Marcela Mora</div>`)[0];
+            popup_4f60a49baabe4e598601ac2205a611a5.setContent(html_da7914347871410bb3a6674ecda2ffbe);
+        
+
+        marker_7439556e0c7647e2925e5e9c936cb0a9.bindPopup(popup_4f60a49baabe4e598601ac2205a611a5)
+        ;
+
+        
+    
+    
+            var marker_1410577d0171415ca4d28e315cbf6856 = L.marker(
+                [-1.344722, -78.168611],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_ad16986798554927a66a9b930d2b24c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bec184f652e4d9fa9fc2e28f772617f = $(`<div id="html_6bec184f652e4d9fa9fc2e28f772617f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanganates-Sangay Ecological Corridor, north of Río Pastaza, near Llanganates National Park.  Headwaters of Rìo Tigre, an affluent of Río Zuñac.  Dense cloud forest with abundant epiphytes.  With Juan Pablo Reyes and Karima López. <strong>Elevación:</strong> 2070.0 m  <strong>Fecha:</strong> 2014-01-29 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill <strong>Identificadores:</strong> D.A. Neill (ECUAMZ)</div>`)[0];
+            popup_ad16986798554927a66a9b930d2b24c6.setContent(html_6bec184f652e4d9fa9fc2e28f772617f);
+        
+
+        marker_1410577d0171415ca4d28e315cbf6856.bindPopup(popup_ad16986798554927a66a9b930d2b24c6)
+        ;
+
+        
+    
+    
+            var marker_9c92fb15a6b245abaeb3accde20a0267 = L.marker(
+                [5.971317, -75.219167],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_0e63e61f8d434d79baa68fb2a4b1d12e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9568bef3ee241d8818c58827393e6e0 = $(`<div id="html_c9568bef3ee241d8818c58827393e6e0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cañón del rio Santo Domingo, vereda La Aguada <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Cristina Carvajal; Juan Tobón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0e63e61f8d434d79baa68fb2a4b1d12e.setContent(html_c9568bef3ee241d8818c58827393e6e0);
+        
+
+        marker_9c92fb15a6b245abaeb3accde20a0267.bindPopup(popup_0e63e61f8d434d79baa68fb2a4b1d12e)
+        ;
+
+        
+    
+    
+            var marker_c8e3d72e75624af19bd4248424525bd2 = L.marker(
+                [-4.276669999999999, -73.88028],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_7fd7c0d881ac4347825d040a2ff83aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcbc0e7b5ad246338298fc3bae1ac841 = $(`<div id="html_fcbc0e7b5ad246338298fc3bae1ac841" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Loreto - Moyobamaba <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Weberbauer, A. (Coll. De Candolle) <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7fd7c0d881ac4347825d040a2ff83aec.setContent(html_fcbc0e7b5ad246338298fc3bae1ac841);
+        
+
+        marker_c8e3d72e75624af19bd4248424525bd2.bindPopup(popup_7fd7c0d881ac4347825d040a2ff83aec)
+        ;
+
+        
+    
+    
+            var marker_40ef1cf4dbba4769ada4e1e5735d7125 = L.marker(
+                [6.144356, -75.570475],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_7408caea20024d348659a02ddca82452 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af97dde291734980be1abe11aa72e635 = $(`<div id="html_af97dde291734980be1abe11aa72e635" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1995-08-19 00:00:00+00:00 <strong>Recolectores:</strong> Giraldo F. | Correa M. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_7408caea20024d348659a02ddca82452.setContent(html_af97dde291734980be1abe11aa72e635);
+        
+
+        marker_40ef1cf4dbba4769ada4e1e5735d7125.bindPopup(popup_7408caea20024d348659a02ddca82452)
+        ;
+
+        
+    
+    
+            var marker_0ca4f4a366114672bc2dc0659876c066 = L.marker(
+                [6.144356, -75.570475],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_ec33b84b57054eaca2301e80ba28b48a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c794e3dea3e94da7a9847558d3ec136c = $(`<div id="html_c794e3dea3e94da7a9847558d3ec136c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1995-08-19 00:00:00+00:00 <strong>Recolectores:</strong> Giraldo F. | Correa M. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_ec33b84b57054eaca2301e80ba28b48a.setContent(html_c794e3dea3e94da7a9847558d3ec136c);
+        
+
+        marker_0ca4f4a366114672bc2dc0659876c066.bindPopup(popup_ec33b84b57054eaca2301e80ba28b48a)
+        ;
+
+        
+    
+    
+            var marker_568adee9121042bb9d1adb8699bc1912 = L.marker(
+                [6.144356, -75.570475],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_4829ee56abd74e25bdc557acfb225db7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da67275273df407da7221b27db59af0d = $(`<div id="html_da67275273df407da7221b27db59af0d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1995-08-19 00:00:00+00:00 <strong>Recolectores:</strong> Giraldo F. | Correa M. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_4829ee56abd74e25bdc557acfb225db7.setContent(html_da67275273df407da7221b27db59af0d);
+        
+
+        marker_568adee9121042bb9d1adb8699bc1912.bindPopup(popup_4829ee56abd74e25bdc557acfb225db7)
+        ;
+
+        
+    
+    
+            var marker_f420d333053f490186114464b08e9c0f = L.marker(
+                [6.95, -75.033333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_e542c2f0f554418fb1a4ee947ba305d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e423ecbcf0c24e109a0a0f47b7a58e95 = $(`<div id="html_e423ecbcf0c24e109a0a0f47b7a58e95" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Road between Amalfi and Fraguas, near Salazar, km 17.5 - 19.8 from centro of Amalfi" <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1988-02-14 00:00:00+00:00 <strong>Recolectores:</strong> MacDougal J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_e542c2f0f554418fb1a4ee947ba305d7.setContent(html_e423ecbcf0c24e109a0a0f47b7a58e95);
+        
+
+        marker_f420d333053f490186114464b08e9c0f.bindPopup(popup_e542c2f0f554418fb1a4ee947ba305d7)
+        ;
+
+        
+    
+    
+            var marker_07db976bb9e2458c8866f3dfa032683f = L.marker(
+                [6.95, -75.033333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_c5d108ea8e9f49719d395ef0315404b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0e7c11dab51452dad9d973ad2285dd6 = $(`<div id="html_a0e7c11dab51452dad9d973ad2285dd6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Road between Amalfi and Fraguas, near Salazar, km 17.5 - 19.8 from centro of Amalfi" <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1988-02-14 00:00:00+00:00 <strong>Recolectores:</strong> MacDougal J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_c5d108ea8e9f49719d395ef0315404b4.setContent(html_a0e7c11dab51452dad9d973ad2285dd6);
+        
+
+        marker_07db976bb9e2458c8866f3dfa032683f.bindPopup(popup_c5d108ea8e9f49719d395ef0315404b4)
+        ;
+
+        
+    
+    
+            var marker_ad5cc085eb144976839e6937ef6f45dd = L.marker(
+                [6.95, -75.033333],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_173bc12f052c4e689909b524fb5957bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23f1223800134286a83f2192c0584d84 = $(`<div id="html_23f1223800134286a83f2192c0584d84" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Road between Amalfi and Fraguas, near Salazar, km 17.5 - 19.8 from centro of Amalfi" <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1988-02-14 00:00:00+00:00 <strong>Recolectores:</strong> MacDougal J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_173bc12f052c4e689909b524fb5957bf.setContent(html_23f1223800134286a83f2192c0584d84);
+        
+
+        marker_ad5cc085eb144976839e6937ef6f45dd.bindPopup(popup_173bc12f052c4e689909b524fb5957bf)
+        ;
+
+        
+    
+    
+            var marker_a204d220555047f1ac878063f124935d = L.marker(
+                [7.079483, -75.46263499999999],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a575d8edbd7a4bbebaa2cd1bc001b5aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_152d4ffecf6f4bd1a0e62269971e12c1 = $(`<div id="html_152d4ffecf6f4bd1a0e62269971e12c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Municipios de Yarumal y Briceño, vereda San Fermín, 1 km de la vía Ventanas, finca San Fermín, propietario Lucio Restrepo" <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1988-03-20 00:00:00+00:00 <strong>Recolectores:</strong> Callejas R. | Roldán F. | Arbeláez A. | Cárdenas O. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_a575d8edbd7a4bbebaa2cd1bc001b5aa.setContent(html_152d4ffecf6f4bd1a0e62269971e12c1);
+        
+
+        marker_a204d220555047f1ac878063f124935d.bindPopup(popup_a575d8edbd7a4bbebaa2cd1bc001b5aa)
+        ;
+
+        
+    
+    
+            var marker_b69efdb2ec504c7db706ea401f479edc = L.marker(
+                [7.079483, -75.46263499999999],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_365eebe5ce064a76a650f8d17cf7eefc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bafc9f38be034b799318706b00c209b2 = $(`<div id="html_bafc9f38be034b799318706b00c209b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Municipios de Yarumal y Briceño, vereda San Fermín, 1 km de la vía Ventanas, finca San Fermín, propietario Lucio Restrepo" <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1988-03-20 00:00:00+00:00 <strong>Recolectores:</strong> Callejas R. | Roldán F. | Arbeláez A. | Cárdenas O. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_365eebe5ce064a76a650f8d17cf7eefc.setContent(html_bafc9f38be034b799318706b00c209b2);
+        
+
+        marker_b69efdb2ec504c7db706ea401f479edc.bindPopup(popup_365eebe5ce064a76a650f8d17cf7eefc)
+        ;
+
+        
+    
+    
+            var marker_0f765bd928f44ee4b274221556baabc7 = L.marker(
+                [6.133333, -76.15],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_aa7b99fb5f884789aca1bae5abfba34e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c85d43b837084f8ca3f03f16d29f97fc = $(`<div id="html_c85d43b837084f8ca3f03f16d29f97fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Road to Pavón, 24 km S of Urrao - Betulia road" <strong>Elevación:</strong> 2030.0 m  <strong>Fecha:</strong> 1987-10-31 00:00:00+00:00 <strong>Recolectores:</strong> Brant A. | Betancur J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_aa7b99fb5f884789aca1bae5abfba34e.setContent(html_c85d43b837084f8ca3f03f16d29f97fc);
+        
+
+        marker_0f765bd928f44ee4b274221556baabc7.bindPopup(popup_aa7b99fb5f884789aca1bae5abfba34e)
+        ;
+
+        
+    
+    
+            var marker_8b67353fdaf449cd81d7553f0057c41c = L.marker(
+                [6.133333, -76.15],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_a35ba843d1054bd48529e8e05ee8d5c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3df87a7c7ee346e086c4ed8e64f71f04 = $(`<div id="html_3df87a7c7ee346e086c4ed8e64f71f04" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Road to Pavón, 24 km S of Urrao - Betulia road" <strong>Elevación:</strong> 2030.0 m  <strong>Fecha:</strong> 1987-10-31 00:00:00+00:00 <strong>Recolectores:</strong> Brant A. | Betancur J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_a35ba843d1054bd48529e8e05ee8d5c2.setContent(html_3df87a7c7ee346e086c4ed8e64f71f04);
+        
+
+        marker_8b67353fdaf449cd81d7553f0057c41c.bindPopup(popup_a35ba843d1054bd48529e8e05ee8d5c2)
+        ;
+
+        
+    
+    
+            var marker_73a90ecb9e6e48a7a7b46010fdf5bae2 = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_8358d7380802408b9489d1ec04d4a1eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3b1d3e88f364569b9314fcabf13f320 = $(`<div id="html_a3b1d3e88f364569b9314fcabf13f320" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1987-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. | Curso de Ecología Vegetal. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_8358d7380802408b9489d1ec04d4a1eb.setContent(html_a3b1d3e88f364569b9314fcabf13f320);
+        
+
+        marker_73a90ecb9e6e48a7a7b46010fdf5bae2.bindPopup(popup_8358d7380802408b9489d1ec04d4a1eb)
+        ;
+
+        
+    
+    
+            var marker_2ab0765f70784af798d2b435ce03c487 = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_b60afbc34c8141c29401c41a3a7841f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16548045e26946b58870ee2759f9dd4a = $(`<div id="html_16548045e26946b58870ee2759f9dd4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1987-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. | Curso de Ecología Vegetal. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_b60afbc34c8141c29401c41a3a7841f6.setContent(html_16548045e26946b58870ee2759f9dd4a);
+        
+
+        marker_2ab0765f70784af798d2b435ce03c487.bindPopup(popup_b60afbc34c8141c29401c41a3a7841f6)
+        ;
+
+        
+    
+    
+            var marker_66652afb100a4d1194190607aef4913b = L.marker(
+                [5.885379, -75.306691],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_b56a01cea08246c08667c4935a189505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84ac5db956f548cbb747c56a9ad4327b = $(`<div id="html_84ac5db956f548cbb747c56a9ad4327b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Km 33 of road Sonsón - La Unión, 23 km from La Unión" <strong>Elevación:</strong> 2630.0 m  <strong>Fecha:</strong> 1986-12-06 00:00:00+00:00 <strong>Recolectores:</strong> Zarucchi J. | Bedoya N. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_b56a01cea08246c08667c4935a189505.setContent(html_84ac5db956f548cbb747c56a9ad4327b);
+        
+
+        marker_66652afb100a4d1194190607aef4913b.bindPopup(popup_b56a01cea08246c08667c4935a189505)
+        ;
+
+        
+    
+    
+            var marker_b42035754c24473cb42519d0d858177f = L.marker(
+                [5.817888, -75.29997900000001],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_25ac2901a5d24ceb910278c47e22154e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cbd9a927aeb45a5a635ef99455edbc4 = $(`<div id="html_7cbd9a927aeb45a5a635ef99455edbc4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Km 33 of road Sonsón - La Unión, 23 km from La Unión" <strong>Elevación:</strong> 2330.0 m  <strong>Fecha:</strong> 1986-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Zarucchi J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_25ac2901a5d24ceb910278c47e22154e.setContent(html_7cbd9a927aeb45a5a635ef99455edbc4);
+        
+
+        marker_b42035754c24473cb42519d0d858177f.bindPopup(popup_25ac2901a5d24ceb910278c47e22154e)
+        ;
+
+        
+    
+    
+            var marker_d9ce485d524449adab9e490060fe007e = L.marker(
+                [5.817888, -75.29997900000001],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_918441874123428db17617c7f6a1c198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b816b1189ed4aa297a51fa5980fc83c = $(`<div id="html_9b816b1189ed4aa297a51fa5980fc83c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Km 33 of road Sonsón - La Unión, 23 km from La Unión" <strong>Elevación:</strong> 2330.0 m  <strong>Fecha:</strong> 1986-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Zarucchi J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_918441874123428db17617c7f6a1c198.setContent(html_9b816b1189ed4aa297a51fa5980fc83c);
+        
+
+        marker_d9ce485d524449adab9e490060fe007e.bindPopup(popup_918441874123428db17617c7f6a1c198)
+        ;
+
+        
+    
+    
+            var marker_1adb1268df724aabb9d800ce6be0dc9f = L.marker(
+                [5.817888, -75.29997900000001],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_d7de38436715496cadd5e41362541d4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_511479e665a54dfeb054d187854b2e05 = $(`<div id="html_511479e665a54dfeb054d187854b2e05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Km 33 of road Sonsón - La Unión, 23 km from La Unión" <strong>Elevación:</strong> 2330.0 m  <strong>Fecha:</strong> 1986-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Zarucchi J. <strong>Identificadores:</strong> Frodin D.</div>`)[0];
+            popup_d7de38436715496cadd5e41362541d4c.setContent(html_511479e665a54dfeb054d187854b2e05);
+        
+
+        marker_1adb1268df724aabb9d800ce6be0dc9f.bindPopup(popup_d7de38436715496cadd5e41362541d4c)
+        ;
+
+        
+    
+    
+            var marker_809e18117c254cea8965e715657c570e = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_64af3aea657b47c8a56488d167d7afaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec60b4cd6cbf4cad8cb5e0e2ba6ee466 = $(`<div id="html_ec60b4cd6cbf4cad8cb5e0e2ba6ee466" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1840.0 m  <strong>Fecha:</strong> 1986-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Zarucchi J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_64af3aea657b47c8a56488d167d7afaf.setContent(html_ec60b4cd6cbf4cad8cb5e0e2ba6ee466);
+        
+
+        marker_809e18117c254cea8965e715657c570e.bindPopup(popup_64af3aea657b47c8a56488d167d7afaf)
+        ;
+
+        
+    
+    
+            var marker_fe1a18ccbdda42dfb7e4b5270039f1d3 = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_8fb7845eb56247e5b1496fab50dda360 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_114553818e9a445f95cba2c043a8b695 = $(`<div id="html_114553818e9a445f95cba2c043a8b695" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1840.0 m  <strong>Fecha:</strong> 1986-12-04 00:00:00+00:00 <strong>Recolectores:</strong> Zarucchi J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_8fb7845eb56247e5b1496fab50dda360.setContent(html_114553818e9a445f95cba2c043a8b695);
+        
+
+        marker_fe1a18ccbdda42dfb7e4b5270039f1d3.bindPopup(popup_8fb7845eb56247e5b1496fab50dda360)
+        ;
+
+        
+    
+    
+            var marker_944128069c1446259e534814ee9dbee8 = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_65e44ced12ae4982833b23c2ffa9fdf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_434acae40017404183ea090cc25590a7 = $(`<div id="html_434acae40017404183ea090cc25590a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1986-05-17 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Curso de Ecología Vegetal. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_65e44ced12ae4982833b23c2ffa9fdf4.setContent(html_434acae40017404183ea090cc25590a7);
+        
+
+        marker_944128069c1446259e534814ee9dbee8.bindPopup(popup_65e44ced12ae4982833b23c2ffa9fdf4)
+        ;
+
+        
+    
+    
+            var marker_75cadd3924624aba915fe0669e9b2748 = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_27c761b423de48a2b3b24f85d39a559f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89fd4ab951f9495ca81494ca664f6d90 = $(`<div id="html_89fd4ab951f9495ca81494ca664f6d90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1986-05-17 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Curso de Ecología Vegetal. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_27c761b423de48a2b3b24f85d39a559f.setContent(html_89fd4ab951f9495ca81494ca664f6d90);
+        
+
+        marker_75cadd3924624aba915fe0669e9b2748.bindPopup(popup_27c761b423de48a2b3b24f85d39a559f)
+        ;
+
+        
+    
+    
+            var marker_373c7e500c824799a2a4e91d77ea3547 = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_2ca6fda5ec544a46951c5bbb9c72f8f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d0d3a634258404488f068bad5bb0209 = $(`<div id="html_1d0d3a634258404488f068bad5bb0209" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1986-01-30 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. | Londoño E. | Betancur J. | Marulanda O. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_2ca6fda5ec544a46951c5bbb9c72f8f8.setContent(html_1d0d3a634258404488f068bad5bb0209);
+        
+
+        marker_373c7e500c824799a2a4e91d77ea3547.bindPopup(popup_2ca6fda5ec544a46951c5bbb9c72f8f8)
+        ;
+
+        
+    
+    
+            var marker_e2064bbe35df45c6b53e0069910e040f = L.marker(
+                [6.25, -75.166667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_58bd5d3ffb9c482c9ae76673e68a6453 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a0a9a4f9cd44bb89c51c8573d38dca7 = $(`<div id="html_0a0a9a4f9cd44bb89c51c8573d38dca7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Rita, finca Montepinar" <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1985-11-22 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Vallejo J. | Roldán F. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_58bd5d3ffb9c482c9ae76673e68a6453.setContent(html_0a0a9a4f9cd44bb89c51c8573d38dca7);
+        
+
+        marker_e2064bbe35df45c6b53e0069910e040f.bindPopup(popup_58bd5d3ffb9c482c9ae76673e68a6453)
+        ;
+
+        
+    
+    
+            var marker_4390bd84b03a482083c0428318b059e4 = L.marker(
+                [6.053452, -75.608747],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_50e9520a64cd43e59721d9fa15ba0a8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6918a431c9824cd489ebb306574d7d8c = $(`<div id="html_6918a431c9824cd489ebb306574d7d8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda La Clara <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1985-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_50e9520a64cd43e59721d9fa15ba0a8e.setContent(html_6918a431c9824cd489ebb306574d7d8c);
+        
+
+        marker_4390bd84b03a482083c0428318b059e4.bindPopup(popup_50e9520a64cd43e59721d9fa15ba0a8e)
+        ;
+
+        
+    
+    
+            var marker_8fc1307bcfdb492992172196afca873a = L.marker(
+                [6.053452, -75.608747],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_10356b4e062640fc8793fea26816496d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18c397fef8504684b77d64d5f3bc6fd1 = $(`<div id="html_18c397fef8504684b77d64d5f3bc6fd1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda La Clara <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1985-03-28 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_10356b4e062640fc8793fea26816496d.setContent(html_18c397fef8504684b77d64d5f3bc6fd1);
+        
+
+        marker_8fc1307bcfdb492992172196afca873a.bindPopup(popup_10356b4e062640fc8793fea26816496d)
+        ;
+
+        
+    
+    
+            var marker_62f8c5071a8e48968f00f917f3d83ee2 = L.marker(
+                [6.053452, -75.608747],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_03af3a76776644bc8c1e06e02bcf4109 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f74018c8cdcf453a9f69cb1b0b53929b = $(`<div id="html_f74018c8cdcf453a9f69cb1b0b53929b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda La Clara <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1984-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_03af3a76776644bc8c1e06e02bcf4109.setContent(html_f74018c8cdcf453a9f69cb1b0b53929b);
+        
+
+        marker_62f8c5071a8e48968f00f917f3d83ee2.bindPopup(popup_03af3a76776644bc8c1e06e02bcf4109)
+        ;
+
+        
+    
+    
+            var marker_5948a6e9e22e44119b53c27181a123f7 = L.marker(
+                [6.053452, -75.608747],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_f8308fda956a4261b14afc2322a38fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d44161b81eca44cc9178e69fe06f2ebc = $(`<div id="html_d44161b81eca44cc9178e69fe06f2ebc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda La Clara <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1984-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_f8308fda956a4261b14afc2322a38fb3.setContent(html_d44161b81eca44cc9178e69fe06f2ebc);
+        
+
+        marker_5948a6e9e22e44119b53c27181a123f7.bindPopup(popup_f8308fda956a4261b14afc2322a38fb3)
+        ;
+
+        
+    
+    
+            var marker_9c879955cf9849bbaa0527e7ecaee541 = L.marker(
+                [6.053452, -75.608747],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_d2b1dbea1305444783c33035baf87151 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_544e17cf844a42ce9142a462088ebb31 = $(`<div id="html_544e17cf844a42ce9142a462088ebb31" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda La Clara <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1984-06-14 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_d2b1dbea1305444783c33035baf87151.setContent(html_544e17cf844a42ce9142a462088ebb31);
+        
+
+        marker_9c879955cf9849bbaa0527e7ecaee541.bindPopup(popup_d2b1dbea1305444783c33035baf87151)
+        ;
+
+        
+    
+    
+            var marker_6c263f39813e435085106c523a592856 = L.marker(
+                [6.053452, -75.608747],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_e1d04232f3814ba3a2070c784c23522b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_594b91ae870c48ab8c4a3219bba1ceb7 = $(`<div id="html_594b91ae870c48ab8c4a3219bba1ceb7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda La Clara <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1984-06-14 00:00:00+00:00 <strong>Recolectores:</strong> Albert L. | Uribe A. | Vallejo J. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_e1d04232f3814ba3a2070c784c23522b.setContent(html_594b91ae870c48ab8c4a3219bba1ceb7);
+        
+
+        marker_6c263f39813e435085106c523a592856.bindPopup(popup_e1d04232f3814ba3a2070c784c23522b)
+        ;
+
+        
+    
+    
+            var marker_1415e9d99af841b881fc1428a7398f68 = L.marker(
+                [6.026667, -75.613028],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_282bf753f3ea46bdbadb503bb54f176e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccc491f98a8b494cb2ca3d1cb0faf1f6 = $(`<div id="html_ccc491f98a8b494cb2ca3d1cb0faf1f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda La Clara, Reserva Alto San Miguel, sector quebrada Cañada Honda" <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 2011-03-21 00:00:00+00:00 <strong>Recolectores:</strong> Tuberquia D. | Bolívar L. <strong>Identificadores:</strong> Bolívar L.</div>`)[0];
+            popup_282bf753f3ea46bdbadb503bb54f176e.setContent(html_ccc491f98a8b494cb2ca3d1cb0faf1f6);
+        
+
+        marker_1415e9d99af841b881fc1428a7398f68.bindPopup(popup_282bf753f3ea46bdbadb503bb54f176e)
+        ;
+
+        
+    
+    
+            var marker_99b0547d54c34f818c6b5c9c516a030c = L.marker(
+                [6.026667, -75.613028],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_bf9ea3ea1c334c48a5820ebb34592377 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3017910b8e844bd38c3fb25fa8793034 = $(`<div id="html_3017910b8e844bd38c3fb25fa8793034" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda La Clara, Reserva Alto San Miguel, sector quebrada Cañada Honda" <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 2011-03-21 00:00:00+00:00 <strong>Recolectores:</strong> Tuberquia D. | Bolívar L. <strong>Identificadores:</strong> Bolívar L.</div>`)[0];
+            popup_bf9ea3ea1c334c48a5820ebb34592377.setContent(html_3017910b8e844bd38c3fb25fa8793034);
+        
+
+        marker_99b0547d54c34f818c6b5c9c516a030c.bindPopup(popup_bf9ea3ea1c334c48a5820ebb34592377)
+        ;
+
+        
+    
+    
+            var marker_5fb31c93ee164801aa1b707e10e4201f = L.marker(
+                [6.158056, -75.701389],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_f410c74308744f8e8b6eb0c86fae5550 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f45e9a547f2e4da0bd3a593a1f6c7fef = $(`<div id="html_f45e9a547f2e4da0bd3a593a1f6c7fef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda El Romeral, hacienda La Argentina" <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2005-11-20 00:00:00+00:00 <strong>Recolectores:</strong> Rincón H. | Giraldo F. | Tuberquia D. | Rodríguez W. <strong>Identificadores:</strong> Robles C.</div>`)[0];
+            popup_f410c74308744f8e8b6eb0c86fae5550.setContent(html_f45e9a547f2e4da0bd3a593a1f6c7fef);
+        
+
+        marker_5fb31c93ee164801aa1b707e10e4201f.bindPopup(popup_f410c74308744f8e8b6eb0c86fae5550)
+        ;
+
+        
+    
+    
+            var marker_a1ade73d886b49d391f789c9ade94533 = L.marker(
+                [6.4791669999999995, -75.236111],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_1c2cd1f0b5944074aadc17d9a18a2d4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8ef8531e73b4d1196553f633b8b23ee = $(`<div id="html_d8ef8531e73b4d1196553f633b8b23ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda La Cejita, cuchilla La Cejita" <strong>Elevación:</strong> 2110.0 m  <strong>Fecha:</strong> 2000-05-11 00:00:00+00:00 <strong>Recolectores:</strong> Velásquez C. | Osorio S. | Henao L. <strong>Identificadores:</strong> Cogollo A.</div>`)[0];
+            popup_1c2cd1f0b5944074aadc17d9a18a2d4b.setContent(html_d8ef8531e73b4d1196553f633b8b23ee);
+        
+
+        marker_a1ade73d886b49d391f789c9ade94533.bindPopup(popup_1c2cd1f0b5944074aadc17d9a18a2d4b)
+        ;
+
+        
+    
+    
+            var marker_f4e76b6269af47d88981368da842efd0 = L.marker(
+                [7.133333, -75.15],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_cc0df6d08db941cc9105c4aea4775fa9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1322ae75f03d4c9e9b8e653742c3870c = $(`<div id="html_1322ae75f03d4c9e9b8e653742c3870c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Gertrudis, finca La Estrella" <strong>Elevación:</strong> 1475.0 m  <strong>Fecha:</strong> 2002-08-06 00:00:00+00:00 <strong>Recolectores:</strong> Arias T. | Cuervo A. | Pulgarín P. <strong>Identificadores:</strong> Arias T.</div>`)[0];
+            popup_cc0df6d08db941cc9105c4aea4775fa9.setContent(html_1322ae75f03d4c9e9b8e653742c3870c);
+        
+
+        marker_f4e76b6269af47d88981368da842efd0.bindPopup(popup_cc0df6d08db941cc9105c4aea4775fa9)
+        ;
+
+        
+    
+    
+            var marker_33e4f5dd0217413ebfc7a881d7977e39 = L.marker(
+                [7.133333, -75.15],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_2cfd70cd25014b72bb60f6df0dd94972 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb96d791e1e044a6a63258eae3eb00d5 = $(`<div id="html_bb96d791e1e044a6a63258eae3eb00d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Vereda Santa Gertrudis, finca La Estrella" <strong>Elevación:</strong> 1475.0 m  <strong>Fecha:</strong> 2002-08-06 00:00:00+00:00 <strong>Recolectores:</strong> Arias T. | Cuervo A. | Pulgarín P. <strong>Identificadores:</strong> Arias T.</div>`)[0];
+            popup_2cfd70cd25014b72bb60f6df0dd94972.setContent(html_bb96d791e1e044a6a63258eae3eb00d5);
+        
+
+        marker_33e4f5dd0217413ebfc7a881d7977e39.bindPopup(popup_2cfd70cd25014b72bb60f6df0dd94972)
+        ;
+
+        
+    
+    
+            var marker_07057b7616b94d3bade9465458f6d246 = L.marker(
+                [6.0833330000000005, -75.216667],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_5d5563c1c1654838a4b0fc39d38b49a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_174ae44905bd48879b858a5ba0dc5d70 = $(`<div id="html_174ae44905bd48879b858a5ba0dc5d70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda El Viao <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 1999-10-26 00:00:00+00:00 <strong>Recolectores:</strong> Gíl A. | Duque A. | Flórez J. | García N. <strong>Identificadores:</strong> Gíl A.</div>`)[0];
+            popup_5d5563c1c1654838a4b0fc39d38b49a4.setContent(html_174ae44905bd48879b858a5ba0dc5d70);
+        
+
+        marker_07057b7616b94d3bade9465458f6d246.bindPopup(popup_5d5563c1c1654838a4b0fc39d38b49a4)
+        ;
+
+        
+    
+    
+            var marker_f39e532170064e60b91a836e27d51cc9 = L.marker(
+                [-0.583, -77.866],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_dd6ac9490e27413b9c7955521348cfd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c199df6a127841e58eab32ee6964c55c = $(`<div id="html_c199df6a127841e58eab32ee6964c55c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5 km south of Cosanga on Quito - Tena road. Montane forest. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1983-08-29 00:00:00+00:00 <strong>Recolectores:</strong> H.  Balslev <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_dd6ac9490e27413b9c7955521348cfd1.setContent(html_c199df6a127841e58eab32ee6964c55c);
+        
+
+        marker_f39e532170064e60b91a836e27d51cc9.bindPopup(popup_dd6ac9490e27413b9c7955521348cfd1)
+        ;
+
+        
+    
+    
+            var marker_4b8a597b36cf47f38c7c8259e698b5c4 = L.marker(
+                [-4.05, -79.083],
+                {}
+            ).addTo(marker_cluster_2c81ea825fb84e4e95ccc475201621e7);
+        
+    
+        var popup_94c986a8a9c849f7a31314c3defc40db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_798d0c513d334f12b3b1e71b7ad398cf = $(`<div id="html_798d0c513d334f12b3b1e71b7ad398cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Trail from the Loja-Zamora Chinchipe  rd. to Rio Santiago in the Podocarpus National Park. Primary Mountain Forest. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1995-05-04 00:00:00+00:00 <strong>Recolectores:</strong> H.B.  Pedersen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_94c986a8a9c849f7a31314c3defc40db.setContent(html_798d0c513d334f12b3b1e71b7ad398cf);
+        
+
+        marker_4b8a597b36cf47f38c7c8259e698b5c4.bindPopup(popup_94c986a8a9c849f7a31314c3defc40db)
+        ;
+
+        
+    
+    
+            var layer_control_b8a303cd8e9443cda428d9cf670b4e64 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_882a0429824342f9b57678b3c28dac3c,
+                    "ESRI World Imagery" : tile_layer_0bee344b997342239f7dc98fa9f41e9e,
+                },
+                overlays :  {
+                    "macro_element_2c81ea825fb84e4e95ccc475201621e7" : marker_cluster_2c81ea825fb84e4e95ccc475201621e7,
+                },
+            };
+            L.control.layers(
+                layer_control_b8a303cd8e9443cda428d9cf670b4e64.base_layers,
+                layer_control_b8a303cd8e9443cda428d9cf670b4e64.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_56c69bb55cd64c8183c23be95182199e);
+            tile_layer_0bee344b997342239f7dc98fa9f41e9e.remove();
+        
+</script>

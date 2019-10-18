@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7dc9a9e9f65420688cd7b8b6eb0d57f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c7dc9a9e9f65420688cd7b8b6eb0d57f" ></div>
+        
+</body>
+<script>    
+    
+            var map_c7dc9a9e9f65420688cd7b8b6eb0d57f = L.map(
+                "map_c7dc9a9e9f65420688cd7b8b6eb0d57f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c7dc9a9e9f65420688cd7b8b6eb0d57f);
+
+            
+
+        
+    
+            var tile_layer_929b596eb95b491a9fdc599b410f7a51 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c7dc9a9e9f65420688cd7b8b6eb0d57f);
+        
+    
+            var tile_layer_d0bf295381dc48df9fb217abb946fa7d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c7dc9a9e9f65420688cd7b8b6eb0d57f);
+        
+    
+            var marker_cluster_435d4b17918e4938a348d7ba6dc5710f = L.markerClusterGroup(
+                {}
+            );
+            map_c7dc9a9e9f65420688cd7b8b6eb0d57f.addLayer(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+            var marker_62d36c77674a4c59a3df6adfd3bf337b = L.marker(
+                [10.16, -83.95],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_e2fbd0bc0774448d8e521dabc2b6b6b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58eeebe2a43a4366ae15b902dce6095c = $(`<div id="html_58eeebe2a43a4366ae15b902dce6095c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carrillo Station, on fallen Calliandra tree <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1984-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P.|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> M.H. Grayum</div>`)[0];
+            popup_e2fbd0bc0774448d8e521dabc2b6b6b8.setContent(html_58eeebe2a43a4366ae15b902dce6095c);
+        
+
+        marker_62d36c77674a4c59a3df6adfd3bf337b.bindPopup(popup_e2fbd0bc0774448d8e521dabc2b6b6b8)
+        ;
+
+        
+    
+    
+            var marker_1bf09cddfbfd40bc8551b61254a88af2 = L.marker(
+                [10.81, -84.88],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_2cb0b511f1b24edf886b5d07d7822886 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7d431fc2f9842769db41146698e160e = $(`<div id="html_b7d431fc2f9842769db41146698e160e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Río Chimurria in vicinity of Colonia Puntarenas, ca. 11 km (by road) SE of Upala. <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1988-11-17 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|Randall J. Evans <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_2cb0b511f1b24edf886b5d07d7822886.setContent(html_b7d431fc2f9842769db41146698e160e);
+        
+
+        marker_1bf09cddfbfd40bc8551b61254a88af2.bindPopup(popup_2cb0b511f1b24edf886b5d07d7822886)
+        ;
+
+        
+    
+    
+            var marker_a7d0864d963c42a18a9b7034bdf72904 = L.marker(
+                [10.633333, -83.75],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_36b028ff637b457893ff6c5762104436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5455886957b04322adbb98f13e11d480 = $(`<div id="html_5455886957b04322adbb98f13e11d480" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Barra de Colorado.  Forests and pastures between Río Chirripocito and Río Sardina ("Sardinal" on Chirripó Atlántico quadrangle). <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1988-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|F. G. Stiles|Isidro A. Chacón G.|E. Hernández|Reinaldo Aguilar|F. Bolaños <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_36b028ff637b457893ff6c5762104436.setContent(html_5455886957b04322adbb98f13e11d480);
+        
+
+        marker_a7d0864d963c42a18a9b7034bdf72904.bindPopup(popup_36b028ff637b457893ff6c5762104436)
+        ;
+
+        
+    
+    
+            var marker_cf64acf8141245fb86f4ee1f8ab79346 = L.marker(
+                [10.71, -84.17],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_99037a5b27994f29a147b30d086e2c9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0640eff054940f4886dc9235be12aaa = $(`<div id="html_a0640eff054940f4886dc9235be12aaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del San Carlos, ca. 10 km NE de Boca Tapada, Finca Aserradero San Jorge <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Alexánder Rodríguez|Nelson Zamora <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_99037a5b27994f29a147b30d086e2c9c.setContent(html_a0640eff054940f4886dc9235be12aaa);
+        
+
+        marker_cf64acf8141245fb86f4ee1f8ab79346.bindPopup(popup_99037a5b27994f29a147b30d086e2c9c)
+        ;
+
+        
+    
+    
+            var marker_73ab235444f746dda68d2086c9b3950c = L.marker(
+                [10.2, -83.9],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_932905b022c14eea815c773a9eaf7110 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cb2a4bf84474a7181e070b6151c8c8a = $(`<div id="html_9cb2a4bf84474a7181e070b6151c8c8a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Thomas B. Croat <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_932905b022c14eea815c773a9eaf7110.setContent(html_9cb2a4bf84474a7181e070b6151c8c8a);
+        
+
+        marker_73ab235444f746dda68d2086c9b3950c.bindPopup(popup_932905b022c14eea815c773a9eaf7110)
+        ;
+
+        
+    
+    
+            var marker_b201e75f9ade43878c0afe3c7e7768ca = L.marker(
+                [10.99475, -85.39864],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_063eaa2258994851b2aa1f0163185352 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60b9b0033beb478fa31f6a92f62067f3 = $(`<div id="html_60b9b0033beb478fa31f6a92f62067f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste: La Cruz, Santa Cecilia. Área de Conservación Guanacaste, Sector La Quica. <strong>Elevación:</strong> 485.0 m  <strong>Fecha:</strong> 2014-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Soo-Yong Kim ; Guillermo Villalobos ; Adrián Guadamuz <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_063eaa2258994851b2aa1f0163185352.setContent(html_60b9b0033beb478fa31f6a92f62067f3);
+        
+
+        marker_b201e75f9ade43878c0afe3c7e7768ca.bindPopup(popup_063eaa2258994851b2aa1f0163185352)
+        ;
+
+        
+    
+    
+            var marker_e3044edd0e6a44b6bda6d24959ccfb60 = L.marker(
+                [10.99475, -85.39864],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_d9d8c2656697442bb44b355da6fbd026 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b5ee17e2de341bf85d5ca698d36424a = $(`<div id="html_2b5ee17e2de341bf85d5ca698d36424a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste: La Cruz, Santa Cecilia. Área de Conservación Guanacaste, Sector La Quica. <strong>Elevación:</strong> 485.0 m  <strong>Fecha:</strong> 2014-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Soo-Yong Kim ; Guillermo Villalobos ; Adrián Guadamuz <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_d9d8c2656697442bb44b355da6fbd026.setContent(html_2b5ee17e2de341bf85d5ca698d36424a);
+        
+
+        marker_e3044edd0e6a44b6bda6d24959ccfb60.bindPopup(popup_d9d8c2656697442bb44b355da6fbd026)
+        ;
+
+        
+    
+    
+            var marker_282a840635f04943afd28a4388c919e6 = L.marker(
+                [10.99475, -85.39864],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_8d636bc636f04f259a6e12795d1361eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f64293533f6454588e7421da21a512a = $(`<div id="html_0f64293533f6454588e7421da21a512a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste: La Cruz, Santa Cecilia. Área de Conservación Guanacaste, Sector La Quica. <strong>Elevación:</strong> 485.0 m  <strong>Fecha:</strong> 2014-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza; Soo-Yong Kim ; Guillermo Villalobos ; Adrián Guadamuz <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_8d636bc636f04f259a6e12795d1361eb.setContent(html_0f64293533f6454588e7421da21a512a);
+        
+
+        marker_282a840635f04943afd28a4388c919e6.bindPopup(popup_8d636bc636f04f259a6e12795d1361eb)
+        ;
+
+        
+    
+    
+            var marker_13efad12daa846a68557fb9943ff25c6 = L.marker(
+                [11.033333, -85.4],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_2d43b12702a54761a82e84ff7802834c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b09580237ce49b18a6b6aa1d0b1b927 = $(`<div id="html_2b09580237ce49b18a6b6aa1d0b1b927" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road from Santa Cecilia to La Esperanza, wet forest remnants below turnoff to Estacion Pitilla. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1997-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Calixto Moraga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_2d43b12702a54761a82e84ff7802834c.setContent(html_2b09580237ce49b18a6b6aa1d0b1b927);
+        
+
+        marker_13efad12daa846a68557fb9943ff25c6.bindPopup(popup_2d43b12702a54761a82e84ff7802834c)
+        ;
+
+        
+    
+    
+            var marker_c1b64f6320314c0892930f951e3bbb99 = L.marker(
+                [11.033333, -85.4],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_b7875332e6a64a638155c24f28bced77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26c18bdb66f64762b1bd35cf1b85d3cb = $(`<div id="html_26c18bdb66f64762b1bd35cf1b85d3cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road from Santa Cecilia to La Esperanza, wet forest remnants below turnoff to Estacion Pitilla. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1997-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Calixto Moraga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_b7875332e6a64a638155c24f28bced77.setContent(html_26c18bdb66f64762b1bd35cf1b85d3cb);
+        
+
+        marker_c1b64f6320314c0892930f951e3bbb99.bindPopup(popup_b7875332e6a64a638155c24f28bced77)
+        ;
+
+        
+    
+    
+            var marker_288c44eb5eb04931b50d37ff77b979b7 = L.marker(
+                [11.033333, -85.4],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_bb277e7ec1c6456294b4cf4740ae73e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0d577f09c1a449c9a47baee7c012ac3 = $(`<div id="html_e0d577f09c1a449c9a47baee7c012ac3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road from Santa Cecilia to La Esperanza, wet forest remnants below turnoff to Estacion Pitilla. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1997-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Calixto Moraga <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_bb277e7ec1c6456294b4cf4740ae73e5.setContent(html_e0d577f09c1a449c9a47baee7c012ac3);
+        
+
+        marker_288c44eb5eb04931b50d37ff77b979b7.bindPopup(popup_bb277e7ec1c6456294b4cf4740ae73e5)
+        ;
+
+        
+    
+    
+            var marker_bf66b4a5d9dd4f96834dd16c77590bf3 = L.marker(
+                [10.816667, -84.883333],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_6848122b2da946709615e1c4891dac59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf7b04c79d144e58aafd34f3e8f77baf = $(`<div id="html_bf7b04c79d144e58aafd34f3e8f77baf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Rio Chimurria in vicinity of Colonia Puntarenas, ca. 11 km (by road) SE of Upala. <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1988-11-17 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_6848122b2da946709615e1c4891dac59.setContent(html_bf7b04c79d144e58aafd34f3e8f77baf);
+        
+
+        marker_bf66b4a5d9dd4f96834dd16c77590bf3.bindPopup(popup_6848122b2da946709615e1c4891dac59)
+        ;
+
+        
+    
+    
+            var marker_6cb90f0c431a4996afba2c25f97fd5f9 = L.marker(
+                [10.633333, -83.75],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_47007f9f185440f0a27a3e456d432be4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78fd236e17ad4a59995f3fad10431306 = $(`<div id="html_78fd236e17ad4a59995f3fad10431306" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forests and pastures between Rio Chirripocito and Rio Sardina ( Sardinal  on Chirripo Atlantico quadrangle). <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1988-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_47007f9f185440f0a27a3e456d432be4.setContent(html_78fd236e17ad4a59995f3fad10431306);
+        
+
+        marker_6cb90f0c431a4996afba2c25f97fd5f9.bindPopup(popup_47007f9f185440f0a27a3e456d432be4)
+        ;
+
+        
+    
+    
+            var marker_b80b7233491a42bb89d57ed8e64f2c79 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_c938a7638f37474b824a175663de08da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_684e5ee383b940479d1cd64c74cadc10 = $(`<div id="html_684e5ee383b940479d1cd64c74cadc10" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_c938a7638f37474b824a175663de08da.setContent(html_684e5ee383b940479d1cd64c74cadc10);
+        
+
+        marker_b80b7233491a42bb89d57ed8e64f2c79.bindPopup(popup_c938a7638f37474b824a175663de08da)
+        ;
+
+        
+    
+    
+            var marker_eebe4708d64b48dd9801095608a6e1af = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_b7edef6e82aa44aca5fb1e3dd55553ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3d6fbdef6fa4d5380ba2b443a9ae3f9 = $(`<div id="html_c3d6fbdef6fa4d5380ba2b443a9ae3f9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_b7edef6e82aa44aca5fb1e3dd55553ec.setContent(html_c3d6fbdef6fa4d5380ba2b443a9ae3f9);
+        
+
+        marker_eebe4708d64b48dd9801095608a6e1af.bindPopup(popup_b7edef6e82aa44aca5fb1e3dd55553ec)
+        ;
+
+        
+    
+    
+            var marker_6b5d78c78a6843eeaa9dd7e50c443879 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_1bebe7fd005f4524b15776633c4db8fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82978b976ae346838ece7a95ac504001 = $(`<div id="html_82978b976ae346838ece7a95ac504001" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_1bebe7fd005f4524b15776633c4db8fc.setContent(html_82978b976ae346838ece7a95ac504001);
+        
+
+        marker_6b5d78c78a6843eeaa9dd7e50c443879.bindPopup(popup_1bebe7fd005f4524b15776633c4db8fc)
+        ;
+
+        
+    
+    
+            var marker_a9ac730b2a81491e86b8f54a1b713124 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_35be018b8e474f76af3a8da2146fbde3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb6df86f185645c2a6ab52ca781073f7 = $(`<div id="html_eb6df86f185645c2a6ab52ca781073f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_35be018b8e474f76af3a8da2146fbde3.setContent(html_eb6df86f185645c2a6ab52ca781073f7);
+        
+
+        marker_a9ac730b2a81491e86b8f54a1b713124.bindPopup(popup_35be018b8e474f76af3a8da2146fbde3)
+        ;
+
+        
+    
+    
+            var marker_cab511a593694af58a61ecc3071be1fa = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_8c28e11195d340d5a2d4ebaacb2393c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_670534c2c2984c59a4c1661d4a4d50c1 = $(`<div id="html_670534c2c2984c59a4c1661d4a4d50c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_8c28e11195d340d5a2d4ebaacb2393c5.setContent(html_670534c2c2984c59a4c1661d4a4d50c1);
+        
+
+        marker_cab511a593694af58a61ecc3071be1fa.bindPopup(popup_8c28e11195d340d5a2d4ebaacb2393c5)
+        ;
+
+        
+    
+    
+            var marker_cb6690009c4c4362b1e404ee9b259279 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_aed27e9becee47a39a11d34639e84e73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25d1f7772a024ec89acc7042953c1c5a = $(`<div id="html_25d1f7772a024ec89acc7042953c1c5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_aed27e9becee47a39a11d34639e84e73.setContent(html_25d1f7772a024ec89acc7042953c1c5a);
+        
+
+        marker_cb6690009c4c4362b1e404ee9b259279.bindPopup(popup_aed27e9becee47a39a11d34639e84e73)
+        ;
+
+        
+    
+    
+            var marker_18645114675b470abced9125bbc36266 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_cf054cd76bdb4d1ab07567cf1504b6e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e2e32b27e924753976daca7d4d289ef = $(`<div id="html_1e2e32b27e924753976daca7d4d289ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_cf054cd76bdb4d1ab07567cf1504b6e7.setContent(html_1e2e32b27e924753976daca7d4d289ef);
+        
+
+        marker_18645114675b470abced9125bbc36266.bindPopup(popup_cf054cd76bdb4d1ab07567cf1504b6e7)
+        ;
+
+        
+    
+    
+            var marker_26199a70bdad46e19587ad81dc026965 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_0fe509cd8a0b4506b1c1a223209eb2b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58cce37862d0428d8239735a306f7e88 = $(`<div id="html_58cce37862d0428d8239735a306f7e88" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-11-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Alexánder Francisco Rodríguez González ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_0fe509cd8a0b4506b1c1a223209eb2b4.setContent(html_58cce37862d0428d8239735a306f7e88);
+        
+
+        marker_26199a70bdad46e19587ad81dc026965.bindPopup(popup_0fe509cd8a0b4506b1c1a223209eb2b4)
+        ;
+
+        
+    
+    
+            var marker_dd98eea4c5d44efd90d7ca5f40efbb7c = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_11ed0475bc914a4986812bca9d56f5db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c04989b50fbf47a3b30d3a6a6248c9ad = $(`<div id="html_c04989b50fbf47a3b30d3a6a6248c9ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_11ed0475bc914a4986812bca9d56f5db.setContent(html_c04989b50fbf47a3b30d3a6a6248c9ad);
+        
+
+        marker_dd98eea4c5d44efd90d7ca5f40efbb7c.bindPopup(popup_11ed0475bc914a4986812bca9d56f5db)
+        ;
+
+        
+    
+    
+            var marker_f0279fc824d04e319ca86542773f3bd6 = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_77b1c439727e4909a1f00284fc4403e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2b6faee846549238b4dd22f75c9f0cc = $(`<div id="html_b2b6faee846549238b4dd22f75c9f0cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_77b1c439727e4909a1f00284fc4403e4.setContent(html_b2b6faee846549238b4dd22f75c9f0cc);
+        
+
+        marker_f0279fc824d04e319ca86542773f3bd6.bindPopup(popup_77b1c439727e4909a1f00284fc4403e4)
+        ;
+
+        
+    
+    
+            var marker_d1cecace91ce40b68b532b08657c3827 = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_0af34ee6060547aab12c6f18ccd8323f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2fae87535ae49fe8974d3f823926821 = $(`<div id="html_c2fae87535ae49fe8974d3f823926821" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_0af34ee6060547aab12c6f18ccd8323f.setContent(html_c2fae87535ae49fe8974d3f823926821);
+        
+
+        marker_d1cecace91ce40b68b532b08657c3827.bindPopup(popup_0af34ee6060547aab12c6f18ccd8323f)
+        ;
+
+        
+    
+    
+            var marker_cb0161793a264035acf21a1a3fbbd9e7 = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_91008b607b654140b6f2b1b188438420 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2a30ba788834697a1bb7e5ddcd11d3c = $(`<div id="html_a2a30ba788834697a1bb7e5ddcd11d3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_91008b607b654140b6f2b1b188438420.setContent(html_a2a30ba788834697a1bb7e5ddcd11d3c);
+        
+
+        marker_cb0161793a264035acf21a1a3fbbd9e7.bindPopup(popup_91008b607b654140b6f2b1b188438420)
+        ;
+
+        
+    
+    
+            var marker_18d8502d0c4c48209d2cd66179740886 = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_e15ff40418b84df0b4e53e1f88f46491 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2b4a678bdea43a0bb95cf9eb2ca1634 = $(`<div id="html_e2b4a678bdea43a0bb95cf9eb2ca1634" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_e15ff40418b84df0b4e53e1f88f46491.setContent(html_e2b4a678bdea43a0bb95cf9eb2ca1634);
+        
+
+        marker_18d8502d0c4c48209d2cd66179740886.bindPopup(popup_e15ff40418b84df0b4e53e1f88f46491)
+        ;
+
+        
+    
+    
+            var marker_ebe8c84c092b45d79056e9bd848a94a6 = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_ca66ce4504c2417ba0a965203f6ded7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cee261b2f2734d098c3d50c363a2dd69 = $(`<div id="html_cee261b2f2734d098c3d50c363a2dd69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_ca66ce4504c2417ba0a965203f6ded7e.setContent(html_cee261b2f2734d098c3d50c363a2dd69);
+        
+
+        marker_ebe8c84c092b45d79056e9bd848a94a6.bindPopup(popup_ca66ce4504c2417ba0a965203f6ded7e)
+        ;
+
+        
+    
+    
+            var marker_87dd4a7efb9d49bfa2fa528954e3cecb = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_2ed7a071605f4321bc3c9a7091bedb64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db5a2c8568da46908a4bc03e7d2feeb6 = $(`<div id="html_db5a2c8568da46908a4bc03e7d2feeb6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_2ed7a071605f4321bc3c9a7091bedb64.setContent(html_db5a2c8568da46908a4bc03e7d2feeb6);
+        
+
+        marker_87dd4a7efb9d49bfa2fa528954e3cecb.bindPopup(popup_2ed7a071605f4321bc3c9a7091bedb64)
+        ;
+
+        
+    
+    
+            var marker_2e49e216a4584b298221a460d2935c42 = L.marker(
+                [10.204167, -83.905556],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_9ca218e96ae943a69400be8569014e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59ac0e78d1824cfb9ccc3b94672d804e = $(`<div id="html_59ac0e78d1824cfb9ccc3b94672d804e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Corinto donde cruce la carretera a Guapiles. Bosque a lo largo del Rio. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1996-08-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Thomas Bernard Croat <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_9ca218e96ae943a69400be8569014e16.setContent(html_59ac0e78d1824cfb9ccc3b94672d804e);
+        
+
+        marker_2e49e216a4584b298221a460d2935c42.bindPopup(popup_9ca218e96ae943a69400be8569014e16)
+        ;
+
+        
+    
+    
+            var marker_643d15b7a56740828809bade6753914f = L.marker(
+                [10.28, -83.78],
+                {}
+            ).addTo(marker_cluster_435d4b17918e4938a348d7ba6dc5710f);
+        
+    
+        var popup_bd1a3071e9d741a1b858b4818fccfff5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2e43867d0824a8884b207bf9bef86e7 = $(`<div id="html_a2e43867d0824a8884b207bf9bef86e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El sota, La Rita. <strong>Elevación:</strong> 35.0 m  <strong>Fecha:</strong> 2000-08-10 00:00:00+00:00 <strong>Recolectores:</strong> Ling, Francisco <strong>Identificadores:</strong> Cascante, Alfredo</div>`)[0];
+            popup_bd1a3071e9d741a1b858b4818fccfff5.setContent(html_a2e43867d0824a8884b207bf9bef86e7);
+        
+
+        marker_643d15b7a56740828809bade6753914f.bindPopup(popup_bd1a3071e9d741a1b858b4818fccfff5)
+        ;
+
+        
+    
+    
+            var layer_control_47a377990a9a4be3adf1238f37f5942d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_929b596eb95b491a9fdc599b410f7a51,
+                    "ESRI World Imagery" : tile_layer_d0bf295381dc48df9fb217abb946fa7d,
+                },
+                overlays :  {
+                    "macro_element_435d4b17918e4938a348d7ba6dc5710f" : marker_cluster_435d4b17918e4938a348d7ba6dc5710f,
+                },
+            };
+            L.control.layers(
+                layer_control_47a377990a9a4be3adf1238f37f5942d.base_layers,
+                layer_control_47a377990a9a4be3adf1238f37f5942d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c7dc9a9e9f65420688cd7b8b6eb0d57f);
+            tile_layer_d0bf295381dc48df9fb217abb946fa7d.remove();
+        
+</script>

@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d4a1b4b8d69f404885551da28a211269 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d4a1b4b8d69f404885551da28a211269" ></div>
+        
+</body>
+<script>    
+    
+            var map_d4a1b4b8d69f404885551da28a211269 = L.map(
+                "map_d4a1b4b8d69f404885551da28a211269",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d4a1b4b8d69f404885551da28a211269);
+
+            
+
+        
+    
+            var tile_layer_96c8253305294d10996e2d47f0b8c561 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d4a1b4b8d69f404885551da28a211269);
+        
+    
+            var tile_layer_5426b8ff82a3470bbc5f1d2241a41748 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d4a1b4b8d69f404885551da28a211269);
+        
+    
+            var marker_cluster_dda7056334bb4290b2be41a8c5aaf4de = L.markerClusterGroup(
+                {}
+            );
+            map_d4a1b4b8d69f404885551da28a211269.addLayer(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+            var marker_ffc7acf7181c48da8fb859344cd649ee = L.marker(
+                [8.02, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_4e8570ffb4684655b165a501f55de9f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf1b0d5d335c4d1d864736e3b3b01c24 = $(`<div id="html_cf1b0d5d335c4d1d864736e3b3b01c24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional del Darién; Estacion Rancho Frío at N base of Cerro Pierre; ca. 9 km S of El Real; in forest along Quebrada Perisenico <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 1987-10-08 00:00:00+00:00 <strong>Recolectores:</strong> G. C. de Nevers <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4e8570ffb4684655b165a501f55de9f1.setContent(html_cf1b0d5d335c4d1d864736e3b3b01c24);
+        
+
+        marker_ffc7acf7181c48da8fb859344cd649ee.bindPopup(popup_4e8570ffb4684655b165a501f55de9f1)
+        ;
+
+        
+    
+    
+            var marker_c1fa693442b84daaa9ff4332efb54359 = L.marker(
+                [8.0, -77.8],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_3281941049a3486eb94b873dbe4e1fee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48115ee3b2bf4e4ca1e1b76a5a9afe4a = $(`<div id="html_48115ee3b2bf4e4ca1e1b76a5a9afe4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of base camp of W side of Cerro Pierre, Cerro Pierre National Park <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-06-30 00:00:00+00:00 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3281941049a3486eb94b873dbe4e1fee.setContent(html_48115ee3b2bf4e4ca1e1b76a5a9afe4a);
+        
+
+        marker_c1fa693442b84daaa9ff4332efb54359.bindPopup(popup_3281941049a3486eb94b873dbe4e1fee)
+        ;
+
+        
+    
+    
+            var marker_95d2714261c94e85acb9ed7095cbfedd = L.marker(
+                [7.611055, -76.950968],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_fe6fc1e852244419b2c2041ca2860d04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3546ef1d6c254123bb3e4632f8b50cb0 = $(`<div id="html_3546ef1d6c254123bb3e4632f8b50cb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sin Datos. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1985-02-04 00:00:00+00:00 <strong>Recolectores:</strong> E. Rentería A. <strong>Identificadores:</strong> G. Galeano</div>`)[0];
+            popup_fe6fc1e852244419b2c2041ca2860d04.setContent(html_3546ef1d6c254123bb3e4632f8b50cb0);
+        
+
+        marker_95d2714261c94e85acb9ed7095cbfedd.bindPopup(popup_fe6fc1e852244419b2c2041ca2860d04)
+        ;
+
+        
+    
+    
+            var marker_2a8804a6a49744c89f6a52f365d50151 = L.marker(
+                [7.590446000000001, -76.81518299999999],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_f80ba4938ba245eebe458692af42b0be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f0747b493c14915aad386701883b45c = $(`<div id="html_5f0747b493c14915aad386701883b45c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera Panamericana, Tapón del Darién, sector Río León - Lomas Aisladas, kilómetro 23 (14 kilómetros después de Barranquillita). <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1981-09-21 00:00:00+00:00 <strong>Recolectores:</strong> Jorge Brand <strong>Identificadores:</strong> G. Galeano</div>`)[0];
+            popup_f80ba4938ba245eebe458692af42b0be.setContent(html_5f0747b493c14915aad386701883b45c);
+        
+
+        marker_2a8804a6a49744c89f6a52f365d50151.bindPopup(popup_f80ba4938ba245eebe458692af42b0be)
+        ;
+
+        
+    
+    
+            var marker_80109158c7a942f49c818116c2b4d876 = L.marker(
+                [7.635244, -76.95222],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_cf73db8a52fd47bfbadc49884127bda0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e06836f6bebe4013b285b9d284802479 = $(`<div id="html_e06836f6bebe4013b285b9d284802479" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera Panamericana, Tapón del Darién, sector Río León - Lomas Aisladas, kilómetro 37. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1984-02-26 00:00:00+00:00 <strong>Recolectores:</strong> Jorge Brand <strong>Identificadores:</strong> G. Galeano</div>`)[0];
+            popup_cf73db8a52fd47bfbadc49884127bda0.setContent(html_e06836f6bebe4013b285b9d284802479);
+        
+
+        marker_80109158c7a942f49c818116c2b4d876.bindPopup(popup_cf73db8a52fd47bfbadc49884127bda0)
+        ;
+
+        
+    
+    
+            var marker_312b196734cf4ecc93957d35eddcd904 = L.marker(
+                [7.626219, -76.93348],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_a294736786fb4b4facd9a51f03f4df0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_050d80dddb9d4ff190cc47195d3d88a5 = $(`<div id="html_050d80dddb9d4ff190cc47195d3d88a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera Panamericana, Tapón del Darién, 1 kilómetro antes de Lomas Aisladas. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1982-12-10 00:00:00+00:00 <strong>Recolectores:</strong> R. Bernal <strong>Identificadores:</strong> R. Bernal</div>`)[0];
+            popup_a294736786fb4b4facd9a51f03f4df0f.setContent(html_050d80dddb9d4ff190cc47195d3d88a5);
+        
+
+        marker_312b196734cf4ecc93957d35eddcd904.bindPopup(popup_a294736786fb4b4facd9a51f03f4df0f)
+        ;
+
+        
+    
+    
+            var marker_0ab5d8553bd946fd95dfbc8f891afbe0 = L.marker(
+                [7.590446000000001, -76.81518299999999],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_a063362510ec4ff684c66bfd33b6bd83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_521231c7504e4d2ea33d76a843f3176b = $(`<div id="html_521231c7504e4d2ea33d76a843f3176b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera Panamericana, Tapón del Darién, sector Río León - Lomas Aisladas, kilómetro 23 (14 kilómetros después de Barranquillita). <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1981-09-21 00:00:00+00:00 <strong>Recolectores:</strong> Jorge Brand <strong>Identificadores:</strong> G. Galeano</div>`)[0];
+            popup_a063362510ec4ff684c66bfd33b6bd83.setContent(html_521231c7504e4d2ea33d76a843f3176b);
+        
+
+        marker_0ab5d8553bd946fd95dfbc8f891afbe0.bindPopup(popup_a063362510ec4ff684c66bfd33b6bd83)
+        ;
+
+        
+    
+    
+            var marker_174703e2c9024f47bb3a69d080db8b78 = L.marker(
+                [7.626219, -76.93348],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_a4e3b041b2fa46898fe749b78dcd4ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de00117e29d845d1bdfb74789fa972c4 = $(`<div id="html_de00117e29d845d1bdfb74789fa972c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera Panamericana, Tapón del Darién, 1 kilómetro antes de Lomas Aisladas. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1982-12-10 00:00:00+00:00 <strong>Recolectores:</strong> R. Bernal <strong>Identificadores:</strong> R. Bernal</div>`)[0];
+            popup_a4e3b041b2fa46898fe749b78dcd4ae6.setContent(html_de00117e29d845d1bdfb74789fa972c4);
+        
+
+        marker_174703e2c9024f47bb3a69d080db8b78.bindPopup(popup_a4e3b041b2fa46898fe749b78dcd4ae6)
+        ;
+
+        
+    
+    
+            var marker_4fc18543a26d4b07ae3280ad9d8deda7 = L.marker(
+                [7.58683, -76.63407],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_2404bf89ff204492892eeecb604d8ce4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0c0cce3b0374fce9496824b38622464 = $(`<div id="html_e0c0cce3b0374fce9496824b38622464" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Villa Arteaga y Chigorodó, El Tigre. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1961-10-01 00:00:00+00:00 <strong>Recolectores:</strong> José Cuatrecasas <strong>Identificadores:</strong> José Cuatrecasas</div>`)[0];
+            popup_2404bf89ff204492892eeecb604d8ce4.setContent(html_e0c0cce3b0374fce9496824b38622464);
+        
+
+        marker_4fc18543a26d4b07ae3280ad9d8deda7.bindPopup(popup_2404bf89ff204492892eeecb604d8ce4)
+        ;
+
+        
+    
+    
+            var marker_cf0421614983428194791b68cface14f = L.marker(
+                [6.135555999999999, -75.34083299999999],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_6418bb366e4a4fcca32abda88529f190 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15faf60f859b48a0bf0f455e3cdd8157 = $(`<div id="html_15faf60f859b48a0bf0f455e3cdd8157" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Jardín Botánico Joaquin Antonio Uribe <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2011-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Cogollo <strong>Identificadores:</strong> Cogollo, A.</div>`)[0];
+            popup_6418bb366e4a4fcca32abda88529f190.setContent(html_15faf60f859b48a0bf0f455e3cdd8157);
+        
+
+        marker_cf0421614983428194791b68cface14f.bindPopup(popup_6418bb366e4a4fcca32abda88529f190)
+        ;
+
+        
+    
+    
+            var marker_a6d98304caa24c02ac5111e43e952903 = L.marker(
+                [7.60635, -76.8545],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_172f1c86ed9440a880a9e395a480048a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5397f734dd2e447bb4ae9138bf719611 = $(`<div id="html_5397f734dd2e447bb4ae9138bf719611" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> carretera Tapon del Darien, sector rio Leon-lomas aisladas. Km 37. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1984-02-26 00:00:00+00:00 <strong>Recolectores:</strong> Brand, J. <strong>Identificadores:</strong> Galeano, G.</div>`)[0];
+            popup_172f1c86ed9440a880a9e395a480048a.setContent(html_5397f734dd2e447bb4ae9138bf719611);
+        
+
+        marker_a6d98304caa24c02ac5111e43e952903.bindPopup(popup_172f1c86ed9440a880a9e395a480048a)
+        ;
+
+        
+    
+    
+            var marker_974d294949944f5ca189a255af993bc8 = L.marker(
+                [7.65333, -76.9603],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_bed8b8cbfc9d4b6da0f786fa7bf68d0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f20760a018e749a7a2b224a2be69f060 = $(`<div id="html_f20760a018e749a7a2b224a2be69f060" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de Turbo (Ant), corregimiento de Lomas Aisladas. 50 m.s.n.m. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1985-02-04 00:00:00+00:00 <strong>Recolectores:</strong> Rentería A., E. <strong>Identificadores:</strong> Galeano, G.</div>`)[0];
+            popup_bed8b8cbfc9d4b6da0f786fa7bf68d0d.setContent(html_f20760a018e749a7a2b224a2be69f060);
+        
+
+        marker_974d294949944f5ca189a255af993bc8.bindPopup(popup_bed8b8cbfc9d4b6da0f786fa7bf68d0d)
+        ;
+
+        
+    
+    
+            var marker_c64a412225a34d6685d039cd88914704 = L.marker(
+                [7.5978699999999995, -76.8278],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_086769e754604227aea56e772cbedb19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84ee131563244ed4a751ef88387213c5 = $(`<div id="html_84ee131563244ed4a751ef88387213c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> carretera Tapon del Darien,sector Rio leon-lomas aisladas. km 23 (14kms despues de Barranquillita). <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1981-09-21 00:00:00+00:00 <strong>Recolectores:</strong> Brand, J. <strong>Identificadores:</strong> Galeano, G.</div>`)[0];
+            popup_086769e754604227aea56e772cbedb19.setContent(html_84ee131563244ed4a751ef88387213c5);
+        
+
+        marker_c64a412225a34d6685d039cd88914704.bindPopup(popup_086769e754604227aea56e772cbedb19)
+        ;
+
+        
+    
+    
+            var marker_9660b88ec0b84ed2964167841bca9b45 = L.marker(
+                [7.5978699999999995, -76.8278],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_6754a2e219c443fdaba94cb844b1ff1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45b21f7dd7544ceab6375594d50fc496 = $(`<div id="html_45b21f7dd7544ceab6375594d50fc496" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> carretera Tapon del Darien, sector Rio Leon-Lomas aisladas. Km 23 (14kms despues de Barranquillita). <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1981-09-21 00:00:00+00:00 <strong>Recolectores:</strong> Brand, J. <strong>Identificadores:</strong> Galeano, G.</div>`)[0];
+            popup_6754a2e219c443fdaba94cb844b1ff1b.setContent(html_45b21f7dd7544ceab6375594d50fc496);
+        
+
+        marker_9660b88ec0b84ed2964167841bca9b45.bindPopup(popup_6754a2e219c443fdaba94cb844b1ff1b)
+        ;
+
+        
+    
+    
+            var marker_5b909f4483f84448b523949800a08bff = L.marker(
+                [7.58683, -76.6341],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_48e599dd31c24bbe9cd211a500afdf19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9b9a2b688b4e6cb0c8d3969256984b = $(`<div id="html_6c9b9a2b688b4e6cb0c8d3969256984b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Tigre,entre Villa Arteaga y Chigorodo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1961-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Cuatrecasas, J. <strong>Identificadores:</strong> Cuatrecasas, J.</div>`)[0];
+            popup_48e599dd31c24bbe9cd211a500afdf19.setContent(html_6c9b9a2b688b4e6cb0c8d3969256984b);
+        
+
+        marker_5b909f4483f84448b523949800a08bff.bindPopup(popup_48e599dd31c24bbe9cd211a500afdf19)
+        ;
+
+        
+    
+    
+            var marker_ba36316f32734deb97259c7e60b05a98 = L.marker(
+                [7.63329, -76.9123],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_6c45ba4126ad47c08c6074cd970b1343 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea2cf2af5164f0095235ac73898ef7c = $(`<div id="html_bea2cf2af5164f0095235ac73898ef7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> carretera panamericana, 1 km antes de lomas aisladas. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1982-12-10 00:00:00+00:00 <strong>Recolectores:</strong> Bernal, R. <strong>Identificadores:</strong> Bernal, R.</div>`)[0];
+            popup_6c45ba4126ad47c08c6074cd970b1343.setContent(html_bea2cf2af5164f0095235ac73898ef7c);
+        
+
+        marker_ba36316f32734deb97259c7e60b05a98.bindPopup(popup_6c45ba4126ad47c08c6074cd970b1343)
+        ;
+
+        
+    
+    
+            var marker_91bc658cb1384e5c92038a172258d957 = L.marker(
+                [7.63329, -76.9123],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_cb7a79982ea342f6ab244a7c723ed6a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fc44f0f00d24f76ab53cdd67251a133 = $(`<div id="html_2fc44f0f00d24f76ab53cdd67251a133" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> carretera panamericana, 1 km antes de lomas aisladas. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1982-12-10 00:00:00+00:00 <strong>Recolectores:</strong> Bernal, R. <strong>Identificadores:</strong> Bernal, R.</div>`)[0];
+            popup_cb7a79982ea342f6ab244a7c723ed6a4.setContent(html_2fc44f0f00d24f76ab53cdd67251a133);
+        
+
+        marker_91bc658cb1384e5c92038a172258d957.bindPopup(popup_cb7a79982ea342f6ab244a7c723ed6a4)
+        ;
+
+        
+    
+    
+            var marker_9b4b6544113741d7b80170f06e46ac34 = L.marker(
+                [6.13551, -75.340575],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_b4fa230434cd4ad5bbcf7dea44fcd473 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_735f60a765cb44a98c41d02cb55cdc92 = $(`<div id="html_735f60a765cb44a98c41d02cb55cdc92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Jardín Botánico Joaquin Antonio Uribe <strong>Elevación:</strong> 1468.0 m  <strong>Fecha:</strong> 2011-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Cogollo A. <strong>Identificadores:</strong> Cogollo A.</div>`)[0];
+            popup_b4fa230434cd4ad5bbcf7dea44fcd473.setContent(html_735f60a765cb44a98c41d02cb55cdc92);
+        
+
+        marker_9b4b6544113741d7b80170f06e46ac34.bindPopup(popup_b4fa230434cd4ad5bbcf7dea44fcd473)
+        ;
+
+        
+    
+    
+            var marker_b4a81ddd9b60497b8e6ee5dc7616e89b = L.marker(
+                [13.58, -84.32],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_984205d47c784ba98ff66010ca7213b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f85c36f6390d4cbeb473cd15c217fffe = $(`<div id="html_f85c36f6390d4cbeb473cd15c217fffe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1977-08-17 00:00:00+00:00 <strong>Recolectores:</strong> Avinoam Danin <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_984205d47c784ba98ff66010ca7213b2.setContent(html_f85c36f6390d4cbeb473cd15c217fffe);
+        
+
+        marker_b4a81ddd9b60497b8e6ee5dc7616e89b.bindPopup(popup_984205d47c784ba98ff66010ca7213b2)
+        ;
+
+        
+    
+    
+            var marker_03fd34a1b31149169c12b1507fe6901e = L.marker(
+                [14.4, -85.15],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_79e452d6d7cd4b95a541265564b15f91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_646bd5d0afa04d07b6a6325956f88a30 = $(`<div id="html_646bd5d0afa04d07b6a6325956f88a30" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 2007-06-06 00:00:00+00:00 <strong>Recolectores:</strong> I. Coronado G.|A. Fernández <strong>Identificadores:</strong> W.D. Stevens</div>`)[0];
+            popup_79e452d6d7cd4b95a541265564b15f91.setContent(html_646bd5d0afa04d07b6a6325956f88a30);
+        
+
+        marker_03fd34a1b31149169c12b1507fe6901e.bindPopup(popup_79e452d6d7cd4b95a541265564b15f91)
+        ;
+
+        
+    
+    
+            var marker_567ccde5d70d44fea23a01a50d876656 = L.marker(
+                [8.02, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_6b99ca933e69407a8395ec6ca73a50a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a87de0d08044654a287f17d45f0cf01 = $(`<div id="html_8a87de0d08044654a287f17d45f0cf01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 110.0 m  <strong>Fecha:</strong> 1994-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat|Guang Hua Zhu <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_6b99ca933e69407a8395ec6ca73a50a5.setContent(html_8a87de0d08044654a287f17d45f0cf01);
+        
+
+        marker_567ccde5d70d44fea23a01a50d876656.bindPopup(popup_6b99ca933e69407a8395ec6ca73a50a5)
+        ;
+
+        
+    
+    
+            var marker_e85dd3559fb04f7087a7d64c60073d6e = L.marker(
+                [11.53, -84.43],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_28263d72c7b14c63985b3b052b79745e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b09cd21ad35944fdb76067946c42ecea = $(`<div id="html_b09cd21ad35944fdb76067946c42ecea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1951-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Paul J. Shank|Antonio Molina R. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_28263d72c7b14c63985b3b052b79745e.setContent(html_b09cd21ad35944fdb76067946c42ecea);
+        
+
+        marker_e85dd3559fb04f7087a7d64c60073d6e.bindPopup(popup_28263d72c7b14c63985b3b052b79745e)
+        ;
+
+        
+    
+    
+            var marker_864798ecf85649c0b8d8438897bad7c5 = L.marker(
+                [10.36, -84.47],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_c7f398941ad646f5ae69dedf78e9a19b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af083f7bc4284d17824e6c3a9e17529b = $(`<div id="html_af083f7bc4284d17824e6c3a9e17529b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1985-06-27 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|Barry E. Hammel <strong>Identificadores:</strong> G. de Nevers</div>`)[0];
+            popup_c7f398941ad646f5ae69dedf78e9a19b.setContent(html_af083f7bc4284d17824e6c3a9e17529b);
+        
+
+        marker_864798ecf85649c0b8d8438897bad7c5.bindPopup(popup_c7f398941ad646f5ae69dedf78e9a19b)
+        ;
+
+        
+    
+    
+            var marker_8d7916777b2d4494a3b6b4cdd5a78b0a = L.marker(
+                [8.0, -77.8],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_2e41014b4c9347c6ae8013a58580981c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10056fc094c146bc860797a302ef3338 = $(`<div id="html_10056fc094c146bc860797a302ef3338" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-06-30 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_2e41014b4c9347c6ae8013a58580981c.setContent(html_10056fc094c146bc860797a302ef3338);
+        
+
+        marker_8d7916777b2d4494a3b6b4cdd5a78b0a.bindPopup(popup_2e41014b4c9347c6ae8013a58580981c)
+        ;
+
+        
+    
+    
+            var marker_8bc71d4cb5824df1a7680c5053f8c6d0 = L.marker(
+                [11.67, -84.45],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_b2fe6c29c69d4cc5be31d97c5fff2047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6143f8ec7d35442abc2f87777ccf56ab = $(`<div id="html_6143f8ec7d35442abc2f87777ccf56ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 240.0 m  <strong>Fecha:</strong> 1983-08-17 00:00:00+00:00 <strong>Recolectores:</strong> James S. Miller|J.C. Sandino <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_b2fe6c29c69d4cc5be31d97c5fff2047.setContent(html_6143f8ec7d35442abc2f87777ccf56ab);
+        
+
+        marker_8bc71d4cb5824df1a7680c5053f8c6d0.bindPopup(popup_b2fe6c29c69d4cc5be31d97c5fff2047)
+        ;
+
+        
+    
+    
+            var marker_64388e39403941fe812d7688eba8a2b2 = L.marker(
+                [8.02, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_85ba1bd3d6a84cef87de918e7985bcd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae3047f36bca4b6f9363a42b94951102 = $(`<div id="html_ae3047f36bca4b6f9363a42b94951102" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 1987-10-08 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Barry E. Hammel|Heraclio Herrera <strong>Identificadores:</strong> G. de Nevers, 1989 (CAS)</div>`)[0];
+            popup_85ba1bd3d6a84cef87de918e7985bcd2.setContent(html_ae3047f36bca4b6f9363a42b94951102);
+        
+
+        marker_64388e39403941fe812d7688eba8a2b2.bindPopup(popup_85ba1bd3d6a84cef87de918e7985bcd2)
+        ;
+
+        
+    
+    
+            var marker_66d4ca7d52334bc483f3e5ff317cfb9d = L.marker(
+                [8.92, -78.52],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_bc74c5590c124f88b12bc78a9dae851e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bdd8cb94caa45e19c47a1a0c3395203 = $(`<div id="html_4bdd8cb94caa45e19c47a1a0c3395203" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1984-01-28 00:00:00+00:00 <strong>Recolectores:</strong> H. W. Churchill|Greg C. de Nevers <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_bc74c5590c124f88b12bc78a9dae851e.setContent(html_4bdd8cb94caa45e19c47a1a0c3395203);
+        
+
+        marker_66d4ca7d52334bc483f3e5ff317cfb9d.bindPopup(popup_bc74c5590c124f88b12bc78a9dae851e)
+        ;
+
+        
+    
+    
+            var marker_01b207198aa7463ba76d3515815e39f2 = L.marker(
+                [14.41, -85.19],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_58ce5aa7ca6a4f96bc030e7be6cf2827 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d53c8cc82654d539053a7c181b79b6c = $(`<div id="html_8d53c8cc82654d539053a7c181b79b6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 185.0 m  <strong>Fecha:</strong> 2005-04-16 00:00:00+00:00 <strong>Recolectores:</strong> I. Coronado G.|M. Barrios|F. Rojas|G. Pérez <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_58ce5aa7ca6a4f96bc030e7be6cf2827.setContent(html_8d53c8cc82654d539053a7c181b79b6c);
+        
+
+        marker_01b207198aa7463ba76d3515815e39f2.bindPopup(popup_58ce5aa7ca6a4f96bc030e7be6cf2827)
+        ;
+
+        
+    
+    
+            var marker_612b24bb2581411488534a6f52f44298 = L.marker(
+                [10.5, -84.45],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_5b0c176498bd47da94de90662f7fa5f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e70490f612b4513bfd9b77d4ffa903c = $(`<div id="html_6e70490f612b4513bfd9b77d4ffa903c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1986-06-03 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Greg C. de Nevers <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_5b0c176498bd47da94de90662f7fa5f9.setContent(html_6e70490f612b4513bfd9b77d4ffa903c);
+        
+
+        marker_612b24bb2581411488534a6f52f44298.bindPopup(popup_5b0c176498bd47da94de90662f7fa5f9)
+        ;
+
+        
+    
+    
+            var marker_be060d5385b646f68da30f587dc85b21 = L.marker(
+                [14.41, -85.19],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_978848c99eec4dbdad13a14e2b8f02ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a964a701be44da69ce1c90b45d0d56e = $(`<div id="html_3a964a701be44da69ce1c90b45d0d56e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 185.0 m  <strong>Fecha:</strong> 2005-04-16 00:00:00+00:00 <strong>Recolectores:</strong> I. Coronado G.|M. Barrios|F. Rojas|G. Pérez <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_978848c99eec4dbdad13a14e2b8f02ac.setContent(html_3a964a701be44da69ce1c90b45d0d56e);
+        
+
+        marker_be060d5385b646f68da30f587dc85b21.bindPopup(popup_978848c99eec4dbdad13a14e2b8f02ac)
+        ;
+
+        
+    
+    
+            var marker_54400ccce8c94428ad411204cae519ae = L.marker(
+                [14.32, -85.12],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_68b1be9f9051418c97a663f2caf83b48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7288d000c9b4612b2375911cf669c11 = $(`<div id="html_a7288d000c9b4612b2375911cf669c11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 162.0 m  <strong>Fecha:</strong> 2005-04-04 00:00:00+00:00 <strong>Recolectores:</strong> I. Coronado G.|M. Barrios|F. Rojas <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_68b1be9f9051418c97a663f2caf83b48.setContent(html_a7288d000c9b4612b2375911cf669c11);
+        
+
+        marker_54400ccce8c94428ad411204cae519ae.bindPopup(popup_68b1be9f9051418c97a663f2caf83b48)
+        ;
+
+        
+    
+    
+            var marker_61b64e13369145298e8c769633396a03 = L.marker(
+                [14.32, -85.1],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_5105c3257a1243aeb5ad9c5c90d33fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_870c7b9536f544e3a0c02b79a9a3defb = $(`<div id="html_870c7b9536f544e3a0c02b79a9a3defb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 162.0 m  <strong>Fecha:</strong> 2005-04-03 00:00:00+00:00 <strong>Recolectores:</strong> I. Coronado G.|M. Barrios|F. Rojas <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_5105c3257a1243aeb5ad9c5c90d33fa3.setContent(html_870c7b9536f544e3a0c02b79a9a3defb);
+        
+
+        marker_61b64e13369145298e8c769633396a03.bindPopup(popup_5105c3257a1243aeb5ad9c5c90d33fa3)
+        ;
+
+        
+    
+    
+            var marker_0fb00c2877374384b7d156839e2c5ddb = L.marker(
+                [14.25, -85.17],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_4bc3ebbbc9134b189065be164900f316 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e01f5d5c27304f1cbd924dd118eb3b47 = $(`<div id="html_e01f5d5c27304f1cbd924dd118eb3b47" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2005-02-04 00:00:00+00:00 <strong>Recolectores:</strong> I. Coronado G.|M. Barrios|F. Rojas|G. Pérez <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_4bc3ebbbc9134b189065be164900f316.setContent(html_e01f5d5c27304f1cbd924dd118eb3b47);
+        
+
+        marker_0fb00c2877374384b7d156839e2c5ddb.bindPopup(popup_4bc3ebbbc9134b189065be164900f316)
+        ;
+
+        
+    
+    
+            var marker_5aa8a0fba1784c9d86676865765b38ab = L.marker(
+                [9.32, -78.92],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_f3658990ae3940d5911b18c24aaf5dbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7496164036a4f64bc5d1e7871226b4b = $(`<div id="html_e7496164036a4f64bc5d1e7871226b4b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1985-01-02 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Heraclio Herrera <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_f3658990ae3940d5911b18c24aaf5dbf.setContent(html_e7496164036a4f64bc5d1e7871226b4b);
+        
+
+        marker_5aa8a0fba1784c9d86676865765b38ab.bindPopup(popup_f3658990ae3940d5911b18c24aaf5dbf)
+        ;
+
+        
+    
+    
+            var marker_c35a7fde2a6a4352b785f22dadf4a3e0 = L.marker(
+                [7.7, -78.12],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_07240f71185d40cd9afa20cb899725e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef410d3662564872b846fc592aef3fce = $(`<div id="html_ef410d3662564872b846fc592aef3fce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 426.72 m  <strong>Fecha:</strong> 1981-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma|William G. D'Arcy <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_07240f71185d40cd9afa20cb899725e0.setContent(html_ef410d3662564872b846fc592aef3fce);
+        
+
+        marker_c35a7fde2a6a4352b785f22dadf4a3e0.bindPopup(popup_07240f71185d40cd9afa20cb899725e0)
+        ;
+
+        
+    
+    
+            var marker_241f8cf27d4747c189f2bcc4d4e89923 = L.marker(
+                [8.0, -77.7],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_a378b697e51641f7abd172264855ecf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47882c975e7944fbb5404e55c5a241c7 = $(`<div id="html_47882c975e7944fbb5404e55c5a241c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1975-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_a378b697e51641f7abd172264855ecf2.setContent(html_47882c975e7944fbb5404e55c5a241c7);
+        
+
+        marker_241f8cf27d4747c189f2bcc4d4e89923.bindPopup(popup_a378b697e51641f7abd172264855ecf2)
+        ;
+
+        
+    
+    
+            var marker_efbcb491cf294686a66dade213bad3cd = L.marker(
+                [7.97, -78.37],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_229b9c3cb38d44cfa473132370f40f5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b28da496497a4f9abe104bda1b23a452 = $(`<div id="html_b28da496497a4f9abe104bda1b23a452" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 762.0 m  <strong>Fecha:</strong> 1978-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_229b9c3cb38d44cfa473132370f40f5c.setContent(html_b28da496497a4f9abe104bda1b23a452);
+        
+
+        marker_efbcb491cf294686a66dade213bad3cd.bindPopup(popup_229b9c3cb38d44cfa473132370f40f5c)
+        ;
+
+        
+    
+    
+            var marker_28b09e2200064179921803295b5e1b9c = L.marker(
+                [7.42, -78.07],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_123f0aaba73b4049bfc10ed59251780a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71b07cfd8c014099a3868187c3165c97 = $(`<div id="html_71b07cfd8c014099a3868187c3165c97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1980-04-24 00:00:00+00:00 <strong>Recolectores:</strong> Thomas M. Antonio|William J. Hahn <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_123f0aaba73b4049bfc10ed59251780a.setContent(html_71b07cfd8c014099a3868187c3165c97);
+        
+
+        marker_28b09e2200064179921803295b5e1b9c.bindPopup(popup_123f0aaba73b4049bfc10ed59251780a)
+        ;
+
+        
+    
+    
+            var marker_a4069dca01e447a782357212e227240a = L.marker(
+                [7.98, -77.7],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_72e1b80858c14c0db5aafb4508de3708 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04c8f21760504d98a4b3e788db6fa9c6 = $(`<div id="html_04c8f21760504d98a4b3e788db6fa9c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 310.0 m  <strong>Fecha:</strong> 1986-08-06 00:00:00+00:00 <strong>Recolectores:</strong> J. F. McDonagh|Beverley A. Lewis|N. J. Gumpel|A. J. Plumptre <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_72e1b80858c14c0db5aafb4508de3708.setContent(html_04c8f21760504d98a4b3e788db6fa9c6);
+        
+
+        marker_a4069dca01e447a782357212e227240a.bindPopup(popup_72e1b80858c14c0db5aafb4508de3708)
+        ;
+
+        
+    
+    
+            var marker_eccbfd45cbd846bba69c01ba50cfa986 = L.marker(
+                [8.01, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_9b0b66deb8a04cedafc2ebbe35b83fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_189e66bc333f4c49836bdc2e97add618 = $(`<div id="html_189e66bc333f4c49836bdc2e97add618" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1966-06-01 00:00:00+00:00 <strong>Recolectores:</strong> James A. Duke|Narciso Bristan <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_9b0b66deb8a04cedafc2ebbe35b83fb5.setContent(html_189e66bc333f4c49836bdc2e97add618);
+        
+
+        marker_eccbfd45cbd846bba69c01ba50cfa986.bindPopup(popup_9b0b66deb8a04cedafc2ebbe35b83fb5)
+        ;
+
+        
+    
+    
+            var marker_d6b2c9e3114f4874b143da62c4ab9e7e = L.marker(
+                [7.72, -78.08],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_302ac84cc1bf4dc3b80c43e6752eb5b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e58bed1c001407fadc22d24aa0d5559 = $(`<div id="html_8e58bed1c001407fadc22d24aa0d5559" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 426.72 m  <strong>Fecha:</strong> 1981-01-31 00:00:00+00:00 <strong>Recolectores:</strong> William G. D'Arcy|Kenneth J. Sytsma <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_302ac84cc1bf4dc3b80c43e6752eb5b0.setContent(html_8e58bed1c001407fadc22d24aa0d5559);
+        
+
+        marker_d6b2c9e3114f4874b143da62c4ab9e7e.bindPopup(popup_302ac84cc1bf4dc3b80c43e6752eb5b0)
+        ;
+
+        
+    
+    
+            var marker_4b36eab2d15e489ea41af4dcd3d6654e = L.marker(
+                [7.46, -76.84],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_c1c67d519f284b74878cef2413247af2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0c544edf7dd42cca0e499acf5b6ca92 = $(`<div id="html_c0c544edf7dd42cca0e499acf5b6ca92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-02-13 00:00:00+00:00 <strong>Recolectores:</strong> Dairon Cárdenas L. <strong>Identificadores:</strong> A. Henderson (NY)</div>`)[0];
+            popup_c1c67d519f284b74878cef2413247af2.setContent(html_c0c544edf7dd42cca0e499acf5b6ca92);
+        
+
+        marker_4b36eab2d15e489ea41af4dcd3d6654e.bindPopup(popup_c1c67d519f284b74878cef2413247af2)
+        ;
+
+        
+    
+    
+            var marker_618ddec82a764180b84b55e0303b36c7 = L.marker(
+                [7.45, -76.83],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_b9e453f9b9354060940aedc67e3f131e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2f017072bcc40b2b40c605ee13c0486 = $(`<div id="html_b2f017072bcc40b2b40c605ee13c0486" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1987-08-15 00:00:00+00:00 <strong>Recolectores:</strong> Dairon Cárdenas L. <strong>Identificadores:</strong> A. Henderson (NY)</div>`)[0];
+            popup_b9e453f9b9354060940aedc67e3f131e.setContent(html_b2f017072bcc40b2b40c605ee13c0486);
+        
+
+        marker_618ddec82a764180b84b55e0303b36c7.bindPopup(popup_b9e453f9b9354060940aedc67e3f131e)
+        ;
+
+        
+    
+    
+            var marker_8690b4a68bbb49ee80efa8f6af85b357 = L.marker(
+                [8.02, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_96fbe5f056884bf6a4499f4257a9a2af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9963bf2da4e6467cabee197a82bb8250 = $(`<div id="html_9963bf2da4e6467cabee197a82bb8250" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-01-16 00:00:00+00:00 <strong>Recolectores:</strong> Andrew J. Henderson|José Contraires <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_96fbe5f056884bf6a4499f4257a9a2af.setContent(html_9963bf2da4e6467cabee197a82bb8250);
+        
+
+        marker_8690b4a68bbb49ee80efa8f6af85b357.bindPopup(popup_96fbe5f056884bf6a4499f4257a9a2af)
+        ;
+
+        
+    
+    
+            var marker_8d929949c90e4a19991b0bfebe6e4d49 = L.marker(
+                [7.82, -77.77],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_6a6eca9f3f7f4c7fb573aca103002822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a95659291e4240528e890995abfb68fe = $(`<div id="html_a95659291e4240528e890995abfb68fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1981-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Hartman <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_6a6eca9f3f7f4c7fb573aca103002822.setContent(html_a95659291e4240528e890995abfb68fe);
+        
+
+        marker_8d929949c90e4a19991b0bfebe6e4d49.bindPopup(popup_6a6eca9f3f7f4c7fb573aca103002822)
+        ;
+
+        
+    
+    
+            var marker_4003e40524bc402a9cf9c25513119e2f = L.marker(
+                [7.73, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_b0e935b6becc4a73b9b0e7fb60adc056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f68cd92bc4244875831ca5ba2ca3a837 = $(`<div id="html_f68cd92bc4244875831ca5ba2ca3a837" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 370.0 m  <strong>Fecha:</strong> 1968-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_b0e935b6becc4a73b9b0e7fb60adc056.setContent(html_f68cd92bc4244875831ca5ba2ca3a837);
+        
+
+        marker_4003e40524bc402a9cf9c25513119e2f.bindPopup(popup_b0e935b6becc4a73b9b0e7fb60adc056)
+        ;
+
+        
+    
+    
+            var marker_c34a6abe60b64a6db4d95edd6d158de2 = L.marker(
+                [7.55, -78.08],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_f994fe6cd0584e3ea0d167ba7b24e56e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab7a23b531524b9a82fda74427f08ad4 = $(`<div id="html_ab7a23b531524b9a82fda74427f08ad4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 121.92 m  <strong>Fecha:</strong> 1981-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma|William G. D'Arcy <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_f994fe6cd0584e3ea0d167ba7b24e56e.setContent(html_ab7a23b531524b9a82fda74427f08ad4);
+        
+
+        marker_c34a6abe60b64a6db4d95edd6d158de2.bindPopup(popup_f994fe6cd0584e3ea0d167ba7b24e56e)
+        ;
+
+        
+    
+    
+            var marker_43cb7457bcb0491589ef105c272f773d = L.marker(
+                [7.83, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_81db66d17b7d4fc0b325c02162c79319 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eac5ad335334ee3a2f0cdd13fd1d82b = $(`<div id="html_5eac5ad335334ee3a2f0cdd13fd1d82b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1066.8 m  <strong>Fecha:</strong> 1967-08-09 00:00:00+00:00 <strong>Recolectores:</strong> James A. Duke|Thomas S. Elias <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_81db66d17b7d4fc0b325c02162c79319.setContent(html_5eac5ad335334ee3a2f0cdd13fd1d82b);
+        
+
+        marker_43cb7457bcb0491589ef105c272f773d.bindPopup(popup_81db66d17b7d4fc0b325c02162c79319)
+        ;
+
+        
+    
+    
+            var marker_431131fd2e2f4dea955863c41abe1f06 = L.marker(
+                [7.45, -78.08],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_6350a4f033b44fe1aa1a02e9d126c833 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00f97b201b0e4ca1b4f18f4ad98ab069 = $(`<div id="html_00f97b201b0e4ca1b4f18f4ad98ab069" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1982-01-26 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp|Jim Mallet <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_6350a4f033b44fe1aa1a02e9d126c833.setContent(html_00f97b201b0e4ca1b4f18f4ad98ab069);
+        
+
+        marker_431131fd2e2f4dea955863c41abe1f06.bindPopup(popup_6350a4f033b44fe1aa1a02e9d126c833)
+        ;
+
+        
+    
+    
+            var marker_9d14af7682ed46e2b6f19dc04266eacc = L.marker(
+                [8.02, -77.72],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_24277beae12f4e72a9acea68dad71047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bb0b32ebadf41199579b5a8ca376753 = $(`<div id="html_3bb0b32ebadf41199579b5a8ca376753" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1980-12-18 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Hartman <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_24277beae12f4e72a9acea68dad71047.setContent(html_3bb0b32ebadf41199579b5a8ca376753);
+        
+
+        marker_9d14af7682ed46e2b6f19dc04266eacc.bindPopup(popup_24277beae12f4e72a9acea68dad71047)
+        ;
+
+        
+    
+    
+            var marker_921a1d5d87994119a0b1a18ea93bcfe7 = L.marker(
+                [7.7, -78.12],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_fbc364f0232e4d578f6b16274b003bf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d4f92c41e0e4ad08c2b02efe3b406a9 = $(`<div id="html_4d4f92c41e0e4ad08c2b02efe3b406a9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 426.72 m  <strong>Fecha:</strong> 1981-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Kenneth J. Sytsma|William G. D'Arcy <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_fbc364f0232e4d578f6b16274b003bf1.setContent(html_4d4f92c41e0e4ad08c2b02efe3b406a9);
+        
+
+        marker_921a1d5d87994119a0b1a18ea93bcfe7.bindPopup(popup_fbc364f0232e4d578f6b16274b003bf1)
+        ;
+
+        
+    
+    
+            var marker_9ff7e035b81c47a092727f5c6eb61f0f = L.marker(
+                [7.97, -77.72],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_472fc061b61a4cdaa8cdba06abd26469 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da9bd88c8d004fbcbfff8689917d4fed = $(`<div id="html_da9bd88c8d004fbcbfff8689917d4fed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1977-11-15 00:00:00+00:00 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_472fc061b61a4cdaa8cdba06abd26469.setContent(html_da9bd88c8d004fbcbfff8689917d4fed);
+        
+
+        marker_9ff7e035b81c47a092727f5c6eb61f0f.bindPopup(popup_472fc061b61a4cdaa8cdba06abd26469)
+        ;
+
+        
+    
+    
+            var marker_e94f8c44045b478f899ce2c9f1096ef4 = L.marker(
+                [8.07, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_c5ff6fff011a46bea5e0899b3c3af292 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52c39869685a4f03833ad3d81bee63d7 = $(`<div id="html_52c39869685a4f03833ad3d81bee63d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1962-06-23 00:00:00+00:00 <strong>Recolectores:</strong> James A. Duke <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_c5ff6fff011a46bea5e0899b3c3af292.setContent(html_52c39869685a4f03833ad3d81bee63d7);
+        
+
+        marker_e94f8c44045b478f899ce2c9f1096ef4.bindPopup(popup_c5ff6fff011a46bea5e0899b3c3af292)
+        ;
+
+        
+    
+    
+            var marker_a2ce11507cb041b7aa2e0fd060546f2f = L.marker(
+                [7.45, -76.86],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_c59a2c929c3349498376646e5c249687 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebdd8f4bee494c7dbdef61df5b87a77b = $(`<div id="html_ebdd8f4bee494c7dbdef61df5b87a77b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1988-05-19 00:00:00+00:00 <strong>Recolectores:</strong> Dairon Cárdenas L. <strong>Identificadores:</strong> A. Henderson (NY)</div>`)[0];
+            popup_c59a2c929c3349498376646e5c249687.setContent(html_ebdd8f4bee494c7dbdef61df5b87a77b);
+        
+
+        marker_a2ce11507cb041b7aa2e0fd060546f2f.bindPopup(popup_c59a2c929c3349498376646e5c249687)
+        ;
+
+        
+    
+    
+            var marker_22d2b42669454ce28a985f2079b0f351 = L.marker(
+                [7.95, -77.7],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_ed47808238654e24a3d4b9b4f79335d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78f1bfc8de1842c980373e6fde5fe94c = $(`<div id="html_78f1bfc8de1842c980373e6fde5fe94c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1972-12-30 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Andre F. Clewell <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_ed47808238654e24a3d4b9b4f79335d9.setContent(html_78f1bfc8de1842c980373e6fde5fe94c);
+        
+
+        marker_22d2b42669454ce28a985f2079b0f351.bindPopup(popup_ed47808238654e24a3d4b9b4f79335d9)
+        ;
+
+        
+    
+    
+            var marker_4a426d8d68f144f78192b191b4aee27b = L.marker(
+                [8.02, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_3d07df8ef0cc4e92a83b5a8467bc59df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_450cd1b5af7d46908613fb4381a230d2 = $(`<div id="html_450cd1b5af7d46908613fb4381a230d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1972-03-14 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry <strong>Identificadores:</strong> A. Henderson, 2002 (NY)</div>`)[0];
+            popup_3d07df8ef0cc4e92a83b5a8467bc59df.setContent(html_450cd1b5af7d46908613fb4381a230d2);
+        
+
+        marker_4a426d8d68f144f78192b191b4aee27b.bindPopup(popup_3d07df8ef0cc4e92a83b5a8467bc59df)
+        ;
+
+        
+    
+    
+            var marker_90ae8ad29bb84da7aa4fdb8f169bdf76 = L.marker(
+                [13.17, -84.13],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_7f24c3656b34494c8ccc98f79e0d4680 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b221c7cf1cc945939baf87bccb511869 = $(`<div id="html_b221c7cf1cc945939baf87bccb511869" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1978-06-09 00:00:00+00:00 <strong>Recolectores:</strong> David A. Neill <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_7f24c3656b34494c8ccc98f79e0d4680.setContent(html_b221c7cf1cc945939baf87bccb511869);
+        
+
+        marker_90ae8ad29bb84da7aa4fdb8f169bdf76.bindPopup(popup_7f24c3656b34494c8ccc98f79e0d4680)
+        ;
+
+        
+    
+    
+            var marker_49fb1a49111f4dfe83051915a7e23098 = L.marker(
+                [8.1, -76.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_8dd3cd3f77ef4cb4978470524e50dd47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_121e845043174748884fbd872a9a3163 = $(`<div id="html_121e845043174748884fbd872a9a3163" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1967-02-09 00:00:00+00:00 <strong>Recolectores:</strong> James A. Duke <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8dd3cd3f77ef4cb4978470524e50dd47.setContent(html_121e845043174748884fbd872a9a3163);
+        
+
+        marker_49fb1a49111f4dfe83051915a7e23098.bindPopup(popup_8dd3cd3f77ef4cb4978470524e50dd47)
+        ;
+
+        
+    
+    
+            var marker_2e7a233592fd4953af779f19cf4e497f = L.marker(
+                [10.71, -84.8],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_de47108d4a344702bd0a31fa214cbc86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b473f982086d487097fd1671e5fe30d8 = $(`<div id="html_b473f982086d487097fd1671e5fe30d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1949-08-04 00:00:00+00:00 <strong>Recolectores:</strong> Richard W. Holm|Hugh H. Iltis <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_de47108d4a344702bd0a31fa214cbc86.setContent(html_b473f982086d487097fd1671e5fe30d8);
+        
+
+        marker_2e7a233592fd4953af779f19cf4e497f.bindPopup(popup_de47108d4a344702bd0a31fa214cbc86)
+        ;
+
+        
+    
+    
+            var marker_763e416deb0b4b26a24d3157e486cee9 = L.marker(
+                [13.55, -85.77],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_748292e0a53543bdb2171710d9c97437 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ed7ec8ed972419d8761205b9c59b598 = $(`<div id="html_4ed7ec8ed972419d8761205b9c59b598" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1997-09-09 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G. <strong>Identificadores:</strong> M. Grayum</div>`)[0];
+            popup_748292e0a53543bdb2171710d9c97437.setContent(html_4ed7ec8ed972419d8761205b9c59b598);
+        
+
+        marker_763e416deb0b4b26a24d3157e486cee9.bindPopup(popup_748292e0a53543bdb2171710d9c97437)
+        ;
+
+        
+    
+    
+            var marker_df64ad2a039d4476a53dba56fcb33cff = L.marker(
+                [13.55, -85.78],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_f105d890632f47b59726d62cde462bdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee15e33432f94484af6df83254c27662 = $(`<div id="html_ee15e33432f94484af6df83254c27662" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 376.0 m  <strong>Fecha:</strong> 1997-09-08 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f105d890632f47b59726d62cde462bdd.setContent(html_ee15e33432f94484af6df83254c27662);
+        
+
+        marker_df64ad2a039d4476a53dba56fcb33cff.bindPopup(popup_f105d890632f47b59726d62cde462bdd)
+        ;
+
+        
+    
+    
+            var marker_bfc1191bc1704deba8cce3e65866cdee = L.marker(
+                [13.8, -84.4],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_699cc3df41834aa7848f153aeba848bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb4aeb7997df4b04ad4fd5f2c020f740 = $(`<div id="html_bb4aeb7997df4b04ad4fd5f2c020f740" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1997-07-10 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_699cc3df41834aa7848f153aeba848bf.setContent(html_bb4aeb7997df4b04ad4fd5f2c020f740);
+        
+
+        marker_bfc1191bc1704deba8cce3e65866cdee.bindPopup(popup_699cc3df41834aa7848f153aeba848bf)
+        ;
+
+        
+    
+    
+            var marker_8f68671f19344a7ab4c7236940d35cc9 = L.marker(
+                [6.623837, -76.60462],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_569a96e5309345469d39e2d991b7efd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e96092bee19040e8951866ff465c280a = $(`<div id="html_e96092bee19040e8951866ff465c280a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Mejía <strong>Elevación:</strong> 177.5 m  <strong>Fecha:</strong> 2011-12-13 00:00:00+00:00 <strong>Recolectores:</strong> Rivera A. <strong>Identificadores:</strong> Tuberquia D.</div>`)[0];
+            popup_569a96e5309345469d39e2d991b7efd6.setContent(html_e96092bee19040e8951866ff465c280a);
+        
+
+        marker_8f68671f19344a7ab4c7236940d35cc9.bindPopup(popup_569a96e5309345469d39e2d991b7efd6)
+        ;
+
+        
+    
+    
+            var marker_78bba0a9b84d4176b0dce08fa965a0dc = L.marker(
+                [8.01, -77.73],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_57417cf68a6144ea9f20fea317bba9b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6943696a3a17481db287a71f63b0bc47 = $(`<div id="html_6943696a3a17481db287a71f63b0bc47" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Darien. Parque Nacional del Darien. Estación Rancho Frío at N Base of Cerro Pirre, ca. 9 km S of El Real, in forest along quebrada Perisenico. Primary forest with Jessenia bataua, Astrocaryum standleyanum, Phytelephas and Brownea. <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 1987-10-08 00:00:00+00:00 <strong>Recolectores:</strong> Nevers, Greg de <strong>Identificadores:</strong> Nevers, Greg de</div>`)[0];
+            popup_57417cf68a6144ea9f20fea317bba9b7.setContent(html_6943696a3a17481db287a71f63b0bc47);
+        
+
+        marker_78bba0a9b84d4176b0dce08fa965a0dc.bindPopup(popup_57417cf68a6144ea9f20fea317bba9b7)
+        ;
+
+        
+    
+    
+            var marker_de3d8461dd704160a37eb103c6e1f701 = L.marker(
+                [10.71, -84.8],
+                {}
+            ).addTo(marker_cluster_dda7056334bb4290b2be41a8c5aaf4de);
+        
+    
+        var popup_92439a3ea8584768b9d2552ddd9d559f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66c42099528f4a2dbb496fcbf29059a3 = $(`<div id="html_66c42099528f4a2dbb496fcbf29059a3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Low tropical rainforest, with palms prominent in understory. Vicinity of Guatuso de San Rafael (on Rio Frio). <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1949-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Holm, Richard W. <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_92439a3ea8584768b9d2552ddd9d559f.setContent(html_66c42099528f4a2dbb496fcbf29059a3);
+        
+
+        marker_de3d8461dd704160a37eb103c6e1f701.bindPopup(popup_92439a3ea8584768b9d2552ddd9d559f)
+        ;
+
+        
+    
+    
+            var layer_control_867b4c7c5aad4543887d6e0d8e5f5bc1 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_96c8253305294d10996e2d47f0b8c561,
+                    "ESRI World Imagery" : tile_layer_5426b8ff82a3470bbc5f1d2241a41748,
+                },
+                overlays :  {
+                    "macro_element_dda7056334bb4290b2be41a8c5aaf4de" : marker_cluster_dda7056334bb4290b2be41a8c5aaf4de,
+                },
+            };
+            L.control.layers(
+                layer_control_867b4c7c5aad4543887d6e0d8e5f5bc1.base_layers,
+                layer_control_867b4c7c5aad4543887d6e0d8e5f5bc1.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d4a1b4b8d69f404885551da28a211269);
+            tile_layer_5426b8ff82a3470bbc5f1d2241a41748.remove();
+        
+</script>

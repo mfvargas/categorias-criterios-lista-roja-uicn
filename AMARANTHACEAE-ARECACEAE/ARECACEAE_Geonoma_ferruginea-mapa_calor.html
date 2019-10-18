@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c9ba16a8d7124db582622d6ae557d1f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://rawcdn.githack.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/pa7_hm.min.js"></script>
+    <script src="https://rawcdn.githack.com/pa7/heatmap.js/develop/plugins/leaflet-heatmap/leaflet-heatmap.js"></script>
+    <link rel="stylesheet" href="http://apps.socib.es/Leaflet.TimeDimension/dist/leaflet.timedimension.control.min.css"/>
+    
+            <script>
+                var TDHeatmap = L.TimeDimension.Layer.extend({
+
+            initialize: function(data, options) {
+                var heatmapCfg = {
+                    radius: 15,
+                    maxOpacity: 1.,
+                    scaleRadius: false,
+                    useLocalExtrema: false,
+                    latField: 'lat',
+                    lngField: 'lng',
+                    valueField: 'count',
+                    defaultWeight : 1,
+                };
+                heatmapCfg = $.extend({}, heatmapCfg, options.heatmapOptions || {});
+                var layer = new HeatmapOverlay(heatmapCfg);
+                L.TimeDimension.Layer.prototype.initialize.call(this, layer, options);
+                this._currentLoadedTime = 0;
+                this._currentTimeData = {
+                    data: []
+                    };
+                this.data= data;
+                this.defaultWeight = heatmapCfg.defaultWeight || 1;
+            },
+            onAdd: function(map) {
+                L.TimeDimension.Layer.prototype.onAdd.call(this, map);
+                map.addLayer(this._baseLayer);
+                if (this._timeDimension) {
+                    this._getDataForTime(this._timeDimension.getCurrentTime());
+                }
+            },
+            _onNewTimeLoading: function(ev) {
+                this._getDataForTime(ev.time);
+                return;
+            },
+            isReady: function(time) {
+                return (this._currentLoadedTime == time);
+            },
+            _update: function() {
+                this._baseLayer.setData(this._currentTimeData);
+                return true;
+            },
+            _getDataForTime: function(time) {
+                    delete this._currentTimeData.data;
+                    this._currentTimeData.data = [];
+                    var data = this.data[time-1];
+                    for (var i = 0; i < data.length; i++) {
+                        this._currentTimeData.data.push({
+                                lat: data[i][0],
+                                lng: data[i][1],
+                                count: data[i].length>2 ? data[i][2] : this.defaultWeight
+                            });
+                        }
+                    this._currentLoadedTime = time;
+                    if (this._timeDimension && time == this._timeDimension.getCurrentTime() && !this._timeDimension.isLoading()) {
+                        this._update();
+                    }
+                    this.fire('timeload', {
+                        time: time
+                    });
+                }
+        });
+
+        L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+            initialize: function(index, options) {
+                var playerOptions = {
+                    buffer: 1,
+                    minBufferReady: -1
+                    };
+                options.playerOptions = $.extend({}, playerOptions, options.playerOptions || {});
+                L.Control.TimeDimension.prototype.initialize.call(this, options);
+                this.index = index;
+                },
+            _getDisplayDateFormat: function(date){
+                return this.index[date.getTime()-1];
+                }
+            });
+            </script>
+                
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c9ba16a8d7124db582622d6ae557d1f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_c9ba16a8d7124db582622d6ae557d1f7 = L.map(
+                "map_c9ba16a8d7124db582622d6ae557d1f7",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c9ba16a8d7124db582622d6ae557d1f7);
+
+            
+
+        
+    
+            var tile_layer_45d6bc9eca0646d3a4254b7a0c9dbaa8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c9ba16a8d7124db582622d6ae557d1f7);
+        
+    
+            var tile_layer_72d5e1fa4b43482ab46bb622f7f66fa9 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c9ba16a8d7124db582622d6ae557d1f7);
+        
+    
+
+            var times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+            map_c9ba16a8d7124db582622d6ae557d1f7.timeDimension = L.timeDimension(
+                {times : times, currentTime: new Date(1)}
+            );
+
+            var heat_map_c45e9fb9836a483fbd26fe66d86335bfControl = new L.Control.TimeDimensionCustom(['Mes 0', 'Mes 1', 'Mes 2', 'Mes 3', 'Mes 4', 'Mes 5', 'Mes 6', 'Mes 7', 'Mes 8', 'Mes 9', 'Mes 10', 'Mes 11', 'Mes 12'], {
+                autoPlay: false,
+                backwardButton: true,
+                displayDate: true,
+                forwardButton: true,
+                limitMinimumRange: 5,
+                limitSliders: true,
+                loopButton: true,
+                maxSpeed: 10,
+                minSpeed: 0.1,
+                playButton: true,
+                playReverseButton: true,
+                position: "bottomleft",
+                speedSlider: true,
+                speedStep: 0.1,
+                styleNS: "leaflet-control-timecontrol",
+                timeSlider: true,
+                timeSliderDrapUpdate: false,
+                timeSteps: 1
+                })
+                .addTo(map_c9ba16a8d7124db582622d6ae557d1f7);
+
+                var heat_map_c45e9fb9836a483fbd26fe66d86335bf = new TDHeatmap([[], [[10.75, -85.08], [8.719445, -83.580556], [10.775, -85.3], [10.46, -84.88], [10.46, -84.88], [10.783333, -85.3], [12.3, -85.4], [12.3, -85.4], [10.92888, -85.46694000000001], [9.5, -82.5], [10.76, -85.3], [10.265, -84.17916], [10.05, -84.01], [13.25, -85.65], [13.233332999999998, -85.633333], [13.233332999999998, -85.633333], [10.3, -84.1], [10.88, -85.4], [12.300833, -85.395833], [8.70688, -83.59142], [10.723056, -85.03277800000001], [10.956389, -85.431944], [10.928889, -85.466944], [10.928889, -85.466944], [10.718058000000001, -85.05139399999999], [10.718058000000001, -85.05139399999999], [10.7, -85.0], [10.7, -85.0], [10.956436, -85.43209499999999], [10.956436, -85.43209499999999], [10.880556, -85.40139], [10.58, -84.6], [10.28, -84.04], [10.31, -84.8], [13.25, -85.65], [10.76, -85.3], [10.46, -84.88], [10.46, -84.88], [10.78, -85.3]], [[10.058333, -84.016667], [9.17, -84.86], [10.1667, -84.4917], [10.3, -84.7], [10.16, -84.49], [12.4, -85.55], [9.640278, -83.1375], [12.6, -85.716667], [4.116667, -76.5], [4.116667, -76.5], [10.3, -84.73], [10.92861, -85.46944], [10.76, -85.3], [10.92, -85.46], [10.92, -85.46], [10.186722, -83.86155600000001], [9.459444, -83.186389], [10.100102, -83.981161], [10.058333, -84.016667], [10.058333, -84.016667], [9.640278, -83.1375], [10.928611, -85.46944599999999], [10.928611, -85.469445], [10.928611, -85.469445], [10.3, -84.7], [9.64, -83.13], [10.61, -85.28], [10.31, -83.8], [9.28, -85.43]], [[12.941556, -85.485722], [12.433333, -85.333333], [13.616667000000001, -85.666667], [13.6, -85.65], [13.733332999999998, -84.9875], [13.733332999999998, -85.00416700000001], [13.733332999999998, -84.9875], [13.733332999999998, -84.9875], [10.25, -84.17], [10.05, -84.01], [13.766667000000002, -85.0], [9.454417, -83.185528], [9.454417, -83.185528], [9.454417, -83.185528], [10.7, -85.0], [9.654167, -83.022222], [9.654167, -83.022222], [10.333333, -84.06666700000001], [9.920833, -83.398611], [9.920833, -83.398611], [9.920833, -83.398611], [9.920833, -83.398611], [9.920833, -83.398611], [9.920833, -83.398611], [10.258333, -84.175], [9.726389, -84.188889], [9.404167, -83.084722], [10.880556, -85.401389], [10.0114, -83.9519], [10.22, -84.6], [10.3, -84.71], [10.38, -84.85], [10.3, -84.71], [13.75, -84.98], [10.25, -84.16]], [[13.7361, -84.9972], [10.7314, -85.0181], [10.38, -84.7], [10.16, -84.48], [10.28, -84.56], [13.733332999999998, -84.99583299999999], [10.291667, -84.075], [13.7375, -84.99166], [13.736111, -84.997222], [13.752778, -84.99583299999999], [13.747222, -84.99583299999999], [13.745833, -84.99583299999999], [10.24, -84.57], [13.783332999999999, -84.983333], [10.966667, -85.45], [10.966667, -85.45], [10.244444, -84.572222], [9.788889, -83.13833299999999], [10.383333, -84.7], [10.38, -84.7], [10.3, -84.71], [10.3, -84.71], [13.74, -84.99], [13.75, -84.99], [10.33, -84.06], [10.36, -84.05]], [[10.95, -85.49], [10.95, -85.49], [10.95, -85.49], [10.950999999999999, -85.488], [10.950999999999999, -85.488], [10.07, -84.53], [13.033333, -85.25], [13.0, -85.233333], [13.0, -85.25], [12.983333, -85.25], [10.06, -84.53], [12.416667, -85.533333], [10.91722, -85.46388], [13.766667000000002, -85.0], [13.766667000000002, -85.0], [13.283332999999999, -85.6], [10.441667, -84.619444], [10.452778, -84.658333], [10.452778, -84.658333], [10.917222, -85.463889], [10.917222, -85.463889], [10.917222, -85.463889], [10.224064, -84.588897], [10.0114, -83.9519], [9.96, -83.69], [10.06, -84.53], [10.26, -84.08]], [[10.281972, -84.04458299999999], [10.91, -85.48], [10.92, -85.49], [10.316667, -84.716667], [10.316667, -84.716667], [10.281945, -84.044722], [10.846945, -85.326672], [10.281972, -84.04458299999999], [10.281972, -84.04458299999999], [10.281944000000001, -84.04458299999999], [10.281944000000001, -84.04458299999999], [10.281944000000001, -84.04458299999999], [10.281944000000001, -84.04458299999999], [10.422222, -84.69444399999999], [10.422222, -84.69444399999999], [10.422222, -84.69444399999999], [10.422222, -84.69444399999999], [10.919444, -85.486111], [10.919444, -85.486111], [10.863889, -85.325], [10.863889, -85.325], [9.43, -83.69], [9.96, -83.69], [10.91, -85.48], [10.92, -85.49], [10.31, -83.71], [10.31, -83.71]], [[10.31, -84.72], [13.583332999999998, -85.65], [10.2, -83.9], [10.92, -85.47], [10.96, -85.49333299999999], [10.28, -84.75], [10.46, -84.7], [10.93, -85.46666], [12.283333, -85.366667], [12.966667, -85.216667], [13.28333, -85.68333], [13.283332999999999, -85.666667], [9.618056, -83.268056], [9.617972, -83.26808299999999], [9.617972, -83.26808299999999], [9.617972, -83.26808299999999], [10.96, -85.49333299999999], [10.929167, -85.472222], [10.311944, -84.720556], [10.92, -85.47], [10.28, -84.75]], [[10.966667, -85.475], [10.95, -85.46666], [15.681667000000001, -88.678333], [10.990269999999999, -85.42694], [9.783333, -83.341667], [10.26, -84.45], [10.26, -84.45], [13.55, -85.68333299999999], [10.218611, -84.599722], [10.966667, -85.475], [10.95, -85.466667], [10.928056, -85.463889], [10.928056, -85.463889], [10.928056, -85.463889], [10.218630000000001, -84.599845], [10.218630000000001, -84.599845], [10.990357000000001, -85.427182], [10.990357000000001, -85.427182], [10.990357000000001, -85.427182], [10.990357000000001, -85.427182], [9.783333, -83.341667], [10.99, -85.42], [9.78, -83.34], [10.58, -84.93]], [[10.366667, -84.85], [12.3, -85.391667], [10.2375, -84.55], [10.283333, -84.033333], [10.26666, -84.08333], [10.43138, -84.00361], [9.787649, -83.752778], [10.366667, -84.85], [10.283333, -84.033334], [10.36, -84.85]], [[10.31, -84.71], [9.257222, -82.50805600000001], [9.801667, -83.175833], [10.3, -84.71666], [12.966667, -85.866667], [10.929167, -85.470833], [9.80187, -83.176], [9.80187, -83.17603000000001], [9.80187, -83.17603000000001], [9.80187, -83.17603000000001], [9.80187, -83.17603000000001], [9.810139999999999, -83.16816999999999], [9.80516, -83.16788000000001], [9.802999999999999, -83.180167], [9.801806, -83.174799], [10.066667, -83.966667], [10.066667, -83.966667], [10.3, -84.716667], [10.316667, -84.716668], [10.294444, -84.75], [10.929167, -85.470834], [10.31, -84.71], [10.3, -84.71]], [[6.7105559999999995, -77.4775], [10.702580000000001, -84.99664], [10.702580000000001, -84.99664], [10.702580000000001, -84.99664], [10.98836, -85.42258000000001], [10.31, -84.75], [10.43138, -84.00361], [10.73, -85.05], [13.233332999999998, -86.05], [9.817778, -83.158611], [10.678484, -84.217019], [10.752778, -85.041667], [10.752778, -85.041667], [10.752778, -85.041667], [10.929167, -85.470834], [10.75, -84.866667], [10.315278, -84.751667], [10.710999999999999, -84.995], [10.704, -84.99799999999999], [10.702, -84.99700000000001], [10.702, -84.99600000000001], [10.702, -84.99600000000001], [10.702, -84.99600000000001], [10.702, -84.99600000000001], [10.702, -84.99600000000001], [10.31, -84.75], [10.92, -85.47], [10.3, -84.08]], [[9.85, -83.43], [10.3, -84.71], [12.302222, -85.397222]]],
+                {heatmapOptions: {
+                        radius: 15,
+                        minOpacity: 0,
+                        maxOpacity: 0.6,
+                        scaleRadius: false,
+                        useLocalExtrema: false,
+                        defaultWeight: 1,
+                        
+                    }
+                })
+                .addTo(map_c9ba16a8d7124db582622d6ae557d1f7);
+
+        
+    
+            var layer_control_1eb10a7be9dd431b8cc05ef778aabb76 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_45d6bc9eca0646d3a4254b7a0c9dbaa8,
+                    "ESRI World Imagery" : tile_layer_72d5e1fa4b43482ab46bb622f7f66fa9,
+                },
+                overlays :  {
+                    "macro_element_c45e9fb9836a483fbd26fe66d86335bf" : heat_map_c45e9fb9836a483fbd26fe66d86335bf,
+                },
+            };
+            L.control.layers(
+                layer_control_1eb10a7be9dd431b8cc05ef778aabb76.base_layers,
+                layer_control_1eb10a7be9dd431b8cc05ef778aabb76.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c9ba16a8d7124db582622d6ae557d1f7);
+            tile_layer_72d5e1fa4b43482ab46bb622f7f66fa9.remove();
+        
+</script>

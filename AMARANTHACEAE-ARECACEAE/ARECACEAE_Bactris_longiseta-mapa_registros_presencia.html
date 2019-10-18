@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c5e39498e73e4eb5b6f2c96dbca0e738 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c5e39498e73e4eb5b6f2c96dbca0e738" ></div>
+        
+</body>
+<script>    
+    
+            var map_c5e39498e73e4eb5b6f2c96dbca0e738 = L.map(
+                "map_c5e39498e73e4eb5b6f2c96dbca0e738",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+
+            
+
+        
+    
+            var tile_layer_c600873ff07b41eb9d9139f0a5269095 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+            var tile_layer_1419995028084458baa8991562e3d53f = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+            var circle_marker_824b1e1dcb614bae8ee1023e4690eb26 = L.circleMarker(
+                [10.2972, -84.0736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_9fba024f0be34bdc948bc4b700aa9178 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bed50e6a1ed04835a39b34e50913290e = $(`<div id="html_bed50e6a1ed04835a39b34e50913290e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo; Cordillera Central. Puesto El Ceibo. On ridge crest 250 m E of Transect Trail. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1994-03-05 00:00:00+00:00 <strong>Recolectores:</strong> B. Boyle <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9fba024f0be34bdc948bc4b700aa9178.setContent(html_bed50e6a1ed04835a39b34e50913290e);
+        
+
+        circle_marker_824b1e1dcb614bae8ee1023e4690eb26.bindPopup(popup_9fba024f0be34bdc948bc4b700aa9178)
+        ;
+
+        
+    
+    
+            var circle_marker_057ab827750c4ac0aa7160708604b20e = L.circleMarker(
+                [10.2972, -84.0736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_89d70dcaf74547cea1d8df5d60585a63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad56e67c756e49d88a1b82e6aa103cba = $(`<div id="html_ad56e67c756e49d88a1b82e6aa103cba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo; Cordillera Central. Puesto El Ceibo. On ridge crest 250 m E of Transect Trail. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1994-03-05 00:00:00+00:00 <strong>Recolectores:</strong> B. Boyle <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_89d70dcaf74547cea1d8df5d60585a63.setContent(html_ad56e67c756e49d88a1b82e6aa103cba);
+        
+
+        circle_marker_057ab827750c4ac0aa7160708604b20e.bindPopup(popup_89d70dcaf74547cea1d8df5d60585a63)
+        ;
+
+        
+    
+    
+            var circle_marker_dcbe205dfe674c33b482e88e7a683399 = L.circleMarker(
+                [10.29, -84.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_b96381d1a7c54ea0ba874b19150543d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3911311cb60d43a891610ecbfa954c4f = $(`<div id="html_3911311cb60d43a891610ecbfa954c4f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Cordillera Central, Puesto El Ceibo, on ridge crest 250 m east of Transect Trail, primary premontane wet forest <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1994-03-05 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|L. Esquivel|S. Kelly <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_b96381d1a7c54ea0ba874b19150543d2.setContent(html_3911311cb60d43a891610ecbfa954c4f);
+        
+
+        circle_marker_dcbe205dfe674c33b482e88e7a683399.bindPopup(popup_b96381d1a7c54ea0ba874b19150543d2)
+        ;
+
+        
+    
+    
+            var circle_marker_586e0164dbdb41b392f97bf977d1c65f = L.circleMarker(
+                [10.43138, -84.00361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_87e1e917049e4588998fd92714a6a399 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9b88edff7d54b85bb1387c10d70f835 = $(`<div id="html_a9b88edff7d54b85bb1387c10d70f835" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Sendero: SOR 430m. Izq. 10 m. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2007-01-19 00:00:00+00:00 <strong>Recolectores:</strong> Orlando Vargas <strong>Identificadores:</strong> O. Vargas, 1/19/</div>`)[0];
+            popup_87e1e917049e4588998fd92714a6a399.setContent(html_a9b88edff7d54b85bb1387c10d70f835);
+        
+
+        circle_marker_586e0164dbdb41b392f97bf977d1c65f.bindPopup(popup_87e1e917049e4588998fd92714a6a399)
+        ;
+
+        
+    
+    
+            var circle_marker_83b847c9a8c84c038d3e25d5b90ac54f = L.circleMarker(
+                [10.29, -84.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_45b80c7fd4824c09a4e9df6a3305aa50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06b06d66a77942579d9bf550cdac62c0 = $(`<div id="html_06b06d66a77942579d9bf550cdac62c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest between Río Peje and Río Sardinalito, Atlantic slope of Volcán Barva. 10º17.5'N 84º04.5'W 700-750 m <strong>Elevación:</strong> 725.0 m  <strong>Fecha:</strong> 1986-04-04 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> A. Henderson</div>`)[0];
+            popup_45b80c7fd4824c09a4e9df6a3305aa50.setContent(html_06b06d66a77942579d9bf550cdac62c0);
+        
+
+        circle_marker_83b847c9a8c84c038d3e25d5b90ac54f.bindPopup(popup_45b80c7fd4824c09a4e9df6a3305aa50)
+        ;
+
+        
+    
+    
+            var circle_marker_f37719f2e53542a8908409bd28510498 = L.circleMarker(
+                [10.27722, -84.0825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_a9a41cf9eaac4aa6b76a5cd9e3e1a144 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_745d46548b5143cb9c1ca1eac72b583c = $(`<div id="html_745d46548b5143cb9c1ca1eac72b583c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, immediately to right of trail, one half hour below refugio at 1070 m, Primary Premontane Wet Forest, Treeplot 1000-1 <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1992-11-25 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> M. H. Grayum, 1994 (MO)</div>`)[0];
+            popup_a9a41cf9eaac4aa6b76a5cd9e3e1a144.setContent(html_745d46548b5143cb9c1ca1eac72b583c);
+        
+
+        circle_marker_f37719f2e53542a8908409bd28510498.bindPopup(popup_a9a41cf9eaac4aa6b76a5cd9e3e1a144)
+        ;
+
+        
+    
+    
+            var circle_marker_83a60a2a193f4558a3550467fadc6f9c = L.circleMarker(
+                [11.03333, -85.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_7a65ee5e40af4bb8a5aa05a6677f829f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24acd7c422a344f0a1a806d68f97a4aa = $(`<div id="html_24acd7c422a344f0a1a806d68f97a4aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Volcán Orosí. Límite Este del A.C.G.; 2-3 km S de la Esperanza. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1997-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Calixto Moraga <strong>Identificadores:</strong> J. González</div>`)[0];
+            popup_7a65ee5e40af4bb8a5aa05a6677f829f.setContent(html_24acd7c422a344f0a1a806d68f97a4aa);
+        
+
+        circle_marker_83a60a2a193f4558a3550467fadc6f9c.bindPopup(popup_7a65ee5e40af4bb8a5aa05a6677f829f)
+        ;
+
+        
+    
+    
+            var circle_marker_cf405f14d78f48ca9111e915696d968c = L.circleMarker(
+                [10.438889, -83.958333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+        
+    
+        var popup_5826515c67d347d283c0834fe83a5ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fdf14bd03df460cb8889b9b2364bbbe = $(`<div id="html_5fdf14bd03df460cb8889b9b2364bbbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rumbo a Finca Los Maderos. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1999-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Priscila Hurtado <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_5826515c67d347d283c0834fe83a5ea6.setContent(html_5fdf14bd03df460cb8889b9b2364bbbe);
+        
+
+        circle_marker_cf405f14d78f48ca9111e915696d968c.bindPopup(popup_5826515c67d347d283c0834fe83a5ea6)
+        ;
+
+        
+    
+    
+            var layer_control_7249c2411489441e808da020fc7624ba = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c600873ff07b41eb9d9139f0a5269095,
+                    "ESRI World Imagery" : tile_layer_1419995028084458baa8991562e3d53f,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_7249c2411489441e808da020fc7624ba.base_layers,
+                layer_control_7249c2411489441e808da020fc7624ba.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c5e39498e73e4eb5b6f2c96dbca0e738);
+            tile_layer_1419995028084458baa8991562e3d53f.remove();
+        
+</script>

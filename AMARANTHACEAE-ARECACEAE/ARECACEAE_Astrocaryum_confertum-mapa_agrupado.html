@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_037ded42e4394a79a11c2ba28c7016e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_037ded42e4394a79a11c2ba28c7016e5" ></div>
+        
+</body>
+<script>    
+    
+            var map_037ded42e4394a79a11c2ba28c7016e5 = L.map(
+                "map_037ded42e4394a79a11c2ba28c7016e5",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_037ded42e4394a79a11c2ba28c7016e5);
+
+            
+
+        
+    
+            var tile_layer_191ffc1351814a2094ee5f9f71ad850f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_037ded42e4394a79a11c2ba28c7016e5);
+        
+    
+            var tile_layer_8823fe7f188e4eb89ca4fac1ef91200e = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_037ded42e4394a79a11c2ba28c7016e5);
+        
+    
+            var marker_cluster_94c9950388ef4ce7b9cc9d94481997b1 = L.markerClusterGroup(
+                {}
+            );
+            map_037ded42e4394a79a11c2ba28c7016e5.addLayer(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+            var marker_11b19925bfa64aa5abd21bef9cbda03c = L.marker(
+                [10.43, -84.01],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_fcfb7bdb386242f999e7ea169639bebe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_585ea5464afb4680be3a5a602f3e4727 = $(`<div id="html_585ea5464afb4680be3a5a602f3e4727" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Biológica La Selva At confluence of Río Sarapiquí and Río Puerto Viejo, Atlantic slope. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-09-22 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> M. H. Grayum, IX/</div>`)[0];
+            popup_fcfb7bdb386242f999e7ea169639bebe.setContent(html_585ea5464afb4680be3a5a602f3e4727);
+        
+
+        marker_11b19925bfa64aa5abd21bef9cbda03c.bindPopup(popup_fcfb7bdb386242f999e7ea169639bebe)
+        ;
+
+        
+    
+    
+            var marker_c15d5abbef7d4e82986f856259e462ce = L.marker(
+                [9.383333, -78.8],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_40ab51c89ce64bc68cb1397e8fbedadf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4781377268d246f4861661f5525a7540 = $(`<div id="html_4781377268d246f4861661f5525a7540" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Trail to Cerro Óbu (Habu of maps) from Río Urgandi; (Río Sidra). <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1986-06-24 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Heraclio Herrera|Ernesto Gernado <strong>Identificadores:</strong> G. de Nevers, 1987 (CAS)</div>`)[0];
+            popup_40ab51c89ce64bc68cb1397e8fbedadf.setContent(html_4781377268d246f4861661f5525a7540);
+        
+
+        marker_c15d5abbef7d4e82986f856259e462ce.bindPopup(popup_40ab51c89ce64bc68cb1397e8fbedadf)
+        ;
+
+        
+    
+    
+            var marker_2ae3442e102a4dec96b5ea2a2951d226 = L.marker(
+                [10.683333, -83.633333],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_bf6380f0b7d345499321c3ea398da1dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10697d02d8d44c3eb2cb42d14c587adc = $(`<div id="html_10697d02d8d44c3eb2cb42d14c587adc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-09-15 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens|O.M. Montiel J. <strong>Identificadores:</strong> G.de Nevers (CAS)</div>`)[0];
+            popup_bf6380f0b7d345499321c3ea398da1dd.setContent(html_10697d02d8d44c3eb2cb42d14c587adc);
+        
+
+        marker_2ae3442e102a4dec96b5ea2a2951d226.bindPopup(popup_bf6380f0b7d345499321c3ea398da1dd)
+        ;
+
+        
+    
+    
+            var marker_de911078d74f470ab8cec1630765c35a = L.marker(
+                [10.383333, -84.166667],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_ac28c41e48044e84a17c16c90d8e1947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae9451037b644a7fa5a128a1e45ee400 = $(`<div id="html_ae9451037b644a7fa5a128a1e45ee400" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5 km SW of La Virgen. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1986-06-04 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Barry E. Hammel <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_ac28c41e48044e84a17c16c90d8e1947.setContent(html_ae9451037b644a7fa5a128a1e45ee400);
+        
+
+        marker_de911078d74f470ab8cec1630765c35a.bindPopup(popup_ac28c41e48044e84a17c16c90d8e1947)
+        ;
+
+        
+    
+    
+            var marker_12ffdf6229cd4747bc58ed27ba0728f4 = L.marker(
+                [9.333333, -78.966667],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_6e3282ade60b46fb902bae35dd3f8fcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c2d97b840cd4b188b840b6419b6d758 = $(`<div id="html_9c2d97b840cd4b188b840b6419b6d758" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Llano-Cartí road. [Coordinates on original label: 9º19'N, 78º55'W]. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1985-06-01 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Heraclio Herrera <strong>Identificadores:</strong> G. de Nevers (CAS)</div>`)[0];
+            popup_6e3282ade60b46fb902bae35dd3f8fcf.setContent(html_9c2d97b840cd4b188b840b6419b6d758);
+        
+
+        marker_12ffdf6229cd4747bc58ed27ba0728f4.bindPopup(popup_6e3282ade60b46fb902bae35dd3f8fcf)
+        ;
+
+        
+    
+    
+            var marker_f7ff86d957534f1090e43cb494b370d7 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_650e34fdd92649848b983c44ce400960 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c18fae26a48d4ac7934ac83a270aba0c = $(`<div id="html_c18fae26a48d4ac7934ac83a270aba0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1980-09-18 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> M.H. Grayum</div>`)[0];
+            popup_650e34fdd92649848b983c44ce400960.setContent(html_c18fae26a48d4ac7934ac83a270aba0c);
+        
+
+        marker_f7ff86d957534f1090e43cb494b370d7.bindPopup(popup_650e34fdd92649848b983c44ce400960)
+        ;
+
+        
+    
+    
+            var marker_30a4d9ca41fe42138c8497ca334370ad = L.marker(
+                [8.823472, -80.66583299999999],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_5ccf19c3e42a4c87a9ba3071e7757d9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfaae1c4e8e846318e43eba17a89ae5a = $(`<div id="html_bfaae1c4e8e846318e43eba17a89ae5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Minera Panamá copper-mining concession, headwaters of Ríos Petaquilla and Molejón. <strong>Elevación:</strong> 239.5 m  <strong>Fecha:</strong> 2014-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Gordon McPherson|Christel Ramos|Irving Vergara-Pérez|Luis Rojas <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_5ccf19c3e42a4c87a9ba3071e7757d9a.setContent(html_bfaae1c4e8e846318e43eba17a89ae5a);
+        
+
+        marker_30a4d9ca41fe42138c8497ca334370ad.bindPopup(popup_5ccf19c3e42a4c87a9ba3071e7757d9a)
+        ;
+
+        
+    
+    
+            var marker_d34a5f6fc9f34de9ad3e53f006168296 = L.marker(
+                [10.427306, -83.581556],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_6f97d6dbd6714b289733f3cbf2ebc027 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3905ca85a235424f80f8fc3118b20e82 = $(`<div id="html_3905ca85a235424f80f8fc3118b20e82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tortuguero. <strong>Elevación:</strong> 54.0 m  <strong>Fecha:</strong> 2011-03-31 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_6f97d6dbd6714b289733f3cbf2ebc027.setContent(html_3905ca85a235424f80f8fc3118b20e82);
+        
+
+        marker_d34a5f6fc9f34de9ad3e53f006168296.bindPopup(popup_6f97d6dbd6714b289733f3cbf2ebc027)
+        ;
+
+        
+    
+    
+            var marker_5f9e975259d7445290e4d02440e9ad3b = L.marker(
+                [10.427306, -83.581556],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_1083526552994a2592223810c01ae059 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae6b60ecad0f448e96e54e78f8b4a47f = $(`<div id="html_ae6b60ecad0f448e96e54e78f8b4a47f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tortuguero. <strong>Elevación:</strong> 54.0 m  <strong>Fecha:</strong> 2011-03-31 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_1083526552994a2592223810c01ae059.setContent(html_ae6b60ecad0f448e96e54e78f8b4a47f);
+        
+
+        marker_5f9e975259d7445290e4d02440e9ad3b.bindPopup(popup_1083526552994a2592223810c01ae059)
+        ;
+
+        
+    
+    
+            var marker_c5cd3fd8223245d8802c42237e7aa20a = L.marker(
+                [10.427306, -83.581556],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_4498973d1f3f4e74ba1c6d5a915b0ebe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_553157fe4c2b49d8b206651c763e5795 = $(`<div id="html_553157fe4c2b49d8b206651c763e5795" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tortuguero. <strong>Elevación:</strong> 54.0 m  <strong>Fecha:</strong> 2011-03-31 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_4498973d1f3f4e74ba1c6d5a915b0ebe.setContent(html_553157fe4c2b49d8b206651c763e5795);
+        
+
+        marker_c5cd3fd8223245d8802c42237e7aa20a.bindPopup(popup_4498973d1f3f4e74ba1c6d5a915b0ebe)
+        ;
+
+        
+    
+    
+            var marker_4e95336517b54c16a9a5fdec517be82d = L.marker(
+                [10.433333, -84.01666800000001],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_858987af90bc460299fe0085df36be6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b449ed52472a4a15aae336583859179e = $(`<div id="html_b449ed52472a4a15aae336583859179e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> At confluence of Rio Sarapiqui and Rio Puerto Viejo, Atlantic slope. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-09-22 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_858987af90bc460299fe0085df36be6c.setContent(html_b449ed52472a4a15aae336583859179e);
+        
+
+        marker_4e95336517b54c16a9a5fdec517be82d.bindPopup(popup_858987af90bc460299fe0085df36be6c)
+        ;
+
+        
+    
+    
+            var marker_459ca8aaa11d4cc2b7813ae641834c9e = L.marker(
+                [10.38, -84.16],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_da03eacc47314495b01fe3921f6f7b24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c441c5e4dbc462883bdd0776b1b49c5 = $(`<div id="html_2c441c5e4dbc462883bdd0776b1b49c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5 km SW of La Virgen. Pastures. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1986-06-04 00:00:00+00:00 <strong>Recolectores:</strong> Nevers, Greg de <strong>Identificadores:</strong> Nevers, Greg de</div>`)[0];
+            popup_da03eacc47314495b01fe3921f6f7b24.setContent(html_2c441c5e4dbc462883bdd0776b1b49c5);
+        
+
+        marker_459ca8aaa11d4cc2b7813ae641834c9e.bindPopup(popup_da03eacc47314495b01fe3921f6f7b24)
+        ;
+
+        
+    
+    
+            var marker_c2902d2651804a2db5a052e3f7a9ca59 = L.marker(
+                [10.38, -84.16],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_4c63b171325a4aa5a18aad281fbf4ff1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0bb4ffd401e42a3b18167d661ffe8aa = $(`<div id="html_c0bb4ffd401e42a3b18167d661ffe8aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 5 km SW of La Virgen. <strong>Elevación:</strong> 137.5 m  <strong>Fecha:</strong> 1986-06-04 00:00:00+00:00 <strong>Recolectores:</strong> Nevers, Greg de <strong>Identificadores:</strong> Nevers, Greg de</div>`)[0];
+            popup_4c63b171325a4aa5a18aad281fbf4ff1.setContent(html_c0bb4ffd401e42a3b18167d661ffe8aa);
+        
+
+        marker_c2902d2651804a2db5a052e3f7a9ca59.bindPopup(popup_4c63b171325a4aa5a18aad281fbf4ff1)
+        ;
+
+        
+    
+    
+            var marker_8cbcc95398d74b5d9699bb6b30daba21 = L.marker(
+                [10.68, -83.63],
+                {}
+            ).addTo(marker_cluster_94c9950388ef4ce7b9cc9d94481997b1);
+        
+    
+        var popup_ab7e5be2626a4a62ad0025a076c3e579 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cac9e609566d4ca5a82f13305d942da0 = $(`<div id="html_cac9e609566d4ca5a82f13305d942da0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto, tall evergreen forest on gentle to moderately steep slopes. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-09-20 00:00:00+00:00 <strong>Recolectores:</strong> Stevens, Warren D. <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_ab7e5be2626a4a62ad0025a076c3e579.setContent(html_cac9e609566d4ca5a82f13305d942da0);
+        
+
+        marker_8cbcc95398d74b5d9699bb6b30daba21.bindPopup(popup_ab7e5be2626a4a62ad0025a076c3e579)
+        ;
+
+        
+    
+    
+            var layer_control_a757993402504807bb3480b6f1988f9c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_191ffc1351814a2094ee5f9f71ad850f,
+                    "ESRI World Imagery" : tile_layer_8823fe7f188e4eb89ca4fac1ef91200e,
+                },
+                overlays :  {
+                    "macro_element_94c9950388ef4ce7b9cc9d94481997b1" : marker_cluster_94c9950388ef4ce7b9cc9d94481997b1,
+                },
+            };
+            L.control.layers(
+                layer_control_a757993402504807bb3480b6f1988f9c.base_layers,
+                layer_control_a757993402504807bb3480b6f1988f9c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_037ded42e4394a79a11c2ba28c7016e5);
+            tile_layer_8823fe7f188e4eb89ca4fac1ef91200e.remove();
+        
+</script>

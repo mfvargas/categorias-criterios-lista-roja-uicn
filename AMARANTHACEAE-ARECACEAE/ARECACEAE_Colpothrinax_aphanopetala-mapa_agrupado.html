@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7fd21202aeb420489bf6d8f8f1b4bbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b7fd21202aeb420489bf6d8f8f1b4bbf" ></div>
+        
+</body>
+<script>    
+    
+            var map_b7fd21202aeb420489bf6d8f8f1b4bbf = L.map(
+                "map_b7fd21202aeb420489bf6d8f8f1b4bbf",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b7fd21202aeb420489bf6d8f8f1b4bbf);
+
+            
+
+        
+    
+            var tile_layer_dbfbb4727bf446328d5610896fe08722 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7fd21202aeb420489bf6d8f8f1b4bbf);
+        
+    
+            var tile_layer_c960c85b0dcc4f5598f80b54f8e52b15 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7fd21202aeb420489bf6d8f8f1b4bbf);
+        
+    
+            var marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd = L.markerClusterGroup(
+                {}
+            );
+            map_b7fd21202aeb420489bf6d8f8f1b4bbf.addLayer(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+            var marker_4f476adb2c924ee39c1116f805c1c8e6 = L.marker(
+                [9.2203, -79.3722],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_52a067562bdd4f48bcf63d0dbf248ead = L.popup({"maxWidth": "100%"});
+
+        
+            var html_972b1ef37397425ba1c61be755198859 = $(`<div id="html_972b1ef37397425ba1c61be755198859" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Jefe <strong>Elevación:</strong> 892.0 m  <strong>Fecha:</strong> 2008-08-20 00:00:00+00:00 <strong>Recolectores:</strong> C. Galdames <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_52a067562bdd4f48bcf63d0dbf248ead.setContent(html_972b1ef37397425ba1c61be755198859);
+        
+
+        marker_4f476adb2c924ee39c1116f805c1c8e6.bindPopup(popup_52a067562bdd4f48bcf63d0dbf248ead)
+        ;
+
+        
+    
+    
+            var marker_bc0c0dc8208d49d1ba68f73a1b6fc01a = L.marker(
+                [9.3, -79.27],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_f0d9224bbe7b477cb5bed721fdaf705b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c871e24943ab43ecb5cfbb30ec3bac23 = $(`<div id="html_c871e24943ab43ecb5cfbb30ec3bac23" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Brewster <strong>Elevación:</strong> 825.0 m  <strong>Fecha:</strong> 1985-11-20 00:00:00+00:00 <strong>Recolectores:</strong> G. C. de Nevers <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f0d9224bbe7b477cb5bed721fdaf705b.setContent(html_c871e24943ab43ecb5cfbb30ec3bac23);
+        
+
+        marker_bc0c0dc8208d49d1ba68f73a1b6fc01a.bindPopup(popup_f0d9224bbe7b477cb5bed721fdaf705b)
+        ;
+
+        
+    
+    
+            var marker_3c8010dda390498e8cb6e332a3a49eb3 = L.marker(
+                [8.75, -82.2333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_afd63b48e7e845079f4d9a75a97c27f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72917a58980541d5b0896af2c05786c2 = $(`<div id="html_72917a58980541d5b0896af2c05786c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-09-18 00:00:00+00:00 <strong>Recolectores:</strong> H. Churchill & A. Churchill <strong>Identificadores:</strong> Evans, R. J.</div>`)[0];
+            popup_afd63b48e7e845079f4d9a75a97c27f0.setContent(html_72917a58980541d5b0896af2c05786c2);
+        
+
+        marker_3c8010dda390498e8cb6e332a3a49eb3.bindPopup(popup_afd63b48e7e845079f4d9a75a97c27f0)
+        ;
+
+        
+    
+    
+            var marker_7f1be64218f44828a53b4affc25e7cca = L.marker(
+                [8.75, -82.2333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_0c6b45ad521f4f3ab6ce3e959e8804f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_480d9304166c4a0da0bcdcbbd2a6e41d = $(`<div id="html_480d9304166c4a0da0bcdcbbd2a6e41d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-09-18 00:00:00+00:00 <strong>Recolectores:</strong> H. Churchill & A. Churchill <strong>Identificadores:</strong> Evans, R. J.</div>`)[0];
+            popup_0c6b45ad521f4f3ab6ce3e959e8804f8.setContent(html_480d9304166c4a0da0bcdcbbd2a6e41d);
+        
+
+        marker_7f1be64218f44828a53b4affc25e7cca.bindPopup(popup_0c6b45ad521f4f3ab6ce3e959e8804f8)
+        ;
+
+        
+    
+    
+            var marker_1d7cf3df4287485eb25c2c4fc19d262c = L.marker(
+                [8.75, -82.2333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_04547e3ecdcd494ca73c2521d76cd925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b80d0537fc0d4337a1ca863253ff6e9a = $(`<div id="html_b80d0537fc0d4337a1ca863253ff6e9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-09-18 00:00:00+00:00 <strong>Recolectores:</strong> H. Churchill & A. Churchill <strong>Identificadores:</strong> Evans, R. J.</div>`)[0];
+            popup_04547e3ecdcd494ca73c2521d76cd925.setContent(html_b80d0537fc0d4337a1ca863253ff6e9a);
+        
+
+        marker_1d7cf3df4287485eb25c2c4fc19d262c.bindPopup(popup_04547e3ecdcd494ca73c2521d76cd925)
+        ;
+
+        
+    
+    
+            var marker_58164df3c4eb4ed99ebdaa9cf1c7049f = L.marker(
+                [8.75, -82.2333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_2a2980aae6b043138a5021c30d194ae0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6380ad2cdaaa46ec97b4ec26a225bc4e = $(`<div id="html_6380ad2cdaaa46ec97b4ec26a225bc4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-09-18 00:00:00+00:00 <strong>Recolectores:</strong> H. Churchill & A. Churchill <strong>Identificadores:</strong> Evans, R. J.</div>`)[0];
+            popup_2a2980aae6b043138a5021c30d194ae0.setContent(html_6380ad2cdaaa46ec97b4ec26a225bc4e);
+        
+
+        marker_58164df3c4eb4ed99ebdaa9cf1c7049f.bindPopup(popup_2a2980aae6b043138a5021c30d194ae0)
+        ;
+
+        
+    
+    
+            var marker_fcee7aae10f24675b96508e2bb40cfbd = L.marker(
+                [9.45, -83.0],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_df5689d2449c4507b69283b551f78fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_770571896b164dab8d8caf16b1327298 = $(`<div id="html_770571896b164dab8d8caf16b1327298" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Internac. La Amistad Fila Tsiurábeta, entre Ríos Urén y Lari. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1989-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_df5689d2449c4507b69283b551f78fe0.setContent(html_770571896b164dab8d8caf16b1327298);
+        
+
+        marker_fcee7aae10f24675b96508e2bb40cfbd.bindPopup(popup_df5689d2449c4507b69283b551f78fe0)
+        ;
+
+        
+    
+    
+            var marker_962ca90dffd043d9948ae25ed5ddca81 = L.marker(
+                [9.58055, -84.18333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_2ee8ac1b21eb4366b8535d4033682f99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf5091c186c64a85bdfd0740bb92b8a9 = $(`<div id="html_bf5091c186c64a85bdfd0740bb92b8a9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Pirris-Damas. Fila Chonta, Sector SW, cabeceras Río Damitas <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1999-02-20 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales|Barry E. Hammel|Helen Kennedy <strong>Identificadores:</strong> M. H. Grayum, XII/</div>`)[0];
+            popup_2ee8ac1b21eb4366b8535d4033682f99.setContent(html_bf5091c186c64a85bdfd0740bb92b8a9);
+        
+
+        marker_962ca90dffd043d9948ae25ed5ddca81.bindPopup(popup_2ee8ac1b21eb4366b8535d4033682f99)
+        ;
+
+        
+    
+    
+            var marker_e3c57863a0f3425b94c7f404cadf7ca6 = L.marker(
+                [9.233880000000001, -79.375],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_145999ee823148b5a478294e92804c0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26f716be45164e13bac8690b88cff09d = $(`<div id="html_26f716be45164e13bac8690b88cff09d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Jefe <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 2000-11-29 00:00:00+00:00 <strong>Recolectores:</strong> R. Gottsberger <strong>Identificadores:</strong> Det. Tom Croat</div>`)[0];
+            popup_145999ee823148b5a478294e92804c0b.setContent(html_26f716be45164e13bac8690b88cff09d);
+        
+
+        marker_e3c57863a0f3425b94c7f404cadf7ca6.bindPopup(popup_145999ee823148b5a478294e92804c0b)
+        ;
+
+        
+    
+    
+            var marker_4f2ce952580e49d4af902472a8fc5481 = L.marker(
+                [10.76666, -83.88333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_d40b4ac0f93d4b81aef0e04f1ef40ad6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6da6453dfe1f473793b7d8d202ba0ed2 = $(`<div id="html_6da6453dfe1f473793b7d8d202ba0ed2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maiz, Municipio de San Juan del Norte, cima del Cerro Gigante. <strong>Elevación:</strong> 412.0 m  <strong>Fecha:</strong> 1998-09-26 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G.|W. Velásquez|Y. Rubi <strong>Identificadores:</strong> R. Evans</div>`)[0];
+            popup_d40b4ac0f93d4b81aef0e04f1ef40ad6.setContent(html_6da6453dfe1f473793b7d8d202ba0ed2);
+        
+
+        marker_4f2ce952580e49d4af902472a8fc5481.bindPopup(popup_d40b4ac0f93d4b81aef0e04f1ef40ad6)
+        ;
+
+        
+    
+    
+            var marker_9c4b2c7e5eec40fea7dea3e6e04aa295 = L.marker(
+                [10.76666, -83.88333],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_ddd8546153b74da08863e3ab106b6733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a68c4b74a8264d39ab585bf0d0148e31 = $(`<div id="html_a68c4b74a8264d39ab585bf0d0148e31" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio Maíz, Municipio de San Juan del Norte, cerro el Gigante. <strong>Elevación:</strong> 365.0 m  <strong>Fecha:</strong> 1996-07-25 00:00:00+00:00 <strong>Recolectores:</strong> R.M. Rueda|I. Coronado G.|N. Tercero <strong>Identificadores:</strong> R. Evans</div>`)[0];
+            popup_ddd8546153b74da08863e3ab106b6733.setContent(html_a68c4b74a8264d39ab585bf0d0148e31);
+        
+
+        marker_9c4b2c7e5eec40fea7dea3e6e04aa295.bindPopup(popup_ddd8546153b74da08863e3ab106b6733)
+        ;
+
+        
+    
+    
+            var marker_8ea468cd73cc4511a45e2334d394d832 = L.marker(
+                [9.220278, -79.372222],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_40c6aa73645b443a97b4e35f033e80f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0f117dfef9245db94af4e9f4fe79102 = $(`<div id="html_c0f117dfef9245db94af4e9f4fe79102" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Jefe. <strong>Elevación:</strong> 892.0 m  <strong>Fecha:</strong> 2008-08-20 00:00:00+00:00 <strong>Recolectores:</strong> Carmen Galdames|E. Espino|Rodolfo Flores <strong>Identificadores:</strong> C. Galdames</div>`)[0];
+            popup_40c6aa73645b443a97b4e35f033e80f3.setContent(html_c0f117dfef9245db94af4e9f4fe79102);
+        
+
+        marker_8ea468cd73cc4511a45e2334d394d832.bindPopup(popup_40c6aa73645b443a97b4e35f033e80f3)
+        ;
+
+        
+    
+    
+            var marker_939559a097c54b628adfcc437b4c308a = L.marker(
+                [9.583333, -84.166667],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_56be728abb4b4b439cd378a1fb957011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72428e14e0594846ab29171196f28932 = $(`<div id="html_72428e14e0594846ab29171196f28932" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Cura, La Virgen y Fila Chonta. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1998-01-31 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_56be728abb4b4b439cd378a1fb957011.setContent(html_72428e14e0594846ab29171196f28932);
+        
+
+        marker_939559a097c54b628adfcc437b4c308a.bindPopup(popup_56be728abb4b4b439cd378a1fb957011)
+        ;
+
+        
+    
+    
+            var marker_9812504ed0a64f16862beefd353e721e = L.marker(
+                [9.580556, -84.18333299999999],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_60d1330880964ed8a1b8dd3b7ef7105b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b83e41b0fe04d769a4228d0fa54b4f8 = $(`<div id="html_3b83e41b0fe04d769a4228d0fa54b4f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Chonta, Sector SW, cabeceras Rio Damitas. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1999-02-20 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Barry Hammel ; Helen Kennedy <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_60d1330880964ed8a1b8dd3b7ef7105b.setContent(html_3b83e41b0fe04d769a4228d0fa54b4f8);
+        
+
+        marker_9812504ed0a64f16862beefd353e721e.bindPopup(popup_60d1330880964ed8a1b8dd3b7ef7105b)
+        ;
+
+        
+    
+    
+            var marker_2059ea5c9b5a4643b1bf6320a18b13a2 = L.marker(
+                [9.580556, -84.18333299999999],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_065aa3093fd34d6eada81b32cc7b04d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f3147c691d1462bbff8196d9ec4ce1b = $(`<div id="html_2f3147c691d1462bbff8196d9ec4ce1b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Chonta, Sector SW, cabeceras Rio Damitas. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1999-02-20 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Barry Hammel ; Helen Kennedy <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_065aa3093fd34d6eada81b32cc7b04d5.setContent(html_2f3147c691d1462bbff8196d9ec4ce1b);
+        
+
+        marker_2059ea5c9b5a4643b1bf6320a18b13a2.bindPopup(popup_065aa3093fd34d6eada81b32cc7b04d5)
+        ;
+
+        
+    
+    
+            var marker_7a58cc01a8484bdca4bd5be94bfa8717 = L.marker(
+                [9.584722, -84.173611],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_ad86129d47134d738b1d9448789cf306 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9169bc3c3bfe4fe3b40a3595c885f86f = $(`<div id="html_9169bc3c3bfe4fe3b40a3595c885f86f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Chonta, Sector SE, Sitio El Colpotrino, Fila de la cima. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1997-12-27 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; R. J. Abarca <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_ad86129d47134d738b1d9448789cf306.setContent(html_9169bc3c3bfe4fe3b40a3595c885f86f);
+        
+
+        marker_7a58cc01a8484bdca4bd5be94bfa8717.bindPopup(popup_ad86129d47134d738b1d9448789cf306)
+        ;
+
+        
+    
+    
+            var marker_5f2c23c9313648c49acb2c4064e55851 = L.marker(
+                [9.584722, -84.173611],
+                {}
+            ).addTo(marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd);
+        
+    
+        var popup_4d10dfe01395409ea110aa6d9381be1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b8e6f0823ed46dcba8c295c555eeb2a = $(`<div id="html_5b8e6f0823ed46dcba8c295c555eeb2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Chonta, Sector SE, Sitio El Colpotrino, Fila de la cima. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1997-12-27 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; R. J. Abarca <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_4d10dfe01395409ea110aa6d9381be1a.setContent(html_5b8e6f0823ed46dcba8c295c555eeb2a);
+        
+
+        marker_5f2c23c9313648c49acb2c4064e55851.bindPopup(popup_4d10dfe01395409ea110aa6d9381be1a)
+        ;
+
+        
+    
+    
+            var layer_control_988092bf75434cd6bc7c5a14dd23e885 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dbfbb4727bf446328d5610896fe08722,
+                    "ESRI World Imagery" : tile_layer_c960c85b0dcc4f5598f80b54f8e52b15,
+                },
+                overlays :  {
+                    "macro_element_c4f5a9ca195f47b7947c1f40a78faedd" : marker_cluster_c4f5a9ca195f47b7947c1f40a78faedd,
+                },
+            };
+            L.control.layers(
+                layer_control_988092bf75434cd6bc7c5a14dd23e885.base_layers,
+                layer_control_988092bf75434cd6bc7c5a14dd23e885.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b7fd21202aeb420489bf6d8f8f1b4bbf);
+            tile_layer_c960c85b0dcc4f5598f80b54f8e52b15.remove();
+        
+</script>

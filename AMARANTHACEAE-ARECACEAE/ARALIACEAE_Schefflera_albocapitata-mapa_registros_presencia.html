@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eab9f8d7da3b477bbae6b620ca765b29 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eab9f8d7da3b477bbae6b620ca765b29" ></div>
+        
+</body>
+<script>    
+    
+            var map_eab9f8d7da3b477bbae6b620ca765b29 = L.map(
+                "map_eab9f8d7da3b477bbae6b620ca765b29",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+
+            
+
+        
+    
+            var tile_layer_ce6a34d543924b50a421e5f7cb4e52c2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+            var tile_layer_41e30965ad0c410f90d176e853566a55 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+            var circle_marker_2c1f2aae3f1e4137ad645e73edda77bb = L.circleMarker(
+                [8.8, -82.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+        var popup_819b8f6509d34e98a727644cad848649 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f7f8b8f27e8457a9967c9f6b396e687 = $(`<div id="html_6f7f8b8f27e8457a9967c9f6b396e687" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Cruces Biological Station, 2 mi. S of San Vito, Wilson Botanical Garden. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-06-30 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_819b8f6509d34e98a727644cad848649.setContent(html_6f7f8b8f27e8457a9967c9f6b396e687);
+        
+
+        circle_marker_2c1f2aae3f1e4137ad645e73edda77bb.bindPopup(popup_819b8f6509d34e98a727644cad848649)
+        ;
+
+        
+    
+    
+            var circle_marker_cda9698972f44fe993295b006db2d05a = L.circleMarker(
+                [9.475, -79.56666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+        var popup_62210778008940d5935a652f90717cd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f30f41041e4458e93bdc66e752112b2 = $(`<div id="html_0f30f41041e4458e93bdc66e752112b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> South approach of Cerro Bruja from Río Escandaloso. <strong>Elevación:</strong> 914.4 m  <strong>Fecha:</strong> 1978-05-18 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_62210778008940d5935a652f90717cd3.setContent(html_0f30f41041e4458e93bdc66e752112b2);
+        
+
+        circle_marker_cda9698972f44fe993295b006db2d05a.bindPopup(popup_62210778008940d5935a652f90717cd3)
+        ;
+
+        
+    
+    
+            var circle_marker_991fcfb5599549f4b02876ddc286e37d = L.circleMarker(
+                [8.804117999999999, -82.958579],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+        var popup_b8a2a97c4a9e47c68b0cb16c8504bc34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_deb614c871a144469e10df2f3f7186df = $(`<div id="html_deb614c871a144469e10df2f3f7186df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Linda Vista <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2000-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b8a2a97c4a9e47c68b0cb16c8504bc34.setContent(html_deb614c871a144469e10df2f3f7186df);
+        
+
+        circle_marker_991fcfb5599549f4b02876ddc286e37d.bindPopup(popup_b8a2a97c4a9e47c68b0cb16c8504bc34)
+        ;
+
+        
+    
+    
+            var circle_marker_5e4ad516ce2b4b3bbf430888df6c1608 = L.circleMarker(
+                [8.804117999999999, -82.958579],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+        var popup_1c8acd84b9bc4f05a11637b1c98d041a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55ac3a9f0e44eb1be837b80e1792370 = $(`<div id="html_f55ac3a9f0e44eb1be837b80e1792370" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Linda Vista <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2000-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1c8acd84b9bc4f05a11637b1c98d041a.setContent(html_f55ac3a9f0e44eb1be837b80e1792370);
+        
+
+        circle_marker_5e4ad516ce2b4b3bbf430888df6c1608.bindPopup(popup_1c8acd84b9bc4f05a11637b1c98d041a)
+        ;
+
+        
+    
+    
+            var circle_marker_0a51d27c1b234a1688c9382ad9f8e398 = L.circleMarker(
+                [8.804117999999999, -82.958579],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+        
+    
+        var popup_43246a274f584703badd8189b36b8ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_570a070211bb4bcabba0a4f791ef2346 = $(`<div id="html_570a070211bb4bcabba0a4f791ef2346" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Linda Vista <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2000-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_43246a274f584703badd8189b36b8ff4.setContent(html_570a070211bb4bcabba0a4f791ef2346);
+        
+
+        circle_marker_0a51d27c1b234a1688c9382ad9f8e398.bindPopup(popup_43246a274f584703badd8189b36b8ff4)
+        ;
+
+        
+    
+    
+            var layer_control_984dc69448ca43d0a3400ed48c73982b = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ce6a34d543924b50a421e5f7cb4e52c2,
+                    "ESRI World Imagery" : tile_layer_41e30965ad0c410f90d176e853566a55,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_984dc69448ca43d0a3400ed48c73982b.base_layers,
+                layer_control_984dc69448ca43d0a3400ed48c73982b.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_eab9f8d7da3b477bbae6b620ca765b29);
+            tile_layer_41e30965ad0c410f90d176e853566a55.remove();
+        
+</script>

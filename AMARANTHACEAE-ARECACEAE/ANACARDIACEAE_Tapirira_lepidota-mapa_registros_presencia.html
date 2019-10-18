@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dfa12f6f451e4e4ab0e4d118ad30902f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dfa12f6f451e4e4ab0e4d118ad30902f" ></div>
+        
+</body>
+<script>    
+    
+            var map_dfa12f6f451e4e4ab0e4d118ad30902f = L.map(
+                "map_dfa12f6f451e4e4ab0e4d118ad30902f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+
+            
+
+        
+    
+            var tile_layer_1c89a2a111de4c9190336de21fd775fb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+            var tile_layer_4263e9b5de104f6c94dbae695eb78ee0 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+            var circle_marker_62385cb580c741c6b48c449c16264367 = L.circleMarker(
+                [8.6717, -83.5047],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_0cbcd685bfd24076af01a379fcd09d85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa4365ce2d22408290c7f122cf9651b7 = $(`<div id="html_fa4365ce2d22408290c7f122cf9651b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe.  Reserva Forestal Golfo Dulce; Rincón, cerca de Banegas Los Charcos, 1 km. al Este del centro del pueblo Banegas, Estación Biológica Los Charcos de Osa <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2008-03-28 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_0cbcd685bfd24076af01a379fcd09d85.setContent(html_fa4365ce2d22408290c7f122cf9651b7);
+        
+
+        circle_marker_62385cb580c741c6b48c449c16264367.bindPopup(popup_0cbcd685bfd24076af01a379fcd09d85)
+        ;
+
+        
+    
+    
+            var circle_marker_e3469287bba940a6b45153ca6005f409 = L.circleMarker(
+                [8.58, -83.51],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_c2ab7ae6af1f4680967cafea697a960b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c5ddf18b226454abf3ac5318a6564b7 = $(`<div id="html_1c5ddf18b226454abf3ac5318a6564b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado; Península de Osa. La Palma, Río Rincón aguas arriba, camino a Cerro de Oro. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_c2ab7ae6af1f4680967cafea697a960b.setContent(html_1c5ddf18b226454abf3ac5318a6564b7);
+        
+
+        circle_marker_e3469287bba940a6b45153ca6005f409.bindPopup(popup_c2ab7ae6af1f4680967cafea697a960b)
+        ;
+
+        
+    
+    
+            var circle_marker_04c8d0dbc93d4cb89912e4ac5e83c578 = L.circleMarker(
+                [8.731667, -83.46305600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_38107f2a20f34c739d65dbac457a5f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49968e5c985c424ca8c2ed656192d162 = $(`<div id="html_49968e5c985c424ca8c2ed656192d162" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton Cortés. Península de Osa. Rincon. Bahia Chal. Casa de Salud para todos. In collaboration with Instituto Nacional de Biodiversidad, Organization for Tropical Studies. <strong>Elevación:</strong> 219.0 m  <strong>Fecha:</strong> 2001-08-17 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller|Reinaldo Aguilar|A. Muehlenbachs <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_38107f2a20f34c739d65dbac457a5f1b.setContent(html_49968e5c985c424ca8c2ed656192d162);
+        
+
+        circle_marker_04c8d0dbc93d4cb89912e4ac5e83c578.bindPopup(popup_38107f2a20f34c739d65dbac457a5f1b)
+        ;
+
+        
+    
+    
+            var circle_marker_dec1de4b4efe4d2684c953fb3d23ebaf = L.circleMarker(
+                [8.4, -83.28],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_b8feedcf4bbe4f04ab31f74ea24c2a80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2793b72bf6514ce783da84b7910d2852 = $(`<div id="html_2793b72bf6514ce783da84b7910d2852" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Golfito Puerto Jiménez, Río Piro, camino a Cerro Osa. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1990-10-17 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_b8feedcf4bbe4f04ab31f74ea24c2a80.setContent(html_2793b72bf6514ce783da84b7910d2852);
+        
+
+        circle_marker_dec1de4b4efe4d2684c953fb3d23ebaf.bindPopup(popup_b8feedcf4bbe4f04ab31f74ea24c2a80)
+        ;
+
+        
+    
+    
+            var circle_marker_65c1acfb8137454a90374aa620b72d98 = L.circleMarker(
+                [8.425, -83.31666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_3db0bcef3d464eaf9b67d6965308a9d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aeb681e1161b44cebe5a14afcaae2143 = $(`<div id="html_aeb681e1161b44cebe5a14afcaae2143" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Golfito Jiménez, Alto de la Carbonera, camino a Cerro de Osa. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1990-09-18 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacón <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_3db0bcef3d464eaf9b67d6965308a9d9.setContent(html_aeb681e1161b44cebe5a14afcaae2143);
+        
+
+        circle_marker_65c1acfb8137454a90374aa620b72d98.bindPopup(popup_3db0bcef3d464eaf9b67d6965308a9d9)
+        ;
+
+        
+    
+    
+            var circle_marker_a623023813714c5ba06a4a9fcc3ec4f1 = L.circleMarker(
+                [8.416667, -83.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_6ce2a2f6b52a4683b67f968f3c307edf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50d4d72bb28f440aa32674b79db556f3 = $(`<div id="html_50d4d72bb28f440aa32674b79db556f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa 3 Km. norte de Playa Piro, Puerto Jiménez, Finca Asunción Esquivel <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez|E. Vargas|Juan J. Jiménez <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_6ce2a2f6b52a4683b67f968f3c307edf.setContent(html_50d4d72bb28f440aa32674b79db556f3);
+        
+
+        circle_marker_a623023813714c5ba06a4a9fcc3ec4f1.bindPopup(popup_6ce2a2f6b52a4683b67f968f3c307edf)
+        ;
+
+        
+    
+    
+            var circle_marker_20ce28d29c3e4d6892954a0c8d0e828f = L.circleMarker(
+                [8.527778, -83.416667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_e6137b525dab432d82faec502160446a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7a90f5fe4024f30b50f258fa2f49eda = $(`<div id="html_d7a90f5fe4024f30b50f258fa2f49eda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce.  Península de Osa.  Estación Agujas . Finca Luis Mata, Sendero Homo. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa <strong>Identificadores:</strong> John D. Mitchell (NY)</div>`)[0];
+            popup_e6137b525dab432d82faec502160446a.setContent(html_d7a90f5fe4024f30b50f258fa2f49eda);
+        
+
+        circle_marker_20ce28d29c3e4d6892954a0c8d0e828f.bindPopup(popup_e6137b525dab432d82faec502160446a)
+        ;
+
+        
+    
+    
+            var circle_marker_bff251e33c71458092a8bb110cce0c07 = L.circleMarker(
+                [8.76, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_5a7b3803638d43448def6c7f9b780eba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62d02973d36e4bcc9f95c884170d7603 = $(`<div id="html_62d02973d36e4bcc9f95c884170d7603" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Valle de Coto Colorado. Punta Estrella y Punta Bejuco. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-11-08 00:00:00+00:00 <strong>Recolectores:</strong> F. J. Quesada|Marianela Segura <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_5a7b3803638d43448def6c7f9b780eba.setContent(html_62d02973d36e4bcc9f95c884170d7603);
+        
+
+        circle_marker_bff251e33c71458092a8bb110cce0c07.bindPopup(popup_5a7b3803638d43448def6c7f9b780eba)
+        ;
+
+        
+    
+    
+            var circle_marker_8760cd8455cb469e9e3ce1a06bc78204 = L.circleMarker(
+                [8.983333, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_a991eb2de1d84cf1aa15232bdc154e60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73842c98ded241cba017575c1abd10c3 = $(`<div id="html_73842c98ded241cba017575c1abd10c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca Térraba-Sierpe.  Fachada sur de Fila Retinta, al norte de Palmar Norte, filas y laderas del cañón de la Quebrada Benjamín. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1997-02-23 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Reinaldo Aguilar <strong>Identificadores:</strong> John D. Mitchell (NY)</div>`)[0];
+            popup_a991eb2de1d84cf1aa15232bdc154e60.setContent(html_73842c98ded241cba017575c1abd10c3);
+        
+
+        circle_marker_8760cd8455cb469e9e3ce1a06bc78204.bindPopup(popup_a991eb2de1d84cf1aa15232bdc154e60)
+        ;
+
+        
+    
+    
+            var circle_marker_d3ffd79000c845cca0efd198b082d7ce = L.circleMarker(
+                [8.748889, -83.449444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_5fcd94a6f2494d4f87c134ec04b4ed1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5effe0b7d8de493caccd9d89a1cb5bbf = $(`<div id="html_5effe0b7d8de493caccd9d89a1cb5bbf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal, entrada del Edén, parche de bosque que está antes de llegar al humedal cerca de la Quebrada Lagunas. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2001-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_5fcd94a6f2494d4f87c134ec04b4ed1e.setContent(html_5effe0b7d8de493caccd9d89a1cb5bbf);
+        
+
+        circle_marker_d3ffd79000c845cca0efd198b082d7ce.bindPopup(popup_5fcd94a6f2494d4f87c134ec04b4ed1e)
+        ;
+
+        
+    
+    
+            var circle_marker_88b6c5f0314a4deb8a788384dffb78a8 = L.circleMarker(
+                [8.736111, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_9cbcc821f5954b839936156eda262408 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abd53163f7214682939982eb52b4dec9 = $(`<div id="html_abd53163f7214682939982eb52b4dec9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mogos. Bahía Chal. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2001-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_9cbcc821f5954b839936156eda262408.setContent(html_abd53163f7214682939982eb52b4dec9);
+        
+
+        circle_marker_88b6c5f0314a4deb8a788384dffb78a8.bindPopup(popup_9cbcc821f5954b839936156eda262408)
+        ;
+
+        
+    
+    
+            var circle_marker_334dfd67c69d4de0925c2b2948252fcd = L.circleMarker(
+                [8.748889, -83.449444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_94ca303989434b01bed33e65cdc8d096 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f65702bb57744e77a10241c562bee85f = $(`<div id="html_f65702bb57744e77a10241c562bee85f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal, entrada del Edén, parche de bosque que está antes de llegar al humedal cerca de la Quebrada Lagunas. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2001-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_94ca303989434b01bed33e65cdc8d096.setContent(html_f65702bb57744e77a10241c562bee85f);
+        
+
+        circle_marker_334dfd67c69d4de0925c2b2948252fcd.bindPopup(popup_94ca303989434b01bed33e65cdc8d096)
+        ;
+
+        
+    
+    
+            var circle_marker_1d9cc115396449e88982a4f6d3451709 = L.circleMarker(
+                [8.736111, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_a8f60a024e3748f297a191fe2b9cd91c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb440e45d0564f6fa438ea49504f16e7 = $(`<div id="html_fb440e45d0564f6fa438ea49504f16e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mogos. Bahía Chal. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2001-04-10 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_a8f60a024e3748f297a191fe2b9cd91c.setContent(html_fb440e45d0564f6fa438ea49504f16e7);
+        
+
+        circle_marker_1d9cc115396449e88982a4f6d3451709.bindPopup(popup_a8f60a024e3748f297a191fe2b9cd91c)
+        ;
+
+        
+    
+    
+            var circle_marker_82ca29ef52914b65bf2154bcd50c83de = L.circleMarker(
+                [8.748889, -83.449444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_be95f5f6785b4037850128676ce63863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26014642b246438281170b933c48c46d = $(`<div id="html_26014642b246438281170b933c48c46d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal, entrada del Edén, parche de bosque que está antes de llegar al humedal cerca de la Quebrada Lagunas. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2001-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_be95f5f6785b4037850128676ce63863.setContent(html_26014642b246438281170b933c48c46d);
+        
+
+        circle_marker_82ca29ef52914b65bf2154bcd50c83de.bindPopup(popup_be95f5f6785b4037850128676ce63863)
+        ;
+
+        
+    
+    
+            var circle_marker_d7aafa2de984497f964beb887d26eea5 = L.circleMarker(
+                [8.645639, -83.165778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_9bad4eb629eb416cbb8273e3a7a7d7fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65b5be3714fa4a6283ed5182f23039f6 = $(`<div id="html_65b5be3714fa4a6283ed5182f23039f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> RNVS Golfito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_9bad4eb629eb416cbb8273e3a7a7d7fa.setContent(html_65b5be3714fa4a6283ed5182f23039f6);
+        
+
+        circle_marker_d7aafa2de984497f964beb887d26eea5.bindPopup(popup_9bad4eb629eb416cbb8273e3a7a7d7fa)
+        ;
+
+        
+    
+    
+            var circle_marker_7b0707debd3148b6a13345dfc66043bd = L.circleMarker(
+                [8.645639, -83.165778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_450cfa2ac6d544ebbbc2cd39d71da5be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e611d223c8024e5cae7a36198f795328 = $(`<div id="html_e611d223c8024e5cae7a36198f795328" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> RNVS Golfito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_450cfa2ac6d544ebbbc2cd39d71da5be.setContent(html_e611d223c8024e5cae7a36198f795328);
+        
+
+        circle_marker_7b0707debd3148b6a13345dfc66043bd.bindPopup(popup_450cfa2ac6d544ebbbc2cd39d71da5be)
+        ;
+
+        
+    
+    
+            var circle_marker_ca95e13f61a44e779d900f4a06f49521 = L.circleMarker(
+                [8.645639, -83.165778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_8f074172bfef43f98fdddab5e8706fc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_883bc065748b401581542cfca1e36cd7 = $(`<div id="html_883bc065748b401581542cfca1e36cd7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> RNVS Golfito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8f074172bfef43f98fdddab5e8706fc2.setContent(html_883bc065748b401581542cfca1e36cd7);
+        
+
+        circle_marker_ca95e13f61a44e779d900f4a06f49521.bindPopup(popup_8f074172bfef43f98fdddab5e8706fc2)
+        ;
+
+        
+    
+    
+            var circle_marker_e7c4b68fc21e41108b0e3aaf4c1389f3 = L.circleMarker(
+                [8.645639, -83.165778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_f30c61c26905423c99eae87f797772bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91204357c9ca40e0911d48e402baba91 = $(`<div id="html_91204357c9ca40e0911d48e402baba91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> RNVS Golfito. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2011-05-03 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos ; Daniel Santamaría <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f30c61c26905423c99eae87f797772bb.setContent(html_91204357c9ca40e0911d48e402baba91);
+        
+
+        circle_marker_e7c4b68fc21e41108b0e3aaf4c1389f3.bindPopup(popup_f30c61c26905423c99eae87f797772bb)
+        ;
+
+        
+    
+    
+            var circle_marker_a3264a61ea574ad3b6a12b629b809f82 = L.circleMarker(
+                [8.731722, -83.463],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_6d4de09b0a114b24aefd6d55863c13f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8628f560e9e4c97ada158fb17cc424d = $(`<div id="html_b8628f560e9e4c97ada158fb17cc424d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal. <strong>Elevación:</strong> 209.5 m  <strong>Fecha:</strong> 2001-08-17 00:00:00+00:00 <strong>Recolectores:</strong> Allison Miller <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6d4de09b0a114b24aefd6d55863c13f0.setContent(html_b8628f560e9e4c97ada158fb17cc424d);
+        
+
+        circle_marker_a3264a61ea574ad3b6a12b629b809f82.bindPopup(popup_6d4de09b0a114b24aefd6d55863c13f0)
+        ;
+
+        
+    
+    
+            var circle_marker_6932ed76240b49c49a6d9d08e9a01a02 = L.circleMarker(
+                [8.4, -83.283333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_98a66b84cd9d435d85959921615bd367 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b1b45293af645c3a173c6e37d019d2c = $(`<div id="html_9b1b45293af645c3a173c6e37d019d2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puerto Jimenez, Rio Piro, camino a Cerro Osa. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1990-10-17 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacon <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_98a66b84cd9d435d85959921615bd367.setContent(html_9b1b45293af645c3a173c6e37d019d2c);
+        
+
+        circle_marker_6932ed76240b49c49a6d9d08e9a01a02.bindPopup(popup_98a66b84cd9d435d85959921615bd367)
+        ;
+
+        
+    
+    
+            var circle_marker_e00810972b134e7384e9896fb682b558 = L.circleMarker(
+                [8.416618, -83.336444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_178eb6cd6d56416e8595392353cc9ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_363093f513d4424180e5a354324d8049 = $(`<div id="html_363093f513d4424180e5a354324d8049" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2.5 Km norte de Playa Piro. Finca Asuncion Esquivel <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_178eb6cd6d56416e8595392353cc9ba8.setContent(html_363093f513d4424180e5a354324d8049);
+        
+
+        circle_marker_e00810972b134e7384e9896fb682b558.bindPopup(popup_178eb6cd6d56416e8595392353cc9ba8)
+        ;
+
+        
+    
+    
+            var circle_marker_645976b17c4a4030b81f17cb9ec6e0ec = L.circleMarker(
+                [8.583333, -83.511111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_9a16c2b6a2de4139a9ed55ebe5e3b84a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccbd0afbc54049e1a3dbca828d5a5584 = $(`<div id="html_ccbd0afbc54049e1a3dbca828d5a5584" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Palma, Rio Rincon aguas arriba, camino a Cerro de Oro. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_9a16c2b6a2de4139a9ed55ebe5e3b84a.setContent(html_ccbd0afbc54049e1a3dbca828d5a5584);
+        
+
+        circle_marker_645976b17c4a4030b81f17cb9ec6e0ec.bindPopup(popup_9a16c2b6a2de4139a9ed55ebe5e3b84a)
+        ;
+
+        
+    
+    
+            var circle_marker_6a03ca43457f4e9187e7dba436fb9922 = L.circleMarker(
+                [8.527778, -83.416667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_7a4499970ad64114960ed20b70df8c1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3a82aa923b34fc2b73cb354f61851dd = $(`<div id="html_c3a82aa923b34fc2b73cb354f61851dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero de acceso a la Finca La Purruja, ( Hnos. Azofeifa ) lim. P. N. Corcovado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_7a4499970ad64114960ed20b70df8c1c.setContent(html_c3a82aa923b34fc2b73cb354f61851dd);
+        
+
+        circle_marker_6a03ca43457f4e9187e7dba436fb9922.bindPopup(popup_7a4499970ad64114960ed20b70df8c1c)
+        ;
+
+        
+    
+    
+            var circle_marker_12a1a2214a7f47cda41536ca6a506cf4 = L.circleMarker(
+                [8.527778, -83.416667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_3b13d51076ab4b44805cbe593a26d0ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba6ac53f3b4142a1bbde6053a5c6b4c2 = $(`<div id="html_ba6ac53f3b4142a1bbde6053a5c6b4c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero de acceso a la Finca La Purruja, ( Hnos. Azofeifa ) lim. P. N. Corcovado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_3b13d51076ab4b44805cbe593a26d0ac.setContent(html_ba6ac53f3b4142a1bbde6053a5c6b4c2);
+        
+
+        circle_marker_12a1a2214a7f47cda41536ca6a506cf4.bindPopup(popup_3b13d51076ab4b44805cbe593a26d0ac)
+        ;
+
+        
+    
+    
+            var circle_marker_d66b049c238945f78ed11b1022a47286 = L.circleMarker(
+                [8.527778, -83.416667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_d448c185d19d4addac9d9ad4a3754cdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4723084484f9489d9d20d25db01595ed = $(`<div id="html_4723084484f9489d9d20d25db01595ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero de acceso a la Finca La Purruja, ( Hnos. Azofeifa ) lim. P. N. Corcovado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_d448c185d19d4addac9d9ad4a3754cdc.setContent(html_4723084484f9489d9d20d25db01595ed);
+        
+
+        circle_marker_d66b049c238945f78ed11b1022a47286.bindPopup(popup_d448c185d19d4addac9d9ad4a3754cdc)
+        ;
+
+        
+    
+    
+            var circle_marker_8a9fbfbd13084c23bc3867a67f0530ff = L.circleMarker(
+                [8.527778, -83.416667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_6335d38eb0c5442f8b48c5302ed3615a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d9cfce077c94fccb1b1198fb882c145 = $(`<div id="html_6d9cfce077c94fccb1b1198fb882c145" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero de acceso a la Finca La Purruja, ( Hnos. Azofeifa ) lim. P. N. Corcovado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6335d38eb0c5442f8b48c5302ed3615a.setContent(html_6d9cfce077c94fccb1b1198fb882c145);
+        
+
+        circle_marker_8a9fbfbd13084c23bc3867a67f0530ff.bindPopup(popup_6335d38eb0c5442f8b48c5302ed3615a)
+        ;
+
+        
+    
+    
+            var circle_marker_95e7150733354ad09ea385abe3b370e2 = L.circleMarker(
+                [8.527778, -83.416667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_00bc812e4fc84274a5029b953effb96e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5eae5b2aff342e2abb01d172f053de8 = $(`<div id="html_d5eae5b2aff342e2abb01d172f053de8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero de acceso a la Finca La Purruja, ( Hnos. Azofeifa ) lim. P. N. Corcovado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-10-23 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_00bc812e4fc84274a5029b953effb96e.setContent(html_d5eae5b2aff342e2abb01d172f053de8);
+        
+
+        circle_marker_95e7150733354ad09ea385abe3b370e2.bindPopup(popup_00bc812e4fc84274a5029b953effb96e)
+        ;
+
+        
+    
+    
+            var circle_marker_e6d90b8b473b4b1d8cc64fba0e9edd6c = L.circleMarker(
+                [8.766667, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_110ac8834af84673b8daf5e199e4f77b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27dc8047614d448c94c93b9b6d9c2176 = $(`<div id="html_27dc8047614d448c94c93b9b6d9c2176" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Punta Estrella y Punta Bejuco. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-11-08 00:00:00+00:00 <strong>Recolectores:</strong> Javier Quesada <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_110ac8834af84673b8daf5e199e4f77b.setContent(html_27dc8047614d448c94c93b9b6d9c2176);
+        
+
+        circle_marker_e6d90b8b473b4b1d8cc64fba0e9edd6c.bindPopup(popup_110ac8834af84673b8daf5e199e4f77b)
+        ;
+
+        
+    
+    
+            var circle_marker_eeb025bf300a436788ff922635606454 = L.circleMarker(
+                [8.425, -83.31666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_c60338ad88a8410bbbf8f2912313e559 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37775388b45b4724b927ae991fb76ae9 = $(`<div id="html_37775388b45b4724b927ae991fb76ae9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto de la Carbonera. Camino a Cerro de Osa <strong>Elevación:</strong> 330.0 m  <strong>Fecha:</strong> 1990-09-18 00:00:00+00:00 <strong>Recolectores:</strong> Abelardo Chacon <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_c60338ad88a8410bbbf8f2912313e559.setContent(html_37775388b45b4724b927ae991fb76ae9);
+        
+
+        circle_marker_eeb025bf300a436788ff922635606454.bindPopup(popup_c60338ad88a8410bbbf8f2912313e559)
+        ;
+
+        
+    
+    
+            var circle_marker_e1e006c9b75b426ca56637876267c1ff = L.circleMarker(
+                [8.983333, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_a7736cc9158e46b986898806003e855d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ae7f42980534929a699769bca9d76b2 = $(`<div id="html_9ae7f42980534929a699769bca9d76b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> fachada sur de Fila Retinta, al norte de Palmar Norte, filas y laderas del canon de la Quebrada Benjamin. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1997-02-23 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_a7736cc9158e46b986898806003e855d.setContent(html_9ae7f42980534929a699769bca9d76b2);
+        
+
+        circle_marker_e1e006c9b75b426ca56637876267c1ff.bindPopup(popup_a7736cc9158e46b986898806003e855d)
+        ;
+
+        
+    
+    
+            var circle_marker_2dac807321724972820af876eb4abe0c = L.circleMarker(
+                [8.983333, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_44a7402ff65a48d0839573a5cce4dc05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d2b650009a441b7a573d7b3336a00bc = $(`<div id="html_4d2b650009a441b7a573d7b3336a00bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> fachada sur de Fila Retinta, al norte de Palmar Norte, filas y laderas del canon de la Quebrada Benjamin. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1997-02-23 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_44a7402ff65a48d0839573a5cce4dc05.setContent(html_4d2b650009a441b7a573d7b3336a00bc);
+        
+
+        circle_marker_2dac807321724972820af876eb4abe0c.bindPopup(popup_44a7402ff65a48d0839573a5cce4dc05)
+        ;
+
+        
+    
+    
+            var circle_marker_859f39776c184bf0b0c91ca6fce0ca1a = L.circleMarker(
+                [8.983333, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_834e78be9d36492099f7c2d4969a3347 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98a4d9c5f12a4c03ad367b6c0a106677 = $(`<div id="html_98a4d9c5f12a4c03ad367b6c0a106677" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> fachada sur de Fila Retinta, al norte de Palmar Norte, filas y laderas del canon de la Quebrada Benjamin. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1997-02-23 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_834e78be9d36492099f7c2d4969a3347.setContent(html_98a4d9c5f12a4c03ad367b6c0a106677);
+        
+
+        circle_marker_859f39776c184bf0b0c91ca6fce0ca1a.bindPopup(popup_834e78be9d36492099f7c2d4969a3347)
+        ;
+
+        
+    
+    
+            var circle_marker_31d1e3b67a1241139f49a46c7e2827f2 = L.circleMarker(
+                [8.983333, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_911de8731cc545bc97740e333dd477e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d71c180d91f4420bb06f059da08f49c6 = $(`<div id="html_d71c180d91f4420bb06f059da08f49c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> fachada sur de Fila Retinta, al norte de Palmar Norte, filas y laderas del canon de la Quebrada Benjamin. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1997-02-23 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_911de8731cc545bc97740e333dd477e8.setContent(html_d71c180d91f4420bb06f059da08f49c6);
+        
+
+        circle_marker_31d1e3b67a1241139f49a46c7e2827f2.bindPopup(popup_911de8731cc545bc97740e333dd477e8)
+        ;
+
+        
+    
+    
+            var circle_marker_514c8007e825460a93d8e5e9dabea712 = L.circleMarker(
+                [10.0, -84.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_29d7ac6956864995938b48d1de2c7172 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06244dbc64404b98b4a31007ec73da19 = $(`<div id="html_06244dbc64404b98b4a31007ec73da19" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-10-17 00:00:00+00:00 <strong>Recolectores:</strong> A. Chacón <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_29d7ac6956864995938b48d1de2c7172.setContent(html_06244dbc64404b98b4a31007ec73da19);
+        
+
+        circle_marker_514c8007e825460a93d8e5e9dabea712.bindPopup(popup_29d7ac6956864995938b48d1de2c7172)
+        ;
+
+        
+    
+    
+            var circle_marker_07b6bf9db14e42caa8a8961648f0c10d = L.circleMarker(
+                [8.4, -83.28],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_49f6191ec37c4fdfb28af3003025a118 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3ce7a4bdbc14fc8abf442591d1162b2 = $(`<div id="html_b3ce7a4bdbc14fc8abf442591d1162b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puerto Jiménez, Río Piro, camino a Cerro Osa <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1990-10-17 00:00:00+00:00 <strong>Recolectores:</strong> A. Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_49f6191ec37c4fdfb28af3003025a118.setContent(html_b3ce7a4bdbc14fc8abf442591d1162b2);
+        
+
+        circle_marker_07b6bf9db14e42caa8a8961648f0c10d.bindPopup(popup_49f6191ec37c4fdfb28af3003025a118)
+        ;
+
+        
+    
+    
+            var circle_marker_0c1c9ac3989640b89d5f30fdb686e2e1 = L.circleMarker(
+                [10.0, -84.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+        
+    
+        var popup_8113de8f86b74c30a4f8e9063628ffcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_850864093bbd470fbae8e8770fceb198 = $(`<div id="html_850864093bbd470fbae8e8770fceb198" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1994-02-28 00:00:00+00:00 <strong>Recolectores:</strong> G. Rivera <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_8113de8f86b74c30a4f8e9063628ffcb.setContent(html_850864093bbd470fbae8e8770fceb198);
+        
+
+        circle_marker_0c1c9ac3989640b89d5f30fdb686e2e1.bindPopup(popup_8113de8f86b74c30a4f8e9063628ffcb)
+        ;
+
+        
+    
+    
+            var layer_control_c187f68f724a4dffae0e193ff59c7a94 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1c89a2a111de4c9190336de21fd775fb,
+                    "ESRI World Imagery" : tile_layer_4263e9b5de104f6c94dbae695eb78ee0,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_c187f68f724a4dffae0e193ff59c7a94.base_layers,
+                layer_control_c187f68f724a4dffae0e193ff59c7a94.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_dfa12f6f451e4e4ab0e4d118ad30902f);
+            tile_layer_4263e9b5de104f6c94dbae695eb78ee0.remove();
+        
+</script>

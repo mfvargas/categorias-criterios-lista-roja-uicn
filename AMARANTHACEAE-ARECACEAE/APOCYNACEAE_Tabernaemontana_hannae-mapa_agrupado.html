@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_228fdbc207584ae8a97688ddd133fa14 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_228fdbc207584ae8a97688ddd133fa14" ></div>
+        
+</body>
+<script>    
+    
+            var map_228fdbc207584ae8a97688ddd133fa14 = L.map(
+                "map_228fdbc207584ae8a97688ddd133fa14",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_228fdbc207584ae8a97688ddd133fa14);
+
+            
+
+        
+    
+            var tile_layer_5c7eeb2e8d5141c29ddf67410aa90c40 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_228fdbc207584ae8a97688ddd133fa14);
+        
+    
+            var tile_layer_468b28826c2b40788885e3b2f56c94d2 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_228fdbc207584ae8a97688ddd133fa14);
+        
+    
+            var marker_cluster_19708b1361b0423495f86212ddb56d2a = L.markerClusterGroup(
+                {}
+            );
+            map_228fdbc207584ae8a97688ddd133fa14.addLayer(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+            var marker_eae5c5b059a041c5b74fc9e57add13f2 = L.marker(
+                [16.814207999999997, -93.106509],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_b75c604d3d424d969fdb517252d826cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dba95097529429a8d3ec6a54d9cd7d8 = $(`<div id="html_7dba95097529429a8d3ec6a54d9cd7d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-08-25 10:01:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b75c604d3d424d969fdb517252d826cb.setContent(html_7dba95097529429a8d3ec6a54d9cd7d8);
+        
+
+        marker_eae5c5b059a041c5b74fc9e57add13f2.bindPopup(popup_b75c604d3d424d969fdb517252d826cb)
+        ;
+
+        
+    
+    
+            var marker_da1d1c1b11b24dd69ebbaf196e6311c2 = L.marker(
+                [16.828788, -93.107224],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_5ab4845311ad48a492a749bb9e68fae8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dce878c70a9e4d289c872ab26a49ab48 = $(`<div id="html_dce878c70a9e4d289c872ab26a49ab48" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-08-11 12:48:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5ab4845311ad48a492a749bb9e68fae8.setContent(html_dce878c70a9e4d289c872ab26a49ab48);
+        
+
+        marker_da1d1c1b11b24dd69ebbaf196e6311c2.bindPopup(popup_5ab4845311ad48a492a749bb9e68fae8)
+        ;
+
+        
+    
+    
+            var marker_e572739f38b44be1b0de70813694af30 = L.marker(
+                [16.829287, -93.10497099999999],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_0f282113127142a4911a1da73dc7f725 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a79a3b3df60342b58e9bebee1229508c = $(`<div id="html_a79a3b3df60342b58e9bebee1229508c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-08-04 09:55:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0f282113127142a4911a1da73dc7f725.setContent(html_a79a3b3df60342b58e9bebee1229508c);
+        
+
+        marker_e572739f38b44be1b0de70813694af30.bindPopup(popup_0f282113127142a4911a1da73dc7f725)
+        ;
+
+        
+    
+    
+            var marker_eac8f2c99b0f4d10b54efc963cc8908c = L.marker(
+                [16.820286, -93.07490899999999],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_1654d5ef29814aed8b6700c14f107e89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63b7f6a856ad4da49d0b9ffc4bc4fbdb = $(`<div id="html_63b7f6a856ad4da49d0b9ffc4bc4fbdb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-06-02 09:47:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1654d5ef29814aed8b6700c14f107e89.setContent(html_63b7f6a856ad4da49d0b9ffc4bc4fbdb);
+        
+
+        marker_eac8f2c99b0f4d10b54efc963cc8908c.bindPopup(popup_1654d5ef29814aed8b6700c14f107e89)
+        ;
+
+        
+    
+    
+            var marker_fdda660dc8724858b718dc774efbe515 = L.marker(
+                [16.828661999999998, -93.090837],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_db0a80cea5d64d1eb18b614b9be52651 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ded21c9f8e9444c88705796a829608c = $(`<div id="html_7ded21c9f8e9444c88705796a829608c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-05-05 11:42:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_db0a80cea5d64d1eb18b614b9be52651.setContent(html_7ded21c9f8e9444c88705796a829608c);
+        
+
+        marker_fdda660dc8724858b718dc774efbe515.bindPopup(popup_db0a80cea5d64d1eb18b614b9be52651)
+        ;
+
+        
+    
+    
+            var marker_611fbdbae0ca48d391447474a6156eee = L.marker(
+                [16.812322, -93.10255],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_23e8658939a048479f28507635d84ef7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a866cf8264964c63b5008eb41ef2e15d = $(`<div id="html_a866cf8264964c63b5008eb41ef2e15d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-01-13 11:28:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_23e8658939a048479f28507635d84ef7.setContent(html_a866cf8264964c63b5008eb41ef2e15d);
+        
+
+        marker_611fbdbae0ca48d391447474a6156eee.bindPopup(popup_23e8658939a048479f28507635d84ef7)
+        ;
+
+        
+    
+    
+            var marker_fda3d0337cb14fbf8e86204e8be1b83b = L.marker(
+                [16.805257, -93.095462],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_45d25cf89d9d40aab9e5a5f64b7a1c4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e9e8019631b4cc585432bb901190a22 = $(`<div id="html_0e9e8019631b4cc585432bb901190a22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2017-07-22 11:32:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_45d25cf89d9d40aab9e5a5f64b7a1c4d.setContent(html_0e9e8019631b4cc585432bb901190a22);
+        
+
+        marker_fda3d0337cb14fbf8e86204e8be1b83b.bindPopup(popup_45d25cf89d9d40aab9e5a5f64b7a1c4d)
+        ;
+
+        
+    
+    
+            var marker_de94f7c719e6450d874afc756ea121ff = L.marker(
+                [16.809753, -93.09575500000001],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_aa3346ad10f84692b420202b108652eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b02d209e08b74aa08505666b7a2300d1 = $(`<div id="html_b02d209e08b74aa08505666b7a2300d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2017-05-27 08:56:00+00:00 <strong>Recolectores:</strong> Neptalí Ramírez Marcial <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_aa3346ad10f84692b420202b108652eb.setContent(html_b02d209e08b74aa08505666b7a2300d1);
+        
+
+        marker_de94f7c719e6450d874afc756ea121ff.bindPopup(popup_aa3346ad10f84692b420202b108652eb)
+        ;
+
+        
+    
+    
+            var marker_444e238b0a4c47d8b4a58fe9c053105b = L.marker(
+                [16.440555, -92.39694399999999],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_3d58778a7f8b4d6e940199573befaefc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec99dab25cb477e8487e8cc11087884 = $(`<div id="html_eec99dab25cb477e8487e8cc11087884" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> A 12 km al S de Amatenango del Valle, sobre el camino a Villa Las Rosas. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1984-09-04 00:00:00+00:00 <strong>Recolectores:</strong> Edgar Fco. Cabrera C.|H. de Cabrera <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_3d58778a7f8b4d6e940199573befaefc.setContent(html_eec99dab25cb477e8487e8cc11087884);
+        
+
+        marker_444e238b0a4c47d8b4a58fe9c053105b.bindPopup(popup_3d58778a7f8b4d6e940199573befaefc)
+        ;
+
+        
+    
+    
+            var marker_2c79134c71cd455bbe3460d2a602015f = L.marker(
+                [10.011389, -85.394444],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_c04cd34dbc254fbf9b57eae4b8befa9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3256caae8cb45a493265d3c3fbded7e = $(`<div id="html_b3256caae8cb45a493265d3c3fbded7e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Nosara. Península de Nicoya. Hojancha, R.F. Monte Alto, Río Nosara y Quebrada Huacas. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2003-04-19 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_c04cd34dbc254fbf9b57eae4b8befa9d.setContent(html_b3256caae8cb45a493265d3c3fbded7e);
+        
+
+        marker_2c79134c71cd455bbe3460d2a602015f.bindPopup(popup_c04cd34dbc254fbf9b57eae4b8befa9d)
+        ;
+
+        
+    
+    
+            var marker_5cec493db95c46c99b7edc27412cc3cc = L.marker(
+                [10.011272, -85.39457800000001],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_59cff48cf0264fd59e30bcafeabf3d7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0da8abd1aa5a49188750a71125e9eebd = $(`<div id="html_0da8abd1aa5a49188750a71125e9eebd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.S.F. Monte Alto. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2003-04-19 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_59cff48cf0264fd59e30bcafeabf3d7f.setContent(html_0da8abd1aa5a49188750a71125e9eebd);
+        
+
+        marker_5cec493db95c46c99b7edc27412cc3cc.bindPopup(popup_59cff48cf0264fd59e30bcafeabf3d7f)
+        ;
+
+        
+    
+    
+            var marker_cb2df182c81f46eabfef50c433f37c23 = L.marker(
+                [10.011272, -85.39457800000001],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_30de0b30fd354180b11959e8bbb0ba50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_184608f1b1914091937005e116b55040 = $(`<div id="html_184608f1b1914091937005e116b55040" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.S.F. Monte Alto. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2003-04-19 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_30de0b30fd354180b11959e8bbb0ba50.setContent(html_184608f1b1914091937005e116b55040);
+        
+
+        marker_cb2df182c81f46eabfef50c433f37c23.bindPopup(popup_30de0b30fd354180b11959e8bbb0ba50)
+        ;
+
+        
+    
+    
+            var marker_0efb11fa2a8140e59d9b234294ecdff8 = L.marker(
+                [10.011272, -85.39457800000001],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_0c855737a6f2419bbe0435665b491a50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_353e84878ea543978130ed16ba6d2a94 = $(`<div id="html_353e84878ea543978130ed16ba6d2a94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.S.F. Monte Alto. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2003-04-19 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0c855737a6f2419bbe0435665b491a50.setContent(html_353e84878ea543978130ed16ba6d2a94);
+        
+
+        marker_0efb11fa2a8140e59d9b234294ecdff8.bindPopup(popup_0c855737a6f2419bbe0435665b491a50)
+        ;
+
+        
+    
+    
+            var marker_8fb2d39dd0424107a47f3271381595d1 = L.marker(
+                [10.021539, -85.402565],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_29a3028ea7ac43c7b75910a8f770fd72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3c1c9c0c0cf4fa58190f621bd7b56fd = $(`<div id="html_f3c1c9c0c0cf4fa58190f621bd7b56fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pilangosta <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2003-03-26 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_29a3028ea7ac43c7b75910a8f770fd72.setContent(html_f3c1c9c0c0cf4fa58190f621bd7b56fd);
+        
+
+        marker_8fb2d39dd0424107a47f3271381595d1.bindPopup(popup_29a3028ea7ac43c7b75910a8f770fd72)
+        ;
+
+        
+    
+    
+            var marker_10c7f4cd7a534e23860021679fe01e77 = L.marker(
+                [10.021539, -85.402565],
+                {}
+            ).addTo(marker_cluster_19708b1361b0423495f86212ddb56d2a);
+        
+    
+        var popup_37f8ce21e07e4d5a9ac672c1e8d91dea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6f17442ebc0410e84ce8922eb443ff3 = $(`<div id="html_d6f17442ebc0410e84ce8922eb443ff3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pilangosta <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2003-03-26 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_37f8ce21e07e4d5a9ac672c1e8d91dea.setContent(html_d6f17442ebc0410e84ce8922eb443ff3);
+        
+
+        marker_10c7f4cd7a534e23860021679fe01e77.bindPopup(popup_37f8ce21e07e4d5a9ac672c1e8d91dea)
+        ;
+
+        
+    
+    
+            var layer_control_df961398d4344520b2c5a94e17dc4e0f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5c7eeb2e8d5141c29ddf67410aa90c40,
+                    "ESRI World Imagery" : tile_layer_468b28826c2b40788885e3b2f56c94d2,
+                },
+                overlays :  {
+                    "macro_element_19708b1361b0423495f86212ddb56d2a" : marker_cluster_19708b1361b0423495f86212ddb56d2a,
+                },
+            };
+            L.control.layers(
+                layer_control_df961398d4344520b2c5a94e17dc4e0f.base_layers,
+                layer_control_df961398d4344520b2c5a94e17dc4e0f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_228fdbc207584ae8a97688ddd133fa14);
+            tile_layer_468b28826c2b40788885e3b2f56c94d2.remove();
+        
+</script>

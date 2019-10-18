@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02bc25b8fb824354a7fd1dca181a01a1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_02bc25b8fb824354a7fd1dca181a01a1" ></div>
+        
+</body>
+<script>    
+    
+            var map_02bc25b8fb824354a7fd1dca181a01a1 = L.map(
+                "map_02bc25b8fb824354a7fd1dca181a01a1",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_02bc25b8fb824354a7fd1dca181a01a1);
+
+            
+
+        
+    
+            var tile_layer_fc0f632a7d7c491dbfc14550eafa0dde = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_02bc25b8fb824354a7fd1dca181a01a1);
+        
+    
+            var tile_layer_ea9382d236e94aa4a177f96ed48ae3dc = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_02bc25b8fb824354a7fd1dca181a01a1);
+        
+    
+            var marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7 = L.markerClusterGroup(
+                {}
+            );
+            map_02bc25b8fb824354a7fd1dca181a01a1.addLayer(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+            var marker_4a3bc6e23cd34cc783962b1712039ec7 = L.marker(
+                [10.08, -83.37],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_0a11c9c599e3419cbaa1680254ed65b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8cb65c13d7e4cd885a734229a2feb06 = $(`<div id="html_f8cb65c13d7e4cd885a734229a2feb06" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 32 (Siquirres-Limón), ca. 200 m SSE of bridge over Río Hondo (48.2 km W of intersection with Costa Rica Hwy. 36 S to Bribri at Limón). <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1988-12-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0a11c9c599e3419cbaa1680254ed65b8.setContent(html_f8cb65c13d7e4cd885a734229a2feb06);
+        
+
+        marker_4a3bc6e23cd34cc783962b1712039ec7.bindPopup(popup_0a11c9c599e3419cbaa1680254ed65b8)
+        ;
+
+        
+    
+    
+            var marker_c0b7b721fa2e488f81c81e56d3a815a7 = L.marker(
+                [10.08, -83.37],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_53f79397990a4c2d8f8c61b3d9693c1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff8bba6b6cc1414490fdb268b79894ec = $(`<div id="html_ff8bba6b6cc1414490fdb268b79894ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 32 (Siquirres-Limon), ca. 200 m SSE of bridge over Rio Hondo, W of intersection with Costa Rica Hwy 36 S to Bribri at Limon <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1988-12-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_53f79397990a4c2d8f8c61b3d9693c1e.setContent(html_ff8bba6b6cc1414490fdb268b79894ec);
+        
+
+        marker_c0b7b721fa2e488f81c81e56d3a815a7.bindPopup(popup_53f79397990a4c2d8f8c61b3d9693c1e)
+        ;
+
+        
+    
+    
+            var marker_f482e4c47a0c4584b32645097dbf9f71 = L.marker(
+                [10.32, -83.5417],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_5af38a220ea34e348d96178180d2898b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdd2fc322d8f43aba6bd1775094f3958 = $(`<div id="html_fdd2fc322d8f43aba6bd1775094f3958" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> W of San Geraldo <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1990-12-15 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5af38a220ea34e348d96178180d2898b.setContent(html_fdd2fc322d8f43aba6bd1775094f3958);
+        
+
+        marker_f482e4c47a0c4584b32645097dbf9f71.bindPopup(popup_5af38a220ea34e348d96178180d2898b)
+        ;
+
+        
+    
+    
+            var marker_72f5eed7986e421bbc2f55d4e923fef0 = L.marker(
+                [10.08, -83.37],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_74b7781fbd9749e382f5b108e33365b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4ff5120f7f4450ba5e5a2a700a59b86 = $(`<div id="html_a4ff5120f7f4450ba5e5a2a700a59b86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 32 (Siquirres-Limon), ca. 200 m SSE of bridge over Rio Hondo, W of intersection with Costa Rica Hwy 36 S to Bribri at Limon <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1988-12-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_74b7781fbd9749e382f5b108e33365b5.setContent(html_a4ff5120f7f4450ba5e5a2a700a59b86);
+        
+
+        marker_72f5eed7986e421bbc2f55d4e923fef0.bindPopup(popup_74b7781fbd9749e382f5b108e33365b5)
+        ;
+
+        
+    
+    
+            var marker_d56e3ac81ce8495098c45348587a325c = L.marker(
+                [10.32, -83.5417],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_23df4dedc2fa4d4aa1425c5031e18e18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_419d9812f6bc480196939461f5482bbb = $(`<div id="html_419d9812f6bc480196939461f5482bbb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> W of San Geraldo <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1990-12-15 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_23df4dedc2fa4d4aa1425c5031e18e18.setContent(html_419d9812f6bc480196939461f5482bbb);
+        
+
+        marker_d56e3ac81ce8495098c45348587a325c.bindPopup(popup_23df4dedc2fa4d4aa1425c5031e18e18)
+        ;
+
+        
+    
+    
+            var marker_a313bd84e7394f91b8cf74c759ccfe4b = L.marker(
+                [10.08, -83.37],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_3018d34a30b5413793da366e2c5341b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca64596e53a047e095bab5ce9c05c93a = $(`<div id="html_ca64596e53a047e095bab5ce9c05c93a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 32 (Siquirres-Limon), ca. 200 m SSE of bridge over Rio Hondo, W of intersection with Costa Rica Hwy 36 S to Bribri at Limon <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1988-12-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3018d34a30b5413793da366e2c5341b4.setContent(html_ca64596e53a047e095bab5ce9c05c93a);
+        
+
+        marker_a313bd84e7394f91b8cf74c759ccfe4b.bindPopup(popup_3018d34a30b5413793da366e2c5341b4)
+        ;
+
+        
+    
+    
+            var marker_ae1db533a0ec4f1f95940086c9dbf078 = L.marker(
+                [10.08, -83.37],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_61361cf6c9e4403bb1a5be33672f4353 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cfa5977546f4e5b9e1269d05b04ea91 = $(`<div id="html_1cfa5977546f4e5b9e1269d05b04ea91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 32 (Siquirres-Limon), ca. 200 m SSE of bridge over Rio Hondo, W of intersection with Costa Rica Hwy 36 S to Bribri at Limon <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1988-12-22 00:00:00+00:00 <strong>Recolectores:</strong> R. J. Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_61361cf6c9e4403bb1a5be33672f4353.setContent(html_1cfa5977546f4e5b9e1269d05b04ea91);
+        
+
+        marker_ae1db533a0ec4f1f95940086c9dbf078.bindPopup(popup_61361cf6c9e4403bb1a5be33672f4353)
+        ;
+
+        
+    
+    
+            var marker_e5d9e00c1cec4c8fb3d06006e4bd53a7 = L.marker(
+                [10.08333, -83.36666],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_b0533a67ac0842ccbe001a5303a7e533 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4834653f0ed44c30bf7f7f7e5a5eea67 = $(`<div id="html_4834653f0ed44c30bf7f7f7e5a5eea67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Costa Rica Hwy. 32 (Siquirres-Limón), ca 200 m SSE of bridge over Río Hondo (48.2 km W of intersection with Costa Rica Hwy. 36 S to Bribri at Limón). Much disturbed primary forest along river margin. <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1989-08-20 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> R. Evans</div>`)[0];
+            popup_b0533a67ac0842ccbe001a5303a7e533.setContent(html_4834653f0ed44c30bf7f7f7e5a5eea67);
+        
+
+        marker_e5d9e00c1cec4c8fb3d06006e4bd53a7.bindPopup(popup_b0533a67ac0842ccbe001a5303a7e533)
+        ;
+
+        
+    
+    
+            var marker_aa568857b3784e9a9a0a1f17a5b1d18b = L.marker(
+                [10.31, -83.53],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_917431f97a524ef0b8c0d839e521174d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11d507c851474d988d40844b08141d5f = $(`<div id="html_11d507c851474d988d40844b08141d5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near San Geraldo-La Aurora road, ca. 1 km NW of San Geraldo. Left standing, in cattle pasture on slight rise above swampy area <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1989-06-09 00:00:00+00:00 <strong>Recolectores:</strong> Randall J. Evans <strong>Identificadores:</strong> M.H. Grayum (MO)</div>`)[0];
+            popup_917431f97a524ef0b8c0d839e521174d.setContent(html_11d507c851474d988d40844b08141d5f);
+        
+
+        marker_aa568857b3784e9a9a0a1f17a5b1d18b.bindPopup(popup_917431f97a524ef0b8c0d839e521174d)
+        ;
+
+        
+    
+    
+            var marker_16facc3fffc845c7a56cbc77005c7a33 = L.marker(
+                [9.575, -82.666667],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_fc2f186e78cd4f949ed7fc75cde9d6a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5abfe640afaf493c8aa20e5c03ee7c34 = $(`<div id="html_5abfe640afaf493c8aa20e5c03ee7c34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Miguel, Ascode, alrededores de la estacion. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1999-03-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Helen Kennedy <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_fc2f186e78cd4f949ed7fc75cde9d6a1.setContent(html_5abfe640afaf493c8aa20e5c03ee7c34);
+        
+
+        marker_16facc3fffc845c7a56cbc77005c7a33.bindPopup(popup_fc2f186e78cd4f949ed7fc75cde9d6a1)
+        ;
+
+        
+    
+    
+            var marker_b85bfafe27a34c55a6db59ef594bc42d = L.marker(
+                [10.316667, -83.534722],
+                {}
+            ).addTo(marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7);
+        
+    
+        var popup_b9d6b1515aa34ba4a1f769977b618db6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3c7c1e5962b43858979d62f747e3614 = $(`<div id="html_f3c7c1e5962b43858979d62f747e3614" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near San Gerardo-La Aurora road, ca. 1 Km NW of San Gerardo. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1989-06-09 00:00:00+00:00 <strong>Recolectores:</strong> Randy Evans <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b9d6b1515aa34ba4a1f769977b618db6.setContent(html_f3c7c1e5962b43858979d62f747e3614);
+        
+
+        marker_b85bfafe27a34c55a6db59ef594bc42d.bindPopup(popup_b9d6b1515aa34ba4a1f769977b618db6)
+        ;
+
+        
+    
+    
+            var layer_control_fd2876ab05744ce49ebd425a7c099647 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fc0f632a7d7c491dbfc14550eafa0dde,
+                    "ESRI World Imagery" : tile_layer_ea9382d236e94aa4a177f96ed48ae3dc,
+                },
+                overlays :  {
+                    "macro_element_7eb674b0feda4ee6a3e802b53d49b7d7" : marker_cluster_7eb674b0feda4ee6a3e802b53d49b7d7,
+                },
+            };
+            L.control.layers(
+                layer_control_fd2876ab05744ce49ebd425a7c099647.base_layers,
+                layer_control_fd2876ab05744ce49ebd425a7c099647.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_02bc25b8fb824354a7fd1dca181a01a1);
+            tile_layer_ea9382d236e94aa4a177f96ed48ae3dc.remove();
+        
+</script>

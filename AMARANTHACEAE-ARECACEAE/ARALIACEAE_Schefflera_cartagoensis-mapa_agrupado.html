@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97558b3ef09d410b8b5bc77d747e95b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_97558b3ef09d410b8b5bc77d747e95b1" ></div>
+        
+</body>
+<script>    
+    
+            var map_97558b3ef09d410b8b5bc77d747e95b1 = L.map(
+                "map_97558b3ef09d410b8b5bc77d747e95b1",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_97558b3ef09d410b8b5bc77d747e95b1);
+
+            
+
+        
+    
+            var tile_layer_2b2e5d6f34984985a6a8255f61d4d274 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97558b3ef09d410b8b5bc77d747e95b1);
+        
+    
+            var tile_layer_b2c16d01089440b6ac0deb83cb43cb91 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97558b3ef09d410b8b5bc77d747e95b1);
+        
+    
+            var marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63 = L.markerClusterGroup(
+                {}
+            );
+            map_97558b3ef09d410b8b5bc77d747e95b1.addLayer(marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63);
+        
+    
+            var marker_180567c447c146c7b0be06833d35a5d5 = L.marker(
+                [9.39, -83.08],
+                {}
+            ).addTo(marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63);
+        
+    
+        var popup_de6481b171af465da76f0cbe3017906b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da4118ec9379417283e537e917a61934 = $(`<div id="html_da4118ec9379417283e537e917a61934" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bratsi. Alto Lari. Kivut. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1992-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Heidi H. Schmidt <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_de6481b171af465da76f0cbe3017906b.setContent(html_da4118ec9379417283e537e917a61934);
+        
+
+        marker_180567c447c146c7b0be06833d35a5d5.bindPopup(popup_de6481b171af465da76f0cbe3017906b)
+        ;
+
+        
+    
+    
+            var marker_ce99e3414f2c4fca8e7879b6f2d5a63d = L.marker(
+                [8.494722, -81.771111],
+                {}
+            ).addTo(marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63);
+        
+    
+        var popup_bb7631690b304f1aadc6d52d4bffe6ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a84e963b31644220914c04cac4f1a778 = $(`<div id="html_a84e963b31644220914c04cac4f1a778" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Comarca Gnobe Bugle km 0 al 10 entre Hato Chami y Hato Ratón, 27-37 km N de lnteramericana <strong>Elevación:</strong> 1481.0 m  <strong>Fecha:</strong> 2001-05-20 00:00:00+00:00 <strong>Recolectores:</strong> Carmen Galdames|Jorge E. Aranda B.|M. Stapf|Juan B. Villareal|R. González <strong>Identificadores:</strong> C. Galdames</div>`)[0];
+            popup_bb7631690b304f1aadc6d52d4bffe6ee.setContent(html_a84e963b31644220914c04cac4f1a778);
+        
+
+        marker_ce99e3414f2c4fca8e7879b6f2d5a63d.bindPopup(popup_bb7631690b304f1aadc6d52d4bffe6ee)
+        ;
+
+        
+    
+    
+            var marker_e16c25bb35fe4fc5a2f818897d5cd66b = L.marker(
+                [9.781111, -83.81222199999999],
+                {}
+            ).addTo(marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63);
+        
+    
+        var popup_a2d01b5a2501445f8f2286198353ffb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc1e0b1d18944930beb728ea4e8f0a21 = $(`<div id="html_dc1e0b1d18944930beb728ea4e8f0a21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva de Tapantí. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1982-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P. <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_a2d01b5a2501445f8f2286198353ffb8.setContent(html_dc1e0b1d18944930beb728ea4e8f0a21);
+        
+
+        marker_e16c25bb35fe4fc5a2f818897d5cd66b.bindPopup(popup_a2d01b5a2501445f8f2286198353ffb8)
+        ;
+
+        
+    
+    
+            var marker_b2653a8256804a00be87345a9499ae13 = L.marker(
+                [9.397222, -83.088889],
+                {}
+            ).addTo(marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63);
+        
+    
+        var popup_40bff12f8bd8423dae1edd229a5b0aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3444269bbd3482fab61fa67813e5373 = $(`<div id="html_e3444269bbd3482fab61fa67813e5373" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Lari. Kivut. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1992-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_40bff12f8bd8423dae1edd229a5b0aec.setContent(html_e3444269bbd3482fab61fa67813e5373);
+        
+
+        marker_b2653a8256804a00be87345a9499ae13.bindPopup(popup_40bff12f8bd8423dae1edd229a5b0aec)
+        ;
+
+        
+    
+    
+            var marker_29be7635245b4570a5109412c5a55ae5 = L.marker(
+                [9.818375, -83.705606],
+                {}
+            ).addTo(marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63);
+        
+    
+        var popup_138facaa04924d6293fd69cb2ed680bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e85b26b444324557b55dba8d29d3736f = $(`<div id="html_e85b26b444324557b55dba8d29d3736f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1982-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez Pignatoro <strong>Identificadores:</strong> Margaret Joy Cannon</div>`)[0];
+            popup_138facaa04924d6293fd69cb2ed680bd.setContent(html_e85b26b444324557b55dba8d29d3736f);
+        
+
+        marker_29be7635245b4570a5109412c5a55ae5.bindPopup(popup_138facaa04924d6293fd69cb2ed680bd)
+        ;
+
+        
+    
+    
+            var layer_control_d9131ce82da0407d975c08a30472aea8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2b2e5d6f34984985a6a8255f61d4d274,
+                    "ESRI World Imagery" : tile_layer_b2c16d01089440b6ac0deb83cb43cb91,
+                },
+                overlays :  {
+                    "macro_element_cef4249936e54f7c8b3b61ad44bc3c63" : marker_cluster_cef4249936e54f7c8b3b61ad44bc3c63,
+                },
+            };
+            L.control.layers(
+                layer_control_d9131ce82da0407d975c08a30472aea8.base_layers,
+                layer_control_d9131ce82da0407d975c08a30472aea8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_97558b3ef09d410b8b5bc77d747e95b1);
+            tile_layer_b2c16d01089440b6ac0deb83cb43cb91.remove();
+        
+</script>

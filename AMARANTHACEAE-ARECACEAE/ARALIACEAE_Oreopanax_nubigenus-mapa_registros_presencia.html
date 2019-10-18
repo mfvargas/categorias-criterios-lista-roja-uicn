@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_61d3036571974a0694720bc423c37741 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_61d3036571974a0694720bc423c37741" ></div>
+        
+</body>
+<script>    
+    
+            var map_61d3036571974a0694720bc423c37741 = L.map(
+                "map_61d3036571974a0694720bc423c37741",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_61d3036571974a0694720bc423c37741);
+
+            
+
+        
+    
+            var tile_layer_5a2f8cacf7fa4afcb4d2f73e1385f4c2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+            var tile_layer_161aa225a44c403a9b135059e11b414b = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+            var circle_marker_55097a5cad0d40e1a57895052c7bb8d1 = L.circleMarker(
+                [10.0915, -84.06455600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_ce82afb9faa64a0a86391d9b0d6f0015 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89d3ef5e6c1147df9db04b7777cf93ed = $(`<div id="html_89d3ef5e6c1147df9db04b7777cf93ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ángeles.  Ca. 1.5 km Oeste del Cerro Chompipe (Entrada a torres del ICE), camino a Reserva Cerro Dantas.  Fragmentos de bosque después del segundo puente, ladera Caribe. <strong>Elevación:</strong> 2039.0 m  <strong>Fecha:</strong> 2009-11-11 00:00:00+00:00 <strong>Recolectores:</strong> Alfredo Cascante|Javier Solano <strong>Identificadores:</strong> A. Cascante (CR)</div>`)[0];
+            popup_ce82afb9faa64a0a86391d9b0d6f0015.setContent(html_89d3ef5e6c1147df9db04b7777cf93ed);
+        
+
+        circle_marker_55097a5cad0d40e1a57895052c7bb8d1.bindPopup(popup_ce82afb9faa64a0a86391d9b0d6f0015)
+        ;
+
+        
+    
+    
+            var circle_marker_7006b6a01d014b8b8f368d4e2d1d2110 = L.circleMarker(
+                [10.3186, -84.8086],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_37139eb7f8ab46abad4bb32f0a3b7cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c88e8862ebcd4aac83ef57ae77b07139 = $(`<div id="html_c88e8862ebcd4aac83ef57ae77b07139" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Biologica Monteverde. <strong>Elevación:</strong> 1580.0 m  <strong>Fecha:</strong> 2002-09-22 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_37139eb7f8ab46abad4bb32f0a3b7cc2.setContent(html_c88e8862ebcd4aac83ef57ae77b07139);
+        
+
+        circle_marker_7006b6a01d014b8b8f368d4e2d1d2110.bindPopup(popup_37139eb7f8ab46abad4bb32f0a3b7cc2)
+        ;
+
+        
+    
+    
+            var circle_marker_edf48d6e34e545a4b0e5a690da9f21fe = L.circleMarker(
+                [10.3425, -84.7961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_6ff228e6e5c74e67b9aaa1b490e8f53f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_093196eb06b34efdbd63ddca577d4d41 = $(`<div id="html_093196eb06b34efdbd63ddca577d4d41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Elena Cloud Forest Reserve. <strong>Elevación:</strong> 1720.0 m  <strong>Fecha:</strong> 2002-09-23 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6ff228e6e5c74e67b9aaa1b490e8f53f.setContent(html_093196eb06b34efdbd63ddca577d4d41);
+        
+
+        circle_marker_edf48d6e34e545a4b0e5a690da9f21fe.bindPopup(popup_6ff228e6e5c74e67b9aaa1b490e8f53f)
+        ;
+
+        
+    
+    
+            var circle_marker_31ae10f0775c4b5493a4fe50e05aa244 = L.circleMarker(
+                [10.3186, -84.8086],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_6a676bb6129445159bdb4b725128539e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0f52342a5624862a28af8cb7c53f0a1 = $(`<div id="html_a0f52342a5624862a28af8cb7c53f0a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Biologica Monteverde. <strong>Elevación:</strong> 1580.0 m  <strong>Fecha:</strong> 2002-09-22 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6a676bb6129445159bdb4b725128539e.setContent(html_a0f52342a5624862a28af8cb7c53f0a1);
+        
+
+        circle_marker_31ae10f0775c4b5493a4fe50e05aa244.bindPopup(popup_6a676bb6129445159bdb4b725128539e)
+        ;
+
+        
+    
+    
+            var circle_marker_c1e67a8798594e2582547d840e3c10ea = L.circleMarker(
+                [10.3186, -84.8086],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_0be19d3e91b1450bb084e12e1a6c80b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1775f9a3b1848b998fd8d969fa2ba5d = $(`<div id="html_a1775f9a3b1848b998fd8d969fa2ba5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Biologica Monteverde. <strong>Elevación:</strong> 1580.0 m  <strong>Fecha:</strong> 2002-09-22 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0be19d3e91b1450bb084e12e1a6c80b7.setContent(html_a1775f9a3b1848b998fd8d969fa2ba5d);
+        
+
+        circle_marker_c1e67a8798594e2582547d840e3c10ea.bindPopup(popup_0be19d3e91b1450bb084e12e1a6c80b7)
+        ;
+
+        
+    
+    
+            var circle_marker_29cfa38bf9a64f6db72c858ba1c3b05f = L.circleMarker(
+                [10.1417, -84.1169],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_4db145df14c54a3e887f2774440f9c47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95113b8854fd4a46823f14a85b367a4d = $(`<div id="html_95113b8854fd4a46823f14a85b367a4d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia: Heredia. P.N. Braulio Carrillo. Cuenca del Sarapiquí. P.N. Volcán Barva <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-01-20 00:00:00+00:00 <strong>Recolectores:</strong> L. González & D. Solano <strong>Identificadores:</strong> L. González</div>`)[0];
+            popup_4db145df14c54a3e887f2774440f9c47.setContent(html_95113b8854fd4a46823f14a85b367a4d);
+        
+
+        circle_marker_29cfa38bf9a64f6db72c858ba1c3b05f.bindPopup(popup_4db145df14c54a3e887f2774440f9c47)
+        ;
+
+        
+    
+    
+            var circle_marker_faeb4a3a45ee4f319999ef2fea9a6805 = L.circleMarker(
+                [9.7364, -84.1883],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_1a04ea7bea6348e59a9c71d8215fa703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c430fe13cad41eb823bd9da1cc7bf28 = $(`<div id="html_1c430fe13cad41eb823bd9da1cc7bf28" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de Acosta, on road between Escuadra and Tiqueres. <strong>Elevación:</strong> 1530.0 m  <strong>Fecha:</strong> 2002-10-10 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1a04ea7bea6348e59a9c71d8215fa703.setContent(html_1c430fe13cad41eb823bd9da1cc7bf28);
+        
+
+        circle_marker_faeb4a3a45ee4f319999ef2fea9a6805.bindPopup(popup_1a04ea7bea6348e59a9c71d8215fa703)
+        ;
+
+        
+    
+    
+            var circle_marker_48cf88c655314f808203dc26f80f7c51 = L.circleMarker(
+                [9.7364, -84.1883],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_c4cfb4a0d5054ee5a3fe76b66315ddf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1d5dd9a65e842c68cd911124ff76e05 = $(`<div id="html_a1d5dd9a65e842c68cd911124ff76e05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de Acosta, on road between Escuadra and Tiqueres. <strong>Elevación:</strong> 1530.0 m  <strong>Fecha:</strong> 2002-10-10 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c4cfb4a0d5054ee5a3fe76b66315ddf4.setContent(html_a1d5dd9a65e842c68cd911124ff76e05);
+        
+
+        circle_marker_48cf88c655314f808203dc26f80f7c51.bindPopup(popup_c4cfb4a0d5054ee5a3fe76b66315ddf4)
+        ;
+
+        
+    
+    
+            var circle_marker_f52236b93eb64013ac1613f1ddc56c57 = L.circleMarker(
+                [10.1289, -84.1256],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_6774ede72c8241eea5e4d7cd02be5f36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28a79cb062c3459c866c1509d7de8615 = $(`<div id="html_28a79cb062c3459c866c1509d7de8615" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Barva, Parque Naional Braulio Carrillo, sector volcan Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2002-10-04 00:00:00+00:00 <strong>Recolectores:</strong> J. Wen & R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6774ede72c8241eea5e4d7cd02be5f36.setContent(html_28a79cb062c3459c866c1509d7de8615);
+        
+
+        circle_marker_f52236b93eb64013ac1613f1ddc56c57.bindPopup(popup_6774ede72c8241eea5e4d7cd02be5f36)
+        ;
+
+        
+    
+    
+            var circle_marker_ab17fdd2e69b4a88a56b4f24d436c1ab = L.circleMarker(
+                [10.13, -84.11],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_f3e3702e6adf4a1f88efb9c8101e8b05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c23a2febcf344b81a922d5ed6f9a9ee4 = $(`<div id="html_c23a2febcf344b81a922d5ed6f9a9ee4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo; Cordillera Central. Estación Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1995-05-12 00:00:00+00:00 <strong>Recolectores:</strong> José Á. González R. <strong>Identificadores:</strong> J.F. Morales (INB)</div>`)[0];
+            popup_f3e3702e6adf4a1f88efb9c8101e8b05.setContent(html_c23a2febcf344b81a922d5ed6f9a9ee4);
+        
+
+        circle_marker_ab17fdd2e69b4a88a56b4f24d436c1ab.bindPopup(popup_f3e3702e6adf4a1f88efb9c8101e8b05)
+        ;
+
+        
+    
+    
+            var circle_marker_8a8a1c62b9d8486793beb731d731aeb4 = L.circleMarker(
+                [10.35, -84.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_6fd0c0cec5ab47a8b5f58e1b7267270e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_398c6d3790dd4d7283f5731bc26a023b = $(`<div id="html_398c6d3790dd4d7283f5731bc26a023b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Reserva Biológica del Colegio de Monteverde. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1992-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_6fd0c0cec5ab47a8b5f58e1b7267270e.setContent(html_398c6d3790dd4d7283f5731bc26a023b);
+        
+
+        circle_marker_8a8a1c62b9d8486793beb731d731aeb4.bindPopup(popup_6fd0c0cec5ab47a8b5f58e1b7267270e)
+        ;
+
+        
+    
+    
+            var circle_marker_1e349a4ec4d3414c9ca2f9bd51310886 = L.circleMarker(
+                [10.3, -84.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_0f7a5024abed40f29ba25806a040c8e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_078c4be5f3304753bb3258008e0e6910 = $(`<div id="html_078c4be5f3304753bb3258008e0e6910" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Cordillera de Tilarán, Sendero Pantanoso, Valle Torre. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1991-11-15 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_0f7a5024abed40f29ba25806a040c8e5.setContent(html_078c4be5f3304753bb3258008e0e6910);
+        
+
+        circle_marker_1e349a4ec4d3414c9ca2f9bd51310886.bindPopup(popup_0f7a5024abed40f29ba25806a040c8e5)
+        ;
+
+        
+    
+    
+            var circle_marker_e3f44edf6dbc470f851ca3b72580de38 = L.circleMarker(
+                [8.816667, -82.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_c03c34cec5af421dbd3bf3cd3397b3ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_318a9cf0c69a4cc7a36077f8a24c3fa4 = $(`<div id="html_318a9cf0c69a4cc7a36077f8a24c3fa4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> CERRO PATE MACHO: windpruned ridge at continental divide and forest on lee slope (Pacific side). <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 1985-12-31 00:00:00+00:00 <strong>Recolectores:</strong> Greg C. de Nevers|Susan Charnley <strong>Identificadores:</strong> M.J. Cannon & F.M. Cannon</div>`)[0];
+            popup_c03c34cec5af421dbd3bf3cd3397b3ad.setContent(html_318a9cf0c69a4cc7a36077f8a24c3fa4);
+        
+
+        circle_marker_e3f44edf6dbc470f851ca3b72580de38.bindPopup(popup_c03c34cec5af421dbd3bf3cd3397b3ad)
+        ;
+
+        
+    
+    
+            var circle_marker_33577630723e480ab1d0e3c355695488 = L.circleMarker(
+                [10.13833, -84.10916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_52e5b8fb01a54333a26d4c23d02d82a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1e3db574ff14fe09e20191f4922e0eb = $(`<div id="html_f1e3db574ff14fe09e20191f4922e0eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, upper Volcán Barva, Atlantic slope, ca. 0.5 km below (to north of) main trail to Laguna Barva, descending vía old "Sendero del Transecto" then traversing 250 m directly east, Treeplot 2750-3 <strong>Elevación:</strong> 2750.0 m  <strong>Fecha:</strong> 1992-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> B. Boyle, IV/</div>`)[0];
+            popup_52e5b8fb01a54333a26d4c23d02d82a2.setContent(html_f1e3db574ff14fe09e20191f4922e0eb);
+        
+
+        circle_marker_33577630723e480ab1d0e3c355695488.bindPopup(popup_52e5b8fb01a54333a26d4c23d02d82a2)
+        ;
+
+        
+    
+    
+            var circle_marker_6d57c0cfc45549e48afdf1c0fef478ae = L.circleMarker(
+                [10.168611, -84.113333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_8f0b0a7d0bb84e7cb4302294ee81890a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1e8f32315cd47049f70ba9ab3cfc078 = $(`<div id="html_a1e8f32315cd47049f70ba9ab3cfc078" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, on flat portion of ridge during otherwise steep descent from Cerro Las Marías to old road that leads from San Rafael, Vara Blanca to refugio, primary montane wet forest, Treeplot 2250-1 <strong>Elevación:</strong> 2225.0 m  <strong>Fecha:</strong> 1992-06-05 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> B. Boyle (MO)</div>`)[0];
+            popup_8f0b0a7d0bb84e7cb4302294ee81890a.setContent(html_a1e8f32315cd47049f70ba9ab3cfc078);
+        
+
+        circle_marker_6d57c0cfc45549e48afdf1c0fef478ae.bindPopup(popup_8f0b0a7d0bb84e7cb4302294ee81890a)
+        ;
+
+        
+    
+    
+            var circle_marker_9ac702c22a074fb988f81640886e45dd = L.circleMarker(
+                [10.17722, -84.1075],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_01247532f90b4b72987d8cb0f1f1ca50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed4b094882e947c98cd43ff48ae8b940 = $(`<div id="html_ed4b094882e947c98cd43ff48ae8b940" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto, in abandoned pasture near refugio <strong>Elevación:</strong> 2070.0 m  <strong>Fecha:</strong> 1992-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> B. Boyle (MO)</div>`)[0];
+            popup_01247532f90b4b72987d8cb0f1f1ca50.setContent(html_ed4b094882e947c98cd43ff48ae8b940);
+        
+
+        circle_marker_9ac702c22a074fb988f81640886e45dd.bindPopup(popup_01247532f90b4b72987d8cb0f1f1ca50)
+        ;
+
+        
+    
+    
+            var circle_marker_066b2af6b8b84fd3ac012423005af979 = L.circleMarker(
+                [10.35, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_a6789e75d8834a1f860bbfbb14622f25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12086be1da7413c81ab08ef077b6eb3 = $(`<div id="html_e12086be1da7413c81ab08ef077b6eb3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2 km NE Santa Elena on border of Monteverde Reserve. Upper San Gerardo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1988-11-20 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> J.F. Morales (INB)</div>`)[0];
+            popup_a6789e75d8834a1f860bbfbb14622f25.setContent(html_e12086be1da7413c81ab08ef077b6eb3);
+        
+
+        circle_marker_066b2af6b8b84fd3ac012423005af979.bindPopup(popup_a6789e75d8834a1f860bbfbb14622f25)
+        ;
+
+        
+    
+    
+            var circle_marker_c0d6a1ffcda24befbc4510e4f354ddce = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_30392add914145e4bd20f616373802c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d6b5d2de060424fb97a96b392d972e7 = $(`<div id="html_2d6b5d2de060424fb97a96b392d972e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, road to TV towers, Pacific slope, lower montane wet forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-11-14 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> J.F. Morales (INB)</div>`)[0];
+            popup_30392add914145e4bd20f616373802c9.setContent(html_2d6b5d2de060424fb97a96b392d972e7);
+        
+
+        circle_marker_c0d6a1ffcda24befbc4510e4f354ddce.bindPopup(popup_30392add914145e4bd20f616373802c9)
+        ;
+
+        
+    
+    
+            var circle_marker_bedb8c64b4d14598bd62a69184d1681b = L.circleMarker(
+                [10.09, -84.06],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_8f4e6821e9bc4b60a8ac2e91bced53d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11acf9399d3a48e5a9c5a827c2cadd3c = $(`<div id="html_11acf9399d3a48e5a9c5a827c2cadd3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road through wet cloud forest on flat area straddling continental divide at Alto del Roble (N base of Cerro Chompipe). Elev. ca. 2050-2100 m. 10º05.5'N, 84º04'W. <strong>Elevación:</strong> 2075.0 m  <strong>Fecha:</strong> 1984-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|James H. Beach|Pamela J. Sleeper <strong>Identificadores:</strong> J.F. Morales (INB)</div>`)[0];
+            popup_8f4e6821e9bc4b60a8ac2e91bced53d6.setContent(html_11acf9399d3a48e5a9c5a827c2cadd3c);
+        
+
+        circle_marker_bedb8c64b4d14598bd62a69184d1681b.bindPopup(popup_8f4e6821e9bc4b60a8ac2e91bced53d6)
+        ;
+
+        
+    
+    
+            var circle_marker_12cfdb59a1584366aabeb46893eb366e = L.circleMarker(
+                [10.13333, -84.12083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_119a2c095f66402e971f2ca9f5218206 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_196b99ed864244c79eba57374538a071 = $(`<div id="html_196b99ed864244c79eba57374538a071" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Tarcoles. Estación Barva. Sendero el Secreto. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1998-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|Luis Diego Vargas <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_119a2c095f66402e971f2ca9f5218206.setContent(html_196b99ed864244c79eba57374538a071);
+        
+
+        circle_marker_12cfdb59a1584366aabeb46893eb366e.bindPopup(popup_119a2c095f66402e971f2ca9f5218206)
+        ;
+
+        
+    
+    
+            var circle_marker_abdf97d86af0402f80ec97e93050aca7 = L.circleMarker(
+                [10.06, -84.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_9dd7e9bcce85454f8fd7d1b0672065eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6f6f16c154e4e1db2882b4d9d5e4197 = $(`<div id="html_a6f6f16c154e4e1db2882b4d9d5e4197" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7 km above San Rafael, on slopes of Volcán Barba. <strong>Elevación:</strong> 1975.0 m  <strong>Fecha:</strong> 1965-02-03 00:00:00+00:00 <strong>Recolectores:</strong> Robert K. Godfrey <strong>Identificadores:</strong> R. Liesner</div>`)[0];
+            popup_9dd7e9bcce85454f8fd7d1b0672065eb.setContent(html_a6f6f16c154e4e1db2882b4d9d5e4197);
+        
+
+        circle_marker_abdf97d86af0402f80ec97e93050aca7.bindPopup(popup_9dd7e9bcce85454f8fd7d1b0672065eb)
+        ;
+
+        
+    
+    
+            var circle_marker_de7d4fdd616a47679b3d336ae99a6f7b = L.circleMarker(
+                [10.12, -84.11],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_9b35de3195ff4613bc453d015708bd57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fede55d0ca04facb6d07493f0d42254 = $(`<div id="html_3fede55d0ca04facb6d07493f0d42254" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In pasture, along road to Volcán Barba, 2 km north of Sacramento <strong>Elevación:</strong> 2750.0 m  <strong>Fecha:</strong> 1974-12-29 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> M . Cannon</div>`)[0];
+            popup_9b35de3195ff4613bc453d015708bd57.setContent(html_3fede55d0ca04facb6d07493f0d42254);
+        
+
+        circle_marker_de7d4fdd616a47679b3d336ae99a6f7b.bindPopup(popup_9b35de3195ff4613bc453d015708bd57)
+        ;
+
+        
+    
+    
+            var circle_marker_ab3bc753db17412f9aa41700f0d8118a = L.circleMarker(
+                [10.05, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_3e5fb138cffe4e3c9457654642feef57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_050c4524872840a38a830e0a28af51f4 = $(`<div id="html_050c4524872840a38a830e0a28af51f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Collected along the slopes of Cerro Zurqui above the Rio Para Blanco. Low forest and wet upland pastures. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1974-12-26 00:00:00+00:00 <strong>Recolectores:</strong> Raymond John Taylor, Jr. <strong>Identificadores:</strong> J.F. Morales (INB)</div>`)[0];
+            popup_3e5fb138cffe4e3c9457654642feef57.setContent(html_050c4524872840a38a830e0a28af51f4);
+        
+
+        circle_marker_ab3bc753db17412f9aa41700f0d8118a.bindPopup(popup_3e5fb138cffe4e3c9457654642feef57)
+        ;
+
+        
+    
+    
+            var circle_marker_daab67aecb8f44aa874a92c5e1218635 = L.circleMarker(
+                [10.32, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_b6b9e187e88e49f9ae108e1e1c90e5dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5e4e24edaf24f4289a7fa4d6895484e = $(`<div id="html_f5e4e24edaf24f4289a7fa4d6895484e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. En bosque maduro en faldas altas del Cerro Chomogo. <strong>Elevación:</strong> 1645.0 m  <strong>Fecha:</strong> 1976-11-27 00:00:00+00:00 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> M. Cannon, BM</div>`)[0];
+            popup_b6b9e187e88e49f9ae108e1e1c90e5dc.setContent(html_f5e4e24edaf24f4289a7fa4d6895484e);
+        
+
+        circle_marker_daab67aecb8f44aa874a92c5e1218635.bindPopup(popup_b6b9e187e88e49f9ae108e1e1c90e5dc)
+        ;
+
+        
+    
+    
+            var circle_marker_03c1e904439b46e184cc1ec2d6c59f16 = L.circleMarker(
+                [10.18, -84.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_b309ead7f0a24db88e41883efec8c15f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_868f3c8a7e8346d7a0205fdadd1ce8eb = $(`<div id="html_868f3c8a7e8346d7a0205fdadd1ce8eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Region of Zarcero <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Austin Smith <strong>Identificadores:</strong> M. Cannon, BM</div>`)[0];
+            popup_b309ead7f0a24db88e41883efec8c15f.setContent(html_868f3c8a7e8346d7a0205fdadd1ce8eb);
+        
+
+        circle_marker_03c1e904439b46e184cc1ec2d6c59f16.bindPopup(popup_b309ead7f0a24db88e41883efec8c15f)
+        ;
+
+        
+    
+    
+            var circle_marker_6c53c56010384ee5ba9d930abdd92070 = L.circleMarker(
+                [10.167778, -84.232778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_98faf0b7545044dca41c5f952e9d83cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1516acc7fbc34385814774e82f110bfc = $(`<div id="html_1516acc7fbc34385814774e82f110bfc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Poás. Cuenca del Tárcoles. Alrededores de la Estación. <strong>Elevación:</strong> 2485.0 m  <strong>Fecha:</strong> 2003-07-03 00:00:00+00:00 <strong>Recolectores:</strong> R. Guido Vargas|Alexánder Rodríguez|Evelio Alfaro <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_98faf0b7545044dca41c5f952e9d83cc.setContent(html_1516acc7fbc34385814774e82f110bfc);
+        
+
+        circle_marker_6c53c56010384ee5ba9d930abdd92070.bindPopup(popup_98faf0b7545044dca41c5f952e9d83cc)
+        ;
+
+        
+    
+    
+            var circle_marker_1c95f4619a09457fa691baa6823ee815 = L.circleMarker(
+                [10.13681, -84.10394000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_f61744327076454fb75837745c885f93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e55f16e577b24968a55a1c5325883228 = $(`<div id="html_e55f16e577b24968a55a1c5325883228" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. Flat area beside Laguna Danta trail, ca 0.5 km from junctium with Laguna Barva trail. <strong>Elevación:</strong> 2775.0 m  <strong>Fecha:</strong> 2005-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_f61744327076454fb75837745c885f93.setContent(html_e55f16e577b24968a55a1c5325883228);
+        
+
+        circle_marker_1c95f4619a09457fa691baa6823ee815.bindPopup(popup_f61744327076454fb75837745c885f93)
+        ;
+
+        
+    
+    
+            var circle_marker_b6f674ce780c4c7db05334939b21e012 = L.circleMarker(
+                [10.252778, -84.369444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_67fc4c740c614775aa6f779f176b29cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8343d893be3d44499edaf0300ad3d6b0 = $(`<div id="html_8343d893be3d44499edaf0300ad3d6b0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Juan Castro Blanco, Cuenca del San Carlos.  P.N. Juan Castro Blanco, Cuenca alta del Río La Vieja, alrededores de San Jose de la montaña. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 2005-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Isabel Pérez|Daniel Solano|C. Cerling <strong>Identificadores:</strong> J. F. Morales</div>`)[0];
+            popup_67fc4c740c614775aa6f779f176b29cd.setContent(html_8343d893be3d44499edaf0300ad3d6b0);
+        
+
+        circle_marker_b6f674ce780c4c7db05334939b21e012.bindPopup(popup_67fc4c740c614775aa6f779f176b29cd)
+        ;
+
+        
+    
+    
+            var circle_marker_24d0115ee47a46dc90d1edacc4bfc4b2 = L.circleMarker(
+                [10.128889, -84.125556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_be3e67421e13470d98e37a40ebcfc0a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c34407a93824b508e69bfdc179d035a = $(`<div id="html_3c34407a93824b508e69bfdc179d035a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, sector volcan Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2002-10-04 00:00:00+00:00 <strong>Recolectores:</strong> Jun Wen|Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_be3e67421e13470d98e37a40ebcfc0a5.setContent(html_3c34407a93824b508e69bfdc179d035a);
+        
+
+        circle_marker_24d0115ee47a46dc90d1edacc4bfc4b2.bindPopup(popup_be3e67421e13470d98e37a40ebcfc0a5)
+        ;
+
+        
+    
+    
+            var circle_marker_a62441b6c6094d1489a364d293cdf211 = L.circleMarker(
+                [10.127778, -84.119444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_728183dff6ef41769cdef040252b41af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9115d71f044e4fbc87b2c537051ce250 = $(`<div id="html_9115d71f044e4fbc87b2c537051ce250" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Volcán Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2006-01-24 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Luis Diego Vargas ; Guillermo Villalobos ; Federico Solano <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_728183dff6ef41769cdef040252b41af.setContent(html_9115d71f044e4fbc87b2c537051ce250);
+        
+
+        circle_marker_a62441b6c6094d1489a364d293cdf211.bindPopup(popup_728183dff6ef41769cdef040252b41af)
+        ;
+
+        
+    
+    
+            var circle_marker_5a93e6ce8541499e947fa4942b6e967b = L.circleMarker(
+                [10.127778, -84.119444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_13aa00d2444f4399bcdacb3a798d8515 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eac4250e4e5a4abf83b1e9c57b4c0d36 = $(`<div id="html_eac4250e4e5a4abf83b1e9c57b4c0d36" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Volcán Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2006-01-24 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Luis Diego Vargas ; Guillermo Villalobos ; Federico Solano <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_13aa00d2444f4399bcdacb3a798d8515.setContent(html_eac4250e4e5a4abf83b1e9c57b4c0d36);
+        
+
+        circle_marker_5a93e6ce8541499e947fa4942b6e967b.bindPopup(popup_13aa00d2444f4399bcdacb3a798d8515)
+        ;
+
+        
+    
+    
+            var circle_marker_686aeb6b19f24be3bfc7ae775b69b8ce = L.circleMarker(
+                [10.127778, -84.119444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_09cdc7ab14f74ca79f0df51989a3a51d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db358381d4c14611b88a6633804ee6f6 = $(`<div id="html_db358381d4c14611b88a6633804ee6f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Volcán Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2006-01-24 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Luis Diego Vargas ; Guillermo Villalobos ; Federico Solano <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_09cdc7ab14f74ca79f0df51989a3a51d.setContent(html_db358381d4c14611b88a6633804ee6f6);
+        
+
+        circle_marker_686aeb6b19f24be3bfc7ae775b69b8ce.bindPopup(popup_09cdc7ab14f74ca79f0df51989a3a51d)
+        ;
+
+        
+    
+    
+            var circle_marker_e0753c166c584f50a6ccf90c2ef13b13 = L.circleMarker(
+                [10.167778, -84.232778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_d87c5422fa13491d9845b168fc70e5d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42938eaf33c74c2d8ae6b45cb70505c7 = $(`<div id="html_42938eaf33c74c2d8ae6b45cb70505c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Volcán Poás. Alrededores de la estación. <strong>Elevación:</strong> 2485.0 m  <strong>Fecha:</strong> 2003-07-03 00:00:00+00:00 <strong>Recolectores:</strong> Ronald Guido Vargas; Alexánder Francisco Rodríguez González ; Evelio Alfaro <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d87c5422fa13491d9845b168fc70e5d7.setContent(html_42938eaf33c74c2d8ae6b45cb70505c7);
+        
+
+        circle_marker_e0753c166c584f50a6ccf90c2ef13b13.bindPopup(popup_d87c5422fa13491d9845b168fc70e5d7)
+        ;
+
+        
+    
+    
+            var circle_marker_689f1c7649534e87abad28fbe4215b98 = L.circleMarker(
+                [10.167778, -84.232778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_3072ce12b5c24c28b3b47640b2a24d91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24aeb5ff5a8047509bbbf2551f55e67b = $(`<div id="html_24aeb5ff5a8047509bbbf2551f55e67b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Volcán Poás. Alrededores de la estación. <strong>Elevación:</strong> 2485.0 m  <strong>Fecha:</strong> 2003-07-03 00:00:00+00:00 <strong>Recolectores:</strong> Ronald Guido Vargas; Alexánder Francisco Rodríguez González ; Evelio Alfaro <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3072ce12b5c24c28b3b47640b2a24d91.setContent(html_24aeb5ff5a8047509bbbf2551f55e67b);
+        
+
+        circle_marker_689f1c7649534e87abad28fbe4215b98.bindPopup(popup_3072ce12b5c24c28b3b47640b2a24d91)
+        ;
+
+        
+    
+    
+            var circle_marker_1d8e4dab761b4318bc8b34970820880e = L.circleMarker(
+                [10.167778, -84.232778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_e58307ab49e841e4848a09118ef9ed21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd6dcffd4f9439fb98f46179fa6911b = $(`<div id="html_ecd6dcffd4f9439fb98f46179fa6911b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Volcán Poás. Alrededores de la estación. <strong>Elevación:</strong> 2485.0 m  <strong>Fecha:</strong> 2003-07-03 00:00:00+00:00 <strong>Recolectores:</strong> Ronald Guido Vargas; Alexánder Francisco Rodríguez González ; Evelio Alfaro <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e58307ab49e841e4848a09118ef9ed21.setContent(html_ecd6dcffd4f9439fb98f46179fa6911b);
+        
+
+        circle_marker_1d8e4dab761b4318bc8b34970820880e.bindPopup(popup_e58307ab49e841e4848a09118ef9ed21)
+        ;
+
+        
+    
+    
+            var circle_marker_bf511b46b7064e77aba789497c184ec8 = L.circleMarker(
+                [10.141812, -84.117072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_a0fe7d36d3a6452fa648e18385a21569 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c729ab1b43f4df8b190dcff341a5ce3 = $(`<div id="html_1c729ab1b43f4df8b190dcff341a5ce3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 2005-01-20 00:00:00+00:00 <strong>Recolectores:</strong> Luis González; Daniel Solano <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_a0fe7d36d3a6452fa648e18385a21569.setContent(html_1c729ab1b43f4df8b190dcff341a5ce3);
+        
+
+        circle_marker_bf511b46b7064e77aba789497c184ec8.bindPopup(popup_a0fe7d36d3a6452fa648e18385a21569)
+        ;
+
+        
+    
+    
+            var circle_marker_c985cb420487493f8e3c4b6b744c3137 = L.circleMarker(
+                [10.141812, -84.117072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_4593abb9944e40f4860187ed97cd7acf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b367ec7750b45e28912618a42afc545 = $(`<div id="html_9b367ec7750b45e28912618a42afc545" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 2005-01-20 00:00:00+00:00 <strong>Recolectores:</strong> Luis González; Daniel Solano <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_4593abb9944e40f4860187ed97cd7acf.setContent(html_9b367ec7750b45e28912618a42afc545);
+        
+
+        circle_marker_c985cb420487493f8e3c4b6b744c3137.bindPopup(popup_4593abb9944e40f4860187ed97cd7acf)
+        ;
+
+        
+    
+    
+            var circle_marker_1f0b55b6d23f4e6cbede86a2a7c9a223 = L.circleMarker(
+                [10.141812, -84.117072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_434a5de197d049d88bf003d584eca532 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb6d7b19f5404d27b14f1e5c165de212 = $(`<div id="html_eb6d7b19f5404d27b14f1e5c165de212" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 2005-01-20 00:00:00+00:00 <strong>Recolectores:</strong> Luis González; Daniel Solano <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_434a5de197d049d88bf003d584eca532.setContent(html_eb6d7b19f5404d27b14f1e5c165de212);
+        
+
+        circle_marker_1f0b55b6d23f4e6cbede86a2a7c9a223.bindPopup(popup_434a5de197d049d88bf003d584eca532)
+        ;
+
+        
+    
+    
+            var circle_marker_1b2d2e1bb1de457281c59667931d9bae = L.circleMarker(
+                [10.141812, -84.117072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_ab0e64adaa2146fcb8e7c7328f5f917d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be69511d33cf4d958a024cdea30efe23 = $(`<div id="html_be69511d33cf4d958a024cdea30efe23" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 2005-01-20 00:00:00+00:00 <strong>Recolectores:</strong> Luis González; Daniel Solano <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_ab0e64adaa2146fcb8e7c7328f5f917d.setContent(html_be69511d33cf4d958a024cdea30efe23);
+        
+
+        circle_marker_1b2d2e1bb1de457281c59667931d9bae.bindPopup(popup_ab0e64adaa2146fcb8e7c7328f5f917d)
+        ;
+
+        
+    
+    
+            var circle_marker_655b57babd744a3a82fb159fe569f861 = L.circleMarker(
+                [10.252778, -84.369444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_482ff61e72b245e6b0528f7da413b784 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31f5bc9c05f24611b6d4c21122136cc9 = $(`<div id="html_31f5bc9c05f24611b6d4c21122136cc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Juan Castro Blanco, cuenca alta del Rio La Vieja <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2005-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_482ff61e72b245e6b0528f7da413b784.setContent(html_31f5bc9c05f24611b6d4c21122136cc9);
+        
+
+        circle_marker_655b57babd744a3a82fb159fe569f861.bindPopup(popup_482ff61e72b245e6b0528f7da413b784)
+        ;
+
+        
+    
+    
+            var circle_marker_cb510fdfb01a4581963b1fac2a047bc0 = L.circleMarker(
+                [10.252778, -84.369444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_81ebd88db89f4f25ba4be713c8986594 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c9c9227c1f49a68b3e1da68f6ff499 = $(`<div id="html_09c9c9227c1f49a68b3e1da68f6ff499" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Juan Castro Blanco, cuenca alta del Rio La Vieja <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2005-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_81ebd88db89f4f25ba4be713c8986594.setContent(html_09c9c9227c1f49a68b3e1da68f6ff499);
+        
+
+        circle_marker_cb510fdfb01a4581963b1fac2a047bc0.bindPopup(popup_81ebd88db89f4f25ba4be713c8986594)
+        ;
+
+        
+    
+    
+            var circle_marker_cd49bb52e1ab42e982724b4d9dc37daf = L.circleMarker(
+                [10.252778, -84.369444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_4767194c88a24c1694f1df7009bb6c36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f772fc42fd224be09468b6f019a8e0c8 = $(`<div id="html_f772fc42fd224be09468b6f019a8e0c8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Juan Castro Blanco, cuenca alta del Rio La Vieja <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2005-09-24 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez ; Daniel Solano ; Clare Cerling <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_4767194c88a24c1694f1df7009bb6c36.setContent(html_f772fc42fd224be09468b6f019a8e0c8);
+        
+
+        circle_marker_cd49bb52e1ab42e982724b4d9dc37daf.bindPopup(popup_4767194c88a24c1694f1df7009bb6c36)
+        ;
+
+        
+    
+    
+            var circle_marker_d9383b7ec17f4584a36fdccd8b679fc1 = L.circleMarker(
+                [10.13681, -84.10394000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_6cc34d5bc61147789eeefa526ae29c92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709d60c25f0c426da2ff1fc54356735c = $(`<div id="html_709d60c25f0c426da2ff1fc54356735c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2775.0 m  <strong>Fecha:</strong> 2005-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_6cc34d5bc61147789eeefa526ae29c92.setContent(html_709d60c25f0c426da2ff1fc54356735c);
+        
+
+        circle_marker_d9383b7ec17f4584a36fdccd8b679fc1.bindPopup(popup_6cc34d5bc61147789eeefa526ae29c92)
+        ;
+
+        
+    
+    
+            var circle_marker_23026173ce21469ea449b4f05c740ccc = L.circleMarker(
+                [10.13681, -84.10394000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_b95851fec978445cb86643f8c8349094 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d2d621191dd41b0b7015c02d7a2b527 = $(`<div id="html_5d2d621191dd41b0b7015c02d7a2b527" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2775.0 m  <strong>Fecha:</strong> 2005-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b95851fec978445cb86643f8c8349094.setContent(html_5d2d621191dd41b0b7015c02d7a2b527);
+        
+
+        circle_marker_23026173ce21469ea449b4f05c740ccc.bindPopup(popup_b95851fec978445cb86643f8c8349094)
+        ;
+
+        
+    
+    
+            var circle_marker_20ccf4ce69f64d3789b70f825ec4678c = L.circleMarker(
+                [10.13681, -84.10394000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_fb513121a2f84842b8e84de8d8351cef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea71c31246cc4a788337ccd75cc9fbba = $(`<div id="html_ea71c31246cc4a788337ccd75cc9fbba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2775.0 m  <strong>Fecha:</strong> 2005-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_fb513121a2f84842b8e84de8d8351cef.setContent(html_ea71c31246cc4a788337ccd75cc9fbba);
+        
+
+        circle_marker_20ccf4ce69f64d3789b70f825ec4678c.bindPopup(popup_fb513121a2f84842b8e84de8d8351cef)
+        ;
+
+        
+    
+    
+            var circle_marker_12003340066b49749e195d25e4157a49 = L.circleMarker(
+                [10.13681, -84.10394000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_8397730c80d14e1b82fd5f19c3a1df9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4804fdfa3a494922bcfbae9f5a3c7d86 = $(`<div id="html_4804fdfa3a494922bcfbae9f5a3c7d86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barva. <strong>Elevación:</strong> 2775.0 m  <strong>Fecha:</strong> 2005-03-16 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8397730c80d14e1b82fd5f19c3a1df9e.setContent(html_4804fdfa3a494922bcfbae9f5a3c7d86);
+        
+
+        circle_marker_12003340066b49749e195d25e4157a49.bindPopup(popup_8397730c80d14e1b82fd5f19c3a1df9e)
+        ;
+
+        
+    
+    
+            var circle_marker_b3ad6af2c1aa44c48f7d872e48ec7f6e = L.circleMarker(
+                [10.056823, -84.116221],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_be3d4076fa6d4360a8a2c4a1a974ce71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a342d20acc994eb2aa9276c7d03ffccb = $(`<div id="html_a342d20acc994eb2aa9276c7d03ffccb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San José de la Montaña <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2002-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Jimena Larraguivel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_be3d4076fa6d4360a8a2c4a1a974ce71.setContent(html_a342d20acc994eb2aa9276c7d03ffccb);
+        
+
+        circle_marker_b3ad6af2c1aa44c48f7d872e48ec7f6e.bindPopup(popup_be3d4076fa6d4360a8a2c4a1a974ce71)
+        ;
+
+        
+    
+    
+            var circle_marker_f2af22d95dde4bb0ba86e1357de50ce0 = L.circleMarker(
+                [10.044444, -84.04083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_00acd6d5e67c42dba8b8d25f6169267e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_595d570c3e874de6a65d6f33c181d07f = $(`<div id="html_595d570c3e874de6a65d6f33c181d07f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Concepción Calle Leones. <strong>Elevación:</strong> 1653.0 m  <strong>Fecha:</strong> 2003-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_00acd6d5e67c42dba8b8d25f6169267e.setContent(html_595d570c3e874de6a65d6f33c181d07f);
+        
+
+        circle_marker_f2af22d95dde4bb0ba86e1357de50ce0.bindPopup(popup_00acd6d5e67c42dba8b8d25f6169267e)
+        ;
+
+        
+    
+    
+            var circle_marker_5e539be23a9f49c58957d4790f8df95d = L.circleMarker(
+                [10.044444, -84.04083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_251e1a7f3f7143aaab8d7bc938655c5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19396b85feb243798b4485ce4110aa0b = $(`<div id="html_19396b85feb243798b4485ce4110aa0b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Concepción Calle Leones. <strong>Elevación:</strong> 1653.0 m  <strong>Fecha:</strong> 2003-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_251e1a7f3f7143aaab8d7bc938655c5c.setContent(html_19396b85feb243798b4485ce4110aa0b);
+        
+
+        circle_marker_5e539be23a9f49c58957d4790f8df95d.bindPopup(popup_251e1a7f3f7143aaab8d7bc938655c5c)
+        ;
+
+        
+    
+    
+            var circle_marker_2cc9dd04a4d64cca8ffb76586f17be29 = L.circleMarker(
+                [10.044444, -84.04083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_f94df59c45804436863fbc55b39c3ac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc2aa4d64a6c4f568eb9b5acdb41bc51 = $(`<div id="html_bc2aa4d64a6c4f568eb9b5acdb41bc51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Concepción Calle Leones. <strong>Elevación:</strong> 1653.0 m  <strong>Fecha:</strong> 2003-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_f94df59c45804436863fbc55b39c3ac2.setContent(html_bc2aa4d64a6c4f568eb9b5acdb41bc51);
+        
+
+        circle_marker_2cc9dd04a4d64cca8ffb76586f17be29.bindPopup(popup_f94df59c45804436863fbc55b39c3ac2)
+        ;
+
+        
+    
+    
+            var circle_marker_190a15a71ad94e00a491da414ddfa03b = L.circleMarker(
+                [10.753910000000001, -85.129212],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_303157407dbb41a0a1e3c598eb617b3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f786e0c3d9984e4788d404cddfe9cc60 = $(`<div id="html_f786e0c3d9984e4788d404cddfe9cc60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Miravalles <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2002-03-26 00:00:00+00:00 <strong>Recolectores:</strong> Jose Luis Chaves; Celso Alvarado ; Alexander Alvarado Mendez ; Aurelio López ; Isaac López ; Gerardo Carballo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_303157407dbb41a0a1e3c598eb617b3f.setContent(html_f786e0c3d9984e4788d404cddfe9cc60);
+        
+
+        circle_marker_190a15a71ad94e00a491da414ddfa03b.bindPopup(popup_303157407dbb41a0a1e3c598eb617b3f)
+        ;
+
+        
+    
+    
+            var circle_marker_a468ef9f7a9e4fb0b3963d60559f81bd = L.circleMarker(
+                [10.125, -84.119444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_c084b54750f644b4b7d72c8d8a3f0ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8408159a3f404b60a19f5bd5623bcd5a = $(`<div id="html_8408159a3f404b60a19f5bd5623bcd5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Barva Station, pastures ca. 1 km SE of Station at Park limit. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2000-02-01 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_c084b54750f644b4b7d72c8d8a3f0ef8.setContent(html_8408159a3f404b60a19f5bd5623bcd5a);
+        
+
+        circle_marker_a468ef9f7a9e4fb0b3963d60559f81bd.bindPopup(popup_c084b54750f644b4b7d72c8d8a3f0ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_c29c76d905d745a3919fc2b1ad67c8af = L.circleMarker(
+                [10.177222, -84.1075],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_7e1a45538e0047118c3be61ba19ed78e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de7e13d897b84baa9f91ea5fa7d07304 = $(`<div id="html_de7e13d897b84baa9f91ea5fa7d07304" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero del Transecto. In abandoned pasture near refugio at 2070 m. <strong>Elevación:</strong> 2070.0 m  <strong>Fecha:</strong> 1992-08-23 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Boyle, Brad</div>`)[0];
+            popup_7e1a45538e0047118c3be61ba19ed78e.setContent(html_de7e13d897b84baa9f91ea5fa7d07304);
+        
+
+        circle_marker_c29c76d905d745a3919fc2b1ad67c8af.bindPopup(popup_7e1a45538e0047118c3be61ba19ed78e)
+        ;
+
+        
+    
+    
+            var circle_marker_5fb902f0eac24d59a20c2e5803a45ef0 = L.circleMarker(
+                [10.168611, -84.113333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_d223f4dfdc6b4186b1359563839d0fd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e6270cbad9344cfbe678c9ebc6d52d9 = $(`<div id="html_2e6270cbad9344cfbe678c9ebc6d52d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero del Transecto. On flat portion of ridge during descent from Cerro Las Marias to old road from San Rafael, Vara Blanca to refugio at 2070 m. Montane pluvial forest.      Transect 2250-1 <strong>Elevación:</strong> 2225.0 m  <strong>Fecha:</strong> 1992-06-05 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Boyle, Brad</div>`)[0];
+            popup_d223f4dfdc6b4186b1359563839d0fd2.setContent(html_2e6270cbad9344cfbe678c9ebc6d52d9);
+        
+
+        circle_marker_5fb902f0eac24d59a20c2e5803a45ef0.bindPopup(popup_d223f4dfdc6b4186b1359563839d0fd2)
+        ;
+
+        
+    
+    
+            var circle_marker_9283f633174943acb188417b5d430811 = L.circleMarker(
+                [10.138333, -84.109167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_79594159e00d472e983e96681365b7fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c0af3efa0b44d309e5cf93be9bf4a7a = $(`<div id="html_1c0af3efa0b44d309e5cf93be9bf4a7a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Volcan Barva. 0.5 km below main trail to Lag. Barva, via old  Sendero Transecto .           -Treeplot 2750-3 <strong>Elevación:</strong> 2750.0 m  <strong>Fecha:</strong> 1992-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Boyle, Brad</div>`)[0];
+            popup_79594159e00d472e983e96681365b7fc.setContent(html_1c0af3efa0b44d309e5cf93be9bf4a7a);
+        
+
+        circle_marker_9283f633174943acb188417b5d430811.bindPopup(popup_79594159e00d472e983e96681365b7fc)
+        ;
+
+        
+    
+    
+            var circle_marker_42e3405e39b6422ea4e8bed95eb18330 = L.circleMarker(
+                [10.133333, -84.12083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_1274c3897c6c425c8ddbcb5c4f1dedd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c13207bc73242519c311dbf2d4fd7c1 = $(`<div id="html_2c13207bc73242519c311dbf2d4fd7c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Barva. Finca colindante al oeste del parque. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1998-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1274c3897c6c425c8ddbcb5c4f1dedd3.setContent(html_2c13207bc73242519c311dbf2d4fd7c1);
+        
+
+        circle_marker_42e3405e39b6422ea4e8bed95eb18330.bindPopup(popup_1274c3897c6c425c8ddbcb5c4f1dedd3)
+        ;
+
+        
+    
+    
+            var circle_marker_bf0308a0c8d94ffdb9500b26ed37d7b4 = L.circleMarker(
+                [10.133333, -84.12083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_895a52b2e7754befaa20333b50187b30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_349a57cc17754e3298dbb744df0ae20a = $(`<div id="html_349a57cc17754e3298dbb744df0ae20a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Barva. Finca colindante al oeste del parque. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1998-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_895a52b2e7754befaa20333b50187b30.setContent(html_349a57cc17754e3298dbb744df0ae20a);
+        
+
+        circle_marker_bf0308a0c8d94ffdb9500b26ed37d7b4.bindPopup(popup_895a52b2e7754befaa20333b50187b30)
+        ;
+
+        
+    
+    
+            var circle_marker_ca1064a1103145068f16e1d9ba525e5e = L.circleMarker(
+                [10.133333, -84.12083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_97c2759712164bd08090f64941298dda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d23505e2729e4f7a909effc0f0f6bb1f = $(`<div id="html_d23505e2729e4f7a909effc0f0f6bb1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Barva. Finca colindante al oeste del parque. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1998-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_97c2759712164bd08090f64941298dda.setContent(html_d23505e2729e4f7a909effc0f0f6bb1f);
+        
+
+        circle_marker_ca1064a1103145068f16e1d9ba525e5e.bindPopup(popup_97c2759712164bd08090f64941298dda)
+        ;
+
+        
+    
+    
+            var circle_marker_fd70a8ff726242da80492e83fa46539b = L.circleMarker(
+                [10.133333, -84.12083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_278c9ed0470142b08c38ff1415743b8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_727056a7b82f48aa97ab6f5c9e2cd11d = $(`<div id="html_727056a7b82f48aa97ab6f5c9e2cd11d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Barva. Finca colindante al oeste del parque. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1998-03-24 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_278c9ed0470142b08c38ff1415743b8b.setContent(html_727056a7b82f48aa97ab6f5c9e2cd11d);
+        
+
+        circle_marker_fd70a8ff726242da80492e83fa46539b.bindPopup(popup_278c9ed0470142b08c38ff1415743b8b)
+        ;
+
+        
+    
+    
+            var circle_marker_c94cfb995ae04bd6a3b08e379e664292 = L.circleMarker(
+                [10.308333, -84.783334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_171241a3b53a424f82321b5862e03a90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebcb58dc03f1439d99c74adbd8b48297 = $(`<div id="html_ebcb58dc03f1439d99c74adbd8b48297" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Pantanoso, Valle Torre. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1991-11-15 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_171241a3b53a424f82321b5862e03a90.setContent(html_ebcb58dc03f1439d99c74adbd8b48297);
+        
+
+        circle_marker_c94cfb995ae04bd6a3b08e379e664292.bindPopup(popup_171241a3b53a424f82321b5862e03a90)
+        ;
+
+        
+    
+    
+            var circle_marker_da3482313f6d4c68922bb8b2742be587 = L.circleMarker(
+                [10.355556, -84.830556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_956ff756311d441d8a9f0b93cb814d94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fca0784ed324a12b26d36c7d97de452 = $(`<div id="html_7fca0784ed324a12b26d36c7d97de452" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biologica del Colegio de Monteverde <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1992-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_956ff756311d441d8a9f0b93cb814d94.setContent(html_7fca0784ed324a12b26d36c7d97de452);
+        
+
+        circle_marker_da3482313f6d4c68922bb8b2742be587.bindPopup(popup_956ff756311d441d8a9f0b93cb814d94)
+        ;
+
+        
+    
+    
+            var circle_marker_2c49fa432e714636828c07d2de7b1516 = L.circleMarker(
+                [10.133333, -84.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_d60049c923fd4208beb75b31bfbd6f9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d0fba643a4744a6a2d6b14bff7478bf = $(`<div id="html_3d0fba643a4744a6a2d6b14bff7478bf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Barva. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1995-05-12 00:00:00+00:00 <strong>Recolectores:</strong> Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d60049c923fd4208beb75b31bfbd6f9f.setContent(html_3d0fba643a4744a6a2d6b14bff7478bf);
+        
+
+        circle_marker_2c49fa432e714636828c07d2de7b1516.bindPopup(popup_d60049c923fd4208beb75b31bfbd6f9f)
+        ;
+
+        
+    
+    
+            var circle_marker_974191b8fa1c40159c006694b30f59c4 = L.circleMarker(
+                [10.097222, -84.06666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_1fd3ddfd96244453ad5ba9e554cb4465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6a2bd5d3b2c4800b34e4bb25f585337 = $(`<div id="html_a6a2bd5d3b2c4800b34e4bb25f585337" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road through wet cloud forest on flat area straddiing continental divide at Alto Roble (N base of Cerro Chompipe) <strong>Elevación:</strong> 2075.0 m  <strong>Fecha:</strong> 1984-12-02 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1fd3ddfd96244453ad5ba9e554cb4465.setContent(html_a6a2bd5d3b2c4800b34e4bb25f585337);
+        
+
+        circle_marker_974191b8fa1c40159c006694b30f59c4.bindPopup(popup_1fd3ddfd96244453ad5ba9e554cb4465)
+        ;
+
+        
+    
+    
+            var circle_marker_60c93840c2664ada83d2fdb23056b20b = L.circleMarker(
+                [10.35, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_8809194489604ff6b5ae5d813c2b73b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ade746322b84424d89e49652577a51d3 = $(`<div id="html_ade746322b84424d89e49652577a51d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2 km NE Santa Elena on border of Monteverde Reserve. Upper San Gerardo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1988-11-20 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8809194489604ff6b5ae5d813c2b73b3.setContent(html_ade746322b84424d89e49652577a51d3);
+        
+
+        circle_marker_60c93840c2664ada83d2fdb23056b20b.bindPopup(popup_8809194489604ff6b5ae5d813c2b73b3)
+        ;
+
+        
+    
+    
+            var circle_marker_4c8b1d8518d9435f8f76717e4920d90a = L.circleMarker(
+                [10.35, -84.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_42aba74f6fcc404ea95ea227e6fe173d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1ec557b9474da697395ce7f2eb0760 = $(`<div id="html_ee1ec557b9474da697395ce7f2eb0760" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde Reserva Biológuica del Colegio  de Monteverde. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1992-01-10 00:00:00+00:00 <strong>Recolectores:</strong> Bello, Erick <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_42aba74f6fcc404ea95ea227e6fe173d.setContent(html_ee1ec557b9474da697395ce7f2eb0760);
+        
+
+        circle_marker_4c8b1d8518d9435f8f76717e4920d90a.bindPopup(popup_42aba74f6fcc404ea95ea227e6fe173d)
+        ;
+
+        
+    
+    
+            var circle_marker_22bf5753ab904b869acecd135b3d3524 = L.circleMarker(
+                [10.3, -84.78],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_247eaa764a58414885437bfa6a7f46e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cde5730ec03409797786dcff5b0927b = $(`<div id="html_1cde5730ec03409797786dcff5b0927b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde Sendero Pantanoso, valle Torres. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1991-11-15 00:00:00+00:00 <strong>Recolectores:</strong> Bello, Erick <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_247eaa764a58414885437bfa6a7f46e7.setContent(html_1cde5730ec03409797786dcff5b0927b);
+        
+
+        circle_marker_22bf5753ab904b869acecd135b3d3524.bindPopup(popup_247eaa764a58414885437bfa6a7f46e7)
+        ;
+
+        
+    
+    
+            var circle_marker_95a5e7b48952416da91657cb487a4dfa = L.circleMarker(
+                [9.73, -83.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_8ac2d97255af49a1b178e039db34c4c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bf164c6b0bf4646ae7e5c996e9a44fc = $(`<div id="html_6bf164c6b0bf4646ae7e5c996e9a44fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Empalme, towards San Isidro. <strong>Elevación:</strong> 2208.0 m  <strong>Fecha:</strong> 1977-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Wilbur, Robert L. <strong>Identificadores:</strong> Wilbur, Robert L.</div>`)[0];
+            popup_8ac2d97255af49a1b178e039db34c4c2.setContent(html_6bf164c6b0bf4646ae7e5c996e9a44fc);
+        
+
+        circle_marker_95a5e7b48952416da91657cb487a4dfa.bindPopup(popup_8ac2d97255af49a1b178e039db34c4c2)
+        ;
+
+        
+    
+    
+            var circle_marker_0c57fe2610a74a739e58aaac36844288 = L.circleMarker(
+                [10.3, -84.76],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+        
+    
+        var popup_1dc81e8a5b3743e8aa5bf30df84d98a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e20213e03004341ac51716a5cb33fb0 = $(`<div id="html_8e20213e03004341ac51716a5cb33fb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Evergreen cloud forest and wet wind-gap formations (lower montane and premontane rain forest life zone) on and near the Continental Divide about 2 to 5 km, east and southeast of Monteverde at elevations of 1580 to 1700 m. Puntarenas and Alajuela. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1973-03-20 00:00:00+00:00 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Baker, Richard A.</div>`)[0];
+            popup_1dc81e8a5b3743e8aa5bf30df84d98a0.setContent(html_8e20213e03004341ac51716a5cb33fb0);
+        
+
+        circle_marker_0c57fe2610a74a739e58aaac36844288.bindPopup(popup_1dc81e8a5b3743e8aa5bf30df84d98a0)
+        ;
+
+        
+    
+    
+            var layer_control_47b5f5a78587411d957d74db1ede27ae = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5a2f8cacf7fa4afcb4d2f73e1385f4c2,
+                    "ESRI World Imagery" : tile_layer_161aa225a44c403a9b135059e11b414b,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_47b5f5a78587411d957d74db1ede27ae.base_layers,
+                layer_control_47b5f5a78587411d957d74db1ede27ae.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_61d3036571974a0694720bc423c37741);
+            tile_layer_161aa225a44c403a9b135059e11b414b.remove();
+        
+</script>

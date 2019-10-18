@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7918e5fb440e470f828764031e3f8170 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7918e5fb440e470f828764031e3f8170" ></div>
+        
+</body>
+<script>    
+    
+            var map_7918e5fb440e470f828764031e3f8170 = L.map(
+                "map_7918e5fb440e470f828764031e3f8170",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_7918e5fb440e470f828764031e3f8170);
+
+            
+
+        
+    
+            var tile_layer_62f72006e60347c3a2107176694a47d5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7918e5fb440e470f828764031e3f8170);
+        
+    
+            var tile_layer_1eeaba096f314ff48fd3616d8a14e7e7 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7918e5fb440e470f828764031e3f8170);
+        
+    
+            var marker_cluster_f803ccf077ec4943bd95dcdf2ba91671 = L.markerClusterGroup(
+                {}
+            );
+            map_7918e5fb440e470f828764031e3f8170.addLayer(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+            var marker_76e7d582eb014e89bc6f0ce68ee2d116 = L.marker(
+                [20.676389, -103.33],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_d3135044d80c4cd79a8e7b5fe7dc5108 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c81417f9fbba40458419ca7f848cde34 = $(`<div id="html_c81417f9fbba40458419ca7f848cde34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Barranca of Guadalajara. <strong>Elevación:</strong> 1219.0 m  <strong>Fecha:</strong> 1898-06-15 00:00:00+00:00 <strong>Recolectores:</strong> C. G. Pringle <strong>Identificadores:</strong> M. H. Nee</div>`)[0];
+            popup_d3135044d80c4cd79a8e7b5fe7dc5108.setContent(html_c81417f9fbba40458419ca7f848cde34);
+        
+
+        marker_76e7d582eb014e89bc6f0ce68ee2d116.bindPopup(popup_d3135044d80c4cd79a8e7b5fe7dc5108)
+        ;
+
+        
+    
+    
+            var marker_15071a54c7bb4e89877479b7f8b34cf8 = L.marker(
+                [21.163332999999998, -103.16833299999999],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_4174be02677d40b58aba6fe987a3b0c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c830a44f9b8419196807eb88d3871e5 = $(`<div id="html_5c830a44f9b8419196807eb88d3871e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro la Bota, al oeste de Las Palmas, camino de terraceria Las Palmas - El Pitayito <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1992-09-14 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Balleza C.; M. Adame G. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_4174be02677d40b58aba6fe987a3b0c8.setContent(html_5c830a44f9b8419196807eb88d3871e5);
+        
+
+        marker_15071a54c7bb4e89877479b7f8b34cf8.bindPopup(popup_4174be02677d40b58aba6fe987a3b0c8)
+        ;
+
+        
+    
+    
+            var marker_40b7ff8ffbcc431da129a18891918db9 = L.marker(
+                [21.358056, -103.2125],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_0881be8431444c90942fc7bc8cec2ef7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_363b7597b058467ab13af60159ce34cc = $(`<div id="html_363b7597b058467ab13af60159ce34cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Casa de Jesús Ayala, Cerro de Piñones <strong>Elevación:</strong> 1711.0 m  <strong>Fecha:</strong> 1998-07-09 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Balleza C.; E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_0881be8431444c90942fc7bc8cec2ef7.setContent(html_363b7597b058467ab13af60159ce34cc);
+        
+
+        marker_40b7ff8ffbcc431da129a18891918db9.bindPopup(popup_0881be8431444c90942fc7bc8cec2ef7)
+        ;
+
+        
+    
+    
+            var marker_3fab59c38fed4c21a3b5d64e5900de51 = L.marker(
+                [21.35, -103.221944],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_a2c8ae34c9d3468dac271542ac5c0d69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b3ee2cae1194f5097402ad2306eb83d = $(`<div id="html_9b3ee2cae1194f5097402ad2306eb83d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4 km al oeste de Pueblo Viejo, Sierra de Morones <strong>Elevación:</strong> 2110.0 m  <strong>Fecha:</strong> 1999-09-13 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Balleza C.; M. Adame G. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_a2c8ae34c9d3468dac271542ac5c0d69.setContent(html_9b3ee2cae1194f5097402ad2306eb83d);
+        
+
+        marker_3fab59c38fed4c21a3b5d64e5900de51.bindPopup(popup_a2c8ae34c9d3468dac271542ac5c0d69)
+        ;
+
+        
+    
+    
+            var marker_5cadc2e7aa0b49b8b9473f0507ef1c17 = L.marker(
+                [21.196389, -103.185278],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_adde8921257346b7b945368d0a75bd49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28c50929c7f04d0eb18f2d858112b737 = $(`<div id="html_28c50929c7f04d0eb18f2d858112b737" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa, Cañón del Río Juchipila <strong>Elevación:</strong> 1260.0 m  <strong>Fecha:</strong> 1993-06-29 00:00:00+00:00 <strong>Recolectores:</strong> E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_adde8921257346b7b945368d0a75bd49.setContent(html_28c50929c7f04d0eb18f2d858112b737);
+        
+
+        marker_5cadc2e7aa0b49b8b9473f0507ef1c17.bindPopup(popup_adde8921257346b7b945368d0a75bd49)
+        ;
+
+        
+    
+    
+            var marker_973d93f862244cbbb4d85111841bc210 = L.marker(
+                [21.196389, -103.185278],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_6165e853189a4837b89274effd90898c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a186b978372247ffa47a07574f68438c = $(`<div id="html_a186b978372247ffa47a07574f68438c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa, Cañón del Río Juchipila <strong>Elevación:</strong> 1260.0 m  <strong>Fecha:</strong> 1993-07-29 00:00:00+00:00 <strong>Recolectores:</strong> E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_6165e853189a4837b89274effd90898c.setContent(html_a186b978372247ffa47a07574f68438c);
+        
+
+        marker_973d93f862244cbbb4d85111841bc210.bindPopup(popup_6165e853189a4837b89274effd90898c)
+        ;
+
+        
+    
+    
+            var marker_9dc1bc216a8d44caa26583c709bc54a2 = L.marker(
+                [21.391667, -103.116667],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_524d77b78c9e401ebc04868a430a1573 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc3e082fdd054269813133754fd8fc15 = $(`<div id="html_dc3e082fdd054269813133754fd8fc15" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de Las Ventanas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1992-10-16 00:00:00+00:00 <strong>Recolectores:</strong> E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_524d77b78c9e401ebc04868a430a1573.setContent(html_dc3e082fdd054269813133754fd8fc15);
+        
+
+        marker_9dc1bc216a8d44caa26583c709bc54a2.bindPopup(popup_524d77b78c9e401ebc04868a430a1573)
+        ;
+
+        
+    
+    
+            var marker_e9a8be70977d47188fa5e004473efbda = L.marker(
+                [21.391667, -103.116667],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_934d5deb278c47b69169e2eff132d8d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a3adec0155442ee888698bae7343c77 = $(`<div id="html_9a3adec0155442ee888698bae7343c77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de Las Ventanas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2007-07-21 00:00:00+00:00 <strong>Recolectores:</strong> J. Ramírez P. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_934d5deb278c47b69169e2eff132d8d1.setContent(html_9a3adec0155442ee888698bae7343c77);
+        
+
+        marker_e9a8be70977d47188fa5e004473efbda.bindPopup(popup_934d5deb278c47b69169e2eff132d8d1)
+        ;
+
+        
+    
+    
+            var marker_d40efea1b334495b81744eef3ae96139 = L.marker(
+                [21.095833, -103.465278],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_ca9296604bf5458785a858f5bd975001 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7666c48675e94001aa9e6f367cc883d7 = $(`<div id="html_7666c48675e94001aa9e6f367cc883d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> EL PALO VERDE, 4 KM AL SW DE SAN CRISTOBAL DE LA BARRANCA, MPIO. SAN CRISTOBAL DE LA BARRANCA, JAL. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2001-07-12 00:00:00+00:00 <strong>Recolectores:</strong> P. Carrillo; G. David <strong>Identificadores:</strong> P. Carrillo</div>`)[0];
+            popup_ca9296604bf5458785a858f5bd975001.setContent(html_7666c48675e94001aa9e6f367cc883d7);
+        
+
+        marker_d40efea1b334495b81744eef3ae96139.bindPopup(popup_ca9296604bf5458785a858f5bd975001)
+        ;
+
+        
+    
+    
+            var marker_1a23b2de452940df80a71e24b826da55 = L.marker(
+                [20.683611, -103.20666700000001],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_e9abe6490e7e45c4bc5989f3f66d685b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a01a52a654774814850437f6e74b0214 = $(`<div id="html_a01a52a654774814850437f6e74b0214" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Barranca near Guadalajara. <strong>Elevación:</strong> 1219.2 m  <strong>Fecha:</strong> 1903-09-28 00:00:00+00:00 <strong>Recolectores:</strong> Cyrus G. Pringle <strong>Identificadores:</strong> X. M. Cuevas-Figueroa (IBUG)</div>`)[0];
+            popup_e9abe6490e7e45c4bc5989f3f66d685b.setContent(html_a01a52a654774814850437f6e74b0214);
+        
+
+        marker_1a23b2de452940df80a71e24b826da55.bindPopup(popup_e9abe6490e7e45c4bc5989f3f66d685b)
+        ;
+
+        
+    
+    
+            var marker_3f2c0515d21149089a924dc576c79c73 = L.marker(
+                [10.93333, -85.775],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_31a1cc03af044f9397e3b10db0f8d654 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cbd0828bacb45fda33d990dc0f6be2a = $(`<div id="html_0cbd0828bacb45fda33d990dc0f6be2a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste - Guanacaste: La Cruz. P. N. Santa Rosa. Cuenca de Santa Elena. Sector Murciélago, Bahía Danta, Asociaciones costeras/Provincia de Guanacaste <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-06-11 00:00:00+00:00 <strong>Recolectores:</strong> Morales, J. F. & J. González <strong>Identificadores:</strong> Morales, J. F. (2000)</div>`)[0];
+            popup_31a1cc03af044f9397e3b10db0f8d654.setContent(html_0cbd0828bacb45fda33d990dc0f6be2a);
+        
+
+        marker_3f2c0515d21149089a924dc576c79c73.bindPopup(popup_31a1cc03af044f9397e3b10db0f8d654)
+        ;
+
+        
+    
+    
+            var marker_579ed8935f4347e59eb39809f1081a1b = L.marker(
+                [20.32, -103.60167],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_20a7b78215e24d04b6c70759518af89a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3736ed81564446468f2447c0c21c0da0 = $(`<div id="html_3736ed81564446468f2447c0c21c0da0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Jalisco - State of Jalisco, Barranca of Guadalajara/Estado de Jalisco <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1898-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Pringle, C. G. (Coll. Delessert 1899) <strong>Identificadores:</strong> Chatelain, C. (2008)</div>`)[0];
+            popup_20a7b78215e24d04b6c70759518af89a.setContent(html_3736ed81564446468f2447c0c21c0da0);
+        
+
+        marker_579ed8935f4347e59eb39809f1081a1b.bindPopup(popup_20a7b78215e24d04b6c70759518af89a)
+        ;
+
+        
+    
+    
+            var marker_36ceb19caf2745e88bac0353bf873ccb = L.marker(
+                [20.68, -103.35],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_a481d0184b614c0cb889f5f0c27e6c9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e9184e593ea4487982d6b39beafd572 = $(`<div id="html_5e9184e593ea4487982d6b39beafd572" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Label: Barranca of Guadalajara .  GIS: Guadalajara <strong>Elevación:</strong> 1219.0 m  <strong>Fecha:</strong> 1898-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Pringle, C.G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a481d0184b614c0cb889f5f0c27e6c9a.setContent(html_5e9184e593ea4487982d6b39beafd572);
+        
+
+        marker_36ceb19caf2745e88bac0353bf873ccb.bindPopup(popup_a481d0184b614c0cb889f5f0c27e6c9a)
+        ;
+
+        
+    
+    
+            var marker_33f77dae03b84f9bbc8a40e651e6f58f = L.marker(
+                [10.87, -85.79],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_d8c6b0d2712643d599868319235709f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e50b0e39b4744e2dbdb47806ae02f2d8 = $(`<div id="html_e50b0e39b4744e2dbdb47806ae02f2d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Santa Rosa Golfo de Papagayo, Península de Santa Elena. Hacienda Santa Elena, playa Molle, costado sureste de Fila La Penca. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1998-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_d8c6b0d2712643d599868319235709f7.setContent(html_e50b0e39b4744e2dbdb47806ae02f2d8);
+        
+
+        marker_33f77dae03b84f9bbc8a40e651e6f58f.bindPopup(popup_d8c6b0d2712643d599868319235709f7)
+        ;
+
+        
+    
+    
+            var marker_36f26dbeac834f9bb9b5b027423f0798 = L.marker(
+                [10.93, -85.76],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_e38673ce41774cac84ee8b881b3b1e45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5060e17943d94fe6b1a8bea6092951ec = $(`<div id="html_5060e17943d94fe6b1a8bea6092951ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Santa Rosa Península de Santa Elena; Bahía Danta; a lo largo de la costa y en la parte baja de laderas rocosas. <strong>Elevación:</strong> 2.0 m  <strong>Fecha:</strong> 1994-08-20 00:00:00+00:00 <strong>Recolectores:</strong> González, José <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_e38673ce41774cac84ee8b881b3b1e45.setContent(html_5060e17943d94fe6b1a8bea6092951ec);
+        
+
+        marker_36f26dbeac834f9bb9b5b027423f0798.bindPopup(popup_e38673ce41774cac84ee8b881b3b1e45)
+        ;
+
+        
+    
+    
+            var marker_449688bf8ad84f22af78cb3a76a9af0a = L.marker(
+                [10.93, -85.45],
+                {}
+            ).addTo(marker_cluster_f803ccf077ec4943bd95dcdf2ba91671);
+        
+    
+        var popup_f9b8b3a0867249389c7d49eb75a6a167 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b301bcfc68eb4149b42d20efb53d2731 = $(`<div id="html_b301bcfc68eb4149b42d20efb53d2731" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste Islas Murcielago. Isla San José. slope along beach, pistillate and staminate plants <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1987-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Smith, J. F. <strong>Identificadores:</strong> Valerio, M. A.</div>`)[0];
+            popup_f9b8b3a0867249389c7d49eb75a6a167.setContent(html_b301bcfc68eb4149b42d20efb53d2731);
+        
+
+        marker_449688bf8ad84f22af78cb3a76a9af0a.bindPopup(popup_f9b8b3a0867249389c7d49eb75a6a167)
+        ;
+
+        
+    
+    
+            var layer_control_5dcad204030049b782daa2d443fc0893 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_62f72006e60347c3a2107176694a47d5,
+                    "ESRI World Imagery" : tile_layer_1eeaba096f314ff48fd3616d8a14e7e7,
+                },
+                overlays :  {
+                    "macro_element_f803ccf077ec4943bd95dcdf2ba91671" : marker_cluster_f803ccf077ec4943bd95dcdf2ba91671,
+                },
+            };
+            L.control.layers(
+                layer_control_5dcad204030049b782daa2d443fc0893.base_layers,
+                layer_control_5dcad204030049b782daa2d443fc0893.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7918e5fb440e470f828764031e3f8170);
+            tile_layer_1eeaba096f314ff48fd3616d8a14e7e7.remove();
+        
+</script>
