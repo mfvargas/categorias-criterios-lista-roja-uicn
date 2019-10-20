@@ -14,9 +14,12 @@ El _notebook_ recibe como entrada una lista de nombres científicos de especies 
 
 Para ejecutar el _notebook_, se recomienda utilizar versión de Jupyter incluida en la plataforma [Anaconda](https://www.anaconda.com/) para ciencia de datos.
 
+Primero, debe clonarse el repositorio:
 ```
 git clone https://github.com/evaluacion-arboles-mesoamerica/categorias-criterios-lista-roja-uicn.git
 ```
+
+Luego, debe ejecutarse abrirse el _notebook_ llamado 
 
 ## Referencias
 UICN. (2012). _Categorías y Criterios de la Lista Roja de la UICN: Versión 3.1_. Segunda edición. Gland, Suiza y Cambridge, Reino Unido: UICN. vi + 34pp. Originalmente publicado como _IUCN Red List Categories and Criteria: Version 3.1_. Second edition. (Gland, Switzerland and Cambridge, UK: IUCN, 2012).
