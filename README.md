@@ -1,7 +1,7 @@
 # Categorías y criterios de la Lista Roja de la UICN
 Este repositorio contiene un [Jupyter Notebook](https://jupyter.org/), desarrollado en el lenguaje de programación [Python](https://www.python.org/), para la aplicación de las [categorías y criterios](https://www.iucn.org/es/content/categor%C3%ADas-y-criterios-de-la-lista-roja-de-la-uicn-versi%C3%B3n-31-segunda-edici%C3%B3n) de la [Lista Roja de la Unión Internacional para la Conservación de la Naturaleza (UICN)](https://www.iucnredlist.org/es/).
 
-El _notebook_ recibe como entrada una lista de nombres científicos de especies y genera para cada una:
+El _notebook_ recibe como entrada una lista de nombres científicos de especies y genera para cada uno:
 - Un archivo CSV con los registros de presencia.
 - Un mapa interactivo de distribución basado en los registros de presencia.
 - Un mapa interactivo de registros de presencia agrupados (_clustered_).
