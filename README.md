@@ -21,6 +21,3 @@ git clone https://github.com/mfvargas/categorias-criterios-lista-roja-uicn.git
 ```
 
 Luego, debe abrirse y ejecutarse, con la interfaz de Jupyter, el _notebook_ llamado [categorias-criterios-lista-roja-uicn.ipynb](https://github.com/mfvargas/categorias-criterios-lista-roja-uicn/blob/master/categorias-criterios-lista-roja-uicn.ipynb). Lea las instrucciones contenidas en el _notebook_.
-
-## Referencias
-UICN. (2012). _Categorías y Criterios de la Lista Roja de la UICN: Versión 3.1_. Segunda edición. Gland, Suiza y Cambridge, Reino Unido: UICN. vi + 34pp. Originalmente publicado como _IUCN Red List Categories and Criteria: Version 3.1_. Second edition. (Gland, Switzerland and Cambridge, UK: IUCN, 2012).
