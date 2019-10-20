@@ -5,11 +5,11 @@ El _notebook_ recibe como entrada una lista de nombres científicos de especies 
 * Un mapa de distribución basado en registros de presencia de especies.
 * Un mapa de registros de presencia agrupados (_clustered_).
 * Un archivo CSV con:
- * El área de extensión de la especie.
- * El área de ocupación de la especie.
- * La altitud mínima y la altitud máxima en las que la especie ha sido reportada.
- * La lista de países en los que está presente la especie.
- * La lista de áreas protegidas en las que está presente la especie.
+  * El área de extensión de la especie.
+  * El área de ocupación de la especie.
+  * La altitud mínima y la altitud máxima en las que la especie ha sido reportada.
+  * La lista de países en los que está presente la especie.
+  * La lista de áreas protegidas en las que está presente la especie.
 
 
 Para ejecutar el _notebook_, se recomienda utilizar versión de Jupyter incluida en la plataforma [Anaconda](https://www.anaconda.com/) para ciencia de datos.
