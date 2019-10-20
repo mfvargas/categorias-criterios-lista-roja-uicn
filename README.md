@@ -2,8 +2,12 @@
 Este repositorio contiene un [Jupyter Notebook](https://jupyter.org/), desarrollado en el lenguaje de programación [Python](https://www.python.org/), para la aplicación de las categorías y criterios de la [Lista Roja de la Unión Internacional para la Conservación de la Naturaleza (UICN)](https://www.iucnredlist.org/es/).
 
 El _notebook_ recibe como entrada una lista de nombres científicos de especies y genera para cada una:
-- Un mapa de distribución.
-- Un archivo CSV con:
+* Un mapa de distribución basado en registros de presencia de especies.
+* Un mapa de registros de presencia agrupados (_clustered_).
+* Un archivo CSV con:
+  * El área de extensión de la especie.
+  * El área de ocupación de la especie.
+
 
 Para ejecutar el _notebook_, se recomienda utilizar versión de Jupyter incluida en la plataforma [Anaconda](https://www.anaconda.com/) para ciencia de datos.
 
