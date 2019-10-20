@@ -2,15 +2,16 @@
 Este repositorio contiene un [Jupyter Notebook](https://jupyter.org/), desarrollado en el lenguaje de programación [Python](https://www.python.org/), para la aplicación de las [categorías y criterios](https://www.iucn.org/es/content/categor%C3%ADas-y-criterios-de-la-lista-roja-de-la-uicn-versi%C3%B3n-31-segunda-edici%C3%B3n) de la [Lista Roja de la Unión Internacional para la Conservación de la Naturaleza (UICN)](https://www.iucnredlist.org/es/).
 
 El _notebook_ recibe como entrada una lista de nombres científicos de especies y genera para cada una:
-* Un mapa de distribución basado en registros de presencia de especies.
-* Un mapa de registros de presencia agrupados (_clustered_).
-* Un archivo CSV con:
-  * El área de extensión de la especie.
-  * El área de ocupación de la especie.
-  * La altitud mínima y la altitud máxima en las que la especie ha sido reportada.
-  * La lista de países en los que está presente la especie.
-  * La lista de áreas protegidas en las que está presente la especie.
-
+- Un archivo CSV con los registros de presencia.
+- Un mapa interactivo de distribución basado en los registros de presencia.
+- Un mapa interactivo de registros de presencia agrupados (_clustered_).
+- Un registro en otro archivo CSV, que resume los resultados de la evaluación, con las siguientes columnas:
+  - La extensión de presencia de la especie.
+  - El área de ocupación de la especie.
+  - La altitud mínima y la altitud máxima en las que la especie ha sido reportada.
+  - La lista de países en los que está presente la especie.
+  - La lista de áreas protegidas en las que está presente la especie.
+  - Los enlaces a los otros mapas y archivos.
 
 Para ejecutar el _notebook_, se recomienda utilizar versión de Jupyter incluida en la plataforma [Anaconda](https://www.anaconda.com/) para ciencia de datos.
 
