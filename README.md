@@ -16,7 +16,7 @@ Para ejecutar el _notebook_, se recomienda utilizar versión de Jupyter incluida
 
 Primero, debe clonarse el repositorio:
 ```
-git clone https://github.com/evaluacion-arboles-mesoamerica/categorias-criterios-lista-roja-uicn.git
+git clone https://github.com/mfvargas/categorias-criterios-lista-roja-uicn.git
 ```
 
 Luego, debe abrirse y ejecutarse, con la interfaz de Jupyter, el _notebook_ llamado **categorias-criterios-lista-roja-uicn.ipynb**. Lea las instrucciones contenidas en el _notebook_.
