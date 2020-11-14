@@ -35,7 +35,7 @@ git clone https://github.com/mfvargas/categorias-criterios-lista-roja-uicn.git
 cd categorias-criterios-lista-roja-uicn
 
 # Ejecución de Jupyter Notebook
-jupyter notebook categorias-criterios-lista-roja-uicn.ipynb
+jupyter notebook      # abrir categorias-criterios-lista-roja-uicn.ipynb
 
 # Actualización del repositorio
 $ git add .
