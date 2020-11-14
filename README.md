@@ -14,7 +14,7 @@ El _notebook_ recibe como entrada una lista de nombres científicos de especies 
   - Los enlaces a los otros mapas y archivos.
 
 ## Creación de un ambiente Conda, clonación del repositorio y ejecución del notebook
-Ejecute estos comandos desde la línea de comandos de Anaconda, en el directorio en el que desea almacenar el repositorio clonado.
+Se recomienda ejecutar estos comandos desde la línea de comandos de [Anaconda](https://www.anaconda.com/), en el directorio en el que desea almacenar el repositorio clonado.
 ```shell
 # Actualización de Conda
 conda update -n base -c defaults conda
