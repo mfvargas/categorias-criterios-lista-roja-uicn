@@ -28,7 +28,7 @@ conda activate categorias-criterios-lista-roja-uicn
 # Instalación de módulos
 conda config --env --add channels conda-forge
 conda config --env --set channel_priority strict
-conda install notebook matplotlib scipy fiona geopandas folium
+conda install -c conda-forge notebook matplotlib scipy fiona geopandas folium
 
 # Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
 git clone https://github.com/mfvargas/categorias-criterios-lista-roja-uicn.git
