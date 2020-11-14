@@ -13,11 +13,35 @@ El _notebook_ recibe como entrada una lista de nombres científicos de especies 
   - La lista de áreas protegidas en las que está presente la especie.
   - Los enlaces a los otros mapas y archivos.
 
-Para ejecutar el _notebook_, se recomienda utilizar versión de Jupyter incluida en la plataforma [Anaconda](https://www.anaconda.com/) para ciencia de datos.
+## Creación de un ambiente Conda, clonación del repositorio y ejecución del notebook
+Ejecute estos comandos desde la línea de comandos de Anaconda, en el directorio en el que desea almacenar el repositorio clonado.
+```shell
+# Actualización de Conda
+conda update -n base -c defaults conda
 
-Primero, debe clonarse el repositorio:
-```
+# Creación del ambiente
+conda create -n categorias-criterios-lista-roja-uicn
+
+# Activación del ambiente
+conda activate categorias-criterios-lista-roja-uicn
+
+# Instalación de módulos
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda install jupyter scipy geopandas folium fiona
+
+# Clonación del repositorio (debe sustituir la palabra "usuario" por su nombre de usuario en GitHub)
 git clone https://github.com/mfvargas/categorias-criterios-lista-roja-uicn.git
-```
+cd categorias-criterios-lista-roja-uicn
 
-Luego, debe abrirse y ejecutarse, con la interfaz de Jupyter, el _notebook_ llamado [categorias-criterios-lista-roja-uicn.ipynb](https://github.com/mfvargas/categorias-criterios-lista-roja-uicn/blob/master/categorias-criterios-lista-roja-uicn.ipynb). Lea las instrucciones contenidas en el _notebook_.
+# Ejecución de Jupyter Notebook
+jupyter notebook categorias-criterios-lista-roja-uicn.ipynb
+
+# Actualización del repositorio
+$ git add .
+$ git commit -m "Actualizar notebook"
+$ git push
+
+# Desactivación del ambiente Conda
+$ conda deactivate
+```
