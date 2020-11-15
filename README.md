@@ -34,8 +34,8 @@ conda install -c conda-forge notebook matplotlib scipy geopandas folium
 git clone https://github.com/mfvargas/categorias-criterios-lista-roja-uicn.git
 cd categorias-criterios-lista-roja-uicn
 
-# Ejecución de Jupyter Notebook
-jupyter notebook categorias-criterios-lista-roja-uicn.ipynb
+# Ejecución de Jupyter Notebook (debe abrirse categorias-criterios-lista-roja-uicn.ipynb)
+jupyter notebook
 
 # Actualización del repositorio
 $ git add .
